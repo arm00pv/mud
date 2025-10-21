@@ -1,0 +1,20 @@
+{
+  "leather_armor": {
+    "name": "Leather Armor",
+    "type": "armor",
+    "defense": 2,
+    "cost": 10
+  },
+  "iron_sword": {
+    "name": "Iron Sword",
+    "type": "weapon",
+    "attack": 2,
+    "cost": 15
+  },
+  "ring_of_protection": {
+    "name": "Ring of Protection",
+    "type": "ring",
+    "defense": 1,
+    "cost": 20
+  }
+}
