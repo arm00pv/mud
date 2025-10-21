@@ -1,0 +1,25 @@
+{
+    "name": "The Weary Traveler Inn",
+    "description": "A cozy, clean room to rest and recover.",
+    "start_room": "bedroom",
+    "rooms": {
+        "bedroom": {
+            "description": "A simple but comfortable bedroom. There is a freshly made bed and a door to the bathroom.",
+            "exits": {
+                "bathroom": "bathroom"
+            },
+            "interactables": {
+                "bed": "You take a moment to rest on the comfortable bed. Your health is fully restored."
+            }
+        },
+        "bathroom": {
+            "description": "A small, clean bathroom with a shower.",
+            "exits": {
+                "bedroom": "bedroom"
+            },
+            "interactables": {
+                "shower": "You take a refreshing shower."
+            }
+        }
+    }
+}

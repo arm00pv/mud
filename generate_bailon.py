@@ -93,7 +93,12 @@ def generate_bailon():
     # Define start room and connect bridge from Area 1
     start_room = "p_2_2"
     all_rooms[start_room]["description"] += " A shimmering bridge of light connects back to the Great Forest."
-    all_rooms[start_room]["exits"]["bridge"] = "area1_bridge_room" # This is a placeholder for the connection
+    all_rooms[start_room]["exits"]["bridge"] = "area1_bridge_room"
+
+    # Add a new western gate to the desert
+    desert_gate_room = "h_0_5"
+    all_rooms[desert_gate_room]["description"] += " A massive sandstone gate leads west, out into a vast desert."
+    all_rooms[desert_gate_room]["exits"]["west"] = "area3_d_19_10"
 
     # 5. Final Assembly
     area_data = {
