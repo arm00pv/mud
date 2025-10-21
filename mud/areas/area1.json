@@ -1,0 +1,39 @@
+{
+  "name": "The Whispering Woods",
+  "description": "A mystical forest shrouded in an eerie silence. The trees seem to watch your every move.",
+  "start_room": "start",
+  "rooms": {
+    "start": {
+      "description": "You are at the edge of the woods, where sunlight still reaches. A path leads deeper into the gloom to the north.",
+      "exits": {
+        "north": "ancient_oak"
+      }
+    },
+    "ancient_oak": {
+      "description": "You stand before a massive, gnarled oak tree that seems to hum with an ancient energy. A strange inscription is carved into its bark. A path leads south back to the entrance, and another path leads east into a clearing.",
+      "exits": {
+        "south": "start",
+        "east": "gloomy_clearing"
+      },
+      "quest_object": "inscription"
+    },
+    "gloomy_clearing": {
+      "description": "You are in a small clearing where the trees are thin, revealing a star-filled sky. A faint whisper can be heard on the wind. The only exit is to the west, back to the ancient oak.",
+      "exits": {
+        "west": "ancient_oak"
+      },
+      "quest_object": "whispers"
+    }
+  },
+  "quests": {
+    "whispers_of_the_woods": {
+      "name": "The Whispers of the Woods",
+      "description": "Decipher the inscription on the Ancient Oak to understand the whispers in the clearing.",
+      "steps": [
+        "Read the inscription on the Ancient Oak.",
+        "Listen to the whispers in the Gloomy Clearing."
+      ],
+      "reward": "A glowing seed."
+    }
+  }
+}

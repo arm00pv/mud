@@ -1,0 +1,44 @@
+{
+  "name": "The Crystal Caves",
+  "description": "A network of underground caves filled with glowing crystals that pulse with a soft, ethereal light.",
+  "start_room": "cave_entrance",
+  "rooms": {
+    "cave_entrance": {
+      "description": "You are at the mouth of a dark cave. A cool breeze carrying the scent of damp earth and minerals flows out from the entrance. The only way is east, deeper into the cave.",
+      "exits": {
+        "east": "crystal_chamber"
+      }
+    },
+    "crystal_chamber": {
+      "description": "You enter a large chamber. The walls are lined with massive, glowing crystals that pulse with a soft, blue light, illuminating the cavern. Passages lead west back to the entrance and north deeper into the cave system.",
+      "exits": {
+        "west": "cave_entrance",
+        "north": "underground_river"
+      }
+    },
+    "underground_river": {
+      "description": "An underground river flows through this cavern from north to south. A set of slippery stepping stones offers a path to the east. The way back is to the south.",
+      "exits": {
+        "south": "crystal_chamber",
+        "east": "waterfall_grotto"
+      }
+    },
+    "waterfall_grotto": {
+      "description": "You've found a hidden grotto behind a waterfall. The air is thick with mist and the sound of crashing water is deafening. In the center of the grotto, a large, perfectly formed crystal hums with a powerful energy. The only exit is back to the west, across the river.",
+      "exits": {
+        "west": "underground_river"
+      },
+      "quest_object": "humming_crystal"
+    }
+  },
+  "quests": {
+    "heart_of_the_mountain": {
+      "name": "The Heart of the Mountain",
+      "description": "Find the source of the powerful hum deep within the Crystal Caves.",
+      "steps": [
+        "Find the humming crystal."
+      ],
+      "reward": "A resonating crystal shard."
+    }
+  }
+}
