@@ -5,10 +5,43 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="game-container">
+
+  <!-- Auth Container -->
+  <div id="auth-container">
+    <!-- Login Form -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button id="login-button">Login</button>
+      <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-form" style="display: none;">
+      <h2>Register</h2>
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Password" required>
+      <button id="register-button">Register</button>
+      <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </div>
+  </div>
+
+  <!-- Character Selection Container (hidden by default) -->
+  <div id="character-selection-container" style="display: none;">
+    <h2>Select a Character</h2>
+    <div id="character-list"></div>
+    <input type="text" id="new-character-name" placeholder="New Character Name">
+    <button id="create-character-button">Create Character</button>
+  </div>
+
+
+  <!-- Game Container (hidden by default) -->
+  <div id="game-container" style="display: none;">
     <div id="output"></div>
     <input type="text" id="input" autofocus>
   </div>
+
   <script src="game.js"></script>
 </body>
 </html>

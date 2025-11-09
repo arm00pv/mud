@@ -1,57 +1,86 @@
-# MUD Game Deployment Instructions
+# MUD Game Deployment Guide
 
-This guide provides the step-by-step instructions to deploy the AI-Generated MUD game to your web server.
+This guide provides step-by-step instructions for deploying the AI-Generated MUD game to a web server. The game consists of two main parts:
+
+1.  **Frontend:** A set of static files (HTML, CSS, JavaScript, and JSON) that make up the game client.
+2.  **Backend:** A Node.js server that handles user authentication and game state persistence.
 
 ## Prerequisites
 
-*   You have shell access (e.g., via SSH) to your web server.
-*   You have `sudo` or root privileges to write to the `/var/www/` directory.
-*   Your web server (e.g., Apache, Nginx) is configured to serve files from `/var/www/webhost/`.
-*   The game files from this repository have been cloned or downloaded to your server's home directory.
+*   A web server with shell access (e.g., a VPS running a Linux distribution).
+*   Node.js and npm installed on the server.
+*   A web server software like Nginx or Apache.
 
 ## Deployment Steps
 
-Follow these steps carefully to ensure the game is deployed correctly.
+### 1. Upload Game Files
 
-### 1. Navigate to the Repository
+Transfer the entire project directory (including the `mud` and `server` subdirectories) to your web server. You can use tools like `scp` or `rsync` for this.
 
-First, open a terminal on your server and navigate to the directory where you cloned the game repository.
+### 2. Set Up the Backend
 
-```bash
-cd /path/to/your/repository
-```
+The backend server is responsible for managing user accounts and saving game progress.
 
-### 2. Prepare the Destination Directory
+1.  **Navigate to the server directory:**
+    ```bash
+    cd /path/to/your/project/server
+    ```
 
-The game needs to be hosted in `/var/www/webhost/mud/`. We will create this directory and ensure it has the correct permissions.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-```bash
-sudo mkdir -p /var/www/webhost/mud/
-```
+3.  **Configure Environment Variables:**
+    The server requires a `JWT_SECRET` for signing authentication tokens. You should set this in your environment. For example, you can add it to your shell's startup file (e.g., `~/.bashrc` or `~/.profile`):
+    ```bash
+    export JWT_SECRET='your_super_secret_and_long_random_string'
+    ```
+    Make sure to source the file (`source ~/.bashrc`) or log out and back in for the change to take effect.
 
-### 3. Copy the Game Files
+4.  **Start the server:**
+    It's recommended to use a process manager like `pm2` to keep the server running in the background. `pm2` will automatically use the environment variables you've set.
+    ```bash
+    npm install -g pm2
+    pm2 start server.js --name "mud-backend"
+    ```
+    The backend server will start on port 3000 by default.
 
-Copy the contents of the `mud/` directory from the repository to the web server's target directory.
+### 3. Set Up the Frontend
 
-**Important:** This command copies the *contents* of the `mud/` directory, not the directory itself.
+The frontend consists of static files that need to be served by a web server.
 
-```bash
-sudo cp -r mud/* /var/www/webhost/mud/
-```
+1.  **Configure your web server (e.g., Nginx) to serve the frontend files.**
+    Create a new server block in your Nginx configuration:
+    ```nginx
+    server {
+        listen 80;
+        server_name your_domain.com;
 
-### 4. Set File Permissions
+        root /path/to/your/project/mud;
+        index index.html;
 
-To ensure the web server can read and serve the files, you need to set the correct ownership and permissions. The `www-data` user and group is standard for Debian/Ubuntu-based web servers like Apache and Nginx.
+        location / {
+            try_files $uri $uri/ =404;
+        }
 
-```bash
-sudo chown -R www-data:www-data /var/www/webhost/mud/
-sudo chmod -R 755 /var/www/webhost/mud/
-```
+        location /api/ {
+            proxy_pass http://localhost:3000;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+    }
+    ```
+    This configuration serves the static files from the `mud` directory and proxies all API requests (`/api/...`) to the backend server running on port 3000.
 
-### 5. Verify the Deployment
+2.  **Reload your web server configuration:**
+    ```bash
+    sudo systemctl reload nginx
+    ```
 
-The deployment is now complete. You should be able to access the game in your web browser by navigating to:
+### 4. Access the Game
 
-**http://zapp.sytes.net/mud**
-
-The game should load, and you can begin playing immediately.
+You should now be able to access the game by navigating to `http://your_domain.com` in your web browser.

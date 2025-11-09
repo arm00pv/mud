@@ -1,0 +1,13 @@
+{
+  "name": "mud-frontend",
+  "version": "1.0.0",
+  "description": "Frontend server for the AI-Generated MUD game.",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0"
+  }
+}
