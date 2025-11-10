@@ -51,6 +51,7 @@ Navigate to the server directory and install the required npm packages.
 cd /var/www/webhost/mud/server
 npm install
 ```
+*(This command reads the `package.json` file and installs all the necessary libraries, including the Mailjet SDK.)*
 
 ### b. Set Environment Variables
 The server needs several secret keys and configuration variables. The best practice is to add them to your environment.
@@ -70,11 +71,11 @@ export BASE_URL='https://zapp.sytes.net'
 # You can generate one with: openssl rand -base64 32
 export JWT_SECRET='your_super_secret_and_long_random_string'
 
-# Your SMTP server details for sending verification emails.
-export EMAIL_HOST='your_smtp_host'
-export EMAIL_PORT='587' # Or 465, etc.
-export EMAIL_USER='your_smtp_username'
-export EMAIL_PASS='your_smtp_password'
+# Your Mailjet API credentials for sending verification emails.
+# Retrieve these from your Mailjet account dashboard.
+export MAILJET_API_KEY='your_mailjet_public_api_key'
+export MAILJET_SECRET_KEY='your_mailjet_secret_api_key'
+export MAILJET_SENDER_EMAIL='your_verified_sender_email@yourdomain.com'
 ```
 
 Save the file (`CTRL+X`, then `Y`, then `Enter`) and load the new variables into your current session:

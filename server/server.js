@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const path = require('path');
 const crypto = require('crypto');
-const nodemailer = require('nodemailer');
+const Mailjet = require('node-mailjet');
 
 const app = express();
 const server = http.createServer(app);
@@ -28,15 +28,10 @@ app.use(express.json());
 const clients = new Map();
 
 // --- Email Setup ---
-const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: process.env.EMAIL_PORT,
-    secure: false, // true for 465, false for other ports
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-    },
-});
+const mailjet = Mailjet.apiConnect(
+    process.env.MAILJET_API_KEY,
+    process.env.MAILJET_SECRET_KEY
+);
 
 // --- Database Setup ---
 const db = new sqlite3.Database('./database.db', (err) => {
@@ -94,19 +89,36 @@ app.post('/api/register', (req, res) => {
 
         const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
         const verificationUrl = `${baseUrl}/api/verify-email?token=${verificationToken}`;
-        try {
-            await transporter.sendMail({
-                from: '"MUD Game" <no-reply@mud.game>',
-                to: email,
-                subject: 'Verify your email address',
-                text: `Please verify your email address by clicking the following link: ${verificationUrl}`,
-                html: `<p>Please verify your email address by clicking the following link: <a href="${verificationUrl}">${verificationUrl}</a></p>`,
+
+        const request = mailjet.post('send', { version: 'v3.1' }).request({
+            Messages: [
+                {
+                    From: {
+                        Email: process.env.MAILJET_SENDER_EMAIL || 'no-reply@yourdomain.com',
+                        Name: 'MUD Game',
+                    },
+                    To: [
+                        {
+                            Email: email,
+                        },
+                    ],
+                    Subject: 'Verify Your Email Address',
+                    TextPart: `Please verify your email address by clicking the following link: ${verificationUrl}`,
+                    HTMLPart: `<p>Please verify your email address by clicking the following link: <a href="${verificationUrl}">${verificationUrl}</a></p>`,
+                },
+            ],
+        });
+
+        request
+            .then(() => {
+                res.status(201).json({ message: 'Registration successful. Please check your email to verify your account.' });
+            })
+            .catch((err) => {
+                console.error('Error sending verification email:', err.statusCode, err.response.text);
+                res.status(500).json({ error: 'Failed to send verification email.' });
             });
-            res.status(201).json({ message: 'Registration successful. Please check your email to verify your account.' });
-        } catch (error) {
-            console.error('Error sending verification email:', error);
-            res.status(500).json({ error: 'Failed to send verification email.' });
-        }
+    });
+});
     });
 });
 
