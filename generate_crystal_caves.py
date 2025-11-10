@@ -59,6 +59,7 @@ def generate_crystal_caves():
     area["rooms"][f"cave_{grid_size_x-1}_{grid_size_y-1}"]["monster"] = {
          "name": "Corrupted Crystal Golem", "hp": 150, "attack": 12, "defense": 8, "gold": 200
     }
+    area["rooms"][f"cave_{grid_size_x-1}_{grid_size_y-1}"]["exits"]["down"] = "area6_entrance"
 
     # Add Quest NPC
     area["rooms"]["cave_5_5"]["npcs"] = {

@@ -76,5 +76,17 @@
             },
             "result": "enchanted_sword"
         }
+    },
+    "runecrafting": {
+        "runecarved_key": {
+            "name": "Runecarved Key",
+            "level": 1,
+            "exp": 200,
+            "ingredients": {
+                "obsidian_chunk": 5,
+                "crystal_fragment": 5
+            },
+            "result": "runecarved_key"
+        }
     }
 }

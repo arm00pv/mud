@@ -8,6 +8,14 @@
         "east": "cave_1_0",
         "south": "cave_0_1"
       },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
+      },
       "quest_object": "crystal_shard_1"
     },
     "cave_0_1": {
@@ -24,14 +32,6 @@
         "east": "cave_1_2",
         "north": "cave_0_1",
         "south": "cave_0_3"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_0_3": {
@@ -40,6 +40,14 @@
         "east": "cave_1_3",
         "north": "cave_0_2",
         "south": "cave_0_4"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_0_4": {
@@ -64,6 +72,14 @@
         "east": "cave_1_6",
         "north": "cave_0_5",
         "south": "cave_0_7"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_0_7": {
@@ -136,14 +152,6 @@
         "west": "cave_0_0",
         "east": "cave_2_0",
         "south": "cave_1_1"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_1_1": {
@@ -153,14 +161,6 @@
         "east": "cave_2_1",
         "north": "cave_1_0",
         "south": "cave_1_2"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_1_2": {
@@ -206,14 +206,6 @@
         "east": "cave_2_6",
         "north": "cave_1_5",
         "south": "cave_1_7"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_1_7": {
@@ -232,6 +224,14 @@
         "east": "cave_2_8",
         "north": "cave_1_7",
         "south": "cave_1_9"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_1_9": {
@@ -241,6 +241,14 @@
         "east": "cave_2_9",
         "north": "cave_1_8",
         "south": "cave_1_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_1_10": {
@@ -268,14 +276,6 @@
         "east": "cave_2_12",
         "north": "cave_1_11",
         "south": "cave_1_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_1_13": {
@@ -285,14 +285,6 @@
         "east": "cave_2_13",
         "north": "cave_1_12",
         "south": "cave_1_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_1_14": {
@@ -354,6 +346,14 @@
         "east": "cave_3_5",
         "north": "cave_2_4",
         "south": "cave_2_6"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_2_6": {
@@ -390,6 +390,14 @@
         "east": "cave_3_9",
         "north": "cave_2_8",
         "south": "cave_2_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_2_10": {
@@ -539,6 +547,14 @@
         "east": "cave_4_9",
         "north": "cave_3_8",
         "south": "cave_3_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_3_10": {
@@ -557,6 +573,14 @@
         "east": "cave_4_11",
         "north": "cave_3_10",
         "south": "cave_3_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_3_12": {
@@ -583,6 +607,14 @@
         "west": "cave_2_14",
         "east": "cave_4_14",
         "north": "cave_3_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_4_0": {
@@ -618,6 +650,14 @@
         "east": "cave_5_3",
         "north": "cave_4_2",
         "south": "cave_4_4"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_4_4": {
@@ -627,14 +667,6 @@
         "east": "cave_5_4",
         "north": "cave_4_3",
         "south": "cave_4_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_5": {
@@ -662,6 +694,14 @@
         "east": "cave_5_7",
         "north": "cave_4_6",
         "south": "cave_4_8"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_4_8": {
@@ -671,14 +711,6 @@
         "east": "cave_5_8",
         "north": "cave_4_7",
         "south": "cave_4_9"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_9": {
@@ -688,14 +720,6 @@
         "east": "cave_5_9",
         "north": "cave_4_8",
         "south": "cave_4_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_10": {
@@ -732,14 +756,6 @@
         "east": "cave_5_13",
         "north": "cave_4_12",
         "south": "cave_4_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_14": {
@@ -810,14 +826,6 @@
         "north": "cave_5_4",
         "south": "cave_5_6"
       },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
-      },
       "npcs": {
         "crystal_guardian": {
           "name": "The Crystal Guardian",
@@ -841,14 +849,6 @@
         "east": "cave_6_7",
         "north": "cave_5_6",
         "south": "cave_5_8"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_5_8": {
@@ -876,6 +876,14 @@
         "east": "cave_6_10",
         "north": "cave_5_9",
         "south": "cave_5_11"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_5_11": {
@@ -903,14 +911,6 @@
         "east": "cave_6_13",
         "north": "cave_5_12",
         "south": "cave_5_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_5_14": {
@@ -972,14 +972,6 @@
         "east": "cave_7_5",
         "north": "cave_6_4",
         "south": "cave_6_6"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_6_6": {
@@ -1060,6 +1052,14 @@
         "west": "cave_5_14",
         "east": "cave_7_14",
         "north": "cave_6_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_7_0": {
@@ -1068,6 +1068,14 @@
         "west": "cave_6_0",
         "east": "cave_8_0",
         "south": "cave_7_1"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_7_1": {
@@ -1086,14 +1094,6 @@
         "east": "cave_8_2",
         "north": "cave_7_1",
         "south": "cave_7_3"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_7_3": {
@@ -1112,14 +1112,6 @@
         "east": "cave_8_4",
         "north": "cave_7_3",
         "south": "cave_7_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_7_5": {
@@ -1129,14 +1121,6 @@
         "east": "cave_8_5",
         "north": "cave_7_4",
         "south": "cave_7_6"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_7_6": {
@@ -1207,6 +1191,14 @@
         "east": "cave_8_11",
         "north": "cave_7_10",
         "south": "cave_7_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_7_12": {
@@ -1277,6 +1269,14 @@
         "east": "cave_9_4",
         "north": "cave_8_3",
         "south": "cave_8_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_8_5": {
@@ -1295,14 +1295,6 @@
         "east": "cave_9_6",
         "north": "cave_8_5",
         "south": "cave_8_7"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_8_7": {
@@ -1321,14 +1313,6 @@
         "east": "cave_9_8",
         "north": "cave_8_7",
         "south": "cave_8_9"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_8_9": {
@@ -1338,14 +1322,6 @@
         "east": "cave_9_9",
         "north": "cave_8_8",
         "south": "cave_8_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_8_10": {
@@ -1407,6 +1383,14 @@
         "east": "cave_10_1",
         "north": "cave_9_0",
         "south": "cave_9_2"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_9_2": {
@@ -1452,14 +1436,6 @@
         "east": "cave_10_6",
         "north": "cave_9_5",
         "south": "cave_9_7"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_9_7": {
@@ -1496,6 +1472,14 @@
         "east": "cave_10_10",
         "north": "cave_9_9",
         "south": "cave_9_11"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_9_11": {
@@ -1531,14 +1515,6 @@
         "west": "cave_8_14",
         "east": "cave_10_14",
         "north": "cave_9_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_10_0": {
@@ -1565,14 +1541,6 @@
         "east": "cave_11_2",
         "north": "cave_10_1",
         "south": "cave_10_3"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_10_3": {
@@ -1672,14 +1640,6 @@
         "east": "cave_11_13",
         "north": "cave_10_12",
         "south": "cave_10_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_10_14": {
@@ -1740,14 +1700,6 @@
         "east": "cave_12_4",
         "north": "cave_11_3",
         "south": "cave_11_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_11_5": {
@@ -1845,14 +1797,6 @@
         "west": "cave_10_14",
         "east": "cave_12_14",
         "north": "cave_11_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_0": {
@@ -1879,6 +1823,15 @@
         "east": "cave_13_2",
         "north": "cave_12_1",
         "south": "cave_12_3"
+      }
+    },
+    "cave_12_3": {
+      "description": "You are in a vast cavern at (12, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "exits": {
+        "west": "cave_11_3",
+        "east": "cave_13_3",
+        "north": "cave_12_2",
+        "south": "cave_12_4"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -1889,15 +1842,6 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_12_3": {
-      "description": "You are in a vast cavern at (12, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_11_3",
-        "east": "cave_13_3",
-        "north": "cave_12_2",
-        "south": "cave_12_4"
-      }
-    },
     "cave_12_4": {
       "description": "You are in a vast cavern at (12, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
       "exits": {
@@ -1905,6 +1849,14 @@
         "east": "cave_13_4",
         "north": "cave_12_3",
         "south": "cave_12_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_12_5": {
@@ -1950,6 +1902,14 @@
         "east": "cave_13_9",
         "north": "cave_12_8",
         "south": "cave_12_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_12_10": {
@@ -1994,14 +1954,6 @@
         "east": "cave_13_13",
         "north": "cave_12_12",
         "south": "cave_12_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_14": {
@@ -2063,6 +2015,14 @@
         "east": "cave_14_5",
         "north": "cave_13_4",
         "south": "cave_13_6"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_13_6": {
@@ -2090,6 +2050,14 @@
         "east": "cave_14_8",
         "north": "cave_13_7",
         "south": "cave_13_9"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_13_9": {
@@ -2125,14 +2093,6 @@
         "east": "cave_14_11",
         "north": "cave_13_10",
         "south": "cave_13_12"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_13_12": {
@@ -2151,14 +2111,6 @@
         "east": "cave_14_13",
         "north": "cave_13_12",
         "south": "cave_13_14"
-      }
-    },
-    "cave_13_14": {
-      "description": "You are in a vast cavern at (13, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_14",
-        "east": "cave_14_14",
-        "north": "cave_13_13"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2167,6 +2119,14 @@
         "defense": 4,
         "gold": 20,
         "loot": "crystal_fragment"
+      }
+    },
+    "cave_13_14": {
+      "description": "You are in a vast cavern at (13, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "exits": {
+        "west": "cave_12_14",
+        "east": "cave_14_14",
+        "north": "cave_13_13"
       }
     },
     "cave_14_0": {
@@ -2256,6 +2216,14 @@
         "east": "cave_15_9",
         "north": "cave_14_8",
         "south": "cave_14_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_14_10": {
@@ -2308,14 +2276,6 @@
         "west": "cave_13_14",
         "east": "cave_15_14",
         "north": "cave_14_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_15_0": {
@@ -2423,6 +2383,14 @@
         "east": "cave_16_11",
         "north": "cave_15_10",
         "south": "cave_15_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_15_12": {
@@ -2441,14 +2409,6 @@
         "east": "cave_16_13",
         "north": "cave_15_12",
         "south": "cave_15_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_15_14": {
@@ -2536,14 +2496,6 @@
         "east": "cave_17_7",
         "north": "cave_16_6",
         "south": "cave_16_8"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_16_8": {
@@ -2571,6 +2523,14 @@
         "east": "cave_17_10",
         "north": "cave_16_9",
         "south": "cave_16_11"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_16_11": {
@@ -2580,6 +2540,14 @@
         "east": "cave_17_11",
         "north": "cave_16_10",
         "south": "cave_16_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_16_12": {
@@ -2589,6 +2557,14 @@
         "east": "cave_17_12",
         "north": "cave_16_11",
         "south": "cave_16_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_16_13": {
@@ -2623,6 +2599,14 @@
         "east": "cave_18_1",
         "north": "cave_17_0",
         "south": "cave_17_2"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_17_2": {
@@ -2731,6 +2715,14 @@
         "east": "cave_18_13",
         "north": "cave_17_12",
         "south": "cave_17_14"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_17_14": {
@@ -2756,15 +2748,6 @@
         "east": "cave_19_1",
         "north": "cave_18_0",
         "south": "cave_18_2"
-      }
-    },
-    "cave_18_2": {
-      "description": "You are in a vast cavern at (18, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_17_2",
-        "east": "cave_19_2",
-        "north": "cave_18_1",
-        "south": "cave_18_3"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2775,6 +2758,15 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_18_2": {
+      "description": "You are in a vast cavern at (18, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "exits": {
+        "west": "cave_17_2",
+        "east": "cave_19_2",
+        "north": "cave_18_1",
+        "south": "cave_18_3"
+      }
+    },
     "cave_18_3": {
       "description": "You are in a vast cavern at (18, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
       "exits": {
@@ -2782,6 +2774,14 @@
         "east": "cave_19_3",
         "north": "cave_18_2",
         "south": "cave_18_4"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_4": {
@@ -2809,14 +2809,6 @@
         "east": "cave_19_6",
         "north": "cave_18_5",
         "south": "cave_18_7"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_18_7": {
@@ -2880,6 +2872,14 @@
         "east": "cave_19_13",
         "north": "cave_18_12",
         "south": "cave_18_14"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_14": {
@@ -2960,6 +2960,14 @@
         "west": "cave_18_8",
         "north": "cave_19_7",
         "south": "cave_19_9"
+      }
+    },
+    "cave_19_9": {
+      "description": "You are in a vast cavern at (19, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "exits": {
+        "west": "cave_18_9",
+        "north": "cave_19_8",
+        "south": "cave_19_10"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2970,20 +2978,20 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_19_9": {
-      "description": "You are in a vast cavern at (19, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_18_9",
-        "north": "cave_19_8",
-        "south": "cave_19_10"
-      }
-    },
     "cave_19_10": {
       "description": "You are in a vast cavern at (19, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
       "exits": {
         "west": "cave_18_10",
         "north": "cave_19_9",
         "south": "cave_19_11"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_19_11": {
@@ -3014,7 +3022,8 @@
       "description": "You are in a vast cavern at (19, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
       "exits": {
         "west": "cave_18_14",
-        "north": "cave_19_13"
+        "north": "cave_19_13",
+        "down": "area6_entrance"
       },
       "monster": {
         "name": "Corrupted Crystal Golem",

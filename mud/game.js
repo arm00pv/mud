@@ -245,7 +245,7 @@ function handleCommand(command) {
   const target1 = parts[1];
   const target2 = parts.slice(2).join(' ');
 
-  if (action === 'talk' || action === 'lt' || action === 'link') {
+  if (action === 'talk' || action === 'lt' || action === 'link' || action === 'newbiet') {
       const message = parts.slice(1).join(' ');
       ws.send(JSON.stringify({ type: 'chat', command: action, message: message }));
       return;
@@ -267,12 +267,17 @@ function handleCommand(command) {
 
   if (room.exits && room.exits[command]) {
     const nextRoomId = room.exits[command];
-    // This is a simplified check. A more robust solution might check the area file.
-    const isUnderwater = nextRoomId.includes("room_");
-    if (currentArea.rooms[nextRoomId].environment === 'underwater' && (!player.effects || !player.effects.water_breathing || player.effects.water_breathing.duration <= 0)) {
+    const nextRoom = currentArea.rooms[nextRoomId];
+
+    if (nextRoom.environment === 'underwater' && (!player.effects || !player.effects.water_breathing || player.effects.water_breathing.duration <= 0)) {
         printToOutput("You can't breathe underwater! You need a special potion.");
         return;
     }
+    if (nextRoom.environment === 'intense_heat' && (!player.effects || !player.effects.fire_resistance || player.effects.fire_resistance.duration <= 0)) {
+        printToOutput("The intense heat is unbearable! You need a special potion to survive.");
+        return;
+    }
+
     // Crystal Heart quest progression check
     if (nextRoomId === 'cave_19_14' && (!player.quests.crystal_heart || !player.quests.crystal_heart.steps.shards_returned)) {
         printToOutput("A powerful barrier blocks your path. You feel a strange energy coming from the Crystal Guardian's chamber.");
@@ -300,7 +305,7 @@ function handleCommand(command) {
       case 'talk': talkToNpc(target1, room); break;
       case 'interact': interactWithObject(target1, room); break;
       case 'goto':
-          if (target1 && ['area1', 'area2', 'area3', 'area4', 'area5'].includes(target1)) loadArea(target1);
+          if (target1 && ['area1', 'area2', 'area3', 'area4', 'area5', 'area6'].includes(target1)) loadArea(target1);
           else printToOutput('Invalid area name.');
           break;
       case 'collect': handleCollection(target1, room); break;
@@ -514,6 +519,9 @@ function showStats() {
     printToOutput(`Defense: ${getTotalStat('defense')} (Base: ${player.defense})`);
     if(player.effects && player.effects.water_breathing) {
         printToOutput(`Water Breathing: ${player.effects.water_breathing.duration}s`);
+    }
+    if(player.effects && player.effects.fire_resistance) {
+        printToOutput(`Fire Resistance: ${player.effects.fire_resistance.duration}s`);
     }
     printToOutput("--------------------");
 }

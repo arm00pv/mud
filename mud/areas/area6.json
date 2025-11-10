@@ -1,0 +1,3382 @@
+{
+  "name": "The Volcanic Tunnels of Mol'gor",
+  "start_room": "entrance",
+  "rooms": {
+    "volcano_0_0": {
+      "description": "You are in a sweltering tunnel at (0, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_0",
+        "south": "volcano_0_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_1": {
+      "description": "You are in a sweltering tunnel at (0, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_1",
+        "north": "volcano_0_0",
+        "south": "volcano_0_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_2": {
+      "description": "You are in a sweltering tunnel at (0, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_2",
+        "north": "volcano_0_1",
+        "south": "volcano_0_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_3": {
+      "description": "You are in a sweltering tunnel at (0, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_3",
+        "north": "volcano_0_2",
+        "south": "volcano_0_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_4": {
+      "description": "You are in a sweltering tunnel at (0, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_4",
+        "north": "volcano_0_3",
+        "south": "volcano_0_5"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_0_5": {
+      "description": "You are in a sweltering tunnel at (0, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_5",
+        "north": "volcano_0_4",
+        "south": "volcano_0_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_0_6": {
+      "description": "You are in a sweltering tunnel at (0, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_6",
+        "north": "volcano_0_5",
+        "south": "volcano_0_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_7": {
+      "description": "You are in a sweltering tunnel at (0, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_7",
+        "north": "volcano_0_6",
+        "south": "volcano_0_8"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_0_8": {
+      "description": "You are in a sweltering tunnel at (0, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_8",
+        "north": "volcano_0_7",
+        "south": "volcano_0_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_9": {
+      "description": "You are in a sweltering tunnel at (0, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_9",
+        "north": "volcano_0_8",
+        "south": "volcano_0_10"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_0_10": {
+      "description": "You are in a sweltering tunnel at (0, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_10",
+        "north": "volcano_0_9",
+        "south": "volcano_0_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_0_11": {
+      "description": "You are in a sweltering tunnel at (0, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_11",
+        "north": "volcano_0_10",
+        "south": "volcano_0_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_12": {
+      "description": "You are in a sweltering tunnel at (0, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_12",
+        "north": "volcano_0_11",
+        "south": "volcano_0_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_13": {
+      "description": "You are in a sweltering tunnel at (0, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_13",
+        "north": "volcano_0_12",
+        "south": "volcano_0_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_0_14": {
+      "description": "You are in a sweltering tunnel at (0, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "east": "volcano_1_14",
+        "north": "volcano_0_13"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_1_0": {
+      "description": "You are in a sweltering tunnel at (1, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_0",
+        "east": "volcano_2_0",
+        "south": "volcano_1_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_1": {
+      "description": "You are in a sweltering tunnel at (1, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_1",
+        "east": "volcano_2_1",
+        "north": "volcano_1_0",
+        "south": "volcano_1_2"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_1_2": {
+      "description": "You are in a sweltering tunnel at (1, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_2",
+        "east": "volcano_2_2",
+        "north": "volcano_1_1",
+        "south": "volcano_1_3"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_1_3": {
+      "description": "You are in a sweltering tunnel at (1, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_3",
+        "east": "volcano_2_3",
+        "north": "volcano_1_2",
+        "south": "volcano_1_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_1_4": {
+      "description": "You are in a sweltering tunnel at (1, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_4",
+        "east": "volcano_2_4",
+        "north": "volcano_1_3",
+        "south": "volcano_1_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_5": {
+      "description": "You are in a sweltering tunnel at (1, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_5",
+        "east": "volcano_2_5",
+        "north": "volcano_1_4",
+        "south": "volcano_1_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_6": {
+      "description": "You are in a sweltering tunnel at (1, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_6",
+        "east": "volcano_2_6",
+        "north": "volcano_1_5",
+        "south": "volcano_1_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_7": {
+      "description": "You are in a sweltering tunnel at (1, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_7",
+        "east": "volcano_2_7",
+        "north": "volcano_1_6",
+        "south": "volcano_1_8"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_1_8": {
+      "description": "You are in a sweltering tunnel at (1, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_8",
+        "east": "volcano_2_8",
+        "north": "volcano_1_7",
+        "south": "volcano_1_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_9": {
+      "description": "You are in a sweltering tunnel at (1, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_9",
+        "east": "volcano_2_9",
+        "north": "volcano_1_8",
+        "south": "volcano_1_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_10": {
+      "description": "You are in a sweltering tunnel at (1, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_10",
+        "east": "volcano_2_10",
+        "north": "volcano_1_9",
+        "south": "volcano_1_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_11": {
+      "description": "You are in a sweltering tunnel at (1, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_11",
+        "east": "volcano_2_11",
+        "north": "volcano_1_10",
+        "south": "volcano_1_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_1_12": {
+      "description": "You are in a sweltering tunnel at (1, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_12",
+        "east": "volcano_2_12",
+        "north": "volcano_1_11",
+        "south": "volcano_1_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_1_13": {
+      "description": "You are in a sweltering tunnel at (1, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_13",
+        "east": "volcano_2_13",
+        "north": "volcano_1_12",
+        "south": "volcano_1_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_1_14": {
+      "description": "You are in a sweltering tunnel at (1, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_0_14",
+        "east": "volcano_2_14",
+        "north": "volcano_1_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_0": {
+      "description": "You are in a sweltering tunnel at (2, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_0",
+        "east": "volcano_3_0",
+        "south": "volcano_2_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_1": {
+      "description": "You are in a sweltering tunnel at (2, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_1",
+        "east": "volcano_3_1",
+        "north": "volcano_2_0",
+        "south": "volcano_2_2"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_2_2": {
+      "description": "You are in a sweltering tunnel at (2, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_2",
+        "east": "volcano_3_2",
+        "north": "volcano_2_1",
+        "south": "volcano_2_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_3": {
+      "description": "You are in a sweltering tunnel at (2, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_3",
+        "east": "volcano_3_3",
+        "north": "volcano_2_2",
+        "south": "volcano_2_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_4": {
+      "description": "You are in a sweltering tunnel at (2, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_4",
+        "east": "volcano_3_4",
+        "north": "volcano_2_3",
+        "south": "volcano_2_5"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_2_5": {
+      "description": "You are in a sweltering tunnel at (2, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_5",
+        "east": "volcano_3_5",
+        "north": "volcano_2_4",
+        "south": "volcano_2_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_6": {
+      "description": "You are in a sweltering tunnel at (2, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_6",
+        "east": "volcano_3_6",
+        "north": "volcano_2_5",
+        "south": "volcano_2_7"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_2_7": {
+      "description": "You are in a sweltering tunnel at (2, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_7",
+        "east": "volcano_3_7",
+        "north": "volcano_2_6",
+        "south": "volcano_2_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_8": {
+      "description": "You are in a sweltering tunnel at (2, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_8",
+        "east": "volcano_3_8",
+        "north": "volcano_2_7",
+        "south": "volcano_2_9"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_2_9": {
+      "description": "You are in a sweltering tunnel at (2, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_9",
+        "east": "volcano_3_9",
+        "north": "volcano_2_8",
+        "south": "volcano_2_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_10": {
+      "description": "You are in a sweltering tunnel at (2, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_10",
+        "east": "volcano_3_10",
+        "north": "volcano_2_9",
+        "south": "volcano_2_11"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_2_11": {
+      "description": "You are in a sweltering tunnel at (2, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_11",
+        "east": "volcano_3_11",
+        "north": "volcano_2_10",
+        "south": "volcano_2_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_12": {
+      "description": "You are in a sweltering tunnel at (2, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_12",
+        "east": "volcano_3_12",
+        "north": "volcano_2_11",
+        "south": "volcano_2_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_13": {
+      "description": "You are in a sweltering tunnel at (2, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_13",
+        "east": "volcano_3_13",
+        "north": "volcano_2_12",
+        "south": "volcano_2_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_2_14": {
+      "description": "You are in a sweltering tunnel at (2, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_1_14",
+        "east": "volcano_3_14",
+        "north": "volcano_2_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_0": {
+      "description": "You are in a sweltering tunnel at (3, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_0",
+        "east": "volcano_4_0",
+        "south": "volcano_3_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_1": {
+      "description": "You are in a sweltering tunnel at (3, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_1",
+        "east": "volcano_4_1",
+        "north": "volcano_3_0",
+        "south": "volcano_3_2"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_3_2": {
+      "description": "You are in a sweltering tunnel at (3, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_2",
+        "east": "volcano_4_2",
+        "north": "volcano_3_1",
+        "south": "volcano_3_3"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_3_3": {
+      "description": "You are in a sweltering tunnel at (3, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_3",
+        "east": "volcano_4_3",
+        "north": "volcano_3_2",
+        "south": "volcano_3_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_3_4": {
+      "description": "You are in a sweltering tunnel at (3, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_4",
+        "east": "volcano_4_4",
+        "north": "volcano_3_3",
+        "south": "volcano_3_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_5": {
+      "description": "You are in a sweltering tunnel at (3, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_5",
+        "east": "volcano_4_5",
+        "north": "volcano_3_4",
+        "south": "volcano_3_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_3_6": {
+      "description": "You are in a sweltering tunnel at (3, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_6",
+        "east": "volcano_4_6",
+        "north": "volcano_3_5",
+        "south": "volcano_3_7"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_3_7": {
+      "description": "You are in a sweltering tunnel at (3, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_7",
+        "east": "volcano_4_7",
+        "north": "volcano_3_6",
+        "south": "volcano_3_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_8": {
+      "description": "You are in a sweltering tunnel at (3, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_8",
+        "east": "volcano_4_8",
+        "north": "volcano_3_7",
+        "south": "volcano_3_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_9": {
+      "description": "You are in a sweltering tunnel at (3, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_9",
+        "east": "volcano_4_9",
+        "north": "volcano_3_8",
+        "south": "volcano_3_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_10": {
+      "description": "You are in a sweltering tunnel at (3, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_10",
+        "east": "volcano_4_10",
+        "north": "volcano_3_9",
+        "south": "volcano_3_11"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_3_11": {
+      "description": "You are in a sweltering tunnel at (3, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_11",
+        "east": "volcano_4_11",
+        "north": "volcano_3_10",
+        "south": "volcano_3_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_12": {
+      "description": "You are in a sweltering tunnel at (3, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_12",
+        "east": "volcano_4_12",
+        "north": "volcano_3_11",
+        "south": "volcano_3_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_13": {
+      "description": "You are in a sweltering tunnel at (3, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_13",
+        "east": "volcano_4_13",
+        "north": "volcano_3_12",
+        "south": "volcano_3_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_3_14": {
+      "description": "You are in a sweltering tunnel at (3, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_2_14",
+        "east": "volcano_4_14",
+        "north": "volcano_3_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_0": {
+      "description": "You are in a sweltering tunnel at (4, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_0",
+        "east": "volcano_5_0",
+        "south": "volcano_4_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_1": {
+      "description": "You are in a sweltering tunnel at (4, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_1",
+        "east": "volcano_5_1",
+        "north": "volcano_4_0",
+        "south": "volcano_4_2"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_4_2": {
+      "description": "You are in a sweltering tunnel at (4, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_2",
+        "east": "volcano_5_2",
+        "north": "volcano_4_1",
+        "south": "volcano_4_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_3": {
+      "description": "You are in a sweltering tunnel at (4, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_3",
+        "east": "volcano_5_3",
+        "north": "volcano_4_2",
+        "south": "volcano_4_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_4_4": {
+      "description": "You are in a sweltering tunnel at (4, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_4",
+        "east": "volcano_5_4",
+        "north": "volcano_4_3",
+        "south": "volcano_4_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_5": {
+      "description": "You are in a sweltering tunnel at (4, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_5",
+        "east": "volcano_5_5",
+        "north": "volcano_4_4",
+        "south": "volcano_4_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_6": {
+      "description": "You are in a sweltering tunnel at (4, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_6",
+        "east": "volcano_5_6",
+        "north": "volcano_4_5",
+        "south": "volcano_4_7"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_4_7": {
+      "description": "You are in a sweltering tunnel at (4, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_7",
+        "east": "volcano_5_7",
+        "north": "volcano_4_6",
+        "south": "volcano_4_8"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_4_8": {
+      "description": "You are in a sweltering tunnel at (4, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_8",
+        "east": "volcano_5_8",
+        "north": "volcano_4_7",
+        "south": "volcano_4_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_9": {
+      "description": "You are in a sweltering tunnel at (4, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_9",
+        "east": "volcano_5_9",
+        "north": "volcano_4_8",
+        "south": "volcano_4_10"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_4_10": {
+      "description": "You are in a sweltering tunnel at (4, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_10",
+        "east": "volcano_5_10",
+        "north": "volcano_4_9",
+        "south": "volcano_4_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_11": {
+      "description": "You are in a sweltering tunnel at (4, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_11",
+        "east": "volcano_5_11",
+        "north": "volcano_4_10",
+        "south": "volcano_4_12"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_4_12": {
+      "description": "You are in a sweltering tunnel at (4, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_12",
+        "east": "volcano_5_12",
+        "north": "volcano_4_11",
+        "south": "volcano_4_13"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_4_13": {
+      "description": "You are in a sweltering tunnel at (4, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_13",
+        "east": "volcano_5_13",
+        "north": "volcano_4_12",
+        "south": "volcano_4_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_4_14": {
+      "description": "You are in a sweltering tunnel at (4, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_3_14",
+        "east": "volcano_5_14",
+        "north": "volcano_4_13"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_5_0": {
+      "description": "You are in a sweltering tunnel at (5, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_0",
+        "east": "volcano_6_0",
+        "south": "volcano_5_1"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_5_1": {
+      "description": "You are in a sweltering tunnel at (5, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_1",
+        "east": "volcano_6_1",
+        "north": "volcano_5_0",
+        "south": "volcano_5_2"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_5_2": {
+      "description": "You are in a sweltering tunnel at (5, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_2",
+        "east": "volcano_6_2",
+        "north": "volcano_5_1",
+        "south": "volcano_5_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_3": {
+      "description": "You are in a sweltering tunnel at (5, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_3",
+        "east": "volcano_6_3",
+        "north": "volcano_5_2",
+        "south": "volcano_5_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_4": {
+      "description": "You are in a sweltering tunnel at (5, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_4",
+        "east": "volcano_6_4",
+        "north": "volcano_5_3",
+        "south": "volcano_5_5"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_5_5": {
+      "description": "You are in a sweltering tunnel at (5, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_5",
+        "east": "volcano_6_5",
+        "north": "volcano_5_4",
+        "south": "volcano_5_6"
+      },
+      "environment": "normal",
+      "npcs": {
+        "fire_drake": {
+          "name": "The Elder Fire Drake",
+          "dialogue": "Hssst... a mortal. The Magma Lord holds the heart of this mountain captive. Only a key carved with runes can break the seal to his chamber. Bring me the materials, and I shall show you the way."
+        }
+      }
+    },
+    "volcano_5_6": {
+      "description": "You are in a sweltering tunnel at (5, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_6",
+        "east": "volcano_6_6",
+        "north": "volcano_5_5",
+        "south": "volcano_5_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_7": {
+      "description": "You are in a sweltering tunnel at (5, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_7",
+        "east": "volcano_6_7",
+        "north": "volcano_5_6",
+        "south": "volcano_5_8"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_5_8": {
+      "description": "You are in a sweltering tunnel at (5, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_8",
+        "east": "volcano_6_8",
+        "north": "volcano_5_7",
+        "south": "volcano_5_9"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_5_9": {
+      "description": "You are in a sweltering tunnel at (5, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_9",
+        "east": "volcano_6_9",
+        "north": "volcano_5_8",
+        "south": "volcano_5_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_10": {
+      "description": "You are in a sweltering tunnel at (5, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_10",
+        "east": "volcano_6_10",
+        "north": "volcano_5_9",
+        "south": "volcano_5_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_11": {
+      "description": "You are in a sweltering tunnel at (5, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_11",
+        "east": "volcano_6_11",
+        "north": "volcano_5_10",
+        "south": "volcano_5_12"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_5_12": {
+      "description": "You are in a sweltering tunnel at (5, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_12",
+        "east": "volcano_6_12",
+        "north": "volcano_5_11",
+        "south": "volcano_5_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_5_13": {
+      "description": "You are in a sweltering tunnel at (5, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_13",
+        "east": "volcano_6_13",
+        "north": "volcano_5_12",
+        "south": "volcano_5_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_5_14": {
+      "description": "You are in a sweltering tunnel at (5, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_4_14",
+        "east": "volcano_6_14",
+        "north": "volcano_5_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_0": {
+      "description": "You are in a sweltering tunnel at (6, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_0",
+        "east": "volcano_7_0",
+        "south": "volcano_6_1"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_6_1": {
+      "description": "You are in a sweltering tunnel at (6, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_1",
+        "east": "volcano_7_1",
+        "north": "volcano_6_0",
+        "south": "volcano_6_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_2": {
+      "description": "You are in a sweltering tunnel at (6, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_2",
+        "east": "volcano_7_2",
+        "north": "volcano_6_1",
+        "south": "volcano_6_3"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_6_3": {
+      "description": "You are in a sweltering tunnel at (6, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_3",
+        "east": "volcano_7_3",
+        "north": "volcano_6_2",
+        "south": "volcano_6_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_4": {
+      "description": "You are in a sweltering tunnel at (6, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_4",
+        "east": "volcano_7_4",
+        "north": "volcano_6_3",
+        "south": "volcano_6_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_5": {
+      "description": "You are in a sweltering tunnel at (6, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_5",
+        "east": "volcano_7_5",
+        "north": "volcano_6_4",
+        "south": "volcano_6_6"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_6_6": {
+      "description": "You are in a sweltering tunnel at (6, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_6",
+        "east": "volcano_7_6",
+        "north": "volcano_6_5",
+        "south": "volcano_6_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_7": {
+      "description": "You are in a sweltering tunnel at (6, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_7",
+        "east": "volcano_7_7",
+        "north": "volcano_6_6",
+        "south": "volcano_6_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_8": {
+      "description": "You are in a sweltering tunnel at (6, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_8",
+        "east": "volcano_7_8",
+        "north": "volcano_6_7",
+        "south": "volcano_6_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_9": {
+      "description": "You are in a sweltering tunnel at (6, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_9",
+        "east": "volcano_7_9",
+        "north": "volcano_6_8",
+        "south": "volcano_6_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_10": {
+      "description": "You are in a sweltering tunnel at (6, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_10",
+        "east": "volcano_7_10",
+        "north": "volcano_6_9",
+        "south": "volcano_6_11"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_6_11": {
+      "description": "You are in a sweltering tunnel at (6, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_11",
+        "east": "volcano_7_11",
+        "north": "volcano_6_10",
+        "south": "volcano_6_12"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_6_12": {
+      "description": "You are in a sweltering tunnel at (6, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_12",
+        "east": "volcano_7_12",
+        "north": "volcano_6_11",
+        "south": "volcano_6_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_6_13": {
+      "description": "You are in a sweltering tunnel at (6, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_13",
+        "east": "volcano_7_13",
+        "north": "volcano_6_12",
+        "south": "volcano_6_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_6_14": {
+      "description": "You are in a sweltering tunnel at (6, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_5_14",
+        "east": "volcano_7_14",
+        "north": "volcano_6_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_7_0": {
+      "description": "You are in a sweltering tunnel at (7, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_0",
+        "east": "volcano_8_0",
+        "south": "volcano_7_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_1": {
+      "description": "You are in a sweltering tunnel at (7, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_1",
+        "east": "volcano_8_1",
+        "north": "volcano_7_0",
+        "south": "volcano_7_2"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_7_2": {
+      "description": "You are in a sweltering tunnel at (7, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_2",
+        "east": "volcano_8_2",
+        "north": "volcano_7_1",
+        "south": "volcano_7_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_3": {
+      "description": "You are in a sweltering tunnel at (7, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_3",
+        "east": "volcano_8_3",
+        "north": "volcano_7_2",
+        "south": "volcano_7_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_4": {
+      "description": "You are in a sweltering tunnel at (7, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_4",
+        "east": "volcano_8_4",
+        "north": "volcano_7_3",
+        "south": "volcano_7_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_5": {
+      "description": "You are in a sweltering tunnel at (7, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_5",
+        "east": "volcano_8_5",
+        "north": "volcano_7_4",
+        "south": "volcano_7_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_6": {
+      "description": "You are in a sweltering tunnel at (7, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_6",
+        "east": "volcano_8_6",
+        "north": "volcano_7_5",
+        "south": "volcano_7_7"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_7_7": {
+      "description": "You are in a sweltering tunnel at (7, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_7",
+        "east": "volcano_8_7",
+        "north": "volcano_7_6",
+        "south": "volcano_7_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_8": {
+      "description": "You are in a sweltering tunnel at (7, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_8",
+        "east": "volcano_8_8",
+        "north": "volcano_7_7",
+        "south": "volcano_7_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_9": {
+      "description": "You are in a sweltering tunnel at (7, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_9",
+        "east": "volcano_8_9",
+        "north": "volcano_7_8",
+        "south": "volcano_7_10"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_7_10": {
+      "description": "You are in a sweltering tunnel at (7, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_10",
+        "east": "volcano_8_10",
+        "north": "volcano_7_9",
+        "south": "volcano_7_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_7_11": {
+      "description": "You are in a sweltering tunnel at (7, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_11",
+        "east": "volcano_8_11",
+        "north": "volcano_7_10",
+        "south": "volcano_7_12"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_7_12": {
+      "description": "You are in a sweltering tunnel at (7, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_12",
+        "east": "volcano_8_12",
+        "north": "volcano_7_11",
+        "south": "volcano_7_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_7_13": {
+      "description": "You are in a sweltering tunnel at (7, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_13",
+        "east": "volcano_8_13",
+        "north": "volcano_7_12",
+        "south": "volcano_7_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_7_14": {
+      "description": "You are in a sweltering tunnel at (7, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_6_14",
+        "east": "volcano_8_14",
+        "north": "volcano_7_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_8_0": {
+      "description": "You are in a sweltering tunnel at (8, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_0",
+        "east": "volcano_9_0",
+        "south": "volcano_8_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_1": {
+      "description": "You are in a sweltering tunnel at (8, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_1",
+        "east": "volcano_9_1",
+        "north": "volcano_8_0",
+        "south": "volcano_8_2"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_8_2": {
+      "description": "You are in a sweltering tunnel at (8, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_2",
+        "east": "volcano_9_2",
+        "north": "volcano_8_1",
+        "south": "volcano_8_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_3": {
+      "description": "You are in a sweltering tunnel at (8, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_3",
+        "east": "volcano_9_3",
+        "north": "volcano_8_2",
+        "south": "volcano_8_4"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_8_4": {
+      "description": "You are in a sweltering tunnel at (8, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_4",
+        "east": "volcano_9_4",
+        "north": "volcano_8_3",
+        "south": "volcano_8_5"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_8_5": {
+      "description": "You are in a sweltering tunnel at (8, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_5",
+        "east": "volcano_9_5",
+        "north": "volcano_8_4",
+        "south": "volcano_8_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_8_6": {
+      "description": "You are in a sweltering tunnel at (8, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_6",
+        "east": "volcano_9_6",
+        "north": "volcano_8_5",
+        "south": "volcano_8_7"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_8_7": {
+      "description": "You are in a sweltering tunnel at (8, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_7",
+        "east": "volcano_9_7",
+        "north": "volcano_8_6",
+        "south": "volcano_8_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_8": {
+      "description": "You are in a sweltering tunnel at (8, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_8",
+        "east": "volcano_9_8",
+        "north": "volcano_8_7",
+        "south": "volcano_8_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_9": {
+      "description": "You are in a sweltering tunnel at (8, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_9",
+        "east": "volcano_9_9",
+        "north": "volcano_8_8",
+        "south": "volcano_8_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_10": {
+      "description": "You are in a sweltering tunnel at (8, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_10",
+        "east": "volcano_9_10",
+        "north": "volcano_8_9",
+        "south": "volcano_8_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_11": {
+      "description": "You are in a sweltering tunnel at (8, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_11",
+        "east": "volcano_9_11",
+        "north": "volcano_8_10",
+        "south": "volcano_8_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_12": {
+      "description": "You are in a sweltering tunnel at (8, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_12",
+        "east": "volcano_9_12",
+        "north": "volcano_8_11",
+        "south": "volcano_8_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_8_13": {
+      "description": "You are in a sweltering tunnel at (8, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_13",
+        "east": "volcano_9_13",
+        "north": "volcano_8_12",
+        "south": "volcano_8_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_8_14": {
+      "description": "You are in a sweltering tunnel at (8, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_7_14",
+        "east": "volcano_9_14",
+        "north": "volcano_8_13"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_0": {
+      "description": "You are in a sweltering tunnel at (9, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_0",
+        "east": "volcano_10_0",
+        "south": "volcano_9_1"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_1": {
+      "description": "You are in a sweltering tunnel at (9, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_1",
+        "east": "volcano_10_1",
+        "north": "volcano_9_0",
+        "south": "volcano_9_2"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_9_2": {
+      "description": "You are in a sweltering tunnel at (9, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_2",
+        "east": "volcano_10_2",
+        "north": "volcano_9_1",
+        "south": "volcano_9_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_9_3": {
+      "description": "You are in a sweltering tunnel at (9, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_3",
+        "east": "volcano_10_3",
+        "north": "volcano_9_2",
+        "south": "volcano_9_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_4": {
+      "description": "You are in a sweltering tunnel at (9, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_4",
+        "east": "volcano_10_4",
+        "north": "volcano_9_3",
+        "south": "volcano_9_5"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_9_5": {
+      "description": "You are in a sweltering tunnel at (9, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_5",
+        "east": "volcano_10_5",
+        "north": "volcano_9_4",
+        "south": "volcano_9_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_6": {
+      "description": "You are in a sweltering tunnel at (9, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_6",
+        "east": "volcano_10_6",
+        "north": "volcano_9_5",
+        "south": "volcano_9_7"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_7": {
+      "description": "You are in a sweltering tunnel at (9, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_7",
+        "east": "volcano_10_7",
+        "north": "volcano_9_6",
+        "south": "volcano_9_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_9_8": {
+      "description": "You are in a sweltering tunnel at (9, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_8",
+        "east": "volcano_10_8",
+        "north": "volcano_9_7",
+        "south": "volcano_9_9"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_9_9": {
+      "description": "You are in a sweltering tunnel at (9, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_9",
+        "east": "volcano_10_9",
+        "north": "volcano_9_8",
+        "south": "volcano_9_10"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_9_10": {
+      "description": "You are in a sweltering tunnel at (9, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_10",
+        "east": "volcano_10_10",
+        "north": "volcano_9_9",
+        "south": "volcano_9_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_9_11": {
+      "description": "You are in a sweltering tunnel at (9, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_11",
+        "east": "volcano_10_11",
+        "north": "volcano_9_10",
+        "south": "volcano_9_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_9_12": {
+      "description": "You are in a sweltering tunnel at (9, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_12",
+        "east": "volcano_10_12",
+        "north": "volcano_9_11",
+        "south": "volcano_9_13"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_9_13": {
+      "description": "You are in a sweltering tunnel at (9, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_13",
+        "east": "volcano_10_13",
+        "north": "volcano_9_12",
+        "south": "volcano_9_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_9_14": {
+      "description": "You are in a sweltering tunnel at (9, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_8_14",
+        "east": "volcano_10_14",
+        "north": "volcano_9_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_0": {
+      "description": "You are in a sweltering tunnel at (10, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_0",
+        "east": "volcano_11_0",
+        "south": "volcano_10_1"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_10_1": {
+      "description": "You are in a sweltering tunnel at (10, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_1",
+        "east": "volcano_11_1",
+        "north": "entrance",
+        "south": "volcano_10_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_2": {
+      "description": "You are in a sweltering tunnel at (10, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_2",
+        "east": "volcano_11_2",
+        "north": "volcano_10_1",
+        "south": "volcano_10_3"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_10_3": {
+      "description": "You are in a sweltering tunnel at (10, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_3",
+        "east": "volcano_11_3",
+        "north": "volcano_10_2",
+        "south": "volcano_10_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_4": {
+      "description": "You are in a sweltering tunnel at (10, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_4",
+        "east": "volcano_11_4",
+        "north": "volcano_10_3",
+        "south": "volcano_10_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_5": {
+      "description": "You are in a sweltering tunnel at (10, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_5",
+        "east": "volcano_11_5",
+        "north": "volcano_10_4",
+        "south": "volcano_10_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_6": {
+      "description": "You are in a sweltering tunnel at (10, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_6",
+        "east": "volcano_11_6",
+        "north": "volcano_10_5",
+        "south": "volcano_10_7"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_10_7": {
+      "description": "You are in a sweltering tunnel at (10, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_7",
+        "east": "volcano_11_7",
+        "north": "volcano_10_6",
+        "south": "volcano_10_8"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_10_8": {
+      "description": "You are in a sweltering tunnel at (10, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_8",
+        "east": "volcano_11_8",
+        "north": "volcano_10_7",
+        "south": "volcano_10_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_9": {
+      "description": "You are in a sweltering tunnel at (10, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_9",
+        "east": "volcano_11_9",
+        "north": "volcano_10_8",
+        "south": "volcano_10_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_10": {
+      "description": "You are in a sweltering tunnel at (10, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_10",
+        "east": "volcano_11_10",
+        "north": "volcano_10_9",
+        "south": "volcano_10_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_11": {
+      "description": "You are in a sweltering tunnel at (10, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_11",
+        "east": "volcano_11_11",
+        "north": "volcano_10_10",
+        "south": "volcano_10_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_12": {
+      "description": "You are in a sweltering tunnel at (10, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_12",
+        "east": "volcano_11_12",
+        "north": "volcano_10_11",
+        "south": "volcano_10_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_10_13": {
+      "description": "You are in a sweltering tunnel at (10, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_13",
+        "east": "volcano_11_13",
+        "north": "volcano_10_12",
+        "south": "volcano_10_14"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_10_14": {
+      "description": "You are in a sweltering tunnel at (10, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_9_14",
+        "east": "volcano_11_14",
+        "north": "volcano_10_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_0": {
+      "description": "You are in a sweltering tunnel at (11, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_0",
+        "east": "volcano_12_0",
+        "south": "volcano_11_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_1": {
+      "description": "You are in a sweltering tunnel at (11, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_1",
+        "east": "volcano_12_1",
+        "north": "volcano_11_0",
+        "south": "volcano_11_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_2": {
+      "description": "You are in a sweltering tunnel at (11, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_2",
+        "east": "volcano_12_2",
+        "north": "volcano_11_1",
+        "south": "volcano_11_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_3": {
+      "description": "You are in a sweltering tunnel at (11, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_3",
+        "east": "volcano_12_3",
+        "north": "volcano_11_2",
+        "south": "volcano_11_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_4": {
+      "description": "You are in a sweltering tunnel at (11, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_4",
+        "east": "volcano_12_4",
+        "north": "volcano_11_3",
+        "south": "volcano_11_5"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_11_5": {
+      "description": "You are in a sweltering tunnel at (11, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_5",
+        "east": "volcano_12_5",
+        "north": "volcano_11_4",
+        "south": "volcano_11_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_6": {
+      "description": "You are in a sweltering tunnel at (11, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_6",
+        "east": "volcano_12_6",
+        "north": "volcano_11_5",
+        "south": "volcano_11_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_7": {
+      "description": "You are in a sweltering tunnel at (11, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_7",
+        "east": "volcano_12_7",
+        "north": "volcano_11_6",
+        "south": "volcano_11_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_8": {
+      "description": "You are in a sweltering tunnel at (11, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_8",
+        "east": "volcano_12_8",
+        "north": "volcano_11_7",
+        "south": "volcano_11_9"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_11_9": {
+      "description": "You are in a sweltering tunnel at (11, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_9",
+        "east": "volcano_12_9",
+        "north": "volcano_11_8",
+        "south": "volcano_11_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_10": {
+      "description": "You are in a sweltering tunnel at (11, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_10",
+        "east": "volcano_12_10",
+        "north": "volcano_11_9",
+        "south": "volcano_11_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_11": {
+      "description": "You are in a sweltering tunnel at (11, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_11",
+        "east": "volcano_12_11",
+        "north": "volcano_11_10",
+        "south": "volcano_11_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_12": {
+      "description": "You are in a sweltering tunnel at (11, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_12",
+        "east": "volcano_12_12",
+        "north": "volcano_11_11",
+        "south": "volcano_11_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_13": {
+      "description": "You are in a sweltering tunnel at (11, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_13",
+        "east": "volcano_12_13",
+        "north": "volcano_11_12",
+        "south": "volcano_11_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_11_14": {
+      "description": "You are in a sweltering tunnel at (11, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_10_14",
+        "east": "volcano_12_14",
+        "north": "volcano_11_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_0": {
+      "description": "You are in a sweltering tunnel at (12, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_0",
+        "east": "volcano_13_0",
+        "south": "volcano_12_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_1": {
+      "description": "You are in a sweltering tunnel at (12, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_1",
+        "east": "volcano_13_1",
+        "north": "volcano_12_0",
+        "south": "volcano_12_2"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_12_2": {
+      "description": "You are in a sweltering tunnel at (12, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_2",
+        "east": "volcano_13_2",
+        "north": "volcano_12_1",
+        "south": "volcano_12_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_3": {
+      "description": "You are in a sweltering tunnel at (12, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_3",
+        "east": "volcano_13_3",
+        "north": "volcano_12_2",
+        "south": "volcano_12_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_12_4": {
+      "description": "You are in a sweltering tunnel at (12, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_4",
+        "east": "volcano_13_4",
+        "north": "volcano_12_3",
+        "south": "volcano_12_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_5": {
+      "description": "You are in a sweltering tunnel at (12, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_5",
+        "east": "volcano_13_5",
+        "north": "volcano_12_4",
+        "south": "volcano_12_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_6": {
+      "description": "You are in a sweltering tunnel at (12, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_6",
+        "east": "volcano_13_6",
+        "north": "volcano_12_5",
+        "south": "volcano_12_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_7": {
+      "description": "You are in a sweltering tunnel at (12, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_7",
+        "east": "volcano_13_7",
+        "north": "volcano_12_6",
+        "south": "volcano_12_8"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_12_8": {
+      "description": "You are in a sweltering tunnel at (12, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_8",
+        "east": "volcano_13_8",
+        "north": "volcano_12_7",
+        "south": "volcano_12_9"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_12_9": {
+      "description": "You are in a sweltering tunnel at (12, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_9",
+        "east": "volcano_13_9",
+        "north": "volcano_12_8",
+        "south": "volcano_12_10"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_12_10": {
+      "description": "You are in a sweltering tunnel at (12, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_10",
+        "east": "volcano_13_10",
+        "north": "volcano_12_9",
+        "south": "volcano_12_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_12_11": {
+      "description": "You are in a sweltering tunnel at (12, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_11",
+        "east": "volcano_13_11",
+        "north": "volcano_12_10",
+        "south": "volcano_12_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_12": {
+      "description": "You are in a sweltering tunnel at (12, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_12",
+        "east": "volcano_13_12",
+        "north": "volcano_12_11",
+        "south": "volcano_12_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_13": {
+      "description": "You are in a sweltering tunnel at (12, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_13",
+        "east": "volcano_13_13",
+        "north": "volcano_12_12",
+        "south": "volcano_12_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_12_14": {
+      "description": "You are in a sweltering tunnel at (12, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_11_14",
+        "east": "volcano_13_14",
+        "north": "volcano_12_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_0": {
+      "description": "You are in a sweltering tunnel at (13, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_0",
+        "east": "volcano_14_0",
+        "south": "volcano_13_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_1": {
+      "description": "You are in a sweltering tunnel at (13, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_1",
+        "east": "volcano_14_1",
+        "north": "volcano_13_0",
+        "south": "volcano_13_2"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_13_2": {
+      "description": "You are in a sweltering tunnel at (13, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_2",
+        "east": "volcano_14_2",
+        "north": "volcano_13_1",
+        "south": "volcano_13_3"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_13_3": {
+      "description": "You are in a sweltering tunnel at (13, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_3",
+        "east": "volcano_14_3",
+        "north": "volcano_13_2",
+        "south": "volcano_13_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_4": {
+      "description": "You are in a sweltering tunnel at (13, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_4",
+        "east": "volcano_14_4",
+        "north": "volcano_13_3",
+        "south": "volcano_13_5"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_13_5": {
+      "description": "You are in a sweltering tunnel at (13, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_5",
+        "east": "volcano_14_5",
+        "north": "volcano_13_4",
+        "south": "volcano_13_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_6": {
+      "description": "You are in a sweltering tunnel at (13, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_6",
+        "east": "volcano_14_6",
+        "north": "volcano_13_5",
+        "south": "volcano_13_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_7": {
+      "description": "You are in a sweltering tunnel at (13, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_7",
+        "east": "volcano_14_7",
+        "north": "volcano_13_6",
+        "south": "volcano_13_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_8": {
+      "description": "You are in a sweltering tunnel at (13, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_8",
+        "east": "volcano_14_8",
+        "north": "volcano_13_7",
+        "south": "volcano_13_9"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_13_9": {
+      "description": "You are in a sweltering tunnel at (13, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_9",
+        "east": "volcano_14_9",
+        "north": "volcano_13_8",
+        "south": "volcano_13_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_10": {
+      "description": "You are in a sweltering tunnel at (13, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_10",
+        "east": "volcano_14_10",
+        "north": "volcano_13_9",
+        "south": "volcano_13_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_13_11": {
+      "description": "You are in a sweltering tunnel at (13, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_11",
+        "east": "volcano_14_11",
+        "north": "volcano_13_10",
+        "south": "volcano_13_12"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_13_12": {
+      "description": "You are in a sweltering tunnel at (13, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_12",
+        "east": "volcano_14_12",
+        "north": "volcano_13_11",
+        "south": "volcano_13_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_13": {
+      "description": "You are in a sweltering tunnel at (13, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_13",
+        "east": "volcano_14_13",
+        "north": "volcano_13_12",
+        "south": "volcano_13_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_13_14": {
+      "description": "You are in a sweltering tunnel at (13, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_12_14",
+        "east": "volcano_14_14",
+        "north": "volcano_13_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_0": {
+      "description": "You are in a sweltering tunnel at (14, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_0",
+        "east": "volcano_15_0",
+        "south": "volcano_14_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_1": {
+      "description": "You are in a sweltering tunnel at (14, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_1",
+        "east": "volcano_15_1",
+        "north": "volcano_14_0",
+        "south": "volcano_14_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_2": {
+      "description": "You are in a sweltering tunnel at (14, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_2",
+        "east": "volcano_15_2",
+        "north": "volcano_14_1",
+        "south": "volcano_14_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_3": {
+      "description": "You are in a sweltering tunnel at (14, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_3",
+        "east": "volcano_15_3",
+        "north": "volcano_14_2",
+        "south": "volcano_14_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_4": {
+      "description": "You are in a sweltering tunnel at (14, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_4",
+        "east": "volcano_15_4",
+        "north": "volcano_14_3",
+        "south": "volcano_14_5"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_14_5": {
+      "description": "You are in a sweltering tunnel at (14, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_5",
+        "east": "volcano_15_5",
+        "north": "volcano_14_4",
+        "south": "volcano_14_6"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_14_6": {
+      "description": "You are in a sweltering tunnel at (14, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_6",
+        "east": "volcano_15_6",
+        "north": "volcano_14_5",
+        "south": "volcano_14_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_14_7": {
+      "description": "You are in a sweltering tunnel at (14, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_7",
+        "east": "volcano_15_7",
+        "north": "volcano_14_6",
+        "south": "volcano_14_8"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_14_8": {
+      "description": "You are in a sweltering tunnel at (14, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_8",
+        "east": "volcano_15_8",
+        "north": "volcano_14_7",
+        "south": "volcano_14_9"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_14_9": {
+      "description": "You are in a sweltering tunnel at (14, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_9",
+        "east": "volcano_15_9",
+        "north": "volcano_14_8",
+        "south": "volcano_14_10"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_14_10": {
+      "description": "You are in a sweltering tunnel at (14, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_10",
+        "east": "volcano_15_10",
+        "north": "volcano_14_9",
+        "south": "volcano_14_11"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_14_11": {
+      "description": "You are in a sweltering tunnel at (14, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_11",
+        "east": "volcano_15_11",
+        "north": "volcano_14_10",
+        "south": "volcano_14_12"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_14_12": {
+      "description": "You are in a sweltering tunnel at (14, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_12",
+        "east": "volcano_15_12",
+        "north": "volcano_14_11",
+        "south": "volcano_14_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_14_13": {
+      "description": "You are in a sweltering tunnel at (14, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_13",
+        "east": "volcano_15_13",
+        "north": "volcano_14_12",
+        "south": "volcano_14_14"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_14_14": {
+      "description": "You are in a sweltering tunnel at (14, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_13_14",
+        "east": "volcano_15_14",
+        "north": "volcano_14_13"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_15_0": {
+      "description": "You are in a sweltering tunnel at (15, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_0",
+        "east": "volcano_16_0",
+        "south": "volcano_15_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_1": {
+      "description": "You are in a sweltering tunnel at (15, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_1",
+        "east": "volcano_16_1",
+        "north": "volcano_15_0",
+        "south": "volcano_15_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_2": {
+      "description": "You are in a sweltering tunnel at (15, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_2",
+        "east": "volcano_16_2",
+        "north": "volcano_15_1",
+        "south": "volcano_15_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_3": {
+      "description": "You are in a sweltering tunnel at (15, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_3",
+        "east": "volcano_16_3",
+        "north": "volcano_15_2",
+        "south": "volcano_15_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_4": {
+      "description": "You are in a sweltering tunnel at (15, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_4",
+        "east": "volcano_16_4",
+        "north": "volcano_15_3",
+        "south": "volcano_15_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_5": {
+      "description": "You are in a sweltering tunnel at (15, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_5",
+        "east": "volcano_16_5",
+        "north": "volcano_15_4",
+        "south": "volcano_15_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_15_6": {
+      "description": "You are in a sweltering tunnel at (15, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_6",
+        "east": "volcano_16_6",
+        "north": "volcano_15_5",
+        "south": "volcano_15_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_7": {
+      "description": "You are in a sweltering tunnel at (15, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_7",
+        "east": "volcano_16_7",
+        "north": "volcano_15_6",
+        "south": "volcano_15_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_8": {
+      "description": "You are in a sweltering tunnel at (15, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_8",
+        "east": "volcano_16_8",
+        "north": "volcano_15_7",
+        "south": "volcano_15_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_9": {
+      "description": "You are in a sweltering tunnel at (15, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_9",
+        "east": "volcano_16_9",
+        "north": "volcano_15_8",
+        "south": "volcano_15_10"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_15_10": {
+      "description": "You are in a sweltering tunnel at (15, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_10",
+        "east": "volcano_16_10",
+        "north": "volcano_15_9",
+        "south": "volcano_15_11"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_15_11": {
+      "description": "You are in a sweltering tunnel at (15, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_11",
+        "east": "volcano_16_11",
+        "north": "volcano_15_10",
+        "south": "volcano_15_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_12": {
+      "description": "You are in a sweltering tunnel at (15, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_12",
+        "east": "volcano_16_12",
+        "north": "volcano_15_11",
+        "south": "volcano_15_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_15_13": {
+      "description": "You are in a sweltering tunnel at (15, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_13",
+        "east": "volcano_16_13",
+        "north": "volcano_15_12",
+        "south": "volcano_15_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_15_14": {
+      "description": "You are in a sweltering tunnel at (15, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_14_14",
+        "east": "volcano_16_14",
+        "north": "volcano_15_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_0": {
+      "description": "You are in a sweltering tunnel at (16, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_0",
+        "east": "volcano_17_0",
+        "south": "volcano_16_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_1": {
+      "description": "You are in a sweltering tunnel at (16, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_1",
+        "east": "volcano_17_1",
+        "north": "volcano_16_0",
+        "south": "volcano_16_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_2": {
+      "description": "You are in a sweltering tunnel at (16, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_2",
+        "east": "volcano_17_2",
+        "north": "volcano_16_1",
+        "south": "volcano_16_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_3": {
+      "description": "You are in a sweltering tunnel at (16, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_3",
+        "east": "volcano_17_3",
+        "north": "volcano_16_2",
+        "south": "volcano_16_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_4": {
+      "description": "You are in a sweltering tunnel at (16, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_4",
+        "east": "volcano_17_4",
+        "north": "volcano_16_3",
+        "south": "volcano_16_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_5": {
+      "description": "You are in a sweltering tunnel at (16, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_5",
+        "east": "volcano_17_5",
+        "north": "volcano_16_4",
+        "south": "volcano_16_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_16_6": {
+      "description": "You are in a sweltering tunnel at (16, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_6",
+        "east": "volcano_17_6",
+        "north": "volcano_16_5",
+        "south": "volcano_16_7"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_16_7": {
+      "description": "You are in a sweltering tunnel at (16, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_7",
+        "east": "volcano_17_7",
+        "north": "volcano_16_6",
+        "south": "volcano_16_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_8": {
+      "description": "You are in a sweltering tunnel at (16, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_8",
+        "east": "volcano_17_8",
+        "north": "volcano_16_7",
+        "south": "volcano_16_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_9": {
+      "description": "You are in a sweltering tunnel at (16, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_9",
+        "east": "volcano_17_9",
+        "north": "volcano_16_8",
+        "south": "volcano_16_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_10": {
+      "description": "You are in a sweltering tunnel at (16, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_10",
+        "east": "volcano_17_10",
+        "north": "volcano_16_9",
+        "south": "volcano_16_11"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_16_11": {
+      "description": "You are in a sweltering tunnel at (16, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_11",
+        "east": "volcano_17_11",
+        "north": "volcano_16_10",
+        "south": "volcano_16_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_16_12": {
+      "description": "You are in a sweltering tunnel at (16, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_12",
+        "east": "volcano_17_12",
+        "north": "volcano_16_11",
+        "south": "volcano_16_13"
+      },
+      "environment": "intense_heat",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_16_13": {
+      "description": "You are in a sweltering tunnel at (16, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_13",
+        "east": "volcano_17_13",
+        "north": "volcano_16_12",
+        "south": "volcano_16_14"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_16_14": {
+      "description": "You are in a sweltering tunnel at (16, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_15_14",
+        "east": "volcano_17_14",
+        "north": "volcano_16_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_17_0": {
+      "description": "You are in a sweltering tunnel at (17, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_0",
+        "east": "volcano_18_0",
+        "south": "volcano_17_1"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_17_1": {
+      "description": "You are in a sweltering tunnel at (17, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_1",
+        "east": "volcano_18_1",
+        "north": "volcano_17_0",
+        "south": "volcano_17_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_2": {
+      "description": "You are in a sweltering tunnel at (17, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_2",
+        "east": "volcano_18_2",
+        "north": "volcano_17_1",
+        "south": "volcano_17_3"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_17_3": {
+      "description": "You are in a sweltering tunnel at (17, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_3",
+        "east": "volcano_18_3",
+        "north": "volcano_17_2",
+        "south": "volcano_17_4"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_17_4": {
+      "description": "You are in a sweltering tunnel at (17, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_4",
+        "east": "volcano_18_4",
+        "north": "volcano_17_3",
+        "south": "volcano_17_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_5": {
+      "description": "You are in a sweltering tunnel at (17, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_5",
+        "east": "volcano_18_5",
+        "north": "volcano_17_4",
+        "south": "volcano_17_6"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_6": {
+      "description": "You are in a sweltering tunnel at (17, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_6",
+        "east": "volcano_18_6",
+        "north": "volcano_17_5",
+        "south": "volcano_17_7"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_17_7": {
+      "description": "You are in a sweltering tunnel at (17, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_7",
+        "east": "volcano_18_7",
+        "north": "volcano_17_6",
+        "south": "volcano_17_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_8": {
+      "description": "You are in a sweltering tunnel at (17, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_8",
+        "east": "volcano_18_8",
+        "north": "volcano_17_7",
+        "south": "volcano_17_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_9": {
+      "description": "You are in a sweltering tunnel at (17, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_9",
+        "east": "volcano_18_9",
+        "north": "volcano_17_8",
+        "south": "volcano_17_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_10": {
+      "description": "You are in a sweltering tunnel at (17, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_10",
+        "east": "volcano_18_10",
+        "north": "volcano_17_9",
+        "south": "volcano_17_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_11": {
+      "description": "You are in a sweltering tunnel at (17, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_11",
+        "east": "volcano_18_11",
+        "north": "volcano_17_10",
+        "south": "volcano_17_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_12": {
+      "description": "You are in a sweltering tunnel at (17, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_12",
+        "east": "volcano_18_12",
+        "north": "volcano_17_11",
+        "south": "volcano_17_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_13": {
+      "description": "You are in a sweltering tunnel at (17, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_13",
+        "east": "volcano_18_13",
+        "north": "volcano_17_12",
+        "south": "volcano_17_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_17_14": {
+      "description": "You are in a sweltering tunnel at (17, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_16_14",
+        "east": "volcano_18_14",
+        "north": "volcano_17_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_0": {
+      "description": "You are in a sweltering tunnel at (18, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_0",
+        "east": "volcano_19_0",
+        "south": "volcano_18_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_1": {
+      "description": "You are in a sweltering tunnel at (18, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_1",
+        "east": "volcano_19_1",
+        "north": "volcano_18_0",
+        "south": "volcano_18_2"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_2": {
+      "description": "You are in a sweltering tunnel at (18, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_2",
+        "east": "volcano_19_2",
+        "north": "volcano_18_1",
+        "south": "volcano_18_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_3": {
+      "description": "You are in a sweltering tunnel at (18, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_3",
+        "east": "volcano_19_3",
+        "north": "volcano_18_2",
+        "south": "volcano_18_4"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_18_4": {
+      "description": "You are in a sweltering tunnel at (18, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_4",
+        "east": "volcano_19_4",
+        "north": "volcano_18_3",
+        "south": "volcano_18_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_5": {
+      "description": "You are in a sweltering tunnel at (18, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_5",
+        "east": "volcano_19_5",
+        "north": "volcano_18_4",
+        "south": "volcano_18_6"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_18_6": {
+      "description": "You are in a sweltering tunnel at (18, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_6",
+        "east": "volcano_19_6",
+        "north": "volcano_18_5",
+        "south": "volcano_18_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_7": {
+      "description": "You are in a sweltering tunnel at (18, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_7",
+        "east": "volcano_19_7",
+        "north": "volcano_18_6",
+        "south": "volcano_18_8"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_18_8": {
+      "description": "You are in a sweltering tunnel at (18, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_8",
+        "east": "volcano_19_8",
+        "north": "volcano_18_7",
+        "south": "volcano_18_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_9": {
+      "description": "You are in a sweltering tunnel at (18, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_9",
+        "east": "volcano_19_9",
+        "north": "volcano_18_8",
+        "south": "volcano_18_10"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_10": {
+      "description": "You are in a sweltering tunnel at (18, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_10",
+        "east": "volcano_19_10",
+        "north": "volcano_18_9",
+        "south": "volcano_18_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_11": {
+      "description": "You are in a sweltering tunnel at (18, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_11",
+        "east": "volcano_19_11",
+        "north": "volcano_18_10",
+        "south": "volcano_18_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_12": {
+      "description": "You are in a sweltering tunnel at (18, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_12",
+        "east": "volcano_19_12",
+        "north": "volcano_18_11",
+        "south": "volcano_18_13"
+      },
+      "environment": "normal"
+    },
+    "volcano_18_13": {
+      "description": "You are in a sweltering tunnel at (18, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_13",
+        "east": "volcano_19_13",
+        "north": "volcano_18_12",
+        "south": "volcano_18_14"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_18_14": {
+      "description": "You are in a sweltering tunnel at (18, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_17_14",
+        "east": "volcano_19_14",
+        "north": "volcano_18_13"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_19_0": {
+      "description": "You are in a sweltering tunnel at (19, 0). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_0",
+        "south": "volcano_19_1"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_1": {
+      "description": "You are in a sweltering tunnel at (19, 1). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_1",
+        "north": "volcano_19_0",
+        "south": "volcano_19_2"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_19_2": {
+      "description": "You are in a sweltering tunnel at (19, 2). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_2",
+        "north": "volcano_19_1",
+        "south": "volcano_19_3"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_3": {
+      "description": "You are in a sweltering tunnel at (19, 3). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_3",
+        "north": "volcano_19_2",
+        "south": "volcano_19_4"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_4": {
+      "description": "You are in a sweltering tunnel at (19, 4). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_4",
+        "north": "volcano_19_3",
+        "south": "volcano_19_5"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_5": {
+      "description": "You are in a sweltering tunnel at (19, 5). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_5",
+        "north": "volcano_19_4",
+        "south": "volcano_19_6"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Fire Elemental",
+        "hp": 25,
+        "attack": 8,
+        "defense": 5,
+        "gold": 30,
+        "loot": "obsidian_chunk"
+      }
+    },
+    "volcano_19_6": {
+      "description": "You are in a sweltering tunnel at (19, 6). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_6",
+        "north": "volcano_19_5",
+        "south": "volcano_19_7"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_7": {
+      "description": "You are in a sweltering tunnel at (19, 7). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_7",
+        "north": "volcano_19_6",
+        "south": "volcano_19_8"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_8": {
+      "description": "You are in a sweltering tunnel at (19, 8). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_8",
+        "north": "volcano_19_7",
+        "south": "volcano_19_9"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_9": {
+      "description": "You are in a sweltering tunnel at (19, 9). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_9",
+        "north": "volcano_19_8",
+        "south": "volcano_19_10"
+      },
+      "environment": "intense_heat"
+    },
+    "volcano_19_10": {
+      "description": "You are in a sweltering tunnel at (19, 10). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_10",
+        "north": "volcano_19_9",
+        "south": "volcano_19_11"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_11": {
+      "description": "You are in a sweltering tunnel at (19, 11). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_11",
+        "north": "volcano_19_10",
+        "south": "volcano_19_12"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_12": {
+      "description": "You are in a sweltering tunnel at (19, 12). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_12",
+        "north": "volcano_19_11",
+        "south": "volcano_19_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Lava Slime",
+        "hp": 15,
+        "attack": 5,
+        "defense": 8,
+        "gold": 20
+      }
+    },
+    "volcano_19_13": {
+      "description": "You are in a sweltering tunnel at (19, 13). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_13",
+        "north": "volcano_19_12",
+        "south": "volcano_19_14"
+      },
+      "environment": "normal"
+    },
+    "volcano_19_14": {
+      "description": "You are in a sweltering tunnel at (19, 14). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+      "exits": {
+        "west": "volcano_18_14",
+        "north": "volcano_19_13"
+      },
+      "environment": "normal",
+      "monster": {
+        "name": "Magma Lord",
+        "hp": 300,
+        "attack": 25,
+        "defense": 15,
+        "gold": 1000,
+        "loot": "dragon_scale"
+      }
+    },
+    "entrance": {
+      "description": "A blast of hot air greets you at the entrance to the volcanic tunnels. The air shimmers with heat.",
+      "exits": {
+        "south": "volcano_10_1"
+      },
+      "environment": "normal"
+    }
+  },
+  "quests": {
+    "heart_of_the_mountain": {
+      "name": "The Heart of the Mountain",
+      "description": "A powerful elemental is trapped within the volcano's core. Find a way to free it.",
+      "steps": {
+        "1": "Find the Elder Fire Drake.",
+        "2": "Craft a Runecarved Key.",
+        "3": "Defeat the Magma Lord."
+      }
+    }
+  }
+}

@@ -179,7 +179,8 @@ app.post('/api/characters', authenticateToken, (req, res) => {
             alchemy: 1,
             tailoring: 1,
             jewelcrafting: 1,
-            enchanting: 1
+            enchanting: 1,
+            runecrafting: 1
         },
         quest_exp: 0,
         quest_skills: []
@@ -279,6 +280,11 @@ wss.on('connection', (ws) => {
                 } else {
                     ws.send(JSON.stringify({ type: 'error', message: 'Player not found.' }));
                 }
+            } else if (data.command === 'newbiet') {
+                const message = `[NEWBIE] ${sender.player.name}: ${data.message}`;
+                clients.forEach((client) => {
+                    client.ws.send(JSON.stringify({ type: 'chat', message }));
+                });
             }
         }
     });
