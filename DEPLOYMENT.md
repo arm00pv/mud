@@ -76,6 +76,9 @@ export JWT_SECRET='your_super_secret_and_long_random_string'
 export MAILJET_API_KEY='your_mailjet_public_api_key'
 export MAILJET_SECRET_KEY='your_mailjet_secret_api_key'
 export MAILJET_SENDER_EMAIL='your_verified_sender_email@yourdomain.com'
+
+# The port the Node.js server will run on. Default is 3001.
+export PORT='3001'
 ```
 
 Save the file (`CTRL+X`, then `Y`, then `Enter`) and load the new variables into your current session:
@@ -131,11 +134,11 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
     # It must come before the API proxy rule. It upgrades the connection for WebSocket traffic.
     RewriteCond %{REQUEST_URI} ^/mud/$ [NC]
     RewriteCond %{HTTP:Upgrade} =websocket [NC]
-    RewriteRule ^/mud/(.*) ws://localhost:3000/$1 [P,L]
+    RewriteRule ^/mud/(.*) ws://localhost:3001/$1 [P,L]
 
     # 2. API Proxy: This rule forwards all API requests from /mud/api/... to the backend Node.js server.
     # The [P] flag proxies the request, and [L] stops processing further rules for this request.
-    RewriteRule ^/mud/api/(.*)$ http://127.0.0.1:3000/api/$1 [P,L]
+    RewriteRule ^/mud/api/(.*)$ http://127.0.0.1:3001/api/$1 [P,L]
 
     # 3. Static Files: No 'Alias' is needed here.
     # Because your DocumentRoot is /var/www/webhost, Apache will automatically serve
