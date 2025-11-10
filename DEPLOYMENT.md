@@ -122,23 +122,25 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
 ```apache
     # --- MUD Game ---
     # WebSocket Proxy: Must come before the Alias and Location blocks.
-    # This rule specifically targets WebSocket upgrade requests for the MUD game.
+    # --- MUD Game ---
     RewriteEngine On
+
+    # 1. WebSocket Proxy: This rule MUST come first.
+    # It specifically targets WebSocket upgrade requests for the MUD game's root.
     RewriteCond %{REQUEST_URI} ^/mud/$ [NC]
     RewriteCond %{HTTP:Upgrade} =websocket [NC]
     RewriteRule ^/mud/(.*) ws://localhost:3000/$1 [P,L]
 
-    # Alias maps the /mud/ URL path to the frontend's directory on the filesystem.
+    # 2. API Proxy: This rule proxies all requests to /mud/api/ to the Node.js backend.
+    # The [P] flag is crucial for proxying.
+    RewriteRule ^/mud/api/(.*)$ http://127.0.0.1:3000/api/$1 [P,L]
+
+    # 3. Static Files: This Alias serves the frontend files.
+    # It is processed after the RewriteRules, so it won't intercept API or WebSocket traffic.
     Alias /mud/ /var/www/webhost/mud/
     <Directory /var/www/webhost/mud>
         Require all granted
     </Directory>
-
-    # This <Location> block proxies API requests from /mud/api/ to the backend server.
-    <Location /mud/api/>
-        ProxyPass http://127.0.0.1:3000/api/
-        ProxyPassReverse http://127.0.0.1:3000/api/
-    </Location>
 ```
 
 ### c. Restart Apache
