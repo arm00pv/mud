@@ -13,10 +13,11 @@ const registerForm = document.getElementById('register-form');
 const characterList = document.getElementById('character-list');
 
 // --- Global State ---
-let currentArea, innArea, items = {};
+let currentArea, innArea, items, recipes = {};
 let player = {};
 let authToken = null;
 let selectedCharacterId = null;
+let gameInterval; // For the main game loop
 
 // --- Event Listeners ---
 
@@ -42,7 +43,7 @@ document.getElementById('register-button').addEventListener('click', async () =>
     });
 
     if (response.ok) {
-        alert('Registration successful! Please login.');
+        alert('Registration successful. Please check your email to verify your account.');
         registerForm.style.display = 'none';
         loginForm.style.display = 'block';
     } else {
@@ -68,7 +69,8 @@ document.getElementById('login-button').addEventListener('click', async () => {
         authContainer.style.display = 'none';
         await showCharacterSelection();
     } else {
-        alert('Login failed. Please check your email and password.');
+        const { error } = await response.json();
+        alert(`Login failed: ${error}`);
     }
 });
 
@@ -143,6 +145,8 @@ async function startGame() {
         items = await itemResponse.json();
         const innResponse = await fetch('areas/inn.json');
         innArea = await innResponse.json();
+        const recipeResponse = await fetch('crafting_recipes.json');
+        recipes = await recipeResponse.json();
     } catch (error) {
         printToOutput("Error: Failed to load essential game data.");
         return;
@@ -154,12 +158,16 @@ async function startGame() {
 
     if (response.ok) {
         player = await response.json();
+        if (!player.effects) {
+            player.effects = {};
+        }
         loadArea(player.currentAreaName);
     } else {
         alert('Failed to load character data.');
         return;
     }
 
+    gameInterval = setInterval(tick, 1000); // Main game loop
     setInterval(saveGame, 30000);
 }
 
@@ -175,8 +183,22 @@ async function saveGame() {
     });
 }
 
+function tick() {
+    // This function is called every second
+    if (player.effects) {
+        for (const effect in player.effects) {
+            if (player.effects[effect].duration > 0) {
+                player.effects[effect].duration--;
+            }
+            if (player.effects[effect].duration <= 0) {
+                delete player.effects[effect];
+                printToOutput(`The effect of ${effect} has worn off.`);
+            }
+        }
+    }
+}
 
-// --- Command Handler and Game Logic (Mostly unchanged from before) ---
+// --- Command Handler and Game Logic ---
 
 function handleCommand(command) {
   printToOutput(`> ${command}`);
@@ -186,7 +208,7 @@ function handleCommand(command) {
   const action = parts[0];
   const target = parts.slice(1).join(' ');
 
-  if (player.inCombat && !['attack', 'stats', 'inventory', 'i', 'st', 'look', 'l'].includes(action)) {
+  if (player.inCombat && !['attack', 'stats', 'inventory', 'i', 'st', 'look', 'l', 'use'].includes(action)) {
       printToOutput("You are in combat! You must fight!");
       return;
   }
@@ -198,12 +220,25 @@ function handleCommand(command) {
   }
 
   if (room.exits && room.exits[command]) {
+    const nextRoomId = room.exits[command];
+    // This is a simplified check. A more robust solution might check the area file.
+    const isUnderwater = nextRoomId.includes("room_");
+    if (currentArea.rooms[nextRoomId].environment === 'underwater' && (!player.effects || !player.effects.water_breathing || player.effects.water_breathing.duration <= 0)) {
+        printToOutput("You can't breathe underwater! You need a special potion.");
+        return;
+    }
     player.currentRoom = room.exits[command];
     showCurrentRoom();
     return;
   }
 
   switch(action) {
+      case 'craft':
+          craftItem(target);
+          break;
+      case 'use':
+          useItem(target);
+          break;
       case 'attack': handleCombat(room); break;
       case 'look': case 'l': showCurrentRoom(); break;
       case 'quest': showQuestInfo(); break;
@@ -214,7 +249,7 @@ function handleCommand(command) {
       case 'talk': talkToNpc(target, room); break;
       case 'interact': interactWithObject(target, room); break;
       case 'goto':
-          if (target && ['area1', 'area2', 'area3'].includes(target)) loadArea(target);
+          if (target && ['area1', 'area2', 'area3', 'area4'].includes(target)) loadArea(target);
           else printToOutput('Invalid area name.');
           break;
       case 'collect': handleCollection(target, room); break;
@@ -225,6 +260,67 @@ function handleCommand(command) {
       default: printToOutput("I don't understand that command.");
   }
 }
+
+function useItem(itemName) {
+    const itemId = Object.keys(items).find(key => items[key].name.toLowerCase() === itemName);
+    if (!itemId || !player.inventory.includes(itemId)) {
+        printToOutput("You don't have that item.");
+        return;
+    }
+    const item = items[itemId];
+    if (item.type !== 'potion') {
+        printToOutput("You can only use potions.");
+        return;
+    }
+
+    // Apply effect
+    if (!player.effects) {
+        player.effects = {};
+    }
+
+    if (item.effect === 'heal') {
+        player.hp = Math.min(player.max_hp, player.hp + item.amount);
+        printToOutput(`You use the ${item.name} and heal for ${item.amount} HP.`);
+    } else {
+        player.effects[item.effect] = { duration: item.duration };
+        printToOutput(`You use the ${item.name}. You feel its effects for ${item.duration} seconds.`);
+    }
+
+    // Remove from inventory
+    player.inventory = player.inventory.filter(id => id !== itemId);
+}
+
+function craftItem(recipeName) {
+    const recipeId = Object.keys(recipes).find(key => recipes[key].name.toLowerCase() === recipeName);
+    if (!recipeId) {
+        printToOutput("You don't know how to craft that.");
+        return;
+    }
+    const recipe = recipes[recipeId];
+
+    // Check ingredients
+    for (const ingredient in recipe.ingredients) {
+        const requiredAmount = recipe.ingredients[ingredient];
+        const playerAmount = player.inventory.filter(item => item === ingredient).length;
+        if (playerAmount < requiredAmount) {
+            printToOutput(`You don't have enough ${items[ingredient].name}.`);
+            return;
+        }
+    }
+
+    // Remove ingredients
+    for (const ingredient in recipe.ingredients) {
+        for (let i = 0; i < recipe.ingredients[ingredient]; i++) {
+            const index = player.inventory.indexOf(ingredient);
+            player.inventory.splice(index, 1);
+        }
+    }
+
+    // Add result
+    player.inventory.push(recipe.result);
+    printToOutput(`You successfully crafted a ${items[recipe.result].name}.`);
+}
+
 
 function printToOutput(text) {
   output.innerHTML += `<p>${text}</p>`;
@@ -265,8 +361,6 @@ function showCurrentRoom() {
   printToOutput(`Exits: ${exits}`);
 }
 
-// ... [ All other game logic functions (listShopItems, buyShopItem, handleCombat, etc.) remain the same as the previous version ] ...
-
 function listShopItems(room) {
     if (!room.shop) { printToOutput("There is no shop here."); return; }
     printToOutput(`--- ${room.shop.name} ---`);
@@ -297,6 +391,10 @@ function handleCombat(room) {
         printToOutput(`You have defeated the ${monster.name}!`);
         player.gold += monster.gold;
         printToOutput(`You loot ${monster.gold} gold.`);
+        if (monster.loot) {
+            player.inventory.push(monster.loot);
+            printToOutput(`You find a ${items[monster.loot].name}.`);
+        }
         delete room.monster;
         player.inCombat = false;
         return;
@@ -329,6 +427,9 @@ function showStats() {
     printToOutput(`HP: ${player.hp} / ${player.max_hp}`);
     printToOutput(`Attack: ${getTotalStat('attack')} (Base: ${player.attack})`);
     printToOutput(`Defense: ${getTotalStat('defense')} (Base: ${player.defense})`);
+    if(player.effects && player.effects.water_breathing) {
+        printToOutput(`Water Breathing: ${player.effects.water_breathing.duration}s`);
+    }
     printToOutput("--------------------");
 }
 function equipItem(itemName) {
@@ -410,6 +511,20 @@ function talkToNpc(npcName, room) {
     if (!room.npcs || !room.npcs[npcName]) { printToOutput("There is no one here by that name."); return; }
     const npc = room.npcs[npcName];
     printToOutput(`"${npc.dialogue}"`);
+
+    // Quest handling
+    if (npc.quest && !player.quests[npc.quest]) {
+        player.quests[npc.quest] = { completed: false, steps: {} };
+        printToOutput(`You have started the quest: "${currentArea.quests[npc.quest].name}"`);
+    }
+
+    // Item reward
+    if (npc.item) {
+        if (!player.inventory.includes(npc.item)) {
+            player.inventory.push(npc.item);
+            printToOutput(`${npc.name} gives you a ${items[npc.item].name}.`);
+        }
+    }
 }
 function interactWithObject(objectName, room) {
     if (!room.interactables || !room.interactables[objectName]) { printToOutput("You can't interact with that."); return; }

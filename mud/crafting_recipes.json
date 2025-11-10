@@ -1,0 +1,19 @@
+{
+  "health_potion": {
+    "name": "Health Potion",
+    "ingredients": {
+      "sand_viper_fang": 2,
+      "oasis_water": 1
+    },
+    "result": "health_potion_item"
+  },
+  "trident_of_the_tides": {
+    "name": "Trident of the Tides",
+    "ingredients": {
+      "trident_piece_1": 1,
+      "trident_piece_2": 1,
+      "trident_piece_3": 1
+    },
+    "result": "trident_of_the_tides"
+  }
+}

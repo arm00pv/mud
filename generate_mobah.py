@@ -3,7 +3,7 @@ import random
 
 # --- Data Templates ---
 MONSTERS = {
-    "sand_viper": {"name": "Sand Viper", "hp": 10, "attack": 4, "defense": 2, "gold": 7},
+    "sand_viper": {"name": "Sand Viper", "hp": 10, "attack": 4, "defense": 2, "gold": 7, "loot": "sand_viper_fang"},
     "roc": {"name": "Roc", "hp": 15, "attack": 5, "defense": 3, "gold": 12},
 }
 
@@ -26,6 +26,12 @@ NPCS = {
     "mobashi_hunter": {
         "name": "Mobashi Hunter",
         "dialogue": "The Sand Vipers are a plague. Bring me 10 of their fangs, and I will reward you."
+    },
+    "old_sailor": {
+        "name": "Old Sailor",
+        "dialogue": "The sea... it calls. I can feel it in my bones. An ancient evil stirs in the deep. If you are brave enough, seek the Sunken City. Take this, it may help you on your journey.",
+        "quest": "call_of_the_deep",
+        "item": "gillyweed_potion"
     }
 }
 
@@ -73,7 +79,13 @@ def generate_mobah():
     # Shops and Inn in Market
     market["m_1_1"]["shop"] = SHOPS["gear_stall"]
     market["m_3_3"]["shop"] = SHOPS["oasis_drinks"]
+    market["m_3_3"]["quest_object"] = "oasis_water"
     market["m_2_2"]["inn"] = {"cost": 15}
+    market["m_4_4"]["npcs"] = {"sailor": NPCS["old_sailor"]}
+
+    # Connect to Sunken City
+    main_desert["d_10_19"]["exits"]["south"] = "area4_gateway"
+
 
     # NPCs in Tribal Village
     tribal_village["t_5_5"]["npcs"] = {"elder": NPCS["mobashi_elder"]}

@@ -16,5 +16,43 @@
     "type": "ring",
     "defense": 1,
     "cost": 20
+  },
+  "gillyweed_potion": {
+    "name": "Gillyweed Potion",
+    "type": "potion",
+    "effect": "water_breathing",
+    "duration": 300,
+    "cost": 50
+  },
+  "trident_piece_1": {
+    "name": "First Piece of the Trident",
+    "type": "quest"
+  },
+  "trident_piece_2": {
+    "name": "Second Piece of the Trident",
+    "type": "quest"
+  },
+  "trident_piece_3": {
+    "name": "Third Piece of the Trident",
+    "type": "quest"
+  },
+  "trident_of_the_tides": {
+    "name": "Trident of the Tides",
+    "type": "weapon",
+    "attack": 15
+  },
+  "sand_viper_fang": {
+    "name": "Sand Viper Fang",
+    "type": "material"
+  },
+  "oasis_water": {
+    "name": "Oasis Water",
+    "type": "material"
+  },
+  "health_potion_item": {
+    "name": "Health Potion",
+    "type": "potion",
+    "effect": "heal",
+    "amount": 20
   }
 }

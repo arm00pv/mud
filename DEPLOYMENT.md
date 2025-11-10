@@ -3,13 +3,14 @@
 This guide provides step-by-step instructions for deploying the AI-Generated MUD game to a web server. The game consists of two main parts:
 
 1.  **Frontend:** A set of static files (HTML, CSS, JavaScript, and JSON) that make up the game client.
-2.  **Backend:** A Node.js server that handles user authentication and game state persistence.
+2.  **Backend:** A Node.js server that handles user authentication, email verification, and game state persistence.
 
 ## Prerequisites
 
 *   A web server with shell access (e.g., a VPS running a Linux distribution).
 *   Node.js and npm installed on the server.
 *   A web server software like Nginx or Apache.
+*   An SMTP server for sending verification emails.
 
 ## Deployment Steps
 
@@ -32,11 +33,21 @@ The backend server is responsible for managing user accounts and saving game pro
     ```
 
 3.  **Configure Environment Variables:**
-    The server requires a `JWT_SECRET` for signing authentication tokens. You should set this in your environment. For example, you can add it to your shell's startup file (e.g., `~/.bashrc` or `~/.profile`):
+    The server requires several environment variables to be set. You should set these in your shell's startup file (e.g., `~/.bashrc` or `~/.profile`):
     ```bash
+    # The base URL of your application (e.g., http://your_domain.com)
+    export BASE_URL='http://your_domain.com'
+
+    # A long, random, and secret string for signing JWTs
     export JWT_SECRET='your_super_secret_and_long_random_string'
+
+    # Your SMTP server details for sending verification emails
+    export EMAIL_HOST='your_smtp_host'
+    export EMAIL_PORT='your_smtp_port'
+    export EMAIL_USER='your_smtp_username'
+    export EMAIL_PASS='your_smtp_password'
     ```
-    Make sure to source the file (`source ~/.bashrc`) or log out and back in for the change to take effect.
+    Make sure to source the file (`source ~/.bashrc`) or log out and back in for the changes to take effect.
 
 4.  **Start the server:**
     It's recommended to use a process manager like `pm2` to keep the server running in the background. `pm2` will automatically use the environment variables you've set.

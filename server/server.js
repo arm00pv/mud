@@ -5,12 +5,30 @@ const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const path = require('path');
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = 3000;
-const JWT_SECRET = process.env.JWT_SECRET || 'your_very_secret_key';
+
+if (!process.env.JWT_SECRET && process.env.NODE_ENV === 'production') {
+    console.error('FATAL ERROR: JWT_SECRET is not defined.');
+    process.exit(1);
+}
+const JWT_SECRET = process.env.JWT_SECRET || 'your_very_secret_key_for_development_only';
 
 app.use(express.json());
+
+// --- Email Setup ---
+const transporter = nodemailer.createTransport({
+    host: process.env.EMAIL_HOST,
+    port: process.env.EMAIL_PORT,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
+});
 
 // --- Database Setup ---
 const db = new sqlite3.Database('./database.db', (err) => {
@@ -21,7 +39,9 @@ const db = new sqlite3.Database('./database.db', (err) => {
             db.run(`CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 email TEXT UNIQUE,
-                password TEXT
+                password TEXT,
+                verified BOOLEAN DEFAULT FALSE,
+                verification_token TEXT
             )`);
             db.run(`CREATE TABLE IF NOT EXISTS characters (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -56,13 +76,46 @@ app.post('/api/register', (req, res) => {
         return res.status(400).json({ error: 'All fields are required' });
     }
     const hashedPassword = bcrypt.hashSync(password, 8);
+    const verificationToken = crypto.randomBytes(20).toString('hex');
 
-    db.run('INSERT INTO users (email, password) VALUES (?, ?)',
-        [email, hashedPassword], function(err) {
+    db.run('INSERT INTO users (email, password, verification_token) VALUES (?, ?, ?)',
+        [email, hashedPassword, verificationToken], async function(err) {
         if (err) {
             return res.status(500).json({ error: 'Email already exists.' });
         }
-        res.status(201).json({ message: 'User registered successfully' });
+
+        const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+        const verificationUrl = `${baseUrl}/api/verify-email?token=${verificationToken}`;
+        try {
+            await transporter.sendMail({
+                from: '"MUD Game" <no-reply@mud.game>',
+                to: email,
+                subject: 'Verify your email address',
+                text: `Please verify your email address by clicking the following link: ${verificationUrl}`,
+                html: `<p>Please verify your email address by clicking the following link: <a href="${verificationUrl}">${verificationUrl}</a></p>`,
+            });
+            res.status(201).json({ message: 'Registration successful. Please check your email to verify your account.' });
+        } catch (error) {
+            console.error('Error sending verification email:', error);
+            res.status(500).json({ error: 'Failed to send verification email.' });
+        }
+    });
+});
+
+// Verify email
+app.get('/api/verify-email', (req, res) => {
+    const { token } = req.query;
+    if (!token) {
+        return res.status(400).send('Verification token is required.');
+    }
+    db.run('UPDATE users SET verified = TRUE, verification_token = NULL WHERE verification_token = ?', [token], function(err) {
+        if (err) {
+            return res.status(500).send('Failed to verify email.');
+        }
+        if (this.changes === 0) {
+            return res.status(400).send('Invalid or expired verification token.');
+        }
+        res.send('Email verified successfully. You can now log in.');
     });
 });
 
@@ -76,6 +129,9 @@ app.post('/api/login', (req, res) => {
         const passwordIsValid = bcrypt.compareSync(password, user.password);
         if (!passwordIsValid) {
             return res.status(401).json({ error: 'Invalid credentials' });
+        }
+        if (!user.verified) {
+            return res.status(401).json({ error: 'Please verify your email address before logging in.' });
         }
         const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '24h' });
         res.json({ token });
