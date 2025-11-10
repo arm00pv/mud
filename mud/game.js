@@ -13,11 +13,12 @@ const registerForm = document.getElementById('register-form');
 const characterList = document.getElementById('character-list');
 
 // --- Global State ---
-let currentArea, innArea, items, recipes, achievements = {};
+let currentArea, innArea, items, recipes, achievements, help = {};
 let player = {};
 let authToken = null;
 let selectedCharacterId = null;
 let gameInterval; // For the main game loop
+let ws; // WebSocket connection
 
 const API_BASE = '/mud/api'; // Base path for all API calls
 
@@ -151,6 +152,8 @@ async function startGame() {
         recipes = await recipeResponse.json();
         const achievementsResponse = await fetch('achievements.json');
         achievements = await achievementsResponse.json();
+        const helpResponse = await fetch('help.json');
+        help = await helpResponse.json();
     } catch (error) {
         printToOutput("Error: Failed to load essential game data.");
         return;
@@ -174,6 +177,29 @@ async function startGame() {
         if (!player.skills) {
             player.skills = { blacksmithing: 1, alchemy: 1, tailoring: 1 };
         }
+        if (!player.quest_exp) {
+            player.quest_exp = 0;
+        }
+        if (!player.quest_skills) {
+            player.quest_skills = [];
+        }
+
+        // Connect to WebSocket server
+        const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const wsUrl = `${wsProtocol}//${window.location.host}/mud/`;
+        ws = new WebSocket(wsUrl);
+
+        ws.onopen = () => {
+            ws.send(JSON.stringify({ type: 'auth', token: authToken, characterId: selectedCharacterId }));
+        };
+
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === 'chat') {
+                printToOutput(data.message);
+            }
+        };
+
         loadArea(player.currentAreaName);
     } else {
         alert('Failed to load character data.');
@@ -214,14 +240,19 @@ function tick() {
 // --- Command Handler and Game Logic ---
 
 function handleCommand(command) {
-  printToOutput(`> ${command}`);
-  const room = currentArea.rooms[player.currentRoom];
-
   const parts = command.split(' ');
   const action = parts[0];
   const target1 = parts[1];
   const target2 = parts.slice(2).join(' ');
 
+  if (action === 'talk' || action === 'lt' || action === 'link') {
+      const message = parts.slice(1).join(' ');
+      ws.send(JSON.stringify({ type: 'chat', command: action, message: message }));
+      return;
+  }
+
+  printToOutput(`> ${command}`);
+  const room = currentArea.rooms[player.currentRoom];
 
   if (player.inCombat && !['attack', 'stats', 'inventory', 'i', 'st', 'look', 'l', 'use'].includes(action)) {
       printToOutput("You are in combat! You must fight!");
@@ -279,6 +310,8 @@ function handleCommand(command) {
       case 'unequip': unequipItem(target1); break;
       case 'achievements': showAchievements(); break;
       case 'skills': showSkills(); break;
+      case 'qskills': showQuestSkills(); break;
+      case 'help': showHelp(target1); break;
       default: printToOutput("I don't understand that command.");
   }
 }
@@ -439,6 +472,12 @@ function handleCombat(room) {
             printToOutput(`You find a ${items[monster.loot].name}.`);
         }
         if (monster.name === 'Kraken') {
+            if (!player.quests.call_of_the_deep || !player.quests.call_of_the_deep.completed) {
+                player.quest_exp += 100;
+                printToOutput("You have gained 100 quest experience!");
+                player.quests.call_of_the_deep = { completed: true };
+                checkQuestSkills();
+            }
             checkAchievements('defeat_kraken');
         }
         delete room.monster;
@@ -484,6 +523,27 @@ function showSkills() {
         printToOutput(`- ${skill}: ${player.skills[skill]}`);
     }
     printToOutput("--------------");
+}
+function showQuestSkills() {
+    printToOutput("--- Quest Skills ---");
+    printToOutput(`Total Quest Experience: ${player.quest_exp}`);
+    if (player.quest_skills.length === 0) {
+        printToOutput("You have not unlocked any quest skills yet.");
+    } else {
+        player.quest_skills.forEach(skill => {
+            printToOutput(`- ${skill.name}: ${skill.description}`);
+        });
+    }
+    printToOutput("--------------------");
+}
+function checkQuestSkills() {
+    const unlockedSkills = [];
+    if (player.quest_exp >= 100 && !player.quest_skills.find(s => s.id === 'treasure_hunter')) {
+        const newSkill = { id: 'treasure_hunter', name: 'Treasure Hunter', description: 'You have a chance to find extra gold on monsters.' };
+        player.quest_skills.push(newSkill);
+        printToOutput(`New Quest Skill Unlocked: ${newSkill.name}!`);
+    }
+    // Add more skills here
 }
 function equipItem(itemName) {
     const itemId = Object.keys(items).find(key => items[key].name.toLowerCase() === itemName);
@@ -627,5 +687,24 @@ function checkAchievements(event = null) {
     if (event === 'quest_master' && !player.achievements.includes('quest_master')) {
         player.achievements.push('quest_master');
         printToOutput("Achievement unlocked: Legendary Hero!");
+    }
+}
+function showHelp(topic) {
+    if (!topic) {
+        printToOutput("--- Help Topics ---");
+        for (const key in help) {
+            printToOutput(`- ${key}`);
+        }
+        printToOutput("-------------------");
+        printToOutput("Type 'help <topic>' for more information.");
+        return;
+    }
+    if (help[topic]) {
+        const entry = help[topic];
+        printToOutput(`--- Help: ${entry.name} ---`);
+        printToOutput(entry.description);
+        printToOutput("--------------------");
+    } else {
+        printToOutput("That is not a valid help topic.");
     }
 }

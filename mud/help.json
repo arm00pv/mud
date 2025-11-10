@@ -1,0 +1,22 @@
+{
+  "movement": {
+    "name": "Movement",
+    "description": "To move between rooms, type the direction you want to go (e.g., 'north', 'south', 'east', 'west'). You can also use 'up' and 'down' in some areas. To travel between major areas, use the 'goto <area_name>' command."
+  },
+  "combat": {
+    "name": "Combat",
+    "description": "When you encounter a monster, you will enter combat. Use the 'attack' command to fight. You can also use 'stats' and 'inventory' during combat. If your HP reaches 0, you will be revived at the area's entrance, but you will lose some gold."
+  },
+  "crafting": {
+    "name": "Crafting",
+    "description": "You can craft new items using materials you find in the world. Use the 'craft <trade> <item_name>' command to create an item. You must have the required skill level and ingredients. Crafting items will grant you experience in that trade."
+  },
+  "communication": {
+    "name": "Communication",
+    "description": "You can talk to other players in the game. Use the 'talk <message>' command to send a message to everyone in the same room. Use 'lt <player_name> <message>' or 'link talk <player_name> <message>' to send a private message to another player who is online."
+  },
+    "commands": {
+        "name": "Commands",
+        "description": "Here are some other useful commands: 'look' (or 'l') to see the room description again, 'inventory' (or 'i') to see your items, 'stats' (or 'st') to see your character's stats, 'skills' to see your crafting skill levels, 'qskills' to see your unlocked quest skills, and 'achievements' to see your unlocked achievements."
+    }
+}

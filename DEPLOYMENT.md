@@ -99,13 +99,15 @@ You can check the status of the backend at any time with `pm2 status`.
 
 ## 4. Configure Apache
 
-You need to tell Apache how to serve the MUD game's static files and how to forward API requests to the Node.js backend.
+You need to tell Apache how to serve the MUD game's static files and how to forward both HTTP API requests and WebSocket traffic to the Node.js backend.
 
 ### a. Enable Required Apache Modules
-Ensure `mod_proxy` and `mod_proxy_http` are enabled.
+Ensure `mod_proxy`, `mod_proxy_http`, `mod_proxy_wstunnel`, and `mod_rewrite` are enabled.
 ```bash
 sudo a2enmod proxy
 sudo a2enmod proxy_http
+sudo a2enmod proxy_wstunnel
+sudo a2enmod rewrite
 ```
 
 ### b. Edit the Apache Configuration File
@@ -118,6 +120,13 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
 
 ```apache
     # --- MUD Game ---
+    # WebSocket Proxy: Must come before the Alias and Location blocks.
+    # This rule specifically targets WebSocket upgrade requests for the MUD game.
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/mud/$ [NC]
+    RewriteCond %{HTTP:Upgrade} =websocket [NC]
+    RewriteRule ^/mud/(.*) ws://localhost:3000/$1 [P,L]
+
     # Alias maps the /mud/ URL path to the frontend's directory on the filesystem.
     Alias /mud/ /var/www/webhost/mud/
     <Directory /var/www/webhost/mud>
@@ -126,8 +135,8 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
 
     # This <Location> block proxies API requests from /mud/api/ to the backend server.
     <Location /mud/api/>
-        ProxyPass http://127.0.0.1:3000/
-        ProxyPassReverse http://127.0.0.1:3000/
+        ProxyPass http://127.0.0.1:3000/api/
+        ProxyPassReverse http://127.0.0.1:3000/api/
     </Location>
 ```
 

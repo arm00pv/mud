@@ -1,6 +1,8 @@
 // server.js
 
 const express = require('express');
+const http = require('http');
+const WebSocket = require('ws');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -9,6 +11,9 @@ const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 
 const app = express();
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
+
 const PORT = 3000;
 
 if (!process.env.JWT_SECRET && process.env.NODE_ENV === 'production') {
@@ -18,6 +23,9 @@ if (!process.env.JWT_SECRET && process.env.NODE_ENV === 'production') {
 const JWT_SECRET = process.env.JWT_SECRET || 'your_very_secret_key_for_development_only';
 
 app.use(express.json());
+
+// In-memory mapping of characterId to WebSocket connection and player data
+const clients = new Map();
 
 // --- Email Setup ---
 const transporter = nodemailer.createTransport({
@@ -172,7 +180,9 @@ app.post('/api/characters', authenticateToken, (req, res) => {
             tailoring: 1,
             jewelcrafting: 1,
             enchanting: 1
-        }
+        },
+        quest_exp: 0,
+        quest_skills: []
     });
 
     db.run('INSERT INTO characters (user_id, name, character_data) VALUES (?, ?, ?)',
@@ -187,11 +197,13 @@ app.post('/api/characters', authenticateToken, (req, res) => {
 // Load game data for a specific character
 app.get('/api/game/load/:characterId', authenticateToken, (req, res) => {
     const { characterId } = req.params;
-    db.get('SELECT character_data FROM characters WHERE id = ? AND user_id = ?', [characterId, req.user.id], (err, row) => {
+    db.get('SELECT character_data, name FROM characters WHERE id = ? AND user_id = ?', [characterId, req.user.id], (err, row) => {
         if (err || !row) {
             return res.status(404).json({ error: 'Character not found.' });
         }
-        res.json(JSON.parse(row.character_data));
+        const characterData = JSON.parse(row.character_data);
+        characterData.name = row.name;
+        res.json(characterData);
     });
 });
 
@@ -208,13 +220,81 @@ app.post('/api/game/save/:characterId', authenticateToken, (req, res) => {
     });
 });
 
+// --- WebSocket Handling ---
+wss.on('connection', (ws) => {
+    ws.on('message', (message) => {
+        const data = JSON.parse(message);
+
+        // Client authentication
+        if (data.type === 'auth') {
+            jwt.verify(data.token, JWT_SECRET, (err, user) => {
+                if (err) {
+                    ws.send(JSON.stringify({ type: 'error', message: 'Invalid token' }));
+                    ws.close();
+                } else {
+                    db.get('SELECT character_data, name FROM characters WHERE id = ?', [data.characterId], (err, row) => {
+                        if (err || !row) {
+                            ws.send(JSON.stringify({ type: 'error', message: 'Character not found' }));
+                            ws.close();
+                        } else {
+                            const characterData = JSON.parse(row.character_data);
+                            characterData.name = row.name;
+                            clients.set(data.characterId, { ws, player: characterData });
+                            ws.characterId = data.characterId;
+                            ws.send(JSON.stringify({ type: 'info', message: 'Authenticated successfully.' }));
+                        }
+                    });
+                }
+            });
+        }
+
+        // Chat message handling
+        if (data.type === 'chat') {
+            const sender = clients.get(ws.characterId);
+            if (!sender) return;
+
+            if (data.command === 'talk') {
+                const message = `[Room] ${sender.player.name}: ${data.message}`;
+                clients.forEach((client, id) => {
+                    if (client.player.currentRoom === sender.player.currentRoom && id !== ws.characterId) {
+                        client.ws.send(JSON.stringify({ type: 'chat', message }));
+                    }
+                });
+            } else if (data.command === 'lt' || data.command === 'link') {
+                const parts = data.message.split(' ');
+                const recipientName = parts[0];
+                const messageContent = parts.slice(1).join(' ');
+
+                let recipientId = null;
+                clients.forEach((client, id) => {
+                    if (client.player.name.toLowerCase() === recipientName.toLowerCase()) {
+                        recipientId = id;
+                    }
+                });
+
+                if (recipientId) {
+                    const recipient = clients.get(recipientId);
+                    const message = `[Direct] ${sender.player.name}: ${messageContent}`;
+                    recipient.ws.send(JSON.stringify({ type: 'chat', message }));
+                } else {
+                    ws.send(JSON.stringify({ type: 'error', message: 'Player not found.' }));
+                }
+            }
+        }
+    });
+
+    ws.on('close', () => {
+        if (ws.characterId) {
+            clients.delete(ws.characterId);
+        }
+    });
+});
 
 // --- Serve Static Files ---
-// This will serve the main MUD game files from the parent directory
 app.use(express.static(path.join(__dirname, '..', 'mud')));
 
 
 // --- Server Start ---
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
