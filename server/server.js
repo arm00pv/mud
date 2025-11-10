@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 if (!process.env.JWT_SECRET && process.env.NODE_ENV === 'production') {
     console.error('FATAL ERROR: JWT_SECRET is not defined.');
