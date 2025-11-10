@@ -123,21 +123,23 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
     # --- MUD Game ---
     # WebSocket Proxy: Must come before the Alias and Location blocks.
     # --- MUD Game ---
+    # The RewriteEngine must be on for the following rules to work.
     RewriteEngine On
 
-    # 1. WebSocket Proxy: This rule MUST come first.
-    # It specifically targets WebSocket upgrade requests for the MUD game's root.
+    # 1. WebSocket Proxy: This rule handles the real-time chat connection.
+    # It must come before the API proxy rule. It upgrades the connection for WebSocket traffic.
     RewriteCond %{REQUEST_URI} ^/mud/$ [NC]
     RewriteCond %{HTTP:Upgrade} =websocket [NC]
     RewriteRule ^/mud/(.*) ws://localhost:3000/$1 [P,L]
 
-    # 2. API Proxy: This rule proxies all requests to /mud/api/ to the Node.js backend.
-    # The [P] flag is crucial for proxying.
+    # 2. API Proxy: This rule forwards all API requests from /mud/api/... to the backend Node.js server.
+    # The [P] flag proxies the request, and [L] stops processing further rules for this request.
     RewriteRule ^/mud/api/(.*)$ http://127.0.0.1:3000/api/$1 [P,L]
 
-    # 3. Static Files: This Alias serves the frontend files.
-    # It is processed after the RewriteRules, so it won't intercept API or WebSocket traffic.
-    Alias /mud/ /var/www/webhost/mud/
+    # 3. Static Files: No 'Alias' is needed here.
+    # Because your DocumentRoot is /var/www/webhost, Apache will automatically serve
+    # static files from the /var/www/webhost/mud/ directory for any requests to zapp.sytes.net/mud/...
+    # that are not caught by the proxy rules above.
     <Directory /var/www/webhost/mud>
         Require all granted
     </Directory>
