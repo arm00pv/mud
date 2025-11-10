@@ -60,6 +60,7 @@ def generate_sunken_city():
     area["rooms"][f"room_{grid_size-1}_{grid_size-1}"]["monster"] = {
          "name": "Kraken", "hp": 100, "attack": 10, "defense": 5, "gold": 100
     }
+    area["rooms"][f"room_{grid_size-1}_{grid_size-1}"]["exits"]["down"] = "area5_entrance"
 
     # Add Quest NPC
     area["rooms"]["room_5_5"]["npcs"] = {

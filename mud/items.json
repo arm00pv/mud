@@ -11,6 +11,12 @@
     "attack": 2,
     "cost": 15
   },
+    "steel_sword": {
+    "name": "Steel Sword",
+    "type": "weapon",
+    "attack": 5,
+    "cost": 50
+    },
   "ring_of_protection": {
     "name": "Ring of Protection",
     "type": "ring",
@@ -54,5 +60,45 @@
     "type": "potion",
     "effect": "heal",
     "amount": 20
-  }
+  },
+    "iron_ingot": {
+        "name": "Iron Ingot",
+        "type": "material"
+    },
+    "steel_ingot": {
+        "name": "Steel Ingot",
+        "type": "material"
+    },
+    "leather_strips": {
+        "name": "Leather Strips",
+        "type": "material"
+    },
+    "travelers_clothes": {
+        "name": "Traveler's Clothes",
+        "type": "clothing",
+        "slot": "chest",
+        "defense": 1
+    },
+    "travelers_boots": {
+        "name": "Traveler's Boots",
+        "type": "clothing",
+        "slot": "feet",
+        "defense": 1
+    },
+    "crystal_fragment": {
+        "name": "Crystal Fragment",
+        "type": "material"
+    },
+    "crystal_shard_1": {
+        "name": "First Crystal Shard",
+        "type": "quest"
+    },
+    "crystal_shard_2": {
+        "name": "Second Crystal Shard",
+        "type": "quest"
+    },
+    "crystal_shard_3": {
+        "name": "Third Crystal Shard",
+        "type": "quest"
+    }
 }

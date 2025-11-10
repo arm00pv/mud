@@ -156,14 +156,21 @@ app.post('/api/characters', authenticateToken, (req, res) => {
     }
     const initialCharacterData = JSON.stringify({
         hp: 10, max_hp: 10, attack: 1, defense: 1, gold: 0,
-        inventory: ["leather_armor", "iron_sword"],
-        equipment: { weapon: null, armor: null, ring: null },
+        inventory: ["leather_armor", "iron_sword", "travelers_clothes", "travelers_boots"],
+        equipment: { weapon: null, armor: null, ring: null, chest: null, feet: null },
         currentRoom: "start",
         currentAreaName: "area1",
         reputation: { fairies: 0, nymphs: 0 },
         quests: {},
         inCombat: false, inInn: false,
-        returnLocation: { area: null, room: null }
+        returnLocation: { area: null, room: null },
+        achievements: [],
+        visited_areas: ["area1"],
+        skills: {
+            blacksmithing: 1,
+            alchemy: 1,
+            tailoring: 1
+        }
     });
 
     db.run('INSERT INTO characters (user_id, name, character_data) VALUES (?, ?, ?)',

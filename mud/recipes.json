@@ -1,0 +1,46 @@
+{
+  "blacksmithing": {
+    "iron_sword": {
+      "name": "Iron Sword",
+      "level": 1,
+      "exp": 10,
+      "ingredients": {
+        "iron_ingot": 2
+      },
+      "result": "iron_sword"
+    },
+    "steel_sword": {
+      "name": "Steel Sword",
+      "level": 10,
+      "exp": 50,
+      "ingredients": {
+        "steel_ingot": 2,
+        "leather_strips": 1
+      },
+      "result": "steel_sword"
+    }
+  },
+  "alchemy": {
+    "health_potion": {
+      "name": "Health Potion",
+      "level": 1,
+      "exp": 5,
+      "ingredients": {
+        "sand_viper_fang": 2,
+        "oasis_water": 1
+      },
+      "result": "health_potion_item"
+    }
+  },
+  "tailoring": {
+    "leather_armor": {
+        "name": "Leather Armor",
+        "level": 1,
+        "exp": 10,
+        "ingredients": {
+            "leather_strips": 4
+        },
+        "result": "leather_armor"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "defeat_kraken": {
+    "name": "Ocean's Conqueror",
+    "description": "Defeat the mighty Kraken in the Sunken City."
+  },
+  "visit_all_areas": {
+    "name": "World Traveler",
+    "description": "Visit all four areas of the world."
+  },
+  "master_crafter": {
+    "name": "Master Artisan",
+    "description": "Reach the maximum skill level in any crafting trade."
+  },
+  "quest_master": {
+    "name": "Legendary Hero",
+    "description": "Complete the main story questline."
+  }
+}

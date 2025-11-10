@@ -13,7 +13,7 @@ const registerForm = document.getElementById('register-form');
 const characterList = document.getElementById('character-list');
 
 // --- Global State ---
-let currentArea, innArea, items, recipes = {};
+let currentArea, innArea, items, recipes, achievements = {};
 let player = {};
 let authToken = null;
 let selectedCharacterId = null;
@@ -145,8 +145,10 @@ async function startGame() {
         items = await itemResponse.json();
         const innResponse = await fetch('areas/inn.json');
         innArea = await innResponse.json();
-        const recipeResponse = await fetch('crafting_recipes.json');
+        const recipeResponse = await fetch('recipes.json');
         recipes = await recipeResponse.json();
+        const achievementsResponse = await fetch('achievements.json');
+        achievements = await achievementsResponse.json();
     } catch (error) {
         printToOutput("Error: Failed to load essential game data.");
         return;
@@ -160,6 +162,15 @@ async function startGame() {
         player = await response.json();
         if (!player.effects) {
             player.effects = {};
+        }
+        if (!player.achievements) {
+            player.achievements = [];
+        }
+        if (!player.visited_areas) {
+            player.visited_areas = ['area1'];
+        }
+        if (!player.skills) {
+            player.skills = { blacksmithing: 1, alchemy: 1, tailoring: 1 };
         }
         loadArea(player.currentAreaName);
     } else {
@@ -206,7 +217,9 @@ function handleCommand(command) {
 
   const parts = command.split(' ');
   const action = parts[0];
-  const target = parts.slice(1).join(' ');
+  const target1 = parts[1];
+  const target2 = parts.slice(2).join(' ');
+
 
   if (player.inCombat && !['attack', 'stats', 'inventory', 'i', 'st', 'look', 'l', 'use'].includes(action)) {
       printToOutput("You are in combat! You must fight!");
@@ -234,29 +247,31 @@ function handleCommand(command) {
 
   switch(action) {
       case 'craft':
-          craftItem(target);
+          craftItem(target1, target2);
           break;
       case 'use':
-          useItem(target);
+          useItem(target1);
           break;
       case 'attack': handleCombat(room); break;
       case 'look': case 'l': showCurrentRoom(); break;
       case 'quest': showQuestInfo(); break;
       case 'list': listShopItems(room); break;
-      case 'buy': buyShopItem(target, room); break;
+      case 'buy': buyShopItem(target1, room); break;
       case 'rent': rentInn(room); break;
       case 'leave': if (player.inInn) leaveInn(); else printToOutput("You are not in an inn."); break;
-      case 'talk': talkToNpc(target, room); break;
-      case 'interact': interactWithObject(target, room); break;
+      case 'talk': talkToNpc(target1, room); break;
+      case 'interact': interactWithObject(target1, room); break;
       case 'goto':
-          if (target && ['area1', 'area2', 'area3', 'area4'].includes(target)) loadArea(target);
+          if (target1 && ['area1', 'area2', 'area3', 'area4', 'area5'].includes(target1)) loadArea(target1);
           else printToOutput('Invalid area name.');
           break;
-      case 'collect': handleCollection(target, room); break;
+      case 'collect': handleCollection(target1, room); break;
       case 'inventory': case 'i': showInventory(); break;
       case 'stats': case 'st': showStats(); break;
-      case 'equip': equipItem(target); break;
-      case 'unequip': unequipItem(target); break;
+      case 'equip': equipItem(target1); break;
+      case 'unequip': unequipItem(target1); break;
+      case 'achievements': showAchievements(); break;
+      case 'skills': showSkills(); break;
       default: printToOutput("I don't understand that command.");
   }
 }
@@ -290,13 +305,22 @@ function useItem(itemName) {
     player.inventory = player.inventory.filter(id => id !== itemId);
 }
 
-function craftItem(recipeName) {
-    const recipeId = Object.keys(recipes).find(key => recipes[key].name.toLowerCase() === recipeName);
+function craftItem(trade, recipeName) {
+    if (!recipes[trade]) {
+        printToOutput("That is not a valid trade skill.");
+        return;
+    }
+    const recipeId = Object.keys(recipes[trade]).find(key => recipes[trade][key].name.toLowerCase() === recipeName);
     if (!recipeId) {
         printToOutput("You don't know how to craft that.");
         return;
     }
-    const recipe = recipes[recipeId];
+    const recipe = recipes[trade][recipeId];
+
+    if (player.skills[trade] < recipe.level) {
+        printToOutput(`Your ${trade} skill is not high enough. You need to be level ${recipe.level}.`);
+        return;
+    }
 
     // Check ingredients
     for (const ingredient in recipe.ingredients) {
@@ -316,9 +340,10 @@ function craftItem(recipeName) {
         }
     }
 
-    // Add result
+    // Add result and experience
     player.inventory.push(recipe.result);
-    printToOutput(`You successfully crafted a ${items[recipe.result].name}.`);
+    player.skills[trade] += recipe.exp;
+    printToOutput(`You successfully crafted a ${items[recipe.result].name}. You gained ${recipe.exp} ${trade} experience.`);
 }
 
 
@@ -335,6 +360,9 @@ async function loadArea(areaName, specificRoom = null) {
 
     player.currentRoom = specificRoom || currentArea.start_room;
     player.currentAreaName = areaName;
+    if (!player.visited_areas.includes(areaName)) {
+        player.visited_areas.push(areaName);
+    }
 
     if (areaName === 'area1' && !player.quests.acorn_war) player.quests.acorn_war = { fairy_acorns: 0, nymph_acorns: 0 };
     else if (!player.quests[areaName]) player.quests[areaName] = { completed: false, steps: {} };
@@ -342,6 +370,7 @@ async function loadArea(areaName, specificRoom = null) {
     output.innerHTML = '';
     printToOutput(`Welcome to ${currentArea.name}!`);
     showCurrentRoom();
+    checkAchievements();
   } catch (error) {
     printToOutput(`Error loading area: ${error.message}`);
   }
@@ -395,6 +424,9 @@ function handleCombat(room) {
             player.inventory.push(monster.loot);
             printToOutput(`You find a ${items[monster.loot].name}.`);
         }
+        if (monster.name === 'Kraken') {
+            checkAchievements('defeat_kraken');
+        }
         delete room.monster;
         player.inCombat = false;
         return;
@@ -432,20 +464,28 @@ function showStats() {
     }
     printToOutput("--------------------");
 }
+function showSkills() {
+    printToOutput("--- Skills ---");
+    for (const skill in player.skills) {
+        printToOutput(`- ${skill}: ${player.skills[skill]}`);
+    }
+    printToOutput("--------------");
+}
 function equipItem(itemName) {
     const itemId = Object.keys(items).find(key => items[key].name.toLowerCase() === itemName);
     if (!itemId || !player.inventory.includes(itemId)) { printToOutput("You don't have that item."); return; }
     const item = items[itemId];
-    if (player.equipment[item.type]) unequipItem(item.type, true);
-    player.equipment[item.type] = itemId;
+    const slot = item.type === 'clothing' ? item.slot : item.type;
+    if (player.equipment[slot]) unequipItem(slot, true);
+    player.equipment[slot] = itemId;
     player.inventory = player.inventory.filter(id => id !== itemId);
     printToOutput(`You equip the ${item.name}.`);
 }
-function unequipItem(itemType, silent = false) {
-    if (!player.equipment[itemType]) { if (!silent) printToOutput(`You don't have a ${itemType} equipped.`); return; }
-    const itemId = player.equipment[itemType];
+function unequipItem(slot, silent = false) {
+    if (!player.equipment[slot]) { if (!silent) printToOutput(`You don't have a ${slot} equipped.`); return; }
+    const itemId = player.equipment[slot];
     const item = items[itemId];
-    player.equipment[itemType] = null;
+    player.equipment[slot] = null;
     player.inventory.push(itemId);
     if (!silent) printToOutput(`You unequip the ${item.name}.`);
 }
@@ -533,5 +573,27 @@ function interactWithObject(objectName, room) {
     if (objectName === 'bed') {
         player.hp = player.max_hp;
         printToOutput("You feel fully rested.");
+    }
+}
+function showAchievements() {
+    printToOutput("--- Achievements ---");
+    if (player.achievements.length === 0) {
+        printToOutput("You have not earned any achievements yet.");
+    } else {
+        player.achievements.forEach(achId => {
+            const ach = achievements[achId];
+            printToOutput(`- ${ach.name}: ${ach.description}`);
+        });
+    }
+    printToOutput("--------------------");
+}
+function checkAchievements(event = null) {
+    if (event === 'defeat_kraken' && !player.achievements.includes('defeat_kraken')) {
+        player.achievements.push('defeat_kraken');
+        printToOutput("Achievement unlocked: Ocean's Conqueror!");
+    }
+    if (player.visited_areas.length >= 4 && !player.achievements.includes('visit_all_areas')) {
+        player.achievements.push('visit_all_areas');
+        printToOutput("Achievement unlocked: World Traveler!");
     }
 }
