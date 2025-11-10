@@ -1,0 +1,11 @@
+{
+  "name": "The Obsidian Arena",
+  "start_room": "arena",
+  "rooms": {
+    "arena": {
+      "description": "You are in a large, circular arena made of polished black obsidian. The walls are high and smooth, and there is no escape. This is a place of combat.",
+      "exits": {},
+      "pvp": true
+    }
+  }
+}

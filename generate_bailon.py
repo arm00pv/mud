@@ -78,6 +78,7 @@ def generate_bailon():
     # Shops in Marketplace
     marketplace["m_3_3"]["shop"] = SHOPS["armory"]
     marketplace["m_5_5"]["shop"] = SHOPS["apothecary"]
+    marketplace["m_1_1"]["bank"] = True
 
     # Monsters
     for room_id in castle:
@@ -95,6 +96,18 @@ def generate_bailon():
         "name": "The Ghost of King Bailon", "hp": 200, "attack": 15, "defense": 10, "gold": 300
     }
     castle_quest_area["cq_4_9"]["quest_object"] = "amulet_fragment_sky"
+
+    # Add Arena Master
+    marketplace["m_7_7"]["npcs"] = {
+        "arena_master": {
+            "name": "Arena Master",
+            "dialogue": "Do you wish to test your mettle against another champion? I can send you to the Obsidian Arena.",
+            "transport": "area7_arena"
+        }
+    }
+
+    # Add portal to Aetherium
+    plaza["p_2_2"]["exits"]["portal"] = "area8_entrance"
 
     # Define start room and connect bridge from Area 1
     start_room = "p_2_2"

@@ -183,6 +183,12 @@ async function startGame() {
         if (!player.quest_skills) {
             player.quest_skills = [];
         }
+        if (!player.bank) {
+            player.bank = { gold: 0, inventory: [] };
+        }
+        if (!player.pvp) {
+            player.pvp = { wins: 0 };
+        }
 
         // Connect to WebSocket server
         const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -295,7 +301,13 @@ function handleCommand(command) {
       case 'use':
           useItem(target1);
           break;
-      case 'attack': handleCombat(room); break;
+      case 'attack':
+        if (room.pvp) {
+            ws.send(JSON.stringify({ type: 'pvp', command: 'attack', target: target1 }));
+        } else {
+            handleCombat(room);
+        }
+        break;
       case 'look': case 'l': showCurrentRoom(); break;
       case 'quest': showQuestInfo(); break;
       case 'list': listShopItems(room); break;
@@ -305,7 +317,7 @@ function handleCommand(command) {
       case 'talk': talkToNpc(target1, room); break;
       case 'interact': interactWithObject(target1, room); break;
       case 'goto':
-          if (target1 && ['area1', 'area2', 'area3', 'area4', 'area5', 'area6'].includes(target1)) loadArea(target1);
+          if (target1 && ['area1', 'area2', 'area3', 'area4', 'area5', 'area6', 'arena', 'area8'].includes(target1)) loadArea(target1);
           else printToOutput('Invalid area name.');
           break;
       case 'collect': handleCollection(target1, room); break;
@@ -317,6 +329,14 @@ function handleCommand(command) {
       case 'skills': showSkills(); break;
       case 'qskills': showQuestSkills(); break;
       case 'help': showHelp(target1); break;
+      case 'deposit': deposit(target1, target2); break;
+      case 'withdraw': withdraw(target1, target2); break;
+      case 'balance': showBalance(); break;
+      case 'pvp':
+          if (target1 === 'board') {
+              ws.send(JSON.stringify({ type: 'pvp', command: 'board' }));
+          }
+          break;
       default: printToOutput("I don't understand that command.");
   }
 }
@@ -396,6 +416,11 @@ function craftItem(trade, recipeName) {
         printToOutput("You have reforged the Shattered Amulet and restored balance to the world! Congratulations!");
         checkAchievements('quest_master');
     }
+    if (recipe.result === 'starcaller_staff') {
+        player.quests.starfall.completed = true;
+        printToOutput("You have forged the Starcaller's Staff and saved the world from certain doom! You are a true hero!");
+        checkAchievements('quest_master');
+    }
 }
 
 
@@ -437,6 +462,9 @@ function showCurrentRoom() {
   if (room.inn) printToOutput(`There is an inn here. You can 'rent' a room for ${room.inn.cost} gold.`);
   if (room.npcs) {
       Object.keys(room.npcs).forEach(npcId => printToOutput(`${room.npcs[npcId].name} is here. ('talk to ${npcId}')`));
+  }
+  if (room.bank) {
+      printToOutput("You see a bank here. You can 'deposit', 'withdraw', and check your 'balance'.");
   }
   const exits = Object.keys(room.exits).join(', ');
   printToOutput(`Exits: ${exits}`);
@@ -648,6 +676,12 @@ function talkToNpc(npcName, room) {
         }
     }
 
+    // Transport
+    if (npc.transport) {
+        const [area, room] = npc.transport.split('_');
+        loadArea(area, room);
+    }
+
     // Specific quest logic for Crystal Guardian
     if (npcName === 'crystal_guardian' && player.quests.crystal_heart) {
         const hasShards = player.inventory.includes('crystal_shard_1') &&
@@ -715,4 +749,76 @@ function showHelp(topic) {
     } else {
         printToOutput("That is not a valid help topic.");
     }
+}
+function deposit(item, amount) {
+    if (!currentArea.rooms[player.currentRoom].bank) {
+        printToOutput("There is no bank here.");
+        return;
+    }
+    if (item === 'gold') {
+        const goldAmount = parseInt(amount);
+        if (isNaN(goldAmount) || goldAmount <= 0) {
+            printToOutput("Invalid amount.");
+            return;
+        }
+        if (player.gold < goldAmount) {
+            printToOutput("You don't have that much gold.");
+            return;
+        }
+        player.gold -= goldAmount;
+        player.bank.gold += goldAmount;
+        printToOutput(`You deposited ${goldAmount} gold.`);
+    } else {
+        const itemId = Object.keys(items).find(key => items[key].name.toLowerCase() === item);
+        if (!itemId || !player.inventory.includes(itemId)) {
+            printToOutput("You don't have that item.");
+            return;
+        }
+        player.inventory = player.inventory.filter(id => id !== itemId);
+        player.bank.inventory.push(itemId);
+        printToOutput(`You deposited ${items[itemId].name}.`);
+    }
+}
+function withdraw(item, amount) {
+    if (!currentArea.rooms[player.currentRoom].bank) {
+        printToOutput("There is no bank here.");
+        return;
+    }
+    if (item === 'gold') {
+        const goldAmount = parseInt(amount);
+        if (isNaN(goldAmount) || goldAmount <= 0) {
+            printToOutput("Invalid amount.");
+            return;
+        }
+        if (player.bank.gold < goldAmount) {
+            printToOutput("You don't have that much gold in the bank.");
+            return;
+        }
+        player.bank.gold -= goldAmount;
+        player.gold += goldAmount;
+        printToOutput(`You withdrew ${goldAmount} gold.`);
+    } else {
+        const itemId = Object.keys(items).find(key => items[key].name.toLowerCase() === item);
+        if (!itemId || !player.bank.inventory.includes(itemId)) {
+            printToOutput("You don't have that item in the bank.");
+            return;
+        }
+        player.bank.inventory = player.bank.inventory.filter(id => id !== itemId);
+        player.inventory.push(itemId);
+        printToOutput(`You withdrew ${items[itemId].name}.`);
+    }
+}
+function showBalance() {
+    if (!currentArea.rooms[player.currentRoom].bank) {
+        printToOutput("There is no bank here.");
+        return;
+    }
+    printToOutput("--- Bank Balance ---");
+    printToOutput(`Gold: ${player.bank.gold}`);
+    if (player.bank.inventory.length === 0) {
+        printToOutput("Your bank inventory is empty.");
+    } else {
+        player.bank.inventory.forEach(itemId => printToOutput(`- ${items[itemId].name}`));
+    }
+    printToOutput("--------------------");
 }

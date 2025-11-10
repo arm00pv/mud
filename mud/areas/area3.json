@@ -4,7 +4,7 @@
   "start_room": "d_19_10",
   "rooms": {
     "d_0_0": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_0",
         "south": "d_0_1"
@@ -19,7 +19,7 @@
       "quest_object": "amulet_fragment_desert"
     },
     "d_1_0": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_0",
         "east": "d_2_0",
@@ -27,7 +27,7 @@
       }
     },
     "d_2_0": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_0",
         "east": "d_3_0",
@@ -35,7 +35,7 @@
       }
     },
     "d_3_0": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_0",
         "east": "d_4_0",
@@ -43,7 +43,7 @@
       }
     },
     "d_4_0": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_0",
         "east": "d_5_0",
@@ -67,7 +67,7 @@
       }
     },
     "d_7_0": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_0",
         "east": "d_8_0",
@@ -75,15 +75,23 @@
       }
     },
     "d_8_0": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_0",
         "east": "d_9_0",
         "south": "d_8_1"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_9_0": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_0",
         "east": "d_10_0",
@@ -91,7 +99,7 @@
       }
     },
     "d_10_0": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_0",
         "east": "d_11_0",
@@ -108,7 +116,7 @@
       }
     },
     "d_12_0": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_0",
         "east": "d_13_0",
@@ -116,7 +124,7 @@
       }
     },
     "d_13_0": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_0",
         "east": "d_14_0",
@@ -124,19 +132,35 @@
       }
     },
     "d_14_0": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_0",
         "east": "d_15_0",
         "south": "d_14_1"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_15_0": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_0",
         "east": "d_16_0",
         "south": "d_15_1"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_16_0": {
@@ -148,11 +172,26 @@
       }
     },
     "d_17_0": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_0",
         "east": "d_18_0",
         "south": "d_17_1"
+      }
+    },
+    "d_18_0": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_17_0",
+        "east": "d_19_0",
+        "south": "d_18_1"
+      }
+    },
+    "d_19_0": {
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_0",
+        "south": "d_19_1"
       },
       "monster": {
         "name": "Sand Viper",
@@ -163,30 +202,8 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_18_0": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_17_0",
-        "east": "d_19_0",
-        "south": "d_18_1"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
-      }
-    },
-    "d_19_0": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_0",
-        "south": "d_19_1"
-      }
-    },
     "d_0_1": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_1",
         "north": "d_0_0",
@@ -194,7 +211,7 @@
       }
     },
     "d_1_1": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_1",
         "east": "d_2_1",
@@ -212,7 +229,7 @@
       }
     },
     "d_3_1": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_1",
         "east": "d_4_1",
@@ -221,7 +238,7 @@
       }
     },
     "d_4_1": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_1",
         "east": "d_5_1",
@@ -230,55 +247,12 @@
       }
     },
     "d_5_1": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_1",
         "east": "d_6_1",
         "north": "d_5_0",
         "south": "d_5_2"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
-      }
-    },
-    "d_6_1": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_5_1",
-        "east": "d_7_1",
-        "north": "d_6_0",
-        "south": "d_6_2"
-      }
-    },
-    "d_7_1": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_6_1",
-        "east": "d_8_1",
-        "north": "d_7_0",
-        "south": "d_7_2"
-      }
-    },
-    "d_8_1": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_7_1",
-        "east": "d_9_1",
-        "north": "d_8_0",
-        "south": "d_8_2"
-      }
-    },
-    "d_9_1": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_8_1",
-        "east": "d_10_1",
-        "north": "d_9_0",
-        "south": "d_9_2"
       },
       "monster": {
         "name": "Sand Viper",
@@ -289,8 +263,51 @@
         "loot": "sand_viper_fang"
       }
     },
+    "d_6_1": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_5_1",
+        "east": "d_7_1",
+        "north": "d_6_0",
+        "south": "d_6_2"
+      }
+    },
+    "d_7_1": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_6_1",
+        "east": "d_8_1",
+        "north": "d_7_0",
+        "south": "d_7_2"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
+      }
+    },
+    "d_8_1": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_7_1",
+        "east": "d_9_1",
+        "north": "d_8_0",
+        "south": "d_8_2"
+      }
+    },
+    "d_9_1": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_8_1",
+        "east": "d_10_1",
+        "north": "d_9_0",
+        "south": "d_9_2"
+      }
+    },
     "d_10_1": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_1",
         "east": "d_11_1",
@@ -314,10 +331,18 @@
         "east": "d_13_1",
         "north": "d_12_0",
         "south": "d_12_2"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_13_1": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_1",
         "east": "d_14_1",
@@ -326,7 +351,7 @@
       }
     },
     "d_14_1": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_1",
         "east": "d_15_1",
@@ -335,7 +360,7 @@
       }
     },
     "d_15_1": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_1",
         "east": "d_16_1",
@@ -344,25 +369,41 @@
       }
     },
     "d_16_1": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_1",
         "east": "d_17_1",
         "north": "d_16_0",
         "south": "d_16_2"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_17_1": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_1",
         "east": "d_18_1",
         "north": "d_17_0",
         "south": "d_17_2"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_18_1": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_1",
         "east": "d_19_1",
@@ -379,7 +420,7 @@
       }
     },
     "d_0_2": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_2",
         "north": "d_0_1",
@@ -402,18 +443,10 @@
         "east": "d_3_2",
         "north": "d_2_1",
         "south": "d_2_3"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_3_2": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_2",
         "east": "d_4_2",
@@ -422,7 +455,7 @@
       }
     },
     "d_4_2": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_2",
         "east": "d_5_2",
@@ -431,7 +464,7 @@
       }
     },
     "d_5_2": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_2",
         "east": "d_6_2",
@@ -440,7 +473,7 @@
       }
     },
     "d_6_2": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_2",
         "east": "d_7_2",
@@ -458,37 +491,12 @@
       }
     },
     "d_8_2": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_2",
         "east": "d_9_2",
         "north": "d_8_1",
         "south": "d_8_3"
-      }
-    },
-    "d_9_2": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_8_2",
-        "east": "d_10_2",
-        "north": "d_9_1",
-        "south": "d_9_3"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
-      }
-    },
-    "d_10_2": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_9_2",
-        "east": "d_11_2",
-        "north": "d_10_1",
-        "south": "d_10_3"
       },
       "monster": {
         "name": "Sand Viper",
@@ -499,8 +507,26 @@
         "loot": "sand_viper_fang"
       }
     },
+    "d_9_2": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_8_2",
+        "east": "d_10_2",
+        "north": "d_9_1",
+        "south": "d_9_3"
+      }
+    },
+    "d_10_2": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_9_2",
+        "east": "d_11_2",
+        "north": "d_10_1",
+        "south": "d_10_3"
+      }
+    },
     "d_11_2": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_2",
         "east": "d_12_2",
@@ -509,7 +535,7 @@
       }
     },
     "d_12_2": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_2",
         "east": "d_13_2",
@@ -518,7 +544,7 @@
       }
     },
     "d_13_2": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_2",
         "east": "d_14_2",
@@ -527,7 +553,7 @@
       }
     },
     "d_14_2": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_2",
         "east": "d_15_2",
@@ -536,55 +562,30 @@
       }
     },
     "d_15_2": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_2",
         "east": "d_16_2",
         "north": "d_15_1",
         "south": "d_15_3"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_16_2": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_2",
         "east": "d_17_2",
         "north": "d_16_1",
         "south": "d_16_3"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_17_2": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_2",
         "east": "d_18_2",
         "north": "d_17_1",
         "south": "d_17_3"
-      }
-    },
-    "d_18_2": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_17_2",
-        "east": "d_19_2",
-        "north": "d_18_1",
-        "south": "d_18_3"
       },
       "monster": {
         "name": "Sand Viper",
@@ -593,6 +594,15 @@
         "defense": 2,
         "gold": 7,
         "loot": "sand_viper_fang"
+      }
+    },
+    "d_18_2": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_17_2",
+        "east": "d_19_2",
+        "north": "d_18_1",
+        "south": "d_18_3"
       }
     },
     "d_19_2": {
@@ -604,7 +614,7 @@
       }
     },
     "d_0_3": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_3",
         "north": "d_0_2",
@@ -612,7 +622,7 @@
       }
     },
     "d_1_3": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_3",
         "east": "d_2_3",
@@ -627,18 +637,10 @@
         "east": "d_3_3",
         "north": "d_2_2",
         "south": "d_2_4"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_3_3": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_3",
         "east": "d_4_3",
@@ -647,7 +649,7 @@
       }
     },
     "d_4_3": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_3",
         "east": "d_5_3",
@@ -656,40 +658,25 @@
       }
     },
     "d_5_3": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_3",
         "east": "d_6_3",
         "north": "d_5_2",
         "south": "d_5_4"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_6_3": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_3",
         "east": "d_7_3",
         "north": "d_6_2",
         "south": "d_6_4"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_7_3": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_3",
         "east": "d_8_3",
@@ -698,7 +685,7 @@
       }
     },
     "d_8_3": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_3",
         "east": "d_9_3",
@@ -722,18 +709,10 @@
         "east": "d_11_3",
         "north": "d_10_2",
         "south": "d_10_4"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_11_3": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_3",
         "east": "d_12_3",
@@ -742,7 +721,7 @@
       }
     },
     "d_12_3": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_3",
         "east": "d_13_3",
@@ -757,10 +736,18 @@
         "east": "d_14_3",
         "north": "d_13_2",
         "south": "d_13_4"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_14_3": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_3",
         "east": "d_15_3",
@@ -778,24 +765,16 @@
       }
     },
     "d_16_3": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_3",
         "east": "d_17_3",
         "north": "d_16_2",
         "south": "d_16_4"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_17_3": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_3",
         "east": "d_18_3",
@@ -810,6 +789,22 @@
         "east": "d_19_3",
         "north": "d_18_2",
         "south": "d_18_4"
+      }
+    },
+    "d_19_3": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_3",
+        "north": "d_19_2",
+        "south": "d_19_4"
+      }
+    },
+    "d_0_4": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_4",
+        "north": "d_0_3",
+        "south": "d_0_5"
       },
       "monster": {
         "name": "Sand Viper",
@@ -818,22 +813,6 @@
         "defense": 2,
         "gold": 7,
         "loot": "sand_viper_fang"
-      }
-    },
-    "d_19_3": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_3",
-        "north": "d_19_2",
-        "south": "d_19_4"
-      }
-    },
-    "d_0_4": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_4",
-        "north": "d_0_3",
-        "south": "d_0_5"
       }
     },
     "d_1_4": {
@@ -861,10 +840,18 @@
         "east": "d_4_4",
         "north": "d_3_3",
         "south": "d_3_5"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_4_4": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_4",
         "east": "d_5_4",
@@ -873,7 +860,7 @@
       }
     },
     "d_5_4": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_4",
         "east": "d_6_4",
@@ -882,7 +869,7 @@
       }
     },
     "d_6_4": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_4",
         "east": "d_7_4",
@@ -890,15 +877,16 @@
         "south": "d_6_5"
       },
       "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_7_4": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_4",
         "east": "d_8_4",
@@ -907,12 +895,20 @@
       }
     },
     "d_8_4": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_4",
         "east": "d_9_4",
         "north": "d_8_3",
         "south": "d_8_5"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_9_4": {
@@ -925,7 +921,7 @@
       }
     },
     "d_10_4": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_4",
         "east": "d_11_4",
@@ -943,40 +939,25 @@
       }
     },
     "d_12_4": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_4",
         "east": "d_13_4",
         "north": "d_12_3",
         "south": "d_12_5"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_13_4": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_4",
         "east": "d_14_4",
         "north": "d_13_3",
         "south": "d_13_5"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_14_4": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_4",
         "east": "d_15_4",
@@ -1003,24 +984,16 @@
       }
     },
     "d_17_4": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_4",
         "east": "d_18_4",
         "north": "d_17_3",
         "south": "d_17_5"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_18_4": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_4",
         "east": "d_19_4",
@@ -1028,32 +1001,23 @@
         "south": "d_18_5"
       },
       "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_19_4": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_4",
         "north": "d_19_3",
         "south": "d_19_5"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_0_5": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_5",
         "north": "d_0_4",
@@ -1061,7 +1025,7 @@
       }
     },
     "d_1_5": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_5",
         "east": "d_2_5",
@@ -1070,75 +1034,12 @@
       }
     },
     "d_2_5": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_5",
         "east": "d_3_5",
         "north": "d_2_4",
         "south": "d_2_6"
-      }
-    },
-    "d_3_5": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_2_5",
-        "east": "d_4_5",
-        "north": "d_3_4",
-        "south": "d_3_6"
-      }
-    },
-    "d_4_5": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_3_5",
-        "east": "d_5_5",
-        "north": "d_4_4",
-        "south": "d_4_6"
-      }
-    },
-    "d_5_5": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_4_5",
-        "east": "d_6_5",
-        "north": "d_5_4",
-        "south": "d_5_6"
-      }
-    },
-    "d_6_5": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_5_5",
-        "east": "d_7_5",
-        "north": "d_6_4",
-        "south": "d_6_6"
-      }
-    },
-    "d_7_5": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_6_5",
-        "east": "d_8_5",
-        "north": "d_7_4",
-        "south": "d_7_6"
-      }
-    },
-    "d_8_5": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_7_5",
-        "east": "d_9_5",
-        "north": "d_8_4",
-        "south": "d_8_6"
-      }
-    },
-    "d_9_5": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_8_5",
-        "east": "d_10_5",
-        "north": "d_9_4",
-        "south": "d_9_6"
       },
       "monster": {
         "name": "Sand Viper",
@@ -1149,8 +1050,86 @@
         "loot": "sand_viper_fang"
       }
     },
+    "d_3_5": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_2_5",
+        "east": "d_4_5",
+        "north": "d_3_4",
+        "south": "d_3_6"
+      }
+    },
+    "d_4_5": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_3_5",
+        "east": "d_5_5",
+        "north": "d_4_4",
+        "south": "d_4_6"
+      }
+    },
+    "d_5_5": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_4_5",
+        "east": "d_6_5",
+        "north": "d_5_4",
+        "south": "d_5_6"
+      }
+    },
+    "d_6_5": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_5_5",
+        "east": "d_7_5",
+        "north": "d_6_4",
+        "south": "d_6_6"
+      }
+    },
+    "d_7_5": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_6_5",
+        "east": "d_8_5",
+        "north": "d_7_4",
+        "south": "d_7_6"
+      }
+    },
+    "d_8_5": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_7_5",
+        "east": "d_9_5",
+        "north": "d_8_4",
+        "south": "d_8_6"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
+      }
+    },
+    "d_9_5": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_8_5",
+        "east": "d_10_5",
+        "north": "d_9_4",
+        "south": "d_9_6"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
+      }
+    },
     "d_10_5": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_5",
         "east": "d_11_5",
@@ -1159,7 +1138,7 @@
       }
     },
     "d_11_5": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_5",
         "east": "d_12_5",
@@ -1168,7 +1147,7 @@
       }
     },
     "d_12_5": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_5",
         "east": "d_13_5",
@@ -1177,7 +1156,7 @@
       }
     },
     "d_13_5": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_5",
         "east": "d_14_5",
@@ -1186,7 +1165,7 @@
       }
     },
     "d_14_5": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_5",
         "east": "d_15_5",
@@ -1204,7 +1183,7 @@
       }
     },
     "d_16_5": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_5",
         "east": "d_17_5",
@@ -1213,62 +1192,21 @@
       }
     },
     "d_17_5": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_5",
         "east": "d_18_5",
         "north": "d_17_4",
         "south": "d_17_6"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_18_5": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_5",
         "east": "d_19_5",
         "north": "d_18_4",
         "south": "d_18_6"
-      }
-    },
-    "d_19_5": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_5",
-        "north": "d_19_4",
-        "south": "d_19_6"
-      }
-    },
-    "d_0_6": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_6",
-        "north": "d_0_5",
-        "south": "d_0_7"
-      }
-    },
-    "d_1_6": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_0_6",
-        "east": "d_2_6",
-        "north": "d_1_5",
-        "south": "d_1_7"
-      }
-    },
-    "d_2_6": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_1_6",
-        "east": "d_3_6",
-        "north": "d_2_5",
-        "south": "d_2_7"
       },
       "monster": {
         "name": "Sand Viper",
@@ -1279,13 +1217,54 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_3_6": {
+    "d_19_5": {
       "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_5",
+        "north": "d_19_4",
+        "south": "d_19_6"
+      }
+    },
+    "d_0_6": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_6",
+        "north": "d_0_5",
+        "south": "d_0_7"
+      }
+    },
+    "d_1_6": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_0_6",
+        "east": "d_2_6",
+        "north": "d_1_5",
+        "south": "d_1_7"
+      }
+    },
+    "d_2_6": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_1_6",
+        "east": "d_3_6",
+        "north": "d_2_5",
+        "south": "d_2_7"
+      }
+    },
+    "d_3_6": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_6",
         "east": "d_4_6",
         "north": "d_3_5",
         "south": "d_3_7"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_4_6": {
@@ -1298,7 +1277,7 @@
       }
     },
     "d_5_6": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_6",
         "east": "d_6_6",
@@ -1316,7 +1295,7 @@
       }
     },
     "d_7_6": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_6",
         "east": "d_8_6",
@@ -1325,7 +1304,7 @@
       }
     },
     "d_8_6": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_6",
         "east": "d_9_6",
@@ -1343,7 +1322,7 @@
       }
     },
     "d_10_6": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_6",
         "east": "d_11_6",
@@ -1352,7 +1331,7 @@
       }
     },
     "d_11_6": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_6",
         "east": "d_12_6",
@@ -1361,7 +1340,7 @@
       }
     },
     "d_12_6": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_6",
         "east": "d_13_6",
@@ -1370,7 +1349,7 @@
       }
     },
     "d_13_6": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_6",
         "east": "d_14_6",
@@ -1386,23 +1365,16 @@
       }
     },
     "d_14_6": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_6",
         "east": "d_15_6",
         "north": "d_14_5",
         "south": "d_14_7"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_15_6": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_6",
         "east": "d_16_6",
@@ -1411,7 +1383,7 @@
       }
     },
     "d_16_6": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_6",
         "east": "d_17_6",
@@ -1420,7 +1392,7 @@
       }
     },
     "d_17_6": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_6",
         "east": "d_18_6",
@@ -1429,24 +1401,16 @@
       }
     },
     "d_18_6": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_6",
         "east": "d_19_6",
         "north": "d_18_5",
         "south": "d_18_7"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_19_6": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_6",
         "north": "d_19_5",
@@ -1462,7 +1426,7 @@
       }
     },
     "d_0_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_7",
         "north": "d_0_6",
@@ -1470,7 +1434,7 @@
       }
     },
     "d_1_7": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_7",
         "east": "d_2_7",
@@ -1479,7 +1443,7 @@
       }
     },
     "d_2_7": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_7",
         "east": "d_3_7",
@@ -1488,7 +1452,7 @@
       }
     },
     "d_3_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_7",
         "east": "d_4_7",
@@ -1497,7 +1461,7 @@
       }
     },
     "d_4_7": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_7",
         "east": "d_5_7",
@@ -1506,24 +1470,16 @@
       }
     },
     "d_5_7": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_7",
         "east": "d_6_7",
         "north": "d_5_6",
         "south": "d_5_8"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_6_7": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_7",
         "east": "d_7_7",
@@ -1532,7 +1488,7 @@
       }
     },
     "d_7_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_7",
         "east": "d_8_7",
@@ -1541,7 +1497,7 @@
       }
     },
     "d_8_7": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_7",
         "east": "d_9_7",
@@ -1550,16 +1506,23 @@
       }
     },
     "d_9_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_7",
         "east": "d_10_7",
         "north": "d_9_6",
         "south": "d_9_8"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_10_7": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_7",
         "east": "d_11_7",
@@ -1568,7 +1531,7 @@
       }
     },
     "d_11_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_7",
         "east": "d_12_7",
@@ -1586,7 +1549,7 @@
       }
     },
     "d_13_7": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_7",
         "east": "d_14_7",
@@ -1595,7 +1558,7 @@
       }
     },
     "d_14_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_7",
         "east": "d_15_7",
@@ -1604,7 +1567,7 @@
       }
     },
     "d_15_7": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_7",
         "east": "d_16_7",
@@ -1613,7 +1576,7 @@
       }
     },
     "d_16_7": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_7",
         "east": "d_17_7",
@@ -1622,7 +1585,7 @@
       }
     },
     "d_17_7": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_7",
         "east": "d_18_7",
@@ -1631,7 +1594,7 @@
       }
     },
     "d_18_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_7",
         "east": "d_19_7",
@@ -1640,37 +1603,11 @@
       }
     },
     "d_19_7": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_7",
         "north": "d_19_6",
         "south": "d_19_8"
-      }
-    },
-    "d_0_8": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_8",
-        "north": "d_0_7",
-        "south": "d_0_9"
-      }
-    },
-    "d_1_8": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_0_8",
-        "east": "d_2_8",
-        "north": "d_1_7",
-        "south": "d_1_9"
-      }
-    },
-    "d_2_8": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_1_8",
-        "east": "d_3_8",
-        "north": "d_2_7",
-        "south": "d_2_9"
       },
       "monster": {
         "name": "Roc",
@@ -1680,8 +1617,34 @@
         "gold": 12
       }
     },
-    "d_3_8": {
+    "d_0_8": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_8",
+        "north": "d_0_7",
+        "south": "d_0_9"
+      }
+    },
+    "d_1_8": {
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_0_8",
+        "east": "d_2_8",
+        "north": "d_1_7",
+        "south": "d_1_9"
+      }
+    },
+    "d_2_8": {
       "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_1_8",
+        "east": "d_3_8",
+        "north": "d_2_7",
+        "south": "d_2_9"
+      }
+    },
+    "d_3_8": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_8",
         "east": "d_4_8",
@@ -1690,7 +1653,7 @@
       }
     },
     "d_4_8": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_8",
         "east": "d_5_8",
@@ -1705,18 +1668,10 @@
         "east": "d_6_8",
         "north": "d_5_7",
         "south": "d_5_9"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_6_8": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_8",
         "east": "d_7_8",
@@ -1725,7 +1680,7 @@
       }
     },
     "d_7_8": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_8",
         "east": "d_8_8",
@@ -1734,12 +1689,19 @@
       }
     },
     "d_8_8": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_8",
         "east": "d_9_8",
         "north": "d_8_7",
         "south": "d_8_9"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_9_8": {
@@ -1752,7 +1714,7 @@
       }
     },
     "d_10_8": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_8",
         "east": "d_11_8",
@@ -1760,16 +1722,15 @@
         "south": "d_10_9"
       },
       "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_11_8": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_8",
         "east": "d_12_8",
@@ -1778,7 +1739,7 @@
       }
     },
     "d_12_8": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_8",
         "east": "d_13_8",
@@ -1805,7 +1766,7 @@
       }
     },
     "d_15_8": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_8",
         "east": "d_16_8",
@@ -1814,7 +1775,7 @@
       }
     },
     "d_16_8": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_8",
         "east": "d_17_8",
@@ -1823,29 +1784,12 @@
       }
     },
     "d_17_8": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_8",
         "east": "d_18_8",
         "north": "d_17_7",
         "south": "d_17_9"
-      }
-    },
-    "d_18_8": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_17_8",
-        "east": "d_19_8",
-        "north": "d_18_7",
-        "south": "d_18_9"
-      }
-    },
-    "d_19_8": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_8",
-        "north": "d_19_7",
-        "south": "d_19_9"
       },
       "monster": {
         "name": "Sand Viper",
@@ -1856,12 +1800,51 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_0_9": {
+    "d_18_8": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_17_8",
+        "east": "d_19_8",
+        "north": "d_18_7",
+        "south": "d_18_9"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
+      }
+    },
+    "d_19_8": {
       "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_8",
+        "north": "d_19_7",
+        "south": "d_19_9"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
+      }
+    },
+    "d_0_9": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_9",
         "north": "d_0_8",
         "south": "d_0_10"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_1_9": {
@@ -1871,6 +1854,14 @@
         "east": "d_2_9",
         "north": "d_1_8",
         "south": "d_1_10"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_2_9": {
@@ -1883,7 +1874,7 @@
       }
     },
     "d_3_9": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_9",
         "east": "d_4_9",
@@ -1892,7 +1883,7 @@
       }
     },
     "d_4_9": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_9",
         "east": "d_5_9",
@@ -1901,7 +1892,7 @@
       }
     },
     "d_5_9": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_9",
         "east": "d_6_9",
@@ -1910,7 +1901,7 @@
       }
     },
     "d_6_9": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_9",
         "east": "d_7_9",
@@ -1919,19 +1910,12 @@
       }
     },
     "d_7_9": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_9",
         "east": "d_8_9",
         "north": "d_7_8",
         "south": "d_7_10"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_8_9": {
@@ -1941,6 +1925,24 @@
         "east": "d_9_9",
         "north": "d_8_8",
         "south": "d_8_10"
+      }
+    },
+    "d_9_9": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_8_9",
+        "east": "d_10_9",
+        "north": "d_9_8",
+        "south": "d_9_10"
+      }
+    },
+    "d_10_9": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_9_9",
+        "east": "d_11_9",
+        "north": "d_10_8",
+        "south": "d_10_10"
       },
       "monster": {
         "name": "Sand Viper",
@@ -1951,42 +1953,17 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_9_9": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_8_9",
-        "east": "d_10_9",
-        "north": "d_9_8",
-        "south": "d_9_10"
-      }
-    },
-    "d_10_9": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_9_9",
-        "east": "d_11_9",
-        "north": "d_10_8",
-        "south": "d_10_10"
-      }
-    },
     "d_11_9": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_9",
         "east": "d_12_9",
         "north": "d_11_8",
         "south": "d_11_10"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_12_9": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_9",
         "east": "d_13_9",
@@ -1995,7 +1972,7 @@
       }
     },
     "d_13_9": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_9",
         "east": "d_14_9",
@@ -2013,7 +1990,7 @@
       }
     },
     "d_15_9": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_9",
         "east": "d_16_9",
@@ -2022,24 +1999,16 @@
       }
     },
     "d_16_9": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_9",
         "east": "d_17_9",
         "north": "d_16_8",
         "south": "d_16_10"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_17_9": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_9",
         "east": "d_18_9",
@@ -2048,12 +2017,38 @@
       }
     },
     "d_18_9": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_9",
         "east": "d_19_9",
         "north": "d_18_8",
         "south": "d_18_10"
+      }
+    },
+    "d_19_9": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_9",
+        "north": "d_19_8",
+        "south": "d_19_10"
+      }
+    },
+    "d_0_10": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_10",
+        "north": "d_0_9",
+        "south": "d_0_11",
+        "west": "t_9_5"
+      }
+    },
+    "d_1_10": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_0_10",
+        "east": "d_2_10",
+        "north": "d_1_9",
+        "south": "d_1_11"
       },
       "monster": {
         "name": "Sand Viper",
@@ -2064,34 +2059,8 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_19_9": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_9",
-        "north": "d_19_8",
-        "south": "d_19_10"
-      }
-    },
-    "d_0_10": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_10",
-        "north": "d_0_9",
-        "south": "d_0_11",
-        "west": "t_9_5"
-      }
-    },
-    "d_1_10": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_0_10",
-        "east": "d_2_10",
-        "north": "d_1_9",
-        "south": "d_1_11"
-      }
-    },
     "d_2_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_10",
         "east": "d_3_10",
@@ -2100,7 +2069,7 @@
       }
     },
     "d_3_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_10",
         "east": "d_4_10",
@@ -2109,7 +2078,7 @@
       }
     },
     "d_4_10": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_10",
         "east": "d_5_10",
@@ -2118,16 +2087,24 @@
       }
     },
     "d_5_10": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_10",
         "east": "d_6_10",
         "north": "d_5_9",
         "south": "d_5_11"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_6_10": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_10",
         "east": "d_7_10",
@@ -2136,7 +2113,7 @@
       }
     },
     "d_7_10": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_10",
         "east": "d_8_10",
@@ -2145,7 +2122,7 @@
       }
     },
     "d_8_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_10",
         "east": "d_9_10",
@@ -2154,7 +2131,7 @@
       }
     },
     "d_9_10": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_10",
         "east": "d_10_10",
@@ -2163,7 +2140,7 @@
       }
     },
     "d_10_10": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_10",
         "east": "d_11_10",
@@ -2172,7 +2149,7 @@
       }
     },
     "d_11_10": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_10",
         "east": "d_12_10",
@@ -2181,7 +2158,7 @@
       }
     },
     "d_12_10": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_10",
         "east": "d_13_10",
@@ -2190,7 +2167,7 @@
       }
     },
     "d_13_10": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_10",
         "east": "d_14_10",
@@ -2199,16 +2176,24 @@
       }
     },
     "d_14_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_10",
         "east": "d_15_10",
         "north": "d_14_9",
         "south": "d_14_11"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_15_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_10",
         "east": "d_16_10",
@@ -2217,7 +2202,7 @@
       }
     },
     "d_16_10": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_10",
         "east": "d_17_10",
@@ -2226,7 +2211,7 @@
       }
     },
     "d_17_10": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_10",
         "east": "d_18_10",
@@ -2244,7 +2229,7 @@
       }
     },
     "d_19_10": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_10",
         "north": "d_19_9",
@@ -2253,7 +2238,7 @@
       }
     },
     "d_0_11": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_11",
         "north": "d_0_10",
@@ -2261,7 +2246,7 @@
       }
     },
     "d_1_11": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_11",
         "east": "d_2_11",
@@ -2270,7 +2255,7 @@
       }
     },
     "d_2_11": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_11",
         "east": "d_3_11",
@@ -2279,41 +2264,25 @@
       }
     },
     "d_3_11": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_11",
         "east": "d_4_11",
         "north": "d_3_10",
         "south": "d_3_12"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_4_11": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_11",
         "east": "d_5_11",
         "north": "d_4_10",
         "south": "d_4_12"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_5_11": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_11",
         "east": "d_6_11",
@@ -2330,7 +2299,7 @@
       }
     },
     "d_6_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_11",
         "east": "d_7_11",
@@ -2339,7 +2308,7 @@
       }
     },
     "d_7_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_11",
         "east": "d_8_11",
@@ -2348,7 +2317,7 @@
       }
     },
     "d_8_11": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_11",
         "east": "d_9_11",
@@ -2357,12 +2326,30 @@
       }
     },
     "d_9_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_11",
         "east": "d_10_11",
         "north": "d_9_10",
         "south": "d_9_12"
+      }
+    },
+    "d_10_11": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_9_11",
+        "east": "d_11_11",
+        "north": "d_10_10",
+        "south": "d_10_12"
+      }
+    },
+    "d_11_11": {
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_10_11",
+        "east": "d_12_11",
+        "north": "d_11_10",
+        "south": "d_11_12"
       },
       "monster": {
         "name": "Sand Viper",
@@ -2371,31 +2358,6 @@
         "defense": 2,
         "gold": 7,
         "loot": "sand_viper_fang"
-      }
-    },
-    "d_10_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_9_11",
-        "east": "d_11_11",
-        "north": "d_10_10",
-        "south": "d_10_12"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
-      }
-    },
-    "d_11_11": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_10_11",
-        "east": "d_12_11",
-        "north": "d_11_10",
-        "south": "d_11_12"
       }
     },
     "d_12_11": {
@@ -2408,7 +2370,7 @@
       }
     },
     "d_13_11": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_11",
         "east": "d_14_11",
@@ -2417,24 +2379,16 @@
       }
     },
     "d_14_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_11",
         "east": "d_15_11",
         "north": "d_14_10",
         "south": "d_14_12"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_15_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_11",
         "east": "d_16_11",
@@ -2443,12 +2397,20 @@
       }
     },
     "d_16_11": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_11",
         "east": "d_17_11",
         "north": "d_16_10",
         "south": "d_16_12"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_17_11": {
@@ -2458,17 +2420,10 @@
         "east": "d_18_11",
         "north": "d_17_10",
         "south": "d_17_12"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_18_11": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_11",
         "east": "d_19_11",
@@ -2477,19 +2432,11 @@
       }
     },
     "d_19_11": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_11",
         "north": "d_19_10",
         "south": "d_19_12"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_0_12": {
@@ -2498,6 +2445,13 @@
         "east": "d_1_12",
         "north": "d_0_11",
         "south": "d_0_13"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_1_12": {
@@ -2510,7 +2464,7 @@
       }
     },
     "d_2_12": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_12",
         "east": "d_3_12",
@@ -2519,7 +2473,7 @@
       }
     },
     "d_3_12": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_12",
         "east": "d_4_12",
@@ -2528,12 +2482,21 @@
       }
     },
     "d_4_12": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_12",
         "east": "d_5_12",
         "north": "d_4_11",
         "south": "d_4_13"
+      }
+    },
+    "d_5_12": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_4_12",
+        "east": "d_6_12",
+        "north": "d_5_11",
+        "south": "d_5_13"
       },
       "monster": {
         "name": "Sand Viper",
@@ -2542,15 +2505,6 @@
         "defense": 2,
         "gold": 7,
         "loot": "sand_viper_fang"
-      }
-    },
-    "d_5_12": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_4_12",
-        "east": "d_6_12",
-        "north": "d_5_11",
-        "south": "d_5_13"
       }
     },
     "d_6_12": {
@@ -2572,7 +2526,7 @@
       }
     },
     "d_8_12": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_12",
         "east": "d_9_12",
@@ -2581,16 +2535,23 @@
       }
     },
     "d_9_12": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_12",
         "east": "d_10_12",
         "north": "d_9_11",
         "south": "d_9_13"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_10_12": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_12",
         "east": "d_11_12",
@@ -2599,20 +2560,12 @@
       }
     },
     "d_11_12": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_12",
         "east": "d_12_12",
         "north": "d_11_11",
         "south": "d_11_13"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_12_12": {
@@ -2625,7 +2578,7 @@
       }
     },
     "d_13_12": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_12",
         "east": "d_14_12",
@@ -2634,16 +2587,24 @@
       }
     },
     "d_14_12": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_12",
         "east": "d_15_12",
         "north": "d_14_11",
         "south": "d_14_13"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_15_12": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_12",
         "east": "d_16_12",
@@ -2661,19 +2622,12 @@
       }
     },
     "d_17_12": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_12",
         "east": "d_18_12",
         "north": "d_17_11",
         "south": "d_17_13"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_18_12": {
@@ -2683,18 +2637,10 @@
         "east": "d_19_12",
         "north": "d_18_11",
         "south": "d_18_13"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_19_12": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_12",
         "north": "d_19_11",
@@ -2702,7 +2648,7 @@
       }
     },
     "d_0_13": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_13",
         "north": "d_0_12",
@@ -2710,24 +2656,16 @@
       }
     },
     "d_1_13": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_13",
         "east": "d_2_13",
         "north": "d_1_12",
         "south": "d_1_14"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_2_13": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_13",
         "east": "d_3_13",
@@ -2736,7 +2674,7 @@
       }
     },
     "d_3_13": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_13",
         "east": "d_4_13",
@@ -2745,7 +2683,7 @@
       }
     },
     "d_4_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_13",
         "east": "d_5_13",
@@ -2754,7 +2692,7 @@
       }
     },
     "d_5_13": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_13",
         "east": "d_6_13",
@@ -2763,75 +2701,12 @@
       }
     },
     "d_6_13": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_13",
         "east": "d_7_13",
         "north": "d_6_12",
         "south": "d_6_14"
-      }
-    },
-    "d_7_13": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_6_13",
-        "east": "d_8_13",
-        "north": "d_7_12",
-        "south": "d_7_14"
-      }
-    },
-    "d_8_13": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_7_13",
-        "east": "d_9_13",
-        "north": "d_8_12",
-        "south": "d_8_14"
-      }
-    },
-    "d_9_13": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_8_13",
-        "east": "d_10_13",
-        "north": "d_9_12",
-        "south": "d_9_14"
-      }
-    },
-    "d_10_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_9_13",
-        "east": "d_11_13",
-        "north": "d_10_12",
-        "south": "d_10_14"
-      }
-    },
-    "d_11_13": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_10_13",
-        "east": "d_12_13",
-        "north": "d_11_12",
-        "south": "d_11_14"
-      }
-    },
-    "d_12_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_11_13",
-        "east": "d_13_13",
-        "north": "d_12_12",
-        "south": "d_12_14"
-      }
-    },
-    "d_13_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_12_13",
-        "east": "d_14_13",
-        "north": "d_13_12",
-        "south": "d_13_14"
       },
       "monster": {
         "name": "Sand Viper",
@@ -2840,6 +2715,76 @@
         "defense": 2,
         "gold": 7,
         "loot": "sand_viper_fang"
+      }
+    },
+    "d_7_13": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_6_13",
+        "east": "d_8_13",
+        "north": "d_7_12",
+        "south": "d_7_14"
+      }
+    },
+    "d_8_13": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_7_13",
+        "east": "d_9_13",
+        "north": "d_8_12",
+        "south": "d_8_14"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
+      }
+    },
+    "d_9_13": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_8_13",
+        "east": "d_10_13",
+        "north": "d_9_12",
+        "south": "d_9_14"
+      }
+    },
+    "d_10_13": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_9_13",
+        "east": "d_11_13",
+        "north": "d_10_12",
+        "south": "d_10_14"
+      }
+    },
+    "d_11_13": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_10_13",
+        "east": "d_12_13",
+        "north": "d_11_12",
+        "south": "d_11_14"
+      }
+    },
+    "d_12_13": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_11_13",
+        "east": "d_13_13",
+        "north": "d_12_12",
+        "south": "d_12_14"
+      }
+    },
+    "d_13_13": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_12_13",
+        "east": "d_14_13",
+        "north": "d_13_12",
+        "south": "d_13_14"
       }
     },
     "d_14_13": {
@@ -2852,7 +2797,7 @@
       }
     },
     "d_15_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_13",
         "east": "d_16_13",
@@ -2861,7 +2806,7 @@
       }
     },
     "d_16_13": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_13",
         "east": "d_17_13",
@@ -2870,7 +2815,7 @@
       }
     },
     "d_17_13": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_13",
         "east": "d_18_13",
@@ -2879,7 +2824,7 @@
       }
     },
     "d_18_13": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_13",
         "east": "d_19_13",
@@ -2888,7 +2833,7 @@
       }
     },
     "d_19_13": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_13",
         "north": "d_19_12",
@@ -2896,7 +2841,7 @@
       }
     },
     "d_0_14": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_14",
         "north": "d_0_13",
@@ -2904,7 +2849,7 @@
       }
     },
     "d_1_14": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_14",
         "east": "d_2_14",
@@ -2913,7 +2858,7 @@
       }
     },
     "d_2_14": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_14",
         "east": "d_3_14",
@@ -2922,7 +2867,7 @@
       }
     },
     "d_3_14": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_14",
         "east": "d_4_14",
@@ -2931,7 +2876,7 @@
       }
     },
     "d_4_14": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_14",
         "east": "d_5_14",
@@ -2940,7 +2885,7 @@
       }
     },
     "d_5_14": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_14",
         "east": "d_6_14",
@@ -2949,7 +2894,7 @@
       }
     },
     "d_6_14": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_14",
         "east": "d_7_14",
@@ -2964,30 +2909,15 @@
         "east": "d_8_14",
         "north": "d_7_13",
         "south": "d_7_15"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_8_14": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_14",
         "east": "d_9_14",
         "north": "d_8_13",
         "south": "d_8_15"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_9_14": {
@@ -2997,17 +2927,10 @@
         "east": "d_10_14",
         "north": "d_9_13",
         "south": "d_9_15"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_10_14": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_14",
         "east": "d_11_14",
@@ -3016,7 +2939,7 @@
       }
     },
     "d_11_14": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_14",
         "east": "d_12_14",
@@ -3025,7 +2948,7 @@
       }
     },
     "d_12_14": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_14",
         "east": "d_13_14",
@@ -3034,12 +2957,21 @@
       }
     },
     "d_13_14": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_14",
         "east": "d_14_14",
         "north": "d_13_13",
         "south": "d_13_15"
+      }
+    },
+    "d_14_14": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_13_14",
+        "east": "d_15_14",
+        "north": "d_14_13",
+        "south": "d_14_15"
       },
       "monster": {
         "name": "Sand Viper",
@@ -3050,26 +2982,24 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_14_14": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_13_14",
-        "east": "d_15_14",
-        "north": "d_14_13",
-        "south": "d_14_15"
-      }
-    },
     "d_15_14": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_14",
         "east": "d_16_14",
         "north": "d_15_13",
         "south": "d_15_15"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_16_14": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_14",
         "east": "d_17_14",
@@ -3078,7 +3008,7 @@
       }
     },
     "d_17_14": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_14",
         "east": "d_18_14",
@@ -3087,16 +3017,24 @@
       }
     },
     "d_18_14": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_14",
         "east": "d_19_14",
         "north": "d_18_13",
         "south": "d_18_15"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_19_14": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_14",
         "north": "d_19_13",
@@ -3104,7 +3042,7 @@
       }
     },
     "d_0_15": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_15",
         "north": "d_0_14",
@@ -3112,7 +3050,7 @@
       }
     },
     "d_1_15": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_15",
         "east": "d_2_15",
@@ -3130,12 +3068,30 @@
       }
     },
     "d_3_15": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_15",
         "east": "d_4_15",
         "north": "d_3_14",
         "south": "d_3_16"
+      }
+    },
+    "d_4_15": {
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_3_15",
+        "east": "d_5_15",
+        "north": "d_4_14",
+        "south": "d_4_16"
+      }
+    },
+    "d_5_15": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_4_15",
+        "east": "d_6_15",
+        "north": "d_5_14",
+        "south": "d_5_16"
       },
       "monster": {
         "name": "Roc",
@@ -3145,34 +3101,8 @@
         "gold": 12
       }
     },
-    "d_4_15": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_3_15",
-        "east": "d_5_15",
-        "north": "d_4_14",
-        "south": "d_4_16"
-      }
-    },
-    "d_5_15": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_4_15",
-        "east": "d_6_15",
-        "north": "d_5_14",
-        "south": "d_5_16"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
-      }
-    },
     "d_6_15": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_15",
         "east": "d_7_15",
@@ -3181,24 +3111,16 @@
       }
     },
     "d_7_15": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_15",
         "east": "d_8_15",
         "north": "d_7_14",
         "south": "d_7_16"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_8_15": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_15",
         "east": "d_9_15",
@@ -3215,7 +3137,7 @@
       }
     },
     "d_9_15": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_15",
         "east": "d_10_15",
@@ -3224,20 +3146,12 @@
       }
     },
     "d_10_15": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_15",
         "east": "d_11_15",
         "north": "d_10_14",
         "south": "d_10_16"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_11_15": {
@@ -3249,15 +3163,16 @@
         "south": "d_11_16"
       },
       "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_12_15": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_15",
         "east": "d_13_15",
@@ -3266,25 +3181,41 @@
       }
     },
     "d_13_15": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_15",
         "east": "d_14_15",
         "north": "d_13_14",
         "south": "d_13_16"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_14_15": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_15",
         "east": "d_15_15",
         "north": "d_14_14",
         "south": "d_14_16"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_15_15": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_15",
         "east": "d_16_15",
@@ -3293,7 +3224,7 @@
       }
     },
     "d_16_15": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_15",
         "east": "d_17_15",
@@ -3302,7 +3233,7 @@
       }
     },
     "d_17_15": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_16_15",
         "east": "d_18_15",
@@ -3311,16 +3242,24 @@
       }
     },
     "d_18_15": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_15",
         "east": "d_19_15",
         "north": "d_18_14",
         "south": "d_18_16"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_19_15": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_15",
         "north": "d_19_14",
@@ -3328,7 +3267,7 @@
       }
     },
     "d_0_16": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "east": "d_1_16",
         "north": "d_0_15",
@@ -3336,7 +3275,7 @@
       }
     },
     "d_1_16": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_16",
         "east": "d_2_16",
@@ -3345,7 +3284,7 @@
       }
     },
     "d_2_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_16",
         "east": "d_3_16",
@@ -3360,33 +3299,6 @@
         "east": "d_4_16",
         "north": "d_3_15",
         "south": "d_3_17"
-      }
-    },
-    "d_4_16": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_3_16",
-        "east": "d_5_16",
-        "north": "d_4_15",
-        "south": "d_4_17"
-      }
-    },
-    "d_5_16": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_4_16",
-        "east": "d_6_16",
-        "north": "d_5_15",
-        "south": "d_5_17"
-      }
-    },
-    "d_6_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_5_16",
-        "east": "d_7_16",
-        "north": "d_6_15",
-        "south": "d_6_17"
       },
       "monster": {
         "name": "Sand Viper",
@@ -3397,8 +3309,35 @@
         "loot": "sand_viper_fang"
       }
     },
+    "d_4_16": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_3_16",
+        "east": "d_5_16",
+        "north": "d_4_15",
+        "south": "d_4_17"
+      }
+    },
+    "d_5_16": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_4_16",
+        "east": "d_6_16",
+        "north": "d_5_15",
+        "south": "d_5_17"
+      }
+    },
+    "d_6_16": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_5_16",
+        "east": "d_7_16",
+        "north": "d_6_15",
+        "south": "d_6_17"
+      }
+    },
     "d_7_16": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_16",
         "east": "d_8_16",
@@ -3407,7 +3346,7 @@
       }
     },
     "d_8_16": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_16",
         "east": "d_9_16",
@@ -3416,7 +3355,7 @@
       }
     },
     "d_9_16": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_16",
         "east": "d_10_16",
@@ -3425,23 +3364,16 @@
       }
     },
     "d_10_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_16",
         "east": "d_11_16",
         "north": "d_10_15",
         "south": "d_10_17"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_11_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_16",
         "east": "d_12_16",
@@ -3450,12 +3382,20 @@
       }
     },
     "d_12_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_16",
         "east": "d_13_16",
         "north": "d_12_15",
         "south": "d_12_17"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_13_16": {
@@ -3468,24 +3408,16 @@
       }
     },
     "d_14_16": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_16",
         "east": "d_15_16",
         "north": "d_14_15",
         "south": "d_14_17"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_15_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_16",
         "east": "d_16_16",
@@ -3512,7 +3444,7 @@
       }
     },
     "d_18_16": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_16",
         "east": "d_19_16",
@@ -3521,7 +3453,7 @@
       }
     },
     "d_19_16": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_16",
         "north": "d_19_15",
@@ -3537,7 +3469,7 @@
       }
     },
     "d_1_17": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_17",
         "east": "d_2_17",
@@ -3546,7 +3478,7 @@
       }
     },
     "d_2_17": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_17",
         "east": "d_3_17",
@@ -3555,24 +3487,16 @@
       }
     },
     "d_3_17": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_17",
         "east": "d_4_17",
         "north": "d_3_16",
         "south": "d_3_18"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_4_17": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_17",
         "east": "d_5_17",
@@ -3581,41 +3505,25 @@
       }
     },
     "d_5_17": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_17",
         "east": "d_6_17",
         "north": "d_5_16",
         "south": "d_5_18"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_6_17": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_17",
         "east": "d_7_17",
         "north": "d_6_16",
         "south": "d_6_18"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_7_17": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_17",
         "east": "d_8_17",
@@ -3624,7 +3532,7 @@
       }
     },
     "d_8_17": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_17",
         "east": "d_9_17",
@@ -3642,7 +3550,7 @@
       }
     },
     "d_10_17": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_17",
         "east": "d_11_17",
@@ -3651,7 +3559,7 @@
       }
     },
     "d_11_17": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_17",
         "east": "d_12_17",
@@ -3660,7 +3568,7 @@
       }
     },
     "d_12_17": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_17",
         "east": "d_13_17",
@@ -3678,64 +3586,12 @@
       }
     },
     "d_14_17": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_17",
         "east": "d_15_17",
         "north": "d_14_16",
         "south": "d_14_18"
-      }
-    },
-    "d_15_17": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_14_17",
-        "east": "d_16_17",
-        "north": "d_15_16",
-        "south": "d_15_18"
-      }
-    },
-    "d_16_17": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_15_17",
-        "east": "d_17_17",
-        "north": "d_16_16",
-        "south": "d_16_18"
-      }
-    },
-    "d_17_17": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_16_17",
-        "east": "d_18_17",
-        "north": "d_17_16",
-        "south": "d_17_18"
-      }
-    },
-    "d_18_17": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_17_17",
-        "east": "d_19_17",
-        "north": "d_18_16",
-        "south": "d_18_18"
-      }
-    },
-    "d_19_17": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_17",
-        "north": "d_19_16",
-        "south": "d_19_18"
-      }
-    },
-    "d_0_18": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_18",
-        "north": "d_0_17",
-        "south": "d_0_19"
       },
       "monster": {
         "name": "Sand Viper",
@@ -3746,8 +3602,60 @@
         "loot": "sand_viper_fang"
       }
     },
+    "d_15_17": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_14_17",
+        "east": "d_16_17",
+        "north": "d_15_16",
+        "south": "d_15_18"
+      }
+    },
+    "d_16_17": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_15_17",
+        "east": "d_17_17",
+        "north": "d_16_16",
+        "south": "d_16_18"
+      }
+    },
+    "d_17_17": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_16_17",
+        "east": "d_18_17",
+        "north": "d_17_16",
+        "south": "d_17_18"
+      }
+    },
+    "d_18_17": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_17_17",
+        "east": "d_19_17",
+        "north": "d_18_16",
+        "south": "d_18_18"
+      }
+    },
+    "d_19_17": {
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_17",
+        "north": "d_19_16",
+        "south": "d_19_18"
+      }
+    },
+    "d_0_18": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_18",
+        "north": "d_0_17",
+        "south": "d_0_19"
+      }
+    },
     "d_1_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_0_18",
         "east": "d_2_18",
@@ -3756,7 +3664,7 @@
       }
     },
     "d_2_18": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_18",
         "east": "d_3_18",
@@ -3765,7 +3673,7 @@
       }
     },
     "d_3_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_2_18",
         "east": "d_4_18",
@@ -3774,23 +3682,16 @@
       }
     },
     "d_4_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_3_18",
         "east": "d_5_18",
         "north": "d_4_17",
         "south": "d_4_19"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_5_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_18",
         "east": "d_6_18",
@@ -3799,23 +3700,16 @@
       }
     },
     "d_6_18": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_18",
         "east": "d_7_18",
         "north": "d_6_17",
         "south": "d_6_19"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "d_7_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_18",
         "east": "d_8_18",
@@ -3824,7 +3718,7 @@
       }
     },
     "d_8_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_18",
         "east": "d_9_18",
@@ -3839,18 +3733,10 @@
         "east": "d_10_18",
         "north": "d_9_17",
         "south": "d_9_19"
-      },
-      "monster": {
-        "name": "Sand Viper",
-        "hp": 10,
-        "attack": 4,
-        "defense": 2,
-        "gold": 7,
-        "loot": "sand_viper_fang"
       }
     },
     "d_10_18": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_18",
         "east": "d_11_18",
@@ -3859,21 +3745,37 @@
       }
     },
     "d_11_18": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_18",
         "east": "d_12_18",
         "north": "d_11_17",
         "south": "d_11_19"
+      },
+      "monster": {
+        "name": "Roc",
+        "hp": 15,
+        "attack": 5,
+        "defense": 3,
+        "gold": 12
       }
     },
     "d_12_18": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_18",
         "east": "d_13_18",
         "north": "d_12_17",
         "south": "d_12_19"
+      }
+    },
+    "d_13_18": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_12_18",
+        "east": "d_14_18",
+        "north": "d_13_17",
+        "south": "d_13_19"
       },
       "monster": {
         "name": "Sand Viper",
@@ -3884,17 +3786,8 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_13_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_12_18",
-        "east": "d_14_18",
-        "north": "d_13_17",
-        "south": "d_13_19"
-      }
-    },
     "d_14_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_13_18",
         "east": "d_15_18",
@@ -3903,62 +3796,12 @@
       }
     },
     "d_15_18": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_18",
         "east": "d_16_18",
         "north": "d_15_17",
         "south": "d_15_19"
-      }
-    },
-    "d_16_18": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_15_18",
-        "east": "d_17_18",
-        "north": "d_16_17",
-        "south": "d_16_19"
-      }
-    },
-    "d_17_18": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_16_18",
-        "east": "d_18_18",
-        "north": "d_17_17",
-        "south": "d_17_19"
-      }
-    },
-    "d_18_18": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_17_18",
-        "east": "d_19_18",
-        "north": "d_18_17",
-        "south": "d_18_19"
-      }
-    },
-    "d_19_18": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_18_18",
-        "north": "d_19_17",
-        "south": "d_19_19"
-      }
-    },
-    "d_0_19": {
-      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "east": "d_1_19",
-        "north": "d_0_18"
-      }
-    },
-    "d_1_19": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
-      "exits": {
-        "west": "d_0_19",
-        "east": "d_2_19",
-        "north": "d_1_18"
       },
       "monster": {
         "name": "Sand Viper",
@@ -3969,8 +3812,66 @@
         "loot": "sand_viper_fang"
       }
     },
-    "d_2_19": {
+    "d_16_18": {
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_15_18",
+        "east": "d_17_18",
+        "north": "d_16_17",
+        "south": "d_16_19"
+      }
+    },
+    "d_17_18": {
       "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_16_18",
+        "east": "d_18_18",
+        "north": "d_17_17",
+        "south": "d_17_19"
+      }
+    },
+    "d_18_18": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_17_18",
+        "east": "d_19_18",
+        "north": "d_18_17",
+        "south": "d_18_19"
+      }
+    },
+    "d_19_18": {
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_18_18",
+        "north": "d_19_17",
+        "south": "d_19_19"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
+      }
+    },
+    "d_0_19": {
+      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "east": "d_1_19",
+        "north": "d_0_18"
+      }
+    },
+    "d_1_19": {
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "exits": {
+        "west": "d_0_19",
+        "east": "d_2_19",
+        "north": "d_1_18"
+      }
+    },
+    "d_2_19": {
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_1_19",
         "east": "d_3_19",
@@ -3994,7 +3895,7 @@
       }
     },
     "d_5_19": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_4_19",
         "east": "d_6_19",
@@ -4002,7 +3903,7 @@
       }
     },
     "d_6_19": {
-      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_5_19",
         "east": "d_7_19",
@@ -4010,15 +3911,23 @@
       }
     },
     "d_7_19": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_6_19",
         "east": "d_8_19",
         "north": "d_7_18"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_8_19": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_7_19",
         "east": "d_9_19",
@@ -4026,24 +3935,40 @@
       }
     },
     "d_9_19": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_8_19",
         "east": "d_10_19",
         "north": "d_9_18"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_10_19": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_9_19",
         "east": "d_11_19",
         "north": "d_10_18",
         "south": "area4_gateway"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_11_19": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_10_19",
         "east": "d_12_19",
@@ -4051,7 +3976,7 @@
       }
     },
     "d_12_19": {
-      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_11_19",
         "east": "d_13_19",
@@ -4059,7 +3984,7 @@
       }
     },
     "d_13_19": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_12_19",
         "east": "d_14_19",
@@ -4075,7 +4000,7 @@
       }
     },
     "d_15_19": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a scorching dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_14_19",
         "east": "d_16_19",
@@ -4083,7 +4008,7 @@
       }
     },
     "d_16_19": {
-      "description": "You are in a windswept expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_15_19",
         "east": "d_17_19",
@@ -4099,29 +4024,30 @@
       }
     },
     "d_18_19": {
-      "description": "You are in a scorching expanse of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast dune sea of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_17_19",
         "east": "d_19_19",
         "north": "d_18_18"
+      },
+      "monster": {
+        "name": "Sand Viper",
+        "hp": 10,
+        "attack": 4,
+        "defense": 2,
+        "gold": 7,
+        "loot": "sand_viper_fang"
       }
     },
     "d_19_19": {
-      "description": "You are in a windswept dune sea of the desert. The sun beats down relentlessly.",
+      "description": "You are in a vast expanse of the desert. The sun beats down relentlessly.",
       "exits": {
         "west": "d_18_19",
         "north": "d_19_18"
-      },
-      "monster": {
-        "name": "Roc",
-        "hp": 15,
-        "attack": 5,
-        "defense": 3,
-        "gold": 12
       }
     },
     "m_0_0": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "east": "m_1_0",
         "south": "m_0_1"
@@ -4136,7 +4062,7 @@
       }
     },
     "m_2_0": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_1_0",
         "east": "m_3_0",
@@ -4144,7 +4070,7 @@
       }
     },
     "m_3_0": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_2_0",
         "east": "m_4_0",
@@ -4152,14 +4078,14 @@
       }
     },
     "m_4_0": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_3_0",
         "south": "m_4_1"
       }
     },
     "m_0_1": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "east": "m_1_1",
         "north": "m_0_0",
@@ -4167,7 +4093,7 @@
       }
     },
     "m_1_1": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_0_1",
         "east": "m_2_1",
@@ -4180,10 +4106,11 @@
           "iron_sword",
           "ring_of_protection"
         ]
-      }
+      },
+      "bank": true
     },
     "m_2_1": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_1_1",
         "east": "m_3_1",
@@ -4192,7 +4119,7 @@
       }
     },
     "m_3_1": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_2_1",
         "east": "m_4_1",
@@ -4201,7 +4128,7 @@
       }
     },
     "m_4_1": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_3_1",
         "north": "m_4_0",
@@ -4217,7 +4144,7 @@
       }
     },
     "m_1_2": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_0_2",
         "east": "m_2_2",
@@ -4226,7 +4153,7 @@
       }
     },
     "m_2_2": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_1_2",
         "east": "m_3_2",
@@ -4238,7 +4165,7 @@
       }
     },
     "m_3_2": {
-      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_2_2",
         "east": "m_4_2",
@@ -4247,7 +4174,7 @@
       }
     },
     "m_4_2": {
-      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_3_2",
         "north": "m_4_1",
@@ -4255,7 +4182,7 @@
       }
     },
     "m_0_3": {
-      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "east": "m_1_3",
         "north": "m_0_2",
@@ -4263,7 +4190,7 @@
       }
     },
     "m_1_3": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_0_3",
         "east": "m_2_3",
@@ -4272,7 +4199,7 @@
       }
     },
     "m_2_3": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_1_3",
         "east": "m_3_3",
@@ -4281,7 +4208,7 @@
       }
     },
     "m_3_3": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_2_3",
         "east": "m_4_3",
@@ -4295,7 +4222,7 @@
       "quest_object": "oasis_water"
     },
     "m_4_3": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_3_3",
         "north": "m_4_2",
@@ -4310,7 +4237,7 @@
       }
     },
     "m_1_4": {
-      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_0_4",
         "east": "m_2_4",
@@ -4318,7 +4245,7 @@
       }
     },
     "m_2_4": {
-      "description": "You are in a colorful oasis bazaar of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling oasis bazaar of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_1_4",
         "east": "m_3_4",
@@ -4327,7 +4254,7 @@
       }
     },
     "m_3_4": {
-      "description": "You are in a colorful market square of the desert. The smell of exotic spices fills the air.",
+      "description": "You are in a bustling market square of the desert. The smell of exotic spices fills the air.",
       "exits": {
         "west": "m_2_4",
         "east": "m_4_4",
@@ -4350,7 +4277,7 @@
       }
     },
     "t_0_0": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_0",
         "south": "t_0_1"
@@ -4365,7 +4292,7 @@
       }
     },
     "t_2_0": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_0",
         "east": "t_3_0",
@@ -4373,7 +4300,7 @@
       }
     },
     "t_3_0": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_0",
         "east": "t_4_0",
@@ -4381,7 +4308,7 @@
       }
     },
     "t_4_0": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_0",
         "east": "t_5_0",
@@ -4389,7 +4316,7 @@
       }
     },
     "t_5_0": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_0",
         "east": "t_6_0",
@@ -4397,7 +4324,7 @@
       }
     },
     "t_6_0": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_0",
         "east": "t_7_0",
@@ -4421,7 +4348,7 @@
       }
     },
     "t_9_0": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_0",
         "south": "t_9_1"
@@ -4436,7 +4363,7 @@
       }
     },
     "t_1_1": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_1",
         "east": "t_2_1",
@@ -4445,7 +4372,7 @@
       }
     },
     "t_2_1": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_1",
         "east": "t_3_1",
@@ -4454,7 +4381,7 @@
       }
     },
     "t_3_1": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_1",
         "east": "t_4_1",
@@ -4463,7 +4390,7 @@
       }
     },
     "t_4_1": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_1",
         "east": "t_5_1",
@@ -4472,7 +4399,7 @@
       }
     },
     "t_5_1": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_1",
         "east": "t_6_1",
@@ -4481,7 +4408,7 @@
       }
     },
     "t_6_1": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_1",
         "east": "t_7_1",
@@ -4490,7 +4417,7 @@
       }
     },
     "t_7_1": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_1",
         "east": "t_8_1",
@@ -4499,7 +4426,7 @@
       }
     },
     "t_8_1": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_1",
         "east": "t_9_1",
@@ -4508,7 +4435,7 @@
       }
     },
     "t_9_1": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_1",
         "north": "t_9_0",
@@ -4516,7 +4443,7 @@
       }
     },
     "t_0_2": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_2",
         "north": "t_0_1",
@@ -4524,7 +4451,7 @@
       }
     },
     "t_1_2": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_2",
         "east": "t_2_2",
@@ -4533,7 +4460,7 @@
       }
     },
     "t_2_2": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_2",
         "east": "t_3_2",
@@ -4551,7 +4478,7 @@
       }
     },
     "t_4_2": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_2",
         "east": "t_5_2",
@@ -4560,7 +4487,7 @@
       }
     },
     "t_5_2": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_2",
         "east": "t_6_2",
@@ -4569,7 +4496,7 @@
       }
     },
     "t_6_2": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_2",
         "east": "t_7_2",
@@ -4578,7 +4505,7 @@
       }
     },
     "t_7_2": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_2",
         "east": "t_8_2",
@@ -4596,7 +4523,7 @@
       }
     },
     "t_9_2": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_2",
         "north": "t_9_1",
@@ -4612,7 +4539,7 @@
       }
     },
     "t_1_3": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_3",
         "east": "t_2_3",
@@ -4645,7 +4572,7 @@
       }
     },
     "t_4_3": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_3",
         "east": "t_5_3",
@@ -4654,7 +4581,7 @@
       }
     },
     "t_5_3": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_3",
         "east": "t_6_3",
@@ -4672,7 +4599,7 @@
       }
     },
     "t_7_3": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_3",
         "east": "t_8_3",
@@ -4681,7 +4608,7 @@
       }
     },
     "t_8_3": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_3",
         "east": "t_9_3",
@@ -4690,7 +4617,7 @@
       }
     },
     "t_9_3": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_3",
         "north": "t_9_2",
@@ -4698,7 +4625,7 @@
       }
     },
     "t_0_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_4",
         "north": "t_0_3",
@@ -4715,7 +4642,7 @@
       }
     },
     "t_2_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_4",
         "east": "t_3_4",
@@ -4724,7 +4651,7 @@
       }
     },
     "t_3_4": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_4",
         "east": "t_4_4",
@@ -4733,7 +4660,7 @@
       }
     },
     "t_4_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_4",
         "east": "t_5_4",
@@ -4742,7 +4669,7 @@
       }
     },
     "t_5_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_4",
         "east": "t_6_4",
@@ -4751,7 +4678,7 @@
       }
     },
     "t_6_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_4",
         "east": "t_7_4",
@@ -4760,7 +4687,7 @@
       }
     },
     "t_7_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_4",
         "east": "t_8_4",
@@ -4769,7 +4696,7 @@
       }
     },
     "t_8_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_4",
         "east": "t_9_4",
@@ -4778,7 +4705,7 @@
       }
     },
     "t_9_4": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_4",
         "north": "t_9_3",
@@ -4786,7 +4713,7 @@
       }
     },
     "t_0_5": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_5",
         "north": "t_0_4",
@@ -4794,7 +4721,7 @@
       }
     },
     "t_1_5": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_5",
         "east": "t_2_5",
@@ -4803,7 +4730,7 @@
       }
     },
     "t_2_5": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_5",
         "east": "t_3_5",
@@ -4812,7 +4739,7 @@
       }
     },
     "t_3_5": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_5",
         "east": "t_4_5",
@@ -4821,7 +4748,7 @@
       }
     },
     "t_4_5": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_5",
         "east": "t_5_5",
@@ -4830,7 +4757,7 @@
       }
     },
     "t_5_5": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_5",
         "east": "t_6_5",
@@ -4854,7 +4781,7 @@
       }
     },
     "t_7_5": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_5",
         "east": "t_8_5",
@@ -4872,7 +4799,7 @@
       }
     },
     "t_9_5": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_5",
         "north": "t_9_4",
@@ -4881,7 +4808,7 @@
       }
     },
     "t_0_6": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_6",
         "north": "t_0_5",
@@ -4889,7 +4816,7 @@
       }
     },
     "t_1_6": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_6",
         "east": "t_2_6",
@@ -4916,7 +4843,7 @@
       }
     },
     "t_4_6": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_6",
         "east": "t_5_6",
@@ -4934,7 +4861,7 @@
       }
     },
     "t_6_6": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_6",
         "east": "t_7_6",
@@ -4943,7 +4870,7 @@
       }
     },
     "t_7_6": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_6",
         "east": "t_8_6",
@@ -4961,7 +4888,7 @@
       }
     },
     "t_9_6": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_6",
         "north": "t_9_5",
@@ -4969,7 +4896,7 @@
       }
     },
     "t_0_7": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_7",
         "north": "t_0_6",
@@ -4977,7 +4904,7 @@
       }
     },
     "t_1_7": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_7",
         "east": "t_2_7",
@@ -4995,7 +4922,7 @@
       }
     },
     "t_3_7": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_7",
         "east": "t_4_7",
@@ -5022,7 +4949,7 @@
       }
     },
     "t_6_7": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_7",
         "east": "t_7_7",
@@ -5040,7 +4967,7 @@
       }
     },
     "t_8_7": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_7",
         "east": "t_9_7",
@@ -5049,7 +4976,7 @@
       }
     },
     "t_9_7": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_7",
         "north": "t_9_6",
@@ -5057,7 +4984,7 @@
       }
     },
     "t_0_8": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_8",
         "north": "t_0_7",
@@ -5065,7 +4992,7 @@
       }
     },
     "t_1_8": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_0_8",
         "east": "t_2_8",
@@ -5074,7 +5001,7 @@
       }
     },
     "t_2_8": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_8",
         "east": "t_3_8",
@@ -5083,7 +5010,7 @@
       }
     },
     "t_3_8": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_8",
         "east": "t_4_8",
@@ -5092,7 +5019,7 @@
       }
     },
     "t_4_8": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_8",
         "east": "t_5_8",
@@ -5101,7 +5028,7 @@
       }
     },
     "t_5_8": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_4_8",
         "east": "t_6_8",
@@ -5110,7 +5037,7 @@
       }
     },
     "t_6_8": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_8",
         "east": "t_7_8",
@@ -5128,7 +5055,7 @@
       }
     },
     "t_8_8": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_8",
         "east": "t_9_8",
@@ -5137,7 +5064,7 @@
       }
     },
     "t_9_8": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_8",
         "north": "t_9_7",
@@ -5145,7 +5072,7 @@
       }
     },
     "t_0_9": {
-      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "east": "t_1_9",
         "north": "t_0_8"
@@ -5160,7 +5087,7 @@
       }
     },
     "t_2_9": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_1_9",
         "east": "t_3_9",
@@ -5168,7 +5095,7 @@
       }
     },
     "t_3_9": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone village of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_2_9",
         "east": "t_4_9",
@@ -5176,7 +5103,7 @@
       }
     },
     "t_4_9": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_3_9",
         "east": "t_5_9",
@@ -5192,7 +5119,7 @@
       }
     },
     "t_6_9": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_5_9",
         "east": "t_7_9",
@@ -5200,7 +5127,7 @@
       }
     },
     "t_7_9": {
-      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_6_9",
         "east": "t_8_9",
@@ -5208,7 +5135,7 @@
       }
     },
     "t_8_9": {
-      "description": "You are in a quiet village of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_7_9",
         "east": "t_9_9",
@@ -5216,7 +5143,7 @@
       }
     },
     "t_9_9": {
-      "description": "You are in a quiet tribal ground of the desert. The Mobashi people watch you silently.",
+      "description": "You are in a sandstone tribal ground of the desert. The Mobashi people watch you silently.",
       "exits": {
         "west": "t_8_9",
         "north": "t_9_8"

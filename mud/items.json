@@ -150,5 +150,18 @@
     "runecarved_key": {
         "name": "Runecarved Key",
         "type": "quest"
+    },
+    "stardust": {
+        "name": "Stardust",
+        "type": "material"
+    },
+    "aetherial_essence": {
+        "name": "Aetherial Essence",
+        "type": "material"
+    },
+    "starcaller_staff": {
+        "name": "Starcaller's Staff",
+        "type": "weapon",
+        "attack": 25
     }
 }

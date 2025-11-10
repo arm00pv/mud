@@ -1,0 +1,2278 @@
+{
+  "name": "The Aetherium",
+  "start_room": "entrance",
+  "rooms": {
+    "aether_0_0": {
+      "description": "You are floating in a cosmic void at (0, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_0",
+        "descend": "aether_0_1"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_0_1": {
+      "description": "You are floating in a cosmic void at (0, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_1",
+        "ascend": "aether_0_0",
+        "descend": "aether_0_2"
+      }
+    },
+    "aether_0_2": {
+      "description": "You are floating in a cosmic void at (0, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_2",
+        "ascend": "aether_0_1",
+        "descend": "aether_0_3"
+      }
+    },
+    "aether_0_3": {
+      "description": "You are floating in a cosmic void at (0, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_3",
+        "ascend": "aether_0_2",
+        "descend": "aether_0_4"
+      }
+    },
+    "aether_0_4": {
+      "description": "You are floating in a cosmic void at (0, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_4",
+        "ascend": "aether_0_3",
+        "descend": "aether_0_5"
+      }
+    },
+    "aether_0_5": {
+      "description": "You are floating in a cosmic void at (0, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_5",
+        "ascend": "aether_0_4",
+        "descend": "aether_0_6"
+      }
+    },
+    "aether_0_6": {
+      "description": "You are floating in a cosmic void at (0, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_6",
+        "ascend": "aether_0_5",
+        "descend": "aether_0_7"
+      }
+    },
+    "aether_0_7": {
+      "description": "You are floating in a cosmic void at (0, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_7",
+        "ascend": "aether_0_6",
+        "descend": "aether_0_8"
+      }
+    },
+    "aether_0_8": {
+      "description": "You are floating in a cosmic void at (0, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_8",
+        "ascend": "aether_0_7",
+        "descend": "aether_0_9"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_0_9": {
+      "description": "You are floating in a cosmic void at (0, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_9",
+        "ascend": "aether_0_8",
+        "descend": "aether_0_10"
+      }
+    },
+    "aether_0_10": {
+      "description": "You are floating in a cosmic void at (0, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_10",
+        "ascend": "aether_0_9",
+        "descend": "aether_0_11"
+      }
+    },
+    "aether_0_11": {
+      "description": "You are floating in a cosmic void at (0, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_11",
+        "ascend": "aether_0_10",
+        "descend": "aether_0_12"
+      }
+    },
+    "aether_0_12": {
+      "description": "You are floating in a cosmic void at (0, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_12",
+        "ascend": "aether_0_11",
+        "descend": "aether_0_13"
+      }
+    },
+    "aether_0_13": {
+      "description": "You are floating in a cosmic void at (0, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_13",
+        "ascend": "aether_0_12",
+        "descend": "aether_0_14"
+      }
+    },
+    "aether_0_14": {
+      "description": "You are floating in a cosmic void at (0, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift east": "aether_1_14",
+        "ascend": "aether_0_13"
+      }
+    },
+    "aether_1_0": {
+      "description": "You are floating in a cosmic void at (1, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_0",
+        "drift east": "aether_2_0",
+        "descend": "aether_1_1"
+      }
+    },
+    "aether_1_1": {
+      "description": "You are floating in a cosmic void at (1, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_1",
+        "drift east": "aether_2_1",
+        "ascend": "aether_1_0",
+        "descend": "aether_1_2"
+      }
+    },
+    "aether_1_2": {
+      "description": "You are floating in a cosmic void at (1, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_2",
+        "drift east": "aether_2_2",
+        "ascend": "aether_1_1",
+        "descend": "aether_1_3"
+      }
+    },
+    "aether_1_3": {
+      "description": "You are floating in a cosmic void at (1, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_3",
+        "drift east": "aether_2_3",
+        "ascend": "aether_1_2",
+        "descend": "aether_1_4"
+      }
+    },
+    "aether_1_4": {
+      "description": "You are floating in a cosmic void at (1, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_4",
+        "drift east": "aether_2_4",
+        "ascend": "aether_1_3",
+        "descend": "aether_1_5"
+      }
+    },
+    "aether_1_5": {
+      "description": "You are floating in a cosmic void at (1, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_5",
+        "drift east": "aether_2_5",
+        "ascend": "aether_1_4",
+        "descend": "aether_1_6"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_1_6": {
+      "description": "You are floating in a cosmic void at (1, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_6",
+        "drift east": "aether_2_6",
+        "ascend": "aether_1_5",
+        "descend": "aether_1_7"
+      }
+    },
+    "aether_1_7": {
+      "description": "You are floating in a cosmic void at (1, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "entrance",
+        "drift east": "aether_2_7",
+        "ascend": "aether_1_6",
+        "descend": "aether_1_8"
+      }
+    },
+    "aether_1_8": {
+      "description": "You are floating in a cosmic void at (1, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_8",
+        "drift east": "aether_2_8",
+        "ascend": "aether_1_7",
+        "descend": "aether_1_9"
+      }
+    },
+    "aether_1_9": {
+      "description": "You are floating in a cosmic void at (1, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_9",
+        "drift east": "aether_2_9",
+        "ascend": "aether_1_8",
+        "descend": "aether_1_10"
+      }
+    },
+    "aether_1_10": {
+      "description": "You are floating in a cosmic void at (1, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_10",
+        "drift east": "aether_2_10",
+        "ascend": "aether_1_9",
+        "descend": "aether_1_11"
+      }
+    },
+    "aether_1_11": {
+      "description": "You are floating in a cosmic void at (1, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_11",
+        "drift east": "aether_2_11",
+        "ascend": "aether_1_10",
+        "descend": "aether_1_12"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_1_12": {
+      "description": "You are floating in a cosmic void at (1, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_12",
+        "drift east": "aether_2_12",
+        "ascend": "aether_1_11",
+        "descend": "aether_1_13"
+      }
+    },
+    "aether_1_13": {
+      "description": "You are floating in a cosmic void at (1, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_13",
+        "drift east": "aether_2_13",
+        "ascend": "aether_1_12",
+        "descend": "aether_1_14"
+      }
+    },
+    "aether_1_14": {
+      "description": "You are floating in a cosmic void at (1, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_0_14",
+        "drift east": "aether_2_14",
+        "ascend": "aether_1_13"
+      }
+    },
+    "aether_2_0": {
+      "description": "You are floating in a cosmic void at (2, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_0",
+        "drift east": "aether_3_0",
+        "descend": "aether_2_1"
+      }
+    },
+    "aether_2_1": {
+      "description": "You are floating in a cosmic void at (2, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_1",
+        "drift east": "aether_3_1",
+        "ascend": "aether_2_0",
+        "descend": "aether_2_2"
+      }
+    },
+    "aether_2_2": {
+      "description": "You are floating in a cosmic void at (2, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_2",
+        "drift east": "aether_3_2",
+        "ascend": "aether_2_1",
+        "descend": "aether_2_3"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_2_3": {
+      "description": "You are floating in a cosmic void at (2, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_3",
+        "drift east": "aether_3_3",
+        "ascend": "aether_2_2",
+        "descend": "aether_2_4"
+      }
+    },
+    "aether_2_4": {
+      "description": "You are floating in a cosmic void at (2, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_4",
+        "drift east": "aether_3_4",
+        "ascend": "aether_2_3",
+        "descend": "aether_2_5"
+      }
+    },
+    "aether_2_5": {
+      "description": "You are floating in a cosmic void at (2, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_5",
+        "drift east": "aether_3_5",
+        "ascend": "aether_2_4",
+        "descend": "aether_2_6"
+      }
+    },
+    "aether_2_6": {
+      "description": "You are floating in a cosmic void at (2, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_6",
+        "drift east": "aether_3_6",
+        "ascend": "aether_2_5",
+        "descend": "aether_2_7"
+      }
+    },
+    "aether_2_7": {
+      "description": "You are floating in a cosmic void at (2, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_7",
+        "drift east": "aether_3_7",
+        "ascend": "aether_2_6",
+        "descend": "aether_2_8"
+      }
+    },
+    "aether_2_8": {
+      "description": "You are floating in a cosmic void at (2, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_8",
+        "drift east": "aether_3_8",
+        "ascend": "aether_2_7",
+        "descend": "aether_2_9"
+      }
+    },
+    "aether_2_9": {
+      "description": "You are floating in a cosmic void at (2, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_9",
+        "drift east": "aether_3_9",
+        "ascend": "aether_2_8",
+        "descend": "aether_2_10"
+      }
+    },
+    "aether_2_10": {
+      "description": "You are floating in a cosmic void at (2, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_10",
+        "drift east": "aether_3_10",
+        "ascend": "aether_2_9",
+        "descend": "aether_2_11"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_2_11": {
+      "description": "You are floating in a cosmic void at (2, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_11",
+        "drift east": "aether_3_11",
+        "ascend": "aether_2_10",
+        "descend": "aether_2_12"
+      }
+    },
+    "aether_2_12": {
+      "description": "You are floating in a cosmic void at (2, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_12",
+        "drift east": "aether_3_12",
+        "ascend": "aether_2_11",
+        "descend": "aether_2_13"
+      }
+    },
+    "aether_2_13": {
+      "description": "You are floating in a cosmic void at (2, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_13",
+        "drift east": "aether_3_13",
+        "ascend": "aether_2_12",
+        "descend": "aether_2_14"
+      }
+    },
+    "aether_2_14": {
+      "description": "You are floating in a cosmic void at (2, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_1_14",
+        "drift east": "aether_3_14",
+        "ascend": "aether_2_13"
+      }
+    },
+    "aether_3_0": {
+      "description": "You are floating in a cosmic void at (3, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_0",
+        "drift east": "aether_4_0",
+        "descend": "aether_3_1"
+      }
+    },
+    "aether_3_1": {
+      "description": "You are floating in a cosmic void at (3, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_1",
+        "drift east": "aether_4_1",
+        "ascend": "aether_3_0",
+        "descend": "aether_3_2"
+      }
+    },
+    "aether_3_2": {
+      "description": "You are floating in a cosmic void at (3, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_2",
+        "drift east": "aether_4_2",
+        "ascend": "aether_3_1",
+        "descend": "aether_3_3"
+      }
+    },
+    "aether_3_3": {
+      "description": "You are floating in a cosmic void at (3, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_3",
+        "drift east": "aether_4_3",
+        "ascend": "aether_3_2",
+        "descend": "aether_3_4"
+      }
+    },
+    "aether_3_4": {
+      "description": "You are floating in a cosmic void at (3, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_4",
+        "drift east": "aether_4_4",
+        "ascend": "aether_3_3",
+        "descend": "aether_3_5"
+      }
+    },
+    "aether_3_5": {
+      "description": "You are floating in a cosmic void at (3, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_5",
+        "drift east": "aether_4_5",
+        "ascend": "aether_3_4",
+        "descend": "aether_3_6"
+      }
+    },
+    "aether_3_6": {
+      "description": "You are floating in a cosmic void at (3, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_6",
+        "drift east": "aether_4_6",
+        "ascend": "aether_3_5",
+        "descend": "aether_3_7"
+      }
+    },
+    "aether_3_7": {
+      "description": "You are floating in a cosmic void at (3, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_7",
+        "drift east": "aether_4_7",
+        "ascend": "aether_3_6",
+        "descend": "aether_3_8"
+      }
+    },
+    "aether_3_8": {
+      "description": "You are floating in a cosmic void at (3, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_8",
+        "drift east": "aether_4_8",
+        "ascend": "aether_3_7",
+        "descend": "aether_3_9"
+      }
+    },
+    "aether_3_9": {
+      "description": "You are floating in a cosmic void at (3, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_9",
+        "drift east": "aether_4_9",
+        "ascend": "aether_3_8",
+        "descend": "aether_3_10"
+      }
+    },
+    "aether_3_10": {
+      "description": "You are floating in a cosmic void at (3, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_10",
+        "drift east": "aether_4_10",
+        "ascend": "aether_3_9",
+        "descend": "aether_3_11"
+      }
+    },
+    "aether_3_11": {
+      "description": "You are floating in a cosmic void at (3, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_11",
+        "drift east": "aether_4_11",
+        "ascend": "aether_3_10",
+        "descend": "aether_3_12"
+      }
+    },
+    "aether_3_12": {
+      "description": "You are floating in a cosmic void at (3, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_12",
+        "drift east": "aether_4_12",
+        "ascend": "aether_3_11",
+        "descend": "aether_3_13"
+      }
+    },
+    "aether_3_13": {
+      "description": "You are floating in a cosmic void at (3, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_13",
+        "drift east": "aether_4_13",
+        "ascend": "aether_3_12",
+        "descend": "aether_3_14"
+      }
+    },
+    "aether_3_14": {
+      "description": "You are floating in a cosmic void at (3, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_2_14",
+        "drift east": "aether_4_14",
+        "ascend": "aether_3_13"
+      }
+    },
+    "aether_4_0": {
+      "description": "You are floating in a cosmic void at (4, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_0",
+        "drift east": "aether_5_0",
+        "descend": "aether_4_1"
+      }
+    },
+    "aether_4_1": {
+      "description": "You are floating in a cosmic void at (4, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_1",
+        "drift east": "aether_5_1",
+        "ascend": "aether_4_0",
+        "descend": "aether_4_2"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_4_2": {
+      "description": "You are floating in a cosmic void at (4, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_2",
+        "drift east": "aether_5_2",
+        "ascend": "aether_4_1",
+        "descend": "aether_4_3"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_4_3": {
+      "description": "You are floating in a cosmic void at (4, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_3",
+        "drift east": "aether_5_3",
+        "ascend": "aether_4_2",
+        "descend": "aether_4_4"
+      }
+    },
+    "aether_4_4": {
+      "description": "You are floating in a cosmic void at (4, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_4",
+        "drift east": "aether_5_4",
+        "ascend": "aether_4_3",
+        "descend": "aether_4_5"
+      }
+    },
+    "aether_4_5": {
+      "description": "You are floating in a cosmic void at (4, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_5",
+        "drift east": "aether_5_5",
+        "ascend": "aether_4_4",
+        "descend": "aether_4_6"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_4_6": {
+      "description": "You are floating in a cosmic void at (4, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_6",
+        "drift east": "aether_5_6",
+        "ascend": "aether_4_5",
+        "descend": "aether_4_7"
+      }
+    },
+    "aether_4_7": {
+      "description": "You are floating in a cosmic void at (4, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_7",
+        "drift east": "aether_5_7",
+        "ascend": "aether_4_6",
+        "descend": "aether_4_8"
+      }
+    },
+    "aether_4_8": {
+      "description": "You are floating in a cosmic void at (4, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_8",
+        "drift east": "aether_5_8",
+        "ascend": "aether_4_7",
+        "descend": "aether_4_9"
+      }
+    },
+    "aether_4_9": {
+      "description": "You are floating in a cosmic void at (4, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_9",
+        "drift east": "aether_5_9",
+        "ascend": "aether_4_8",
+        "descend": "aether_4_10"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_4_10": {
+      "description": "You are floating in a cosmic void at (4, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_10",
+        "drift east": "aether_5_10",
+        "ascend": "aether_4_9",
+        "descend": "aether_4_11"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_4_11": {
+      "description": "You are floating in a cosmic void at (4, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_11",
+        "drift east": "aether_5_11",
+        "ascend": "aether_4_10",
+        "descend": "aether_4_12"
+      }
+    },
+    "aether_4_12": {
+      "description": "You are floating in a cosmic void at (4, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_12",
+        "drift east": "aether_5_12",
+        "ascend": "aether_4_11",
+        "descend": "aether_4_13"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_4_13": {
+      "description": "You are floating in a cosmic void at (4, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_13",
+        "drift east": "aether_5_13",
+        "ascend": "aether_4_12",
+        "descend": "aether_4_14"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_4_14": {
+      "description": "You are floating in a cosmic void at (4, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_3_14",
+        "drift east": "aether_5_14",
+        "ascend": "aether_4_13"
+      }
+    },
+    "aether_5_0": {
+      "description": "You are floating in a cosmic void at (5, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_0",
+        "drift east": "aether_6_0",
+        "descend": "aether_5_1"
+      }
+    },
+    "aether_5_1": {
+      "description": "You are floating in a cosmic void at (5, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_1",
+        "drift east": "aether_6_1",
+        "ascend": "aether_5_0",
+        "descend": "aether_5_2"
+      }
+    },
+    "aether_5_2": {
+      "description": "You are floating in a cosmic void at (5, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_2",
+        "drift east": "aether_6_2",
+        "ascend": "aether_5_1",
+        "descend": "aether_5_3"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_5_3": {
+      "description": "You are floating in a cosmic void at (5, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_3",
+        "drift east": "aether_6_3",
+        "ascend": "aether_5_2",
+        "descend": "aether_5_4"
+      }
+    },
+    "aether_5_4": {
+      "description": "You are floating in a cosmic void at (5, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_4",
+        "drift east": "aether_6_4",
+        "ascend": "aether_5_3",
+        "descend": "aether_5_5"
+      }
+    },
+    "aether_5_5": {
+      "description": "You are floating in a cosmic void at (5, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_5",
+        "drift east": "aether_6_5",
+        "ascend": "aether_5_4",
+        "descend": "aether_5_6"
+      },
+      "npcs": {
+        "star_gazer": {
+          "name": "The Star-Gazer",
+          "dialogue": "A shadow falls upon your world. A star... it is not falling, it is being pushed. You must forge the Starcaller's Staff to pull it back into its celestial cradle."
+        }
+      }
+    },
+    "aether_5_6": {
+      "description": "You are floating in a cosmic void at (5, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_6",
+        "drift east": "aether_6_6",
+        "ascend": "aether_5_5",
+        "descend": "aether_5_7"
+      }
+    },
+    "aether_5_7": {
+      "description": "You are floating in a cosmic void at (5, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_7",
+        "drift east": "aether_6_7",
+        "ascend": "aether_5_6",
+        "descend": "aether_5_8"
+      }
+    },
+    "aether_5_8": {
+      "description": "You are floating in a cosmic void at (5, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_8",
+        "drift east": "aether_6_8",
+        "ascend": "aether_5_7",
+        "descend": "aether_5_9"
+      }
+    },
+    "aether_5_9": {
+      "description": "You are floating in a cosmic void at (5, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_9",
+        "drift east": "aether_6_9",
+        "ascend": "aether_5_8",
+        "descend": "aether_5_10"
+      }
+    },
+    "aether_5_10": {
+      "description": "You are floating in a cosmic void at (5, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_10",
+        "drift east": "aether_6_10",
+        "ascend": "aether_5_9",
+        "descend": "aether_5_11"
+      }
+    },
+    "aether_5_11": {
+      "description": "You are floating in a cosmic void at (5, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_11",
+        "drift east": "aether_6_11",
+        "ascend": "aether_5_10",
+        "descend": "aether_5_12"
+      }
+    },
+    "aether_5_12": {
+      "description": "You are floating in a cosmic void at (5, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_12",
+        "drift east": "aether_6_12",
+        "ascend": "aether_5_11",
+        "descend": "aether_5_13"
+      }
+    },
+    "aether_5_13": {
+      "description": "You are floating in a cosmic void at (5, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_13",
+        "drift east": "aether_6_13",
+        "ascend": "aether_5_12",
+        "descend": "aether_5_14"
+      }
+    },
+    "aether_5_14": {
+      "description": "You are floating in a cosmic void at (5, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_4_14",
+        "drift east": "aether_6_14",
+        "ascend": "aether_5_13"
+      }
+    },
+    "aether_6_0": {
+      "description": "You are floating in a cosmic void at (6, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_0",
+        "drift east": "aether_7_0",
+        "descend": "aether_6_1"
+      }
+    },
+    "aether_6_1": {
+      "description": "You are floating in a cosmic void at (6, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_1",
+        "drift east": "aether_7_1",
+        "ascend": "aether_6_0",
+        "descend": "aether_6_2"
+      }
+    },
+    "aether_6_2": {
+      "description": "You are floating in a cosmic void at (6, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_2",
+        "drift east": "aether_7_2",
+        "ascend": "aether_6_1",
+        "descend": "aether_6_3"
+      }
+    },
+    "aether_6_3": {
+      "description": "You are floating in a cosmic void at (6, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_3",
+        "drift east": "aether_7_3",
+        "ascend": "aether_6_2",
+        "descend": "aether_6_4"
+      }
+    },
+    "aether_6_4": {
+      "description": "You are floating in a cosmic void at (6, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_4",
+        "drift east": "aether_7_4",
+        "ascend": "aether_6_3",
+        "descend": "aether_6_5"
+      }
+    },
+    "aether_6_5": {
+      "description": "You are floating in a cosmic void at (6, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_5",
+        "drift east": "aether_7_5",
+        "ascend": "aether_6_4",
+        "descend": "aether_6_6"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_6_6": {
+      "description": "You are floating in a cosmic void at (6, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_6",
+        "drift east": "aether_7_6",
+        "ascend": "aether_6_5",
+        "descend": "aether_6_7"
+      }
+    },
+    "aether_6_7": {
+      "description": "You are floating in a cosmic void at (6, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_7",
+        "drift east": "aether_7_7",
+        "ascend": "aether_6_6",
+        "descend": "aether_6_8"
+      }
+    },
+    "aether_6_8": {
+      "description": "You are floating in a cosmic void at (6, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_8",
+        "drift east": "aether_7_8",
+        "ascend": "aether_6_7",
+        "descend": "aether_6_9"
+      }
+    },
+    "aether_6_9": {
+      "description": "You are floating in a cosmic void at (6, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_9",
+        "drift east": "aether_7_9",
+        "ascend": "aether_6_8",
+        "descend": "aether_6_10"
+      }
+    },
+    "aether_6_10": {
+      "description": "You are floating in a cosmic void at (6, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_10",
+        "drift east": "aether_7_10",
+        "ascend": "aether_6_9",
+        "descend": "aether_6_11"
+      }
+    },
+    "aether_6_11": {
+      "description": "You are floating in a cosmic void at (6, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_11",
+        "drift east": "aether_7_11",
+        "ascend": "aether_6_10",
+        "descend": "aether_6_12"
+      }
+    },
+    "aether_6_12": {
+      "description": "You are floating in a cosmic void at (6, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_12",
+        "drift east": "aether_7_12",
+        "ascend": "aether_6_11",
+        "descend": "aether_6_13"
+      }
+    },
+    "aether_6_13": {
+      "description": "You are floating in a cosmic void at (6, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_13",
+        "drift east": "aether_7_13",
+        "ascend": "aether_6_12",
+        "descend": "aether_6_14"
+      }
+    },
+    "aether_6_14": {
+      "description": "You are floating in a cosmic void at (6, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_5_14",
+        "drift east": "aether_7_14",
+        "ascend": "aether_6_13"
+      }
+    },
+    "aether_7_0": {
+      "description": "You are floating in a cosmic void at (7, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_0",
+        "drift east": "aether_8_0",
+        "descend": "aether_7_1"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_7_1": {
+      "description": "You are floating in a cosmic void at (7, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_1",
+        "drift east": "aether_8_1",
+        "ascend": "aether_7_0",
+        "descend": "aether_7_2"
+      }
+    },
+    "aether_7_2": {
+      "description": "You are floating in a cosmic void at (7, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_2",
+        "drift east": "aether_8_2",
+        "ascend": "aether_7_1",
+        "descend": "aether_7_3"
+      }
+    },
+    "aether_7_3": {
+      "description": "You are floating in a cosmic void at (7, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_3",
+        "drift east": "aether_8_3",
+        "ascend": "aether_7_2",
+        "descend": "aether_7_4"
+      }
+    },
+    "aether_7_4": {
+      "description": "You are floating in a cosmic void at (7, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_4",
+        "drift east": "aether_8_4",
+        "ascend": "aether_7_3",
+        "descend": "aether_7_5"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_7_5": {
+      "description": "You are floating in a cosmic void at (7, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_5",
+        "drift east": "aether_8_5",
+        "ascend": "aether_7_4",
+        "descend": "aether_7_6"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_7_6": {
+      "description": "You are floating in a cosmic void at (7, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_6",
+        "drift east": "aether_8_6",
+        "ascend": "aether_7_5",
+        "descend": "aether_7_7"
+      }
+    },
+    "aether_7_7": {
+      "description": "You are floating in a cosmic void at (7, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_7",
+        "drift east": "aether_8_7",
+        "ascend": "aether_7_6",
+        "descend": "aether_7_8"
+      }
+    },
+    "aether_7_8": {
+      "description": "You are floating in a cosmic void at (7, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_8",
+        "drift east": "aether_8_8",
+        "ascend": "aether_7_7",
+        "descend": "aether_7_9"
+      }
+    },
+    "aether_7_9": {
+      "description": "You are floating in a cosmic void at (7, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_9",
+        "drift east": "aether_8_9",
+        "ascend": "aether_7_8",
+        "descend": "aether_7_10"
+      }
+    },
+    "aether_7_10": {
+      "description": "You are floating in a cosmic void at (7, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_10",
+        "drift east": "aether_8_10",
+        "ascend": "aether_7_9",
+        "descend": "aether_7_11"
+      }
+    },
+    "aether_7_11": {
+      "description": "You are floating in a cosmic void at (7, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_11",
+        "drift east": "aether_8_11",
+        "ascend": "aether_7_10",
+        "descend": "aether_7_12"
+      }
+    },
+    "aether_7_12": {
+      "description": "You are floating in a cosmic void at (7, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_12",
+        "drift east": "aether_8_12",
+        "ascend": "aether_7_11",
+        "descend": "aether_7_13"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_7_13": {
+      "description": "You are floating in a cosmic void at (7, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_13",
+        "drift east": "aether_8_13",
+        "ascend": "aether_7_12",
+        "descend": "aether_7_14"
+      }
+    },
+    "aether_7_14": {
+      "description": "You are floating in a cosmic void at (7, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_6_14",
+        "drift east": "aether_8_14",
+        "ascend": "aether_7_13"
+      }
+    },
+    "aether_8_0": {
+      "description": "You are floating in a cosmic void at (8, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_0",
+        "drift east": "aether_9_0",
+        "descend": "aether_8_1"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_8_1": {
+      "description": "You are floating in a cosmic void at (8, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_1",
+        "drift east": "aether_9_1",
+        "ascend": "aether_8_0",
+        "descend": "aether_8_2"
+      }
+    },
+    "aether_8_2": {
+      "description": "You are floating in a cosmic void at (8, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_2",
+        "drift east": "aether_9_2",
+        "ascend": "aether_8_1",
+        "descend": "aether_8_3"
+      }
+    },
+    "aether_8_3": {
+      "description": "You are floating in a cosmic void at (8, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_3",
+        "drift east": "aether_9_3",
+        "ascend": "aether_8_2",
+        "descend": "aether_8_4"
+      }
+    },
+    "aether_8_4": {
+      "description": "You are floating in a cosmic void at (8, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_4",
+        "drift east": "aether_9_4",
+        "ascend": "aether_8_3",
+        "descend": "aether_8_5"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_8_5": {
+      "description": "You are floating in a cosmic void at (8, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_5",
+        "drift east": "aether_9_5",
+        "ascend": "aether_8_4",
+        "descend": "aether_8_6"
+      }
+    },
+    "aether_8_6": {
+      "description": "You are floating in a cosmic void at (8, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_6",
+        "drift east": "aether_9_6",
+        "ascend": "aether_8_5",
+        "descend": "aether_8_7"
+      }
+    },
+    "aether_8_7": {
+      "description": "You are floating in a cosmic void at (8, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_7",
+        "drift east": "aether_9_7",
+        "ascend": "aether_8_6",
+        "descend": "aether_8_8"
+      }
+    },
+    "aether_8_8": {
+      "description": "You are floating in a cosmic void at (8, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_8",
+        "drift east": "aether_9_8",
+        "ascend": "aether_8_7",
+        "descend": "aether_8_9"
+      }
+    },
+    "aether_8_9": {
+      "description": "You are floating in a cosmic void at (8, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_9",
+        "drift east": "aether_9_9",
+        "ascend": "aether_8_8",
+        "descend": "aether_8_10"
+      }
+    },
+    "aether_8_10": {
+      "description": "You are floating in a cosmic void at (8, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_10",
+        "drift east": "aether_9_10",
+        "ascend": "aether_8_9",
+        "descend": "aether_8_11"
+      }
+    },
+    "aether_8_11": {
+      "description": "You are floating in a cosmic void at (8, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_11",
+        "drift east": "aether_9_11",
+        "ascend": "aether_8_10",
+        "descend": "aether_8_12"
+      }
+    },
+    "aether_8_12": {
+      "description": "You are floating in a cosmic void at (8, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_12",
+        "drift east": "aether_9_12",
+        "ascend": "aether_8_11",
+        "descend": "aether_8_13"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_8_13": {
+      "description": "You are floating in a cosmic void at (8, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_13",
+        "drift east": "aether_9_13",
+        "ascend": "aether_8_12",
+        "descend": "aether_8_14"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_8_14": {
+      "description": "You are floating in a cosmic void at (8, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_7_14",
+        "drift east": "aether_9_14",
+        "ascend": "aether_8_13"
+      }
+    },
+    "aether_9_0": {
+      "description": "You are floating in a cosmic void at (9, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_0",
+        "drift east": "aether_10_0",
+        "descend": "aether_9_1"
+      }
+    },
+    "aether_9_1": {
+      "description": "You are floating in a cosmic void at (9, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_1",
+        "drift east": "aether_10_1",
+        "ascend": "aether_9_0",
+        "descend": "aether_9_2"
+      }
+    },
+    "aether_9_2": {
+      "description": "You are floating in a cosmic void at (9, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_2",
+        "drift east": "aether_10_2",
+        "ascend": "aether_9_1",
+        "descend": "aether_9_3"
+      }
+    },
+    "aether_9_3": {
+      "description": "You are floating in a cosmic void at (9, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_3",
+        "drift east": "aether_10_3",
+        "ascend": "aether_9_2",
+        "descend": "aether_9_4"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_9_4": {
+      "description": "You are floating in a cosmic void at (9, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_4",
+        "drift east": "aether_10_4",
+        "ascend": "aether_9_3",
+        "descend": "aether_9_5"
+      }
+    },
+    "aether_9_5": {
+      "description": "You are floating in a cosmic void at (9, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_5",
+        "drift east": "aether_10_5",
+        "ascend": "aether_9_4",
+        "descend": "aether_9_6"
+      }
+    },
+    "aether_9_6": {
+      "description": "You are floating in a cosmic void at (9, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_6",
+        "drift east": "aether_10_6",
+        "ascend": "aether_9_5",
+        "descend": "aether_9_7"
+      }
+    },
+    "aether_9_7": {
+      "description": "You are floating in a cosmic void at (9, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_7",
+        "drift east": "aether_10_7",
+        "ascend": "aether_9_6",
+        "descend": "aether_9_8"
+      }
+    },
+    "aether_9_8": {
+      "description": "You are floating in a cosmic void at (9, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_8",
+        "drift east": "aether_10_8",
+        "ascend": "aether_9_7",
+        "descend": "aether_9_9"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_9_9": {
+      "description": "You are floating in a cosmic void at (9, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_9",
+        "drift east": "aether_10_9",
+        "ascend": "aether_9_8",
+        "descend": "aether_9_10"
+      }
+    },
+    "aether_9_10": {
+      "description": "You are floating in a cosmic void at (9, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_10",
+        "drift east": "aether_10_10",
+        "ascend": "aether_9_9",
+        "descend": "aether_9_11"
+      }
+    },
+    "aether_9_11": {
+      "description": "You are floating in a cosmic void at (9, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_11",
+        "drift east": "aether_10_11",
+        "ascend": "aether_9_10",
+        "descend": "aether_9_12"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_9_12": {
+      "description": "You are floating in a cosmic void at (9, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_12",
+        "drift east": "aether_10_12",
+        "ascend": "aether_9_11",
+        "descend": "aether_9_13"
+      }
+    },
+    "aether_9_13": {
+      "description": "You are floating in a cosmic void at (9, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_13",
+        "drift east": "aether_10_13",
+        "ascend": "aether_9_12",
+        "descend": "aether_9_14"
+      }
+    },
+    "aether_9_14": {
+      "description": "You are floating in a cosmic void at (9, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_8_14",
+        "drift east": "aether_10_14",
+        "ascend": "aether_9_13"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_10_0": {
+      "description": "You are floating in a cosmic void at (10, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_0",
+        "drift east": "aether_11_0",
+        "descend": "aether_10_1"
+      }
+    },
+    "aether_10_1": {
+      "description": "You are floating in a cosmic void at (10, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_1",
+        "drift east": "aether_11_1",
+        "ascend": "aether_10_0",
+        "descend": "aether_10_2"
+      }
+    },
+    "aether_10_2": {
+      "description": "You are floating in a cosmic void at (10, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_2",
+        "drift east": "aether_11_2",
+        "ascend": "aether_10_1",
+        "descend": "aether_10_3"
+      }
+    },
+    "aether_10_3": {
+      "description": "You are floating in a cosmic void at (10, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_3",
+        "drift east": "aether_11_3",
+        "ascend": "aether_10_2",
+        "descend": "aether_10_4"
+      }
+    },
+    "aether_10_4": {
+      "description": "You are floating in a cosmic void at (10, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_4",
+        "drift east": "aether_11_4",
+        "ascend": "aether_10_3",
+        "descend": "aether_10_5"
+      }
+    },
+    "aether_10_5": {
+      "description": "You are floating in a cosmic void at (10, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_5",
+        "drift east": "aether_11_5",
+        "ascend": "aether_10_4",
+        "descend": "aether_10_6"
+      }
+    },
+    "aether_10_6": {
+      "description": "You are floating in a cosmic void at (10, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_6",
+        "drift east": "aether_11_6",
+        "ascend": "aether_10_5",
+        "descend": "aether_10_7"
+      }
+    },
+    "aether_10_7": {
+      "description": "You are floating in a cosmic void at (10, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_7",
+        "drift east": "aether_11_7",
+        "ascend": "aether_10_6",
+        "descend": "aether_10_8"
+      }
+    },
+    "aether_10_8": {
+      "description": "You are floating in a cosmic void at (10, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_8",
+        "drift east": "aether_11_8",
+        "ascend": "aether_10_7",
+        "descend": "aether_10_9"
+      }
+    },
+    "aether_10_9": {
+      "description": "You are floating in a cosmic void at (10, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_9",
+        "drift east": "aether_11_9",
+        "ascend": "aether_10_8",
+        "descend": "aether_10_10"
+      }
+    },
+    "aether_10_10": {
+      "description": "You are floating in a cosmic void at (10, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_10",
+        "drift east": "aether_11_10",
+        "ascend": "aether_10_9",
+        "descend": "aether_10_11"
+      }
+    },
+    "aether_10_11": {
+      "description": "You are floating in a cosmic void at (10, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_11",
+        "drift east": "aether_11_11",
+        "ascend": "aether_10_10",
+        "descend": "aether_10_12"
+      }
+    },
+    "aether_10_12": {
+      "description": "You are floating in a cosmic void at (10, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_12",
+        "drift east": "aether_11_12",
+        "ascend": "aether_10_11",
+        "descend": "aether_10_13"
+      }
+    },
+    "aether_10_13": {
+      "description": "You are floating in a cosmic void at (10, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_13",
+        "drift east": "aether_11_13",
+        "ascend": "aether_10_12",
+        "descend": "aether_10_14"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_10_14": {
+      "description": "You are floating in a cosmic void at (10, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_9_14",
+        "drift east": "aether_11_14",
+        "ascend": "aether_10_13"
+      }
+    },
+    "aether_11_0": {
+      "description": "You are floating in a cosmic void at (11, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_0",
+        "drift east": "aether_12_0",
+        "descend": "aether_11_1"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_11_1": {
+      "description": "You are floating in a cosmic void at (11, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_1",
+        "drift east": "aether_12_1",
+        "ascend": "aether_11_0",
+        "descend": "aether_11_2"
+      }
+    },
+    "aether_11_2": {
+      "description": "You are floating in a cosmic void at (11, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_2",
+        "drift east": "aether_12_2",
+        "ascend": "aether_11_1",
+        "descend": "aether_11_3"
+      }
+    },
+    "aether_11_3": {
+      "description": "You are floating in a cosmic void at (11, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_3",
+        "drift east": "aether_12_3",
+        "ascend": "aether_11_2",
+        "descend": "aether_11_4"
+      }
+    },
+    "aether_11_4": {
+      "description": "You are floating in a cosmic void at (11, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_4",
+        "drift east": "aether_12_4",
+        "ascend": "aether_11_3",
+        "descend": "aether_11_5"
+      }
+    },
+    "aether_11_5": {
+      "description": "You are floating in a cosmic void at (11, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_5",
+        "drift east": "aether_12_5",
+        "ascend": "aether_11_4",
+        "descend": "aether_11_6"
+      }
+    },
+    "aether_11_6": {
+      "description": "You are floating in a cosmic void at (11, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_6",
+        "drift east": "aether_12_6",
+        "ascend": "aether_11_5",
+        "descend": "aether_11_7"
+      }
+    },
+    "aether_11_7": {
+      "description": "You are floating in a cosmic void at (11, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_7",
+        "drift east": "aether_12_7",
+        "ascend": "aether_11_6",
+        "descend": "aether_11_8"
+      }
+    },
+    "aether_11_8": {
+      "description": "You are floating in a cosmic void at (11, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_8",
+        "drift east": "aether_12_8",
+        "ascend": "aether_11_7",
+        "descend": "aether_11_9"
+      }
+    },
+    "aether_11_9": {
+      "description": "You are floating in a cosmic void at (11, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_9",
+        "drift east": "aether_12_9",
+        "ascend": "aether_11_8",
+        "descend": "aether_11_10"
+      }
+    },
+    "aether_11_10": {
+      "description": "You are floating in a cosmic void at (11, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_10",
+        "drift east": "aether_12_10",
+        "ascend": "aether_11_9",
+        "descend": "aether_11_11"
+      }
+    },
+    "aether_11_11": {
+      "description": "You are floating in a cosmic void at (11, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_11",
+        "drift east": "aether_12_11",
+        "ascend": "aether_11_10",
+        "descend": "aether_11_12"
+      }
+    },
+    "aether_11_12": {
+      "description": "You are floating in a cosmic void at (11, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_12",
+        "drift east": "aether_12_12",
+        "ascend": "aether_11_11",
+        "descend": "aether_11_13"
+      }
+    },
+    "aether_11_13": {
+      "description": "You are floating in a cosmic void at (11, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_13",
+        "drift east": "aether_12_13",
+        "ascend": "aether_11_12",
+        "descend": "aether_11_14"
+      }
+    },
+    "aether_11_14": {
+      "description": "You are floating in a cosmic void at (11, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_10_14",
+        "drift east": "aether_12_14",
+        "ascend": "aether_11_13"
+      }
+    },
+    "aether_12_0": {
+      "description": "You are floating in a cosmic void at (12, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_0",
+        "drift east": "aether_13_0",
+        "descend": "aether_12_1"
+      }
+    },
+    "aether_12_1": {
+      "description": "You are floating in a cosmic void at (12, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_1",
+        "drift east": "aether_13_1",
+        "ascend": "aether_12_0",
+        "descend": "aether_12_2"
+      }
+    },
+    "aether_12_2": {
+      "description": "You are floating in a cosmic void at (12, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_2",
+        "drift east": "aether_13_2",
+        "ascend": "aether_12_1",
+        "descend": "aether_12_3"
+      }
+    },
+    "aether_12_3": {
+      "description": "You are floating in a cosmic void at (12, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_3",
+        "drift east": "aether_13_3",
+        "ascend": "aether_12_2",
+        "descend": "aether_12_4"
+      }
+    },
+    "aether_12_4": {
+      "description": "You are floating in a cosmic void at (12, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_4",
+        "drift east": "aether_13_4",
+        "ascend": "aether_12_3",
+        "descend": "aether_12_5"
+      }
+    },
+    "aether_12_5": {
+      "description": "You are floating in a cosmic void at (12, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_5",
+        "drift east": "aether_13_5",
+        "ascend": "aether_12_4",
+        "descend": "aether_12_6"
+      }
+    },
+    "aether_12_6": {
+      "description": "You are floating in a cosmic void at (12, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_6",
+        "drift east": "aether_13_6",
+        "ascend": "aether_12_5",
+        "descend": "aether_12_7"
+      }
+    },
+    "aether_12_7": {
+      "description": "You are floating in a cosmic void at (12, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_7",
+        "drift east": "aether_13_7",
+        "ascend": "aether_12_6",
+        "descend": "aether_12_8"
+      }
+    },
+    "aether_12_8": {
+      "description": "You are floating in a cosmic void at (12, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_8",
+        "drift east": "aether_13_8",
+        "ascend": "aether_12_7",
+        "descend": "aether_12_9"
+      }
+    },
+    "aether_12_9": {
+      "description": "You are floating in a cosmic void at (12, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_9",
+        "drift east": "aether_13_9",
+        "ascend": "aether_12_8",
+        "descend": "aether_12_10"
+      }
+    },
+    "aether_12_10": {
+      "description": "You are floating in a cosmic void at (12, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_10",
+        "drift east": "aether_13_10",
+        "ascend": "aether_12_9",
+        "descend": "aether_12_11"
+      }
+    },
+    "aether_12_11": {
+      "description": "You are floating in a cosmic void at (12, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_11",
+        "drift east": "aether_13_11",
+        "ascend": "aether_12_10",
+        "descend": "aether_12_12"
+      }
+    },
+    "aether_12_12": {
+      "description": "You are floating in a cosmic void at (12, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_12",
+        "drift east": "aether_13_12",
+        "ascend": "aether_12_11",
+        "descend": "aether_12_13"
+      }
+    },
+    "aether_12_13": {
+      "description": "You are floating in a cosmic void at (12, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_13",
+        "drift east": "aether_13_13",
+        "ascend": "aether_12_12",
+        "descend": "aether_12_14"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_12_14": {
+      "description": "You are floating in a cosmic void at (12, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_11_14",
+        "drift east": "aether_13_14",
+        "ascend": "aether_12_13"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_13_0": {
+      "description": "You are floating in a cosmic void at (13, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_0",
+        "drift east": "aether_14_0",
+        "descend": "aether_13_1"
+      }
+    },
+    "aether_13_1": {
+      "description": "You are floating in a cosmic void at (13, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_1",
+        "drift east": "aether_14_1",
+        "ascend": "aether_13_0",
+        "descend": "aether_13_2"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_13_2": {
+      "description": "You are floating in a cosmic void at (13, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_2",
+        "drift east": "aether_14_2",
+        "ascend": "aether_13_1",
+        "descend": "aether_13_3"
+      }
+    },
+    "aether_13_3": {
+      "description": "You are floating in a cosmic void at (13, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_3",
+        "drift east": "aether_14_3",
+        "ascend": "aether_13_2",
+        "descend": "aether_13_4"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_13_4": {
+      "description": "You are floating in a cosmic void at (13, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_4",
+        "drift east": "aether_14_4",
+        "ascend": "aether_13_3",
+        "descend": "aether_13_5"
+      }
+    },
+    "aether_13_5": {
+      "description": "You are floating in a cosmic void at (13, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_5",
+        "drift east": "aether_14_5",
+        "ascend": "aether_13_4",
+        "descend": "aether_13_6"
+      }
+    },
+    "aether_13_6": {
+      "description": "You are floating in a cosmic void at (13, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_6",
+        "drift east": "aether_14_6",
+        "ascend": "aether_13_5",
+        "descend": "aether_13_7"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_13_7": {
+      "description": "You are floating in a cosmic void at (13, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_7",
+        "drift east": "aether_14_7",
+        "ascend": "aether_13_6",
+        "descend": "aether_13_8"
+      }
+    },
+    "aether_13_8": {
+      "description": "You are floating in a cosmic void at (13, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_8",
+        "drift east": "aether_14_8",
+        "ascend": "aether_13_7",
+        "descend": "aether_13_9"
+      }
+    },
+    "aether_13_9": {
+      "description": "You are floating in a cosmic void at (13, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_9",
+        "drift east": "aether_14_9",
+        "ascend": "aether_13_8",
+        "descend": "aether_13_10"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_13_10": {
+      "description": "You are floating in a cosmic void at (13, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_10",
+        "drift east": "aether_14_10",
+        "ascend": "aether_13_9",
+        "descend": "aether_13_11"
+      }
+    },
+    "aether_13_11": {
+      "description": "You are floating in a cosmic void at (13, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_11",
+        "drift east": "aether_14_11",
+        "ascend": "aether_13_10",
+        "descend": "aether_13_12"
+      }
+    },
+    "aether_13_12": {
+      "description": "You are floating in a cosmic void at (13, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_12",
+        "drift east": "aether_14_12",
+        "ascend": "aether_13_11",
+        "descend": "aether_13_13"
+      }
+    },
+    "aether_13_13": {
+      "description": "You are floating in a cosmic void at (13, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_13",
+        "drift east": "aether_14_13",
+        "ascend": "aether_13_12",
+        "descend": "aether_13_14"
+      }
+    },
+    "aether_13_14": {
+      "description": "You are floating in a cosmic void at (13, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_12_14",
+        "drift east": "aether_14_14",
+        "ascend": "aether_13_13"
+      }
+    },
+    "aether_14_0": {
+      "description": "You are floating in a cosmic void at (14, 0). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_0",
+        "descend": "aether_14_1"
+      }
+    },
+    "aether_14_1": {
+      "description": "You are floating in a cosmic void at (14, 1). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_1",
+        "ascend": "aether_14_0",
+        "descend": "aether_14_2"
+      }
+    },
+    "aether_14_2": {
+      "description": "You are floating in a cosmic void at (14, 2). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_2",
+        "ascend": "aether_14_1",
+        "descend": "aether_14_3"
+      }
+    },
+    "aether_14_3": {
+      "description": "You are floating in a cosmic void at (14, 3). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_3",
+        "ascend": "aether_14_2",
+        "descend": "aether_14_4"
+      }
+    },
+    "aether_14_4": {
+      "description": "You are floating in a cosmic void at (14, 4). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_4",
+        "ascend": "aether_14_3",
+        "descend": "aether_14_5"
+      }
+    },
+    "aether_14_5": {
+      "description": "You are floating in a cosmic void at (14, 5). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_5",
+        "ascend": "aether_14_4",
+        "descend": "aether_14_6"
+      },
+      "monster": {
+        "name": "Void Hound",
+        "hp": 40,
+        "attack": 20,
+        "defense": 5,
+        "gold": 40
+      }
+    },
+    "aether_14_6": {
+      "description": "You are floating in a cosmic void at (14, 6). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_6",
+        "ascend": "aether_14_5",
+        "descend": "aether_14_7"
+      }
+    },
+    "aether_14_7": {
+      "description": "You are floating in a cosmic void at (14, 7). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_7",
+        "ascend": "aether_14_6",
+        "descend": "aether_14_8"
+      }
+    },
+    "aether_14_8": {
+      "description": "You are floating in a cosmic void at (14, 8). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_8",
+        "ascend": "aether_14_7",
+        "descend": "aether_14_9"
+      }
+    },
+    "aether_14_9": {
+      "description": "You are floating in a cosmic void at (14, 9). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_9",
+        "ascend": "aether_14_8",
+        "descend": "aether_14_10"
+      }
+    },
+    "aether_14_10": {
+      "description": "You are floating in a cosmic void at (14, 10). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_10",
+        "ascend": "aether_14_9",
+        "descend": "aether_14_11"
+      },
+      "monster": {
+        "name": "Starlight Wraith",
+        "hp": 50,
+        "attack": 15,
+        "defense": 10,
+        "gold": 50,
+        "loot": "stardust"
+      }
+    },
+    "aether_14_11": {
+      "description": "You are floating in a cosmic void at (14, 11). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_11",
+        "ascend": "aether_14_10",
+        "descend": "aether_14_12"
+      }
+    },
+    "aether_14_12": {
+      "description": "You are floating in a cosmic void at (14, 12). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_12",
+        "ascend": "aether_14_11",
+        "descend": "aether_14_13"
+      }
+    },
+    "aether_14_13": {
+      "description": "You are floating in a cosmic void at (14, 13). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_13",
+        "ascend": "aether_14_12",
+        "descend": "aether_14_14"
+      }
+    },
+    "aether_14_14": {
+      "description": "You are floating in a cosmic void at (14, 14). Nebulae swirl in the distance, and the stars are blindingly bright.",
+      "exits": {
+        "drift west": "aether_13_14",
+        "ascend": "aether_14_13"
+      },
+      "monster": {
+        "name": "Void Titan",
+        "hp": 500,
+        "attack": 30,
+        "defense": 20,
+        "gold": 2000,
+        "loot": "aetherial_essence"
+      }
+    },
+    "entrance": {
+      "description": "You have stepped through a portal into a realm of pure starlight. The air hums with cosmic energy.",
+      "exits": {
+        "drift east": "aether_1_7"
+      }
+    }
+  },
+  "quests": {
+    "starfall": {
+      "name": "The Starfall",
+      "description": "A celestial body is hurtling towards the world. Forge the Starcaller's Staff to avert the catastrophe.",
+      "steps": {
+        "1": "Find the Star-Gazer.",
+        "2": "Gather Stardust and Aetherial Essence.",
+        "3": "Defeat the Void Titan."
+      }
+    }
+  }
+}

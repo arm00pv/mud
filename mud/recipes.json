@@ -75,6 +75,16 @@
                 "crystal_fragment": 10
             },
             "result": "enchanted_sword"
+        },
+        "starcaller_staff": {
+            "name": "Starcaller's Staff",
+            "level": 50,
+            "exp": 2000,
+            "ingredients": {
+                "stardust": 20,
+                "aetherial_essence": 1
+            },
+            "result": "starcaller_staff"
         }
     },
     "runecrafting": {

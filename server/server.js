@@ -183,7 +183,14 @@ app.post('/api/characters', authenticateToken, (req, res) => {
             runecrafting: 1
         },
         quest_exp: 0,
-        quest_skills: []
+        quest_skills: [],
+        bank: {
+            gold: 0,
+            inventory: []
+        },
+        pvp: {
+            wins: 0
+        }
     });
 
     db.run('INSERT INTO characters (user_id, name, character_data) VALUES (?, ?, ?)',
@@ -285,6 +292,42 @@ wss.on('connection', (ws) => {
                 clients.forEach((client) => {
                     client.ws.send(JSON.stringify({ type: 'chat', message }));
                 });
+            }
+        }
+
+        // PvP message handling
+        if (data.type === 'pvp') {
+            const sender = clients.get(ws.characterId);
+            if (!sender) return;
+
+            if (data.command === 'attack') {
+                const targetName = data.target;
+                let targetId = null;
+                clients.forEach((client, id) => {
+                    if (client.player.name.toLowerCase() === targetName.toLowerCase()) {
+                        targetId = id;
+                    }
+                });
+
+                if (targetId) {
+                    const target = clients.get(targetId);
+                    if (sender.player.currentRoom === target.player.currentRoom) {
+                        // For simplicity, we'll just send a message. A real implementation would have combat logic.
+                        const message = `${sender.player.name} attacks ${target.player.name}!`;
+                        clients.forEach((client) => {
+                            if (client.player.currentRoom === sender.player.currentRoom) {
+                                client.ws.send(JSON.stringify({ type: 'chat', message }));
+                            }
+                        });
+                    } else {
+                        ws.send(JSON.stringify({ type: 'error', message: 'Target is not in the same room.' }));
+                    }
+                } else {
+                    ws.send(JSON.stringify({ type: 'error', message: 'Player not found.' }));
+                }
+            } else if (data.command === 'board') {
+                // For now, we'll just send a placeholder message.
+                ws.send(JSON.stringify({ type: 'chat', message: 'PvP leaderboard coming soon!' }));
             }
         }
     });

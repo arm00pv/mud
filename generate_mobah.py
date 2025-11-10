@@ -78,6 +78,7 @@ def generate_mobah():
     # 3. Populate Zones
     # Shops and Inn in Market
     market["m_1_1"]["shop"] = SHOPS["gear_stall"]
+    market["m_1_1"]["bank"] = True
     market["m_3_3"]["shop"] = SHOPS["oasis_drinks"]
     market["m_3_3"]["quest_object"] = "oasis_water"
     market["m_2_2"]["inn"] = {"cost": 15}
