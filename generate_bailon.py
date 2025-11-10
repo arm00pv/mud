@@ -90,6 +90,12 @@ def generate_bailon():
     undercity["u_8_8"]["quest_giver"] = "orc_shaman"
     historical["h_5_5"]["quest_giver"] = "historian_ghost"
 
+    # Add final boss and amulet fragment
+    castle_quest_area["cq_4_9"]["monster"] = {
+        "name": "The Ghost of King Bailon", "hp": 200, "attack": 15, "defense": 10, "gold": 300
+    }
+    castle_quest_area["cq_4_9"]["quest_object"] = "amulet_fragment_sky"
+
     # Define start room and connect bridge from Area 1
     start_room = "p_2_2"
     all_rooms[start_room]["description"] += " A shimmering bridge of light connects back to the Great Forest."

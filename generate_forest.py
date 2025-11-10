@@ -92,13 +92,28 @@ def generate_forest():
     # --- Add Bridge ---
     add_bridge_to_bailon(rooms, GRID_SIZE)
 
+    # --- Add Hermit NPC for Main Quest ---
+    dead_end_rooms = [rid for rid, r in rooms.items() if len(r['exits']) == 1]
+    if dead_end_rooms:
+        hermit_room = random.choice(dead_end_rooms)
+        rooms[hermit_room]["npcs"] = {
+            "hermit": {
+                "name": "A mysterious Hermit",
+                "dialogue": "The world is falling out of balance. The Shattered Amulet must be reforged. Find the fragments in the world's most dangerous corners: the heart of the sky city, the deepest part of the desert, and the belly of the beast that sleeps in the sunken city.",
+                "quest": "shattered_amulet"
+            }
+        }
+
     # --- Final Area Structure ---
     area_data = {
         "name": "The Great Forest",
         "description": "A vast and ancient forest, home to warring factions of fairies and nymphs.",
         "start_room": f"room_{start_x}_{start_y}",
         "rooms": rooms,
-        "quests": { "acorn_war": { "name": "The Acorn War", "description": "...", "steps": [], "reward": "..." } }
+        "quests": {
+            "acorn_war": { "name": "The Acorn War", "description": "...", "steps": [], "reward": "..." },
+            "shattered_amulet": { "name": "The Shattered Amulet", "description": "Reforge the Shattered Amulet to restore balance to the world." }
+        }
     }
     return area_data
 

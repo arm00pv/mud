@@ -169,7 +169,9 @@ app.post('/api/characters', authenticateToken, (req, res) => {
         skills: {
             blacksmithing: 1,
             alchemy: 1,
-            tailoring: 1
+            tailoring: 1,
+            jewelcrafting: 1,
+            enchanting: 1
         }
     });
 

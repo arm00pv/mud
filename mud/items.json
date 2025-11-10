@@ -17,12 +17,25 @@
     "attack": 5,
     "cost": 50
     },
+    "enchanted_sword": {
+        "name": "Enchanted Sword",
+        "type": "weapon",
+        "attack": 10,
+        "cost": 200
+    },
   "ring_of_protection": {
     "name": "Ring of Protection",
     "type": "ring",
     "defense": 1,
     "cost": 20
   },
+    "crystal_ring": {
+        "name": "Crystal Ring",
+        "type": "ring",
+        "defense": 2,
+        "attack": 1,
+        "cost": 100
+    },
   "gillyweed_potion": {
     "name": "Gillyweed Potion",
     "type": "potion",
@@ -100,5 +113,23 @@
     "crystal_shard_3": {
         "name": "Third Crystal Shard",
         "type": "quest"
+    },
+    "amulet_fragment_sky": {
+        "name": "Amulet Fragment of the Sky",
+        "type": "quest"
+    },
+    "amulet_fragment_desert": {
+        "name": "Amulet Fragment of the Desert",
+        "type": "quest"
+    },
+    "amulet_fragment_sea": {
+        "name": "Amulet Fragment of the Sea",
+        "type": "quest"
+    },
+    "reforged_amulet": {
+        "name": "The Reforged Amulet",
+        "type": "ring",
+        "attack": 5,
+        "defense": 5
     }
 }

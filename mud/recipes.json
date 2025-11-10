@@ -42,5 +42,39 @@
         },
         "result": "leather_armor"
     }
-  }
+  },
+  "jewelcrafting": {
+      "crystal_ring": {
+          "name": "Crystal Ring",
+          "level": 1,
+          "exp": 20,
+          "ingredients": {
+              "crystal_fragment": 5
+          },
+          "result": "crystal_ring"
+      },
+        "reforged_amulet": {
+            "name": "The Reforged Amulet",
+            "level": 50,
+            "exp": 1000,
+            "ingredients": {
+                "amulet_fragment_sky": 1,
+                "amulet_fragment_desert": 1,
+                "amulet_fragment_sea": 1
+            },
+            "result": "reforged_amulet"
+        }
+  },
+    "enchanting": {
+        "enchanted_sword": {
+            "name": "Enchanted Sword",
+            "level": 1,
+            "exp": 100,
+            "ingredients": {
+                "steel_sword": 1,
+                "crystal_fragment": 10
+            },
+            "result": "enchanted_sword"
+        }
+    }
 }

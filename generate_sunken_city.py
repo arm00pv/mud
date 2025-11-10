@@ -58,7 +58,7 @@ def generate_sunken_city():
 
     # Add a final boss
     area["rooms"][f"room_{grid_size-1}_{grid_size-1}"]["monster"] = {
-         "name": "Kraken", "hp": 100, "attack": 10, "defense": 5, "gold": 100
+         "name": "Kraken", "hp": 100, "attack": 10, "defense": 5, "gold": 100, "loot": "amulet_fragment_sea"
     }
     area["rooms"][f"room_{grid_size-1}_{grid_size-1}"]["exits"]["down"] = "area5_entrance"
 

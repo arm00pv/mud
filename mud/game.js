@@ -19,6 +19,8 @@ let authToken = null;
 let selectedCharacterId = null;
 let gameInterval; // For the main game loop
 
+const API_BASE = '/mud/api'; // Base path for all API calls
+
 // --- Event Listeners ---
 
 // Auth Form Logic
@@ -36,7 +38,7 @@ document.getElementById('register-button').addEventListener('click', async () =>
     const email = document.getElementById('register-email').value;
     const password = document.getElementById('register-password').value;
 
-    const response = await fetch('/api/register', {
+    const response = await fetch(`${API_BASE}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -57,7 +59,7 @@ document.getElementById('login-button').addEventListener('click', async () => {
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
 
-    const response = await fetch('/api/login', {
+    const response = await fetch(`${API_BASE}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -81,7 +83,7 @@ document.getElementById('create-character-button').addEventListener('click', asy
         alert('Please enter a name for your new character.');
         return;
     }
-    const response = await fetch('/api/characters', {
+    const response = await fetch(`${API_BASE}/characters`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -112,7 +114,7 @@ input.addEventListener('keydown', (event) => {
 
 async function showCharacterSelection() {
     characterSelectionContainer.style.display = 'block';
-    const response = await fetch('/api/characters', {
+    const response = await fetch(`${API_BASE}/characters`, {
         headers: { 'Authorization': `Bearer ${authToken}` }
     });
     if (response.ok) {
@@ -154,7 +156,7 @@ async function startGame() {
         return;
     }
 
-    const response = await fetch(`/api/game/load/${selectedCharacterId}`, {
+    const response = await fetch(`${API_BASE}/game/load/${selectedCharacterId}`, {
         headers: { 'Authorization': `Bearer ${authToken}` }
     });
 
@@ -184,7 +186,7 @@ async function startGame() {
 
 async function saveGame() {
     if (!authToken || !selectedCharacterId) return;
-    await fetch(`/api/game/save/${selectedCharacterId}`, {
+    await fetch(`${API_BASE}/game/save/${selectedCharacterId}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -238,6 +240,11 @@ function handleCommand(command) {
     const isUnderwater = nextRoomId.includes("room_");
     if (currentArea.rooms[nextRoomId].environment === 'underwater' && (!player.effects || !player.effects.water_breathing || player.effects.water_breathing.duration <= 0)) {
         printToOutput("You can't breathe underwater! You need a special potion.");
+        return;
+    }
+    // Crystal Heart quest progression check
+    if (nextRoomId === 'cave_19_14' && (!player.quests.crystal_heart || !player.quests.crystal_heart.steps.shards_returned)) {
+        printToOutput("A powerful barrier blocks your path. You feel a strange energy coming from the Crystal Guardian's chamber.");
         return;
     }
     player.currentRoom = room.exits[command];
@@ -344,6 +351,13 @@ function craftItem(trade, recipeName) {
     player.inventory.push(recipe.result);
     player.skills[trade] += recipe.exp;
     printToOutput(`You successfully crafted a ${items[recipe.result].name}. You gained ${recipe.exp} ${trade} experience.`);
+
+    // Check for main quest completion
+    if (recipe.result === 'reforged_amulet') {
+        player.quests.shattered_amulet.completed = true;
+        printToOutput("You have reforged the Shattered Amulet and restored balance to the world! Congratulations!");
+        checkAchievements('quest_master');
+    }
 }
 
 
@@ -565,6 +579,20 @@ function talkToNpc(npcName, room) {
             printToOutput(`${npc.name} gives you a ${items[npc.item].name}.`);
         }
     }
+
+    // Specific quest logic for Crystal Guardian
+    if (npcName === 'crystal_guardian' && player.quests.crystal_heart) {
+        const hasShards = player.inventory.includes('crystal_shard_1') &&
+                          player.inventory.includes('crystal_shard_2') &&
+                          player.inventory.includes('crystal_shard_3');
+        if (hasShards) {
+            printToOutput(`"${npc.name} takes the three shards and they fuse into a glowing key. 'The path to the heart is now open,' the guardian says. 'Follow the easternmost cavern to the end. May you succeed where I cannot.' The key dissolves into light and vanishes."`);
+            // Remove shards from inventory
+            player.inventory = player.inventory.filter(item => !item.startsWith('crystal_shard'));
+            // Update quest state
+            player.quests.crystal_heart.steps.shards_returned = true;
+        }
+    }
 }
 function interactWithObject(objectName, room) {
     if (!room.interactables || !room.interactables[objectName]) { printToOutput("You can't interact with that."); return; }
@@ -595,5 +623,9 @@ function checkAchievements(event = null) {
     if (player.visited_areas.length >= 4 && !player.achievements.includes('visit_all_areas')) {
         player.achievements.push('visit_all_areas');
         printToOutput("Achievement unlocked: World Traveler!");
+    }
+    if (event === 'quest_master' && !player.achievements.includes('quest_master')) {
+        player.achievements.push('quest_master');
+        printToOutput("Achievement unlocked: Legendary Hero!");
     }
 }

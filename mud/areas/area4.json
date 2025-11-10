@@ -36,14 +36,7 @@
         "north": "room_0_2",
         "south": "room_0_4"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_0_4": {
       "description": "You are in a dimly lit, water-filled chamber at (0, 4). Strange coral formations glow with an eerie light.",
@@ -52,7 +45,14 @@
         "north": "room_0_3",
         "south": "room_0_5"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_0_5": {
       "description": "You are in a dimly lit, water-filled chamber at (0, 5). Strange coral formations glow with an eerie light.",
@@ -161,7 +161,14 @@
         "north": "room_1_0",
         "south": "room_1_2"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_1_2": {
       "description": "You are in a dimly lit, water-filled chamber at (1, 2). Strange coral formations glow with an eerie light.",
@@ -238,7 +245,14 @@
         "north": "room_1_7",
         "south": "room_1_9"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_1_9": {
       "description": "You are in a dimly lit, water-filled chamber at (1, 9). Strange coral formations glow with an eerie light.",
@@ -258,7 +272,14 @@
         "north": "room_1_9",
         "south": "room_1_11"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_1_11": {
       "description": "You are in a dimly lit, water-filled chamber at (1, 11). Strange coral formations glow with an eerie light.",
@@ -278,14 +299,7 @@
         "north": "room_1_11",
         "south": "room_1_13"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_1_13": {
       "description": "You are in a dimly lit, water-filled chamber at (1, 13). Strange coral formations glow with an eerie light.",
@@ -313,7 +327,14 @@
         "east": "room_3_0",
         "south": "room_2_1"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_2_1": {
       "description": "You are in a dimly lit, water-filled chamber at (2, 1). Strange coral formations glow with an eerie light.",
@@ -423,7 +444,14 @@
         "north": "room_2_10",
         "south": "room_2_12"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_2_12": {
       "description": "You are in a dimly lit, water-filled chamber at (2, 12). Strange coral formations glow with an eerie light.",
@@ -659,7 +687,14 @@
         "north": "room_4_4",
         "south": "room_4_6"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_4_6": {
       "description": "You are in a dimly lit, water-filled chamber at (4, 6). Strange coral formations glow with an eerie light.",
@@ -748,7 +783,14 @@
         "east": "room_5_14",
         "north": "room_4_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_5_0": {
       "description": "You are in a dimly lit, water-filled chamber at (5, 0). Strange coral formations glow with an eerie light.",
@@ -797,7 +839,14 @@
         "north": "room_5_3",
         "south": "room_5_5"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_5_5": {
       "description": "You are in a dimly lit, water-filled chamber at (5, 5). Strange coral formations glow with an eerie light.",
@@ -823,7 +872,14 @@
         "north": "room_5_5",
         "south": "room_5_7"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_5_7": {
       "description": "You are in a dimly lit, water-filled chamber at (5, 7). Strange coral formations glow with an eerie light.",
@@ -843,7 +899,14 @@
         "north": "room_5_7",
         "south": "room_5_9"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_5_9": {
       "description": "You are in a dimly lit, water-filled chamber at (5, 9). Strange coral formations glow with an eerie light.",
@@ -902,7 +965,14 @@
         "east": "room_6_14",
         "north": "room_5_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_6_0": {
       "description": "You are in a dimly lit, water-filled chamber at (6, 0). Strange coral formations glow with an eerie light.",
@@ -931,7 +1001,14 @@
         "north": "room_6_1",
         "south": "room_6_3"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_6_3": {
       "description": "You are in a dimly lit, water-filled chamber at (6, 3). Strange coral formations glow with an eerie light.",
@@ -951,14 +1028,7 @@
         "north": "room_6_3",
         "south": "room_6_5"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_6_5": {
       "description": "You are in a dimly lit, water-filled chamber at (6, 5). Strange coral formations glow with an eerie light.",
@@ -968,7 +1038,14 @@
         "north": "room_6_4",
         "south": "room_6_6"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_6_6": {
       "description": "You are in a dimly lit, water-filled chamber at (6, 6). Strange coral formations glow with an eerie light.",
@@ -1103,14 +1180,7 @@
         "north": "room_7_2",
         "south": "room_7_4"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_4": {
       "description": "You are in a dimly lit, water-filled chamber at (7, 4). Strange coral formations glow with an eerie light.",
@@ -1140,14 +1210,7 @@
         "north": "room_7_5",
         "south": "room_7_7"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_7": {
       "description": "You are in a dimly lit, water-filled chamber at (7, 7). Strange coral formations glow with an eerie light.",
@@ -1157,14 +1220,7 @@
         "north": "room_7_6",
         "south": "room_7_8"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_8": {
       "description": "You are in a dimly lit, water-filled chamber at (7, 8). Strange coral formations glow with an eerie light.",
@@ -1231,14 +1287,7 @@
         "north": "room_7_12",
         "south": "room_7_14"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_14": {
       "description": "You are in a dimly lit, water-filled chamber at (7, 14). Strange coral formations glow with an eerie light.",
@@ -1306,14 +1355,7 @@
         "north": "room_8_4",
         "south": "room_8_6"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_8_6": {
       "description": "You are in a dimly lit, water-filled chamber at (8, 6). Strange coral formations glow with an eerie light.",
@@ -1323,7 +1365,14 @@
         "north": "room_8_5",
         "south": "room_8_7"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_8_7": {
       "description": "You are in a dimly lit, water-filled chamber at (8, 7). Strange coral formations glow with an eerie light.",
@@ -1393,14 +1442,7 @@
         "north": "room_8_12",
         "south": "room_8_14"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_8_14": {
       "description": "You are in a dimly lit, water-filled chamber at (8, 14). Strange coral formations glow with an eerie light.",
@@ -1448,14 +1490,7 @@
         "north": "room_9_2",
         "south": "room_9_4"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_9_4": {
       "description": "You are in a dimly lit, water-filled chamber at (9, 4). Strange coral formations glow with an eerie light.",
@@ -1465,14 +1500,7 @@
         "north": "room_9_3",
         "south": "room_9_5"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_9_5": {
       "description": "You are in a dimly lit, water-filled chamber at (9, 5). Strange coral formations glow with an eerie light.",
@@ -1502,14 +1530,7 @@
         "north": "room_9_6",
         "south": "room_9_8"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_9_8": {
       "description": "You are in a dimly lit, water-filled chamber at (9, 8). Strange coral formations glow with an eerie light.",
@@ -1576,14 +1597,7 @@
         "north": "room_9_12",
         "south": "room_9_14"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_9_14": {
       "description": "You are in a dimly lit, water-filled chamber at (9, 14). Strange coral formations glow with an eerie light.",
@@ -1611,7 +1625,14 @@
         "north": "room_10_0",
         "south": "room_10_2"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_10_2": {
       "description": "You are in a dimly lit, water-filled chamber at (10, 2). Strange coral formations glow with an eerie light.",
@@ -1641,14 +1662,7 @@
         "north": "room_10_3",
         "south": "room_10_5"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_10_5": {
       "description": "You are in a dimly lit, water-filled chamber at (10, 5). Strange coral formations glow with an eerie light.",
@@ -1658,7 +1672,14 @@
         "north": "room_10_4",
         "south": "room_10_6"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_10_6": {
       "description": "You are in a dimly lit, water-filled chamber at (10, 6). Strange coral formations glow with an eerie light.",
@@ -1668,7 +1689,14 @@
         "north": "room_10_5",
         "south": "room_10_7"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_10_7": {
       "description": "You are in a dimly lit, water-filled chamber at (10, 7). Strange coral formations glow with an eerie light.",
@@ -1718,14 +1746,7 @@
         "north": "room_10_10",
         "south": "room_10_12"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_10_12": {
       "description": "You are in a dimly lit, water-filled chamber at (10, 12). Strange coral formations glow with an eerie light.",
@@ -1833,14 +1854,7 @@
         "north": "room_11_6",
         "south": "room_11_8"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_11_8": {
       "description": "You are in a dimly lit, water-filled chamber at (11, 8). Strange coral formations glow with an eerie light.",
@@ -1850,7 +1864,14 @@
         "north": "room_11_7",
         "south": "room_11_9"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_11_9": {
       "description": "You are in a dimly lit, water-filled chamber at (11, 9). Strange coral formations glow with an eerie light.",
@@ -1870,14 +1891,7 @@
         "north": "room_11_9",
         "south": "room_11_11"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_11_11": {
       "description": "You are in a dimly lit, water-filled chamber at (11, 11). Strange coral formations glow with an eerie light.",
@@ -1887,14 +1901,7 @@
         "north": "room_11_10",
         "south": "room_11_12"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_11_12": {
       "description": "You are in a dimly lit, water-filled chamber at (11, 12). Strange coral formations glow with an eerie light.",
@@ -2012,14 +2019,7 @@
         "north": "room_12_7",
         "south": "room_12_9"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_12_9": {
       "description": "You are in a dimly lit, water-filled chamber at (12, 9). Strange coral formations glow with an eerie light.",
@@ -2069,14 +2069,7 @@
         "north": "room_12_12",
         "south": "room_12_14"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_12_14": {
       "description": "You are in a dimly lit, water-filled chamber at (12, 14). Strange coral formations glow with an eerie light.",
@@ -2134,7 +2127,14 @@
         "north": "room_13_3",
         "south": "room_13_5"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_13_5": {
       "description": "You are in a dimly lit, water-filled chamber at (13, 5). Strange coral formations glow with an eerie light.",
@@ -2144,14 +2144,7 @@
         "north": "room_13_4",
         "south": "room_13_6"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_13_6": {
       "description": "You are in a dimly lit, water-filled chamber at (13, 6). Strange coral formations glow with an eerie light.",
@@ -2265,7 +2258,14 @@
         "north": "room_14_0",
         "south": "room_14_2"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_14_2": {
       "description": "You are in a dimly lit, water-filled chamber at (14, 2). Strange coral formations glow with an eerie light.",
@@ -2362,14 +2362,7 @@
         "north": "room_14_10",
         "south": "room_14_12"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_14_12": {
       "description": "You are in a dimly lit, water-filled chamber at (14, 12). Strange coral formations glow with an eerie light.",
@@ -2402,7 +2395,8 @@
         "hp": 100,
         "attack": 10,
         "defense": 5,
-        "gold": 100
+        "gold": 100,
+        "loot": "amulet_fragment_sea"
       }
     },
     "gateway": {

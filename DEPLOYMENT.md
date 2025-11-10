@@ -64,7 +64,7 @@ Add the following lines to the end of the file. **It is critical that you replac
 
 ```bash
 # The full public URL where the game will be accessed.
-export BASE_URL='https://zapp.sytes.net/mud'
+export BASE_URL='https://zapp.sytes.net'
 
 # A long, random, and secret string for signing security tokens.
 # You can generate one with: openssl rand -base64 32
@@ -119,15 +119,15 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
 ```apache
     # --- MUD Game ---
     # Alias maps the /mud/ URL path to the frontend's directory on the filesystem.
-    Alias /mud/ /var/www/webhost/mud/mud/
-    <Directory /var/www/webhost/mud/mud>
+    Alias /mud/ /var/www/webhost/mud/
+    <Directory /var/www/webhost/mud>
         Require all granted
     </Directory>
 
     # This <Location> block proxies API requests from /mud/api/ to the backend server.
     <Location /mud/api/>
-        ProxyPass http://127.0.0.1:3000/api/
-        ProxyPassReverse http://127.0.0.1:3000/api/
+        ProxyPass http://127.0.0.1:3000/
+        ProxyPassReverse http://127.0.0.1:3000/
     </Location>
 ```
 

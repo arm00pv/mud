@@ -96,6 +96,12 @@ def generate_mobah():
         if random.random() < 0.1: main_desert[room_id]["monster"] = MONSTERS["sand_viper"].copy()
         elif random.random() < 0.05: main_desert[room_id]["monster"] = MONSTERS["roc"].copy()
 
+    # Add final boss and amulet fragment
+    main_desert["d_0_0"]["monster"] = {
+        "name": "Giant Sand Wurm", "hp": 250, "attack": 20, "defense": 5, "gold": 500
+    }
+    main_desert["d_0_0"]["quest_object"] = "amulet_fragment_desert"
+
     # 4. Quests
     # Quest data can be expanded here. For now, the hunter's dialogue implies a quest.
 

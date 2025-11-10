@@ -11,7 +11,7 @@
       }
     },
     "p_1_0": {
-      "description": "You are in a open plaza. Fountains splash softly.",
+      "description": "You are in a grand plaza. Fountains splash softly.",
       "exits": {
         "west": "p_0_0",
         "east": "p_2_0",
@@ -19,7 +19,7 @@
       }
     },
     "p_2_0": {
-      "description": "You are in a grand plaza. Fountains splash softly.",
+      "description": "You are in a bustling plaza. Fountains splash softly.",
       "exits": {
         "west": "p_1_0",
         "east": "p_3_0",
@@ -28,7 +28,7 @@
       }
     },
     "p_3_0": {
-      "description": "You are in a bustling square. Fountains splash softly.",
+      "description": "You are in a bustling plaza. Fountains splash softly.",
       "exits": {
         "west": "p_2_0",
         "east": "p_4_0",
@@ -36,14 +36,14 @@
       }
     },
     "p_4_0": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a open square. Fountains splash softly.",
       "exits": {
         "west": "p_3_0",
         "south": "p_4_1"
       }
     },
     "p_0_1": {
-      "description": "You are in a grand plaza. Fountains splash softly.",
+      "description": "You are in a grand square. Fountains splash softly.",
       "exits": {
         "east": "p_1_1",
         "north": "p_0_0",
@@ -60,7 +60,7 @@
       }
     },
     "p_2_1": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a open plaza. Fountains splash softly.",
       "exits": {
         "west": "p_1_1",
         "east": "p_3_1",
@@ -69,7 +69,7 @@
       }
     },
     "p_3_1": {
-      "description": "You are in a open square. Fountains splash softly.",
+      "description": "You are in a grand plaza. Fountains splash softly.",
       "exits": {
         "west": "p_2_1",
         "east": "p_4_1",
@@ -78,7 +78,7 @@
       }
     },
     "p_4_1": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a open square. Fountains splash softly.",
       "exits": {
         "west": "p_3_1",
         "north": "p_4_0",
@@ -86,7 +86,7 @@
       }
     },
     "p_0_2": {
-      "description": "You are in a open square. Fountains splash softly.",
+      "description": "You are in a bustling plaza. Fountains splash softly.",
       "exits": {
         "east": "p_1_2",
         "north": "p_0_1",
@@ -95,7 +95,7 @@
       }
     },
     "p_1_2": {
-      "description": "You are in a open plaza. Fountains splash softly.",
+      "description": "You are in a open square. Fountains splash softly.",
       "exits": {
         "west": "p_0_2",
         "east": "p_2_2",
@@ -104,7 +104,7 @@
       }
     },
     "p_2_2": {
-      "description": "You are in a open square. Fountains splash softly. A shimmering bridge of light connects back to the Great Forest.",
+      "description": "You are in a open plaza. Fountains splash softly. A shimmering bridge of light connects back to the Great Forest.",
       "exits": {
         "west": "p_1_2",
         "east": "p_3_2",
@@ -123,7 +123,7 @@
       }
     },
     "p_4_2": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a grand plaza. Fountains splash softly.",
       "exits": {
         "west": "p_3_2",
         "north": "p_4_1",
@@ -140,7 +140,7 @@
       }
     },
     "p_1_3": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a bustling square. Fountains splash softly.",
       "exits": {
         "west": "p_0_3",
         "east": "p_2_3",
@@ -149,7 +149,7 @@
       }
     },
     "p_2_3": {
-      "description": "You are in a open square. Fountains splash softly.",
+      "description": "You are in a open plaza. Fountains splash softly.",
       "exits": {
         "west": "p_1_3",
         "east": "p_3_3",
@@ -158,7 +158,7 @@
       }
     },
     "p_3_3": {
-      "description": "You are in a bustling plaza. Fountains splash softly.",
+      "description": "You are in a open square. Fountains splash softly.",
       "exits": {
         "west": "p_2_3",
         "east": "p_4_3",
@@ -175,14 +175,14 @@
       }
     },
     "p_0_4": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a grand plaza. Fountains splash softly.",
       "exits": {
         "east": "p_1_4",
         "north": "p_0_3"
       }
     },
     "p_1_4": {
-      "description": "You are in a grand square. Fountains splash softly.",
+      "description": "You are in a open plaza. Fountains splash softly.",
       "exits": {
         "west": "p_0_4",
         "east": "p_2_4",
@@ -190,7 +190,7 @@
       }
     },
     "p_2_4": {
-      "description": "You are in a bustling square. Fountains splash softly.",
+      "description": "You are in a open plaza. Fountains splash softly.",
       "exits": {
         "west": "p_1_4",
         "east": "p_3_4",
@@ -198,7 +198,7 @@
       }
     },
     "p_3_4": {
-      "description": "You are in a open square. Fountains splash softly.",
+      "description": "You are in a bustling plaza. Fountains splash softly.",
       "exits": {
         "west": "p_2_4",
         "east": "p_4_4",
@@ -206,21 +206,21 @@
       }
     },
     "p_4_4": {
-      "description": "You are in a grand plaza. Fountains splash softly.",
+      "description": "You are in a bustling plaza. Fountains splash softly.",
       "exits": {
         "west": "p_3_4",
         "north": "p_4_3"
       }
     },
     "m_0_0": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "east": "m_1_0",
         "south": "m_0_1"
       }
     },
     "m_1_0": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_0",
         "east": "m_2_0",
@@ -228,7 +228,7 @@
       }
     },
     "m_2_0": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_0",
         "east": "m_3_0",
@@ -236,7 +236,7 @@
       }
     },
     "m_3_0": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_0",
         "east": "m_4_0",
@@ -252,7 +252,7 @@
       }
     },
     "m_5_0": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_0",
         "east": "m_6_0",
@@ -260,7 +260,7 @@
       }
     },
     "m_6_0": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_0",
         "east": "m_7_0",
@@ -268,7 +268,7 @@
       }
     },
     "m_7_0": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_6_0",
         "south": "m_7_1"
@@ -292,7 +292,7 @@
       }
     },
     "m_2_1": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_1",
         "east": "m_3_1",
@@ -301,7 +301,7 @@
       }
     },
     "m_3_1": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_1",
         "east": "m_4_1",
@@ -310,7 +310,7 @@
       }
     },
     "m_4_1": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_1",
         "east": "m_5_1",
@@ -319,7 +319,7 @@
       }
     },
     "m_5_1": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_1",
         "east": "m_6_1",
@@ -328,7 +328,7 @@
       }
     },
     "m_6_1": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_1",
         "east": "m_7_1",
@@ -337,7 +337,7 @@
       }
     },
     "m_7_1": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_6_1",
         "north": "m_7_0",
@@ -345,7 +345,7 @@
       }
     },
     "m_0_2": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "east": "m_1_2",
         "north": "m_0_1",
@@ -353,7 +353,7 @@
       }
     },
     "m_1_2": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_2",
         "east": "m_2_2",
@@ -371,7 +371,7 @@
       }
     },
     "m_3_2": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_2",
         "east": "m_4_2",
@@ -380,7 +380,7 @@
       }
     },
     "m_4_2": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_2",
         "east": "m_5_2",
@@ -389,7 +389,7 @@
       }
     },
     "m_5_2": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_2",
         "east": "m_6_2",
@@ -398,7 +398,7 @@
       }
     },
     "m_6_2": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_2",
         "east": "m_7_2",
@@ -407,7 +407,7 @@
       }
     },
     "m_7_2": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_6_2",
         "north": "m_7_1",
@@ -415,7 +415,7 @@
       }
     },
     "m_0_3": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "east": "m_1_3",
         "north": "m_0_2",
@@ -423,7 +423,7 @@
       }
     },
     "m_1_3": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_3",
         "east": "m_2_3",
@@ -432,7 +432,7 @@
       }
     },
     "m_2_3": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_3",
         "east": "m_3_3",
@@ -441,7 +441,7 @@
       }
     },
     "m_3_3": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_3",
         "east": "m_4_3",
@@ -457,7 +457,7 @@
       }
     },
     "m_4_3": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_3",
         "east": "m_5_3",
@@ -466,7 +466,7 @@
       }
     },
     "m_5_3": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_3",
         "east": "m_6_3",
@@ -475,7 +475,7 @@
       }
     },
     "m_6_3": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_3",
         "east": "m_7_3",
@@ -484,7 +484,7 @@
       }
     },
     "m_7_3": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_6_3",
         "north": "m_7_2",
@@ -500,7 +500,7 @@
       }
     },
     "m_1_4": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_4",
         "east": "m_2_4",
@@ -509,7 +509,7 @@
       }
     },
     "m_2_4": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_4",
         "east": "m_3_4",
@@ -518,7 +518,7 @@
       }
     },
     "m_3_4": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_4",
         "east": "m_4_4",
@@ -536,7 +536,7 @@
       }
     },
     "m_5_4": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_4",
         "east": "m_6_4",
@@ -545,7 +545,7 @@
       }
     },
     "m_6_4": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_4",
         "east": "m_7_4",
@@ -562,7 +562,7 @@
       }
     },
     "m_0_5": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "east": "m_1_5",
         "north": "m_0_4",
@@ -570,7 +570,7 @@
       }
     },
     "m_1_5": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_5",
         "east": "m_2_5",
@@ -579,7 +579,7 @@
       }
     },
     "m_2_5": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_5",
         "east": "m_3_5",
@@ -588,7 +588,7 @@
       }
     },
     "m_3_5": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_5",
         "east": "m_4_5",
@@ -597,7 +597,7 @@
       }
     },
     "m_4_5": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_5",
         "east": "m_5_5",
@@ -621,7 +621,7 @@
       }
     },
     "m_6_5": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_5",
         "east": "m_7_5",
@@ -646,7 +646,7 @@
       }
     },
     "m_1_6": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_0_6",
         "east": "m_2_6",
@@ -655,7 +655,7 @@
       }
     },
     "m_2_6": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_6",
         "east": "m_3_6",
@@ -664,7 +664,7 @@
       }
     },
     "m_3_6": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_2_6",
         "east": "m_4_6",
@@ -673,7 +673,7 @@
       }
     },
     "m_4_6": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_6",
         "east": "m_5_6",
@@ -682,7 +682,7 @@
       }
     },
     "m_5_6": {
-      "description": "You are in a noisy market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_6",
         "east": "m_6_6",
@@ -691,7 +691,7 @@
       }
     },
     "m_6_6": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_6",
         "east": "m_7_6",
@@ -700,7 +700,7 @@
       }
     },
     "m_7_6": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_6_6",
         "north": "m_7_5",
@@ -708,7 +708,7 @@
       }
     },
     "m_0_7": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "east": "m_1_7",
         "north": "m_0_6"
@@ -723,7 +723,7 @@
       }
     },
     "m_2_7": {
-      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
+      "description": "You are in a noisy market street. Merchants hawk their wares.",
       "exits": {
         "west": "m_1_7",
         "east": "m_3_7",
@@ -740,7 +740,7 @@
       }
     },
     "m_4_7": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_3_7",
         "east": "m_5_7",
@@ -748,7 +748,7 @@
       }
     },
     "m_5_7": {
-      "description": "You are in a crowded market street. Merchants hawk their wares.",
+      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_4_7",
         "east": "m_6_7",
@@ -756,7 +756,7 @@
       }
     },
     "m_6_7": {
-      "description": "You are in a noisy bazaar. Merchants hawk their wares.",
+      "description": "You are in a crowded bazaar. Merchants hawk their wares.",
       "exits": {
         "west": "m_5_7",
         "east": "m_7_7",
@@ -771,14 +771,14 @@
       }
     },
     "h_0_0": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_0",
         "south": "h_0_1"
       }
     },
     "h_1_0": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_0",
         "east": "h_2_0",
@@ -786,7 +786,7 @@
       }
     },
     "h_2_0": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_0",
         "east": "h_3_0",
@@ -802,7 +802,7 @@
       }
     },
     "h_4_0": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_0",
         "east": "h_5_0",
@@ -810,7 +810,7 @@
       }
     },
     "h_5_0": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_0",
         "east": "h_6_0",
@@ -826,7 +826,7 @@
       }
     },
     "h_7_0": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_0",
         "east": "h_8_0",
@@ -849,7 +849,7 @@
       }
     },
     "h_0_1": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_1",
         "north": "h_0_0",
@@ -866,7 +866,7 @@
       }
     },
     "h_2_1": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_1",
         "east": "h_3_1",
@@ -875,7 +875,7 @@
       }
     },
     "h_3_1": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_1",
         "east": "h_4_1",
@@ -884,7 +884,7 @@
       }
     },
     "h_4_1": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_1",
         "east": "h_5_1",
@@ -893,7 +893,7 @@
       }
     },
     "h_5_1": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_1",
         "east": "h_6_1",
@@ -902,7 +902,7 @@
       }
     },
     "h_6_1": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_1",
         "east": "h_7_1",
@@ -911,7 +911,7 @@
       }
     },
     "h_7_1": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_1",
         "east": "h_8_1",
@@ -920,7 +920,7 @@
       }
     },
     "h_8_1": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_1",
         "east": "h_9_1",
@@ -929,7 +929,7 @@
       }
     },
     "h_9_1": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_1",
         "north": "h_9_0",
@@ -937,7 +937,7 @@
       }
     },
     "h_0_2": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_2",
         "north": "h_0_1",
@@ -946,7 +946,7 @@
       }
     },
     "h_1_2": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_2",
         "east": "h_2_2",
@@ -955,7 +955,7 @@
       }
     },
     "h_2_2": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_2",
         "east": "h_3_2",
@@ -964,7 +964,7 @@
       }
     },
     "h_3_2": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_2",
         "east": "h_4_2",
@@ -991,7 +991,7 @@
       }
     },
     "h_6_2": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_2",
         "east": "h_7_2",
@@ -1000,7 +1000,7 @@
       }
     },
     "h_7_2": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_2",
         "east": "h_8_2",
@@ -1018,7 +1018,7 @@
       }
     },
     "h_9_2": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_2",
         "north": "h_9_1",
@@ -1026,7 +1026,7 @@
       }
     },
     "h_0_3": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_3",
         "north": "h_0_2",
@@ -1034,7 +1034,7 @@
       }
     },
     "h_1_3": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_3",
         "east": "h_2_3",
@@ -1043,7 +1043,7 @@
       }
     },
     "h_2_3": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_3",
         "east": "h_3_3",
@@ -1052,7 +1052,7 @@
       }
     },
     "h_3_3": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_3",
         "east": "h_4_3",
@@ -1061,7 +1061,7 @@
       }
     },
     "h_4_3": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_3",
         "east": "h_5_3",
@@ -1070,7 +1070,7 @@
       }
     },
     "h_5_3": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_3",
         "east": "h_6_3",
@@ -1079,7 +1079,7 @@
       }
     },
     "h_6_3": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_3",
         "east": "h_7_3",
@@ -1097,7 +1097,7 @@
       }
     },
     "h_8_3": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_3",
         "east": "h_9_3",
@@ -1106,7 +1106,7 @@
       }
     },
     "h_9_3": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_3",
         "north": "h_9_2",
@@ -1114,7 +1114,7 @@
       }
     },
     "h_0_4": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_4",
         "north": "h_0_3",
@@ -1122,7 +1122,7 @@
       }
     },
     "h_1_4": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_4",
         "east": "h_2_4",
@@ -1140,7 +1140,7 @@
       }
     },
     "h_3_4": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_4",
         "east": "h_4_4",
@@ -1149,7 +1149,7 @@
       }
     },
     "h_4_4": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_4",
         "east": "h_5_4",
@@ -1158,7 +1158,7 @@
       }
     },
     "h_5_4": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_4",
         "east": "h_6_4",
@@ -1167,7 +1167,7 @@
       }
     },
     "h_6_4": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_4",
         "east": "h_7_4",
@@ -1176,7 +1176,7 @@
       }
     },
     "h_7_4": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_4",
         "east": "h_8_4",
@@ -1185,7 +1185,7 @@
       }
     },
     "h_8_4": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_4",
         "east": "h_9_4",
@@ -1202,7 +1202,7 @@
       }
     },
     "h_0_5": {
-      "description": "You are in a silent ruin. The stones feel heavy with history. A massive sandstone gate leads west, out into a vast desert.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history. A massive sandstone gate leads west, out into a vast desert.",
       "exits": {
         "east": "h_1_5",
         "north": "h_0_4",
@@ -1211,7 +1211,7 @@
       }
     },
     "h_1_5": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_5",
         "east": "h_2_5",
@@ -1220,7 +1220,7 @@
       }
     },
     "h_2_5": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_5",
         "east": "h_3_5",
@@ -1229,7 +1229,7 @@
       }
     },
     "h_3_5": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_5",
         "east": "h_4_5",
@@ -1238,7 +1238,7 @@
       }
     },
     "h_4_5": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_5",
         "east": "h_5_5",
@@ -1247,7 +1247,7 @@
       }
     },
     "h_5_5": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_5",
         "east": "h_6_5",
@@ -1257,7 +1257,7 @@
       "quest_giver": "historian_ghost"
     },
     "h_6_5": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_5",
         "east": "h_7_5",
@@ -1266,7 +1266,7 @@
       }
     },
     "h_7_5": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_5",
         "east": "h_8_5",
@@ -1284,7 +1284,7 @@
       }
     },
     "h_9_5": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_5",
         "north": "h_9_4",
@@ -1292,7 +1292,7 @@
       }
     },
     "h_0_6": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_6",
         "north": "h_0_5",
@@ -1300,7 +1300,7 @@
       }
     },
     "h_1_6": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_6",
         "east": "h_2_6",
@@ -1309,7 +1309,7 @@
       }
     },
     "h_2_6": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_6",
         "east": "h_3_6",
@@ -1327,7 +1327,7 @@
       }
     },
     "h_4_6": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_6",
         "east": "h_5_6",
@@ -1336,7 +1336,7 @@
       }
     },
     "h_5_6": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_6",
         "east": "h_6_6",
@@ -1345,7 +1345,7 @@
       }
     },
     "h_6_6": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_6",
         "east": "h_7_6",
@@ -1354,7 +1354,7 @@
       }
     },
     "h_7_6": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_6",
         "east": "h_8_6",
@@ -1363,7 +1363,7 @@
       }
     },
     "h_8_6": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_6",
         "east": "h_9_6",
@@ -1372,7 +1372,7 @@
       }
     },
     "h_9_6": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_6",
         "north": "h_9_5",
@@ -1380,7 +1380,7 @@
       }
     },
     "h_0_7": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_7",
         "north": "h_0_6",
@@ -1388,7 +1388,7 @@
       }
     },
     "h_1_7": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_7",
         "east": "h_2_7",
@@ -1397,7 +1397,7 @@
       }
     },
     "h_2_7": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_7",
         "east": "h_3_7",
@@ -1415,7 +1415,7 @@
       }
     },
     "h_4_7": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_7",
         "east": "h_5_7",
@@ -1433,7 +1433,7 @@
       }
     },
     "h_6_7": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_7",
         "east": "h_7_7",
@@ -1442,7 +1442,7 @@
       }
     },
     "h_7_7": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_7",
         "east": "h_8_7",
@@ -1451,7 +1451,7 @@
       }
     },
     "h_8_7": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_7",
         "east": "h_9_7",
@@ -1460,7 +1460,7 @@
       }
     },
     "h_9_7": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_7",
         "north": "h_9_6",
@@ -1468,7 +1468,7 @@
       }
     },
     "h_0_8": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_8",
         "north": "h_0_7",
@@ -1476,7 +1476,7 @@
       }
     },
     "h_1_8": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_8",
         "east": "h_2_8",
@@ -1494,7 +1494,7 @@
       }
     },
     "h_3_8": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_2_8",
         "east": "h_4_8",
@@ -1503,7 +1503,7 @@
       }
     },
     "h_4_8": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_3_8",
         "east": "h_5_8",
@@ -1512,7 +1512,7 @@
       }
     },
     "h_5_8": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_8",
         "east": "h_6_8",
@@ -1521,7 +1521,7 @@
       }
     },
     "h_6_8": {
-      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_8",
         "east": "h_7_8",
@@ -1530,7 +1530,7 @@
       }
     },
     "h_7_8": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_6_8",
         "east": "h_8_8",
@@ -1539,7 +1539,7 @@
       }
     },
     "h_8_8": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_8",
         "east": "h_9_8",
@@ -1548,7 +1548,7 @@
       }
     },
     "h_9_8": {
-      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_8",
         "north": "h_9_7",
@@ -1556,14 +1556,14 @@
       }
     },
     "h_0_9": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "east": "h_1_9",
         "north": "h_0_8"
       }
     },
     "h_1_9": {
-      "description": "You are in a silent ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_0_9",
         "east": "h_2_9",
@@ -1571,7 +1571,7 @@
       }
     },
     "h_2_9": {
-      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_1_9",
         "east": "h_3_9",
@@ -1595,7 +1595,7 @@
       }
     },
     "h_5_9": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a crumbling ruin. The stones feel heavy with history.",
       "exits": {
         "west": "h_4_9",
         "east": "h_6_9",
@@ -1603,7 +1603,7 @@
       }
     },
     "h_6_9": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a silent monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_5_9",
         "east": "h_7_9",
@@ -1619,7 +1619,7 @@
       }
     },
     "h_8_9": {
-      "description": "You are in a ancient ruin. The stones feel heavy with history.",
+      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_7_9",
         "east": "h_9_9",
@@ -1627,7 +1627,7 @@
       }
     },
     "h_9_9": {
-      "description": "You are in a crumbling monument plaza. The stones feel heavy with history.",
+      "description": "You are in a ancient monument plaza. The stones feel heavy with history.",
       "exits": {
         "west": "h_8_9",
         "north": "h_9_8"
@@ -1638,17 +1638,10 @@
       "exits": {
         "east": "u_1_0",
         "south": "u_0_1"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_1_0": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_0_0",
         "east": "u_2_0",
@@ -1656,19 +1649,11 @@
       }
     },
     "u_2_0": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_0",
         "east": "u_3_0",
         "south": "u_2_1"
-      }
-    },
-    "u_3_0": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_2_0",
-        "east": "u_4_0",
-        "south": "u_3_1"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1678,8 +1663,16 @@
         "gold": 8
       }
     },
+    "u_3_0": {
+      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_2_0",
+        "east": "u_4_0",
+        "south": "u_3_1"
+      }
+    },
     "u_4_0": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_0",
         "east": "u_5_0",
@@ -1687,7 +1680,7 @@
       }
     },
     "u_5_0": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_4_0",
         "east": "u_6_0",
@@ -1703,11 +1696,19 @@
       }
     },
     "u_7_0": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_0",
         "east": "u_8_0",
         "south": "u_7_1"
+      }
+    },
+    "u_8_0": {
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_7_0",
+        "east": "u_9_0",
+        "south": "u_8_1"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1717,23 +1718,15 @@
         "gold": 8
       }
     },
-    "u_8_0": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_7_0",
-        "east": "u_9_0",
-        "south": "u_8_1"
-      }
-    },
     "u_9_0": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_0",
         "south": "u_9_1"
       }
     },
     "u_0_1": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "east": "u_1_1",
         "north": "u_0_0",
@@ -1750,12 +1743,21 @@
       }
     },
     "u_2_1": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_1",
         "east": "u_3_1",
         "north": "u_2_0",
         "south": "u_2_2"
+      }
+    },
+    "u_3_1": {
+      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_2_1",
+        "east": "u_4_1",
+        "north": "u_3_0",
+        "south": "u_3_2"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1765,17 +1767,8 @@
         "gold": 8
       }
     },
-    "u_3_1": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_2_1",
-        "east": "u_4_1",
-        "north": "u_3_0",
-        "south": "u_3_2"
-      }
-    },
     "u_4_1": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_1",
         "east": "u_5_1",
@@ -1784,28 +1777,30 @@
       }
     },
     "u_5_1": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_4_1",
         "east": "u_6_1",
         "north": "u_5_0",
         "south": "u_5_2"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_6_1": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_1",
         "east": "u_7_1",
         "north": "u_6_0",
         "south": "u_6_2"
+      }
+    },
+    "u_7_1": {
+      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_6_1",
+        "east": "u_8_1",
+        "north": "u_7_0",
+        "south": "u_7_2"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1815,17 +1810,8 @@
         "gold": 8
       }
     },
-    "u_7_1": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_6_1",
-        "east": "u_8_1",
-        "north": "u_7_0",
-        "south": "u_7_2"
-      }
-    },
     "u_8_1": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_1",
         "east": "u_9_1",
@@ -1841,7 +1827,7 @@
       }
     },
     "u_9_1": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_1",
         "north": "u_9_0",
@@ -1857,23 +1843,16 @@
       }
     },
     "u_1_2": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_0_2",
         "east": "u_2_2",
         "north": "u_1_1",
         "south": "u_1_3"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_2_2": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_2",
         "east": "u_3_2",
@@ -1882,7 +1861,7 @@
       }
     },
     "u_3_2": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_2",
         "east": "u_4_2",
@@ -1891,19 +1870,12 @@
       }
     },
     "u_4_2": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_2",
         "east": "u_5_2",
         "north": "u_4_1",
         "south": "u_4_3"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_5_2": {
@@ -1913,15 +1885,6 @@
         "east": "u_6_2",
         "north": "u_5_1",
         "south": "u_5_3"
-      }
-    },
-    "u_6_2": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_5_2",
-        "east": "u_7_2",
-        "north": "u_6_1",
-        "south": "u_6_3"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1931,8 +1894,17 @@
         "gold": 8
       }
     },
+    "u_6_2": {
+      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_5_2",
+        "east": "u_7_2",
+        "north": "u_6_1",
+        "south": "u_6_3"
+      }
+    },
     "u_7_2": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_2",
         "east": "u_8_2",
@@ -1941,12 +1913,19 @@
       }
     },
     "u_8_2": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_2",
         "east": "u_9_2",
         "north": "u_8_1",
         "south": "u_8_3"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_9_2": {
@@ -1958,20 +1937,11 @@
       }
     },
     "u_0_3": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "east": "u_1_3",
         "north": "u_0_2",
         "south": "u_0_4"
-      }
-    },
-    "u_1_3": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_0_3",
-        "east": "u_2_3",
-        "north": "u_1_2",
-        "south": "u_1_4"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -1981,8 +1951,17 @@
         "gold": 8
       }
     },
+    "u_1_3": {
+      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_0_3",
+        "east": "u_2_3",
+        "north": "u_1_2",
+        "south": "u_1_4"
+      }
+    },
     "u_2_3": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_3",
         "east": "u_3_3",
@@ -1991,7 +1970,7 @@
       }
     },
     "u_3_3": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_3",
         "east": "u_4_3",
@@ -2000,7 +1979,7 @@
       }
     },
     "u_4_3": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_3",
         "east": "u_5_3",
@@ -2009,16 +1988,23 @@
       }
     },
     "u_5_3": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_4_3",
         "east": "u_6_3",
         "north": "u_5_2",
         "south": "u_5_4"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_6_3": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_3",
         "east": "u_7_3",
@@ -2027,7 +2013,7 @@
       }
     },
     "u_7_3": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_3",
         "east": "u_8_3",
@@ -2036,7 +2022,7 @@
       }
     },
     "u_8_3": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_3",
         "east": "u_9_3",
@@ -2052,7 +2038,7 @@
       }
     },
     "u_9_3": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_3",
         "north": "u_9_2",
@@ -2074,6 +2060,13 @@
         "east": "u_2_4",
         "north": "u_1_3",
         "south": "u_1_5"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_2_4": {
@@ -2086,12 +2079,30 @@
       }
     },
     "u_3_4": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_4",
         "east": "u_4_4",
         "north": "u_3_3",
         "south": "u_3_5"
+      }
+    },
+    "u_4_4": {
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_3_4",
+        "east": "u_5_4",
+        "north": "u_4_3",
+        "south": "u_4_5"
+      }
+    },
+    "u_5_4": {
+      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_4_4",
+        "east": "u_6_4",
+        "north": "u_5_3",
+        "south": "u_5_5"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2101,26 +2112,8 @@
         "gold": 8
       }
     },
-    "u_4_4": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_3_4",
-        "east": "u_5_4",
-        "north": "u_4_3",
-        "south": "u_4_5"
-      }
-    },
-    "u_5_4": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_4_4",
-        "east": "u_6_4",
-        "north": "u_5_3",
-        "south": "u_5_5"
-      }
-    },
     "u_6_4": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_4",
         "east": "u_7_4",
@@ -2129,16 +2122,23 @@
       }
     },
     "u_7_4": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_4",
         "east": "u_8_4",
         "north": "u_7_3",
         "south": "u_7_5"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_8_4": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_4",
         "east": "u_9_4",
@@ -2147,7 +2147,7 @@
       }
     },
     "u_9_4": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_4",
         "north": "u_9_3",
@@ -2160,6 +2160,15 @@
         "east": "u_1_5",
         "north": "u_0_4",
         "south": "u_0_6"
+      }
+    },
+    "u_1_5": {
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_0_5",
+        "east": "u_2_5",
+        "north": "u_1_4",
+        "south": "u_1_6"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2169,17 +2178,8 @@
         "gold": 8
       }
     },
-    "u_1_5": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_0_5",
-        "east": "u_2_5",
-        "north": "u_1_4",
-        "south": "u_1_6"
-      }
-    },
     "u_2_5": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_5",
         "east": "u_3_5",
@@ -2188,16 +2188,23 @@
       }
     },
     "u_3_5": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_5",
         "east": "u_4_5",
         "north": "u_3_4",
         "south": "u_3_6"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_4_5": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_5",
         "east": "u_5_5",
@@ -2225,25 +2232,39 @@
       }
     },
     "u_7_5": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_5",
         "east": "u_8_5",
         "north": "u_7_4",
         "south": "u_7_6"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_8_5": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_5",
         "east": "u_9_5",
         "north": "u_8_4",
         "south": "u_8_6"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_9_5": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_5",
         "north": "u_9_4",
@@ -2251,7 +2272,7 @@
       }
     },
     "u_0_6": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "east": "u_1_6",
         "north": "u_0_5",
@@ -2259,7 +2280,7 @@
       }
     },
     "u_1_6": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_0_6",
         "east": "u_2_6",
@@ -2268,7 +2289,7 @@
       }
     },
     "u_2_6": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_6",
         "east": "u_3_6",
@@ -2286,12 +2307,19 @@
       }
     },
     "u_4_6": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_6",
         "east": "u_5_6",
         "north": "u_4_5",
         "south": "u_4_7"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_5_6": {
@@ -2304,37 +2332,21 @@
       }
     },
     "u_6_6": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_6",
         "east": "u_7_6",
         "north": "u_6_5",
         "south": "u_6_7"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_7_6": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_6",
         "east": "u_8_6",
         "north": "u_7_5",
         "south": "u_7_7"
-      }
-    },
-    "u_8_6": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_7_6",
-        "east": "u_9_6",
-        "north": "u_8_5",
-        "south": "u_8_7"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2342,6 +2354,15 @@
         "attack": 4,
         "defense": 1,
         "gold": 8
+      }
+    },
+    "u_8_6": {
+      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_7_6",
+        "east": "u_9_6",
+        "north": "u_8_5",
+        "south": "u_8_7"
       }
     },
     "u_9_6": {
@@ -2350,17 +2371,10 @@
         "west": "u_8_6",
         "north": "u_9_5",
         "south": "u_9_7"
-      },
-      "monster": {
-        "name": "Glutton Orc",
-        "hp": 12,
-        "attack": 4,
-        "defense": 1,
-        "gold": 8
       }
     },
     "u_0_7": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "east": "u_1_7",
         "north": "u_0_6",
@@ -2368,7 +2382,7 @@
       }
     },
     "u_1_7": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_0_7",
         "east": "u_2_7",
@@ -2377,7 +2391,7 @@
       }
     },
     "u_2_7": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_7",
         "east": "u_3_7",
@@ -2386,7 +2400,7 @@
       }
     },
     "u_3_7": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_7",
         "east": "u_4_7",
@@ -2395,21 +2409,12 @@
       }
     },
     "u_4_7": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_7",
         "east": "u_5_7",
         "north": "u_4_6",
         "south": "u_4_8"
-      }
-    },
-    "u_5_7": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_4_7",
-        "east": "u_6_7",
-        "north": "u_5_6",
-        "south": "u_5_8"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2419,8 +2424,17 @@
         "gold": 8
       }
     },
+    "u_5_7": {
+      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_4_7",
+        "east": "u_6_7",
+        "north": "u_5_6",
+        "south": "u_5_8"
+      }
+    },
     "u_6_7": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_7",
         "east": "u_7_7",
@@ -2429,29 +2443,12 @@
       }
     },
     "u_7_7": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_7",
         "east": "u_8_7",
         "north": "u_7_6",
         "south": "u_7_8"
-      }
-    },
-    "u_8_7": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_7_7",
-        "east": "u_9_7",
-        "north": "u_8_6",
-        "south": "u_8_8"
-      }
-    },
-    "u_9_7": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_8_7",
-        "north": "u_9_6",
-        "south": "u_9_8"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2461,8 +2458,25 @@
         "gold": 8
       }
     },
-    "u_0_8": {
+    "u_8_7": {
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_7_7",
+        "east": "u_9_7",
+        "north": "u_8_6",
+        "south": "u_8_8"
+      }
+    },
+    "u_9_7": {
       "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_8_7",
+        "north": "u_9_6",
+        "south": "u_9_8"
+      }
+    },
+    "u_0_8": {
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "east": "u_1_8",
         "north": "u_0_7",
@@ -2470,7 +2484,7 @@
       }
     },
     "u_1_8": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_0_8",
         "east": "u_2_8",
@@ -2479,7 +2493,7 @@
       }
     },
     "u_2_8": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_8",
         "east": "u_3_8",
@@ -2488,7 +2502,7 @@
       }
     },
     "u_3_8": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_8",
         "east": "u_4_8",
@@ -2497,7 +2511,7 @@
       }
     },
     "u_4_8": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_8",
         "east": "u_5_8",
@@ -2506,7 +2520,7 @@
       }
     },
     "u_5_8": {
-      "description": "You are in a damp cave. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_4_8",
         "east": "u_6_8",
@@ -2515,7 +2529,7 @@
       }
     },
     "u_6_8": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_8",
         "east": "u_7_8",
@@ -2524,16 +2538,23 @@
       }
     },
     "u_7_8": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a twisting cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_6_8",
         "east": "u_8_8",
         "north": "u_7_7",
         "south": "u_7_9"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_8_8": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a dark cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_8",
         "east": "u_9_8",
@@ -2543,7 +2564,7 @@
       "quest_giver": "orc_shaman"
     },
     "u_9_8": {
-      "description": "You are in a dark cave. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_8",
         "north": "u_9_7",
@@ -2555,14 +2576,6 @@
       "exits": {
         "east": "u_1_9",
         "north": "u_0_8"
-      }
-    },
-    "u_1_9": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
-      "exits": {
-        "west": "u_0_9",
-        "east": "u_2_9",
-        "north": "u_1_8"
       },
       "monster": {
         "name": "Glutton Orc",
@@ -2572,16 +2585,31 @@
         "gold": 8
       }
     },
+    "u_1_9": {
+      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "exits": {
+        "west": "u_0_9",
+        "east": "u_2_9",
+        "north": "u_1_8"
+      }
+    },
     "u_2_9": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_1_9",
         "east": "u_3_9",
         "north": "u_2_8"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_3_9": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_2_9",
         "east": "u_4_9",
@@ -2589,7 +2617,7 @@
       }
     },
     "u_4_9": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a damp tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_3_9",
         "east": "u_5_9",
@@ -2597,19 +2625,33 @@
       }
     },
     "u_5_9": {
-      "description": "You are in a damp tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_4_9",
         "east": "u_6_9",
         "north": "u_5_8"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_6_9": {
-      "description": "You are in a twisting cave. Water drips from the ceiling.",
+      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
       "exits": {
         "west": "u_5_9",
         "east": "u_7_9",
         "north": "u_6_8"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_7_9": {
@@ -2618,10 +2660,17 @@
         "west": "u_6_9",
         "east": "u_8_9",
         "north": "u_7_8"
+      },
+      "monster": {
+        "name": "Glutton Orc",
+        "hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "gold": 8
       }
     },
     "u_8_9": {
-      "description": "You are in a twisting tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_7_9",
         "east": "u_9_9",
@@ -2629,21 +2678,21 @@
       }
     },
     "u_9_9": {
-      "description": "You are in a dark tunnel. Water drips from the ceiling.",
+      "description": "You are in a damp cave. Water drips from the ceiling.",
       "exits": {
         "west": "u_8_9",
         "north": "u_9_8"
       }
     },
     "c_0_0": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "east": "c_1_0",
         "south": "c_0_1"
       }
     },
     "c_1_0": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_0",
         "east": "c_2_0",
@@ -2651,7 +2700,7 @@
       }
     },
     "c_2_0": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_0",
         "east": "c_3_0",
@@ -2659,7 +2708,7 @@
       }
     },
     "c_3_0": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_0",
         "east": "c_4_0",
@@ -2672,10 +2721,17 @@
         "west": "c_3_0",
         "east": "c_5_0",
         "south": "c_4_1"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_5_0": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_0",
         "east": "c_6_0",
@@ -2683,22 +2739,15 @@
       }
     },
     "c_6_0": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_0",
         "east": "c_7_0",
         "south": "c_6_1"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_7_0": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_0",
         "east": "c_8_0",
@@ -2706,7 +2755,7 @@
       }
     },
     "c_8_0": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_0",
         "east": "c_9_0",
@@ -2714,18 +2763,10 @@
       }
     },
     "c_9_0": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_0",
         "south": "c_9_1"
-      }
-    },
-    "c_0_1": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "east": "c_1_1",
-        "north": "c_0_0",
-        "south": "c_0_2"
       },
       "monster": {
         "name": "Siege Goblin",
@@ -2735,50 +2776,51 @@
         "gold": 5
       }
     },
-    "c_1_1": {
+    "c_0_1": {
       "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "east": "c_1_1",
+        "north": "c_0_0",
+        "south": "c_0_2"
+      }
+    },
+    "c_1_1": {
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_1",
         "east": "c_2_1",
         "north": "c_1_0",
         "south": "c_1_2"
       },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
+      },
       "quest_giver": "goblin_chief"
     },
     "c_2_1": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_1",
         "east": "c_3_1",
         "north": "c_2_0",
         "south": "c_2_2"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_3_1": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_1",
         "east": "c_4_1",
         "north": "c_3_0",
         "south": "c_3_2"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_4_1": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_1",
         "east": "c_5_1",
@@ -2787,23 +2829,16 @@
       }
     },
     "c_5_1": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_1",
         "east": "c_6_1",
         "north": "c_5_0",
         "south": "c_5_2"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_6_1": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_1",
         "east": "c_7_1",
@@ -2812,7 +2847,7 @@
       }
     },
     "c_7_1": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_1",
         "east": "c_8_1",
@@ -2821,19 +2856,12 @@
       }
     },
     "c_8_1": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_1",
         "east": "c_9_1",
         "north": "c_8_0",
         "south": "c_8_2"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_9_1": {
@@ -2853,7 +2881,7 @@
       }
     },
     "c_1_2": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_2",
         "east": "c_2_2",
@@ -2862,7 +2890,7 @@
       }
     },
     "c_2_2": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_2",
         "east": "c_3_2",
@@ -2872,7 +2900,7 @@
       }
     },
     "c_3_2": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_2",
         "east": "c_4_2",
@@ -2890,7 +2918,7 @@
       }
     },
     "c_5_2": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_2",
         "east": "c_6_2",
@@ -2899,7 +2927,7 @@
       }
     },
     "c_6_2": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_2",
         "east": "c_7_2",
@@ -2908,46 +2936,12 @@
       }
     },
     "c_7_2": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_2",
         "east": "c_8_2",
         "north": "c_7_1",
         "south": "c_7_3"
-      }
-    },
-    "c_8_2": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_7_2",
-        "east": "c_9_2",
-        "north": "c_8_1",
-        "south": "c_8_3"
-      }
-    },
-    "c_9_2": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_8_2",
-        "north": "c_9_1",
-        "south": "c_9_3"
-      }
-    },
-    "c_0_3": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "east": "c_1_3",
-        "north": "c_0_2",
-        "south": "c_0_4"
-      }
-    },
-    "c_1_3": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_0_3",
-        "east": "c_2_3",
-        "north": "c_1_2",
-        "south": "c_1_4"
       },
       "monster": {
         "name": "Siege Goblin",
@@ -2957,8 +2951,49 @@
         "gold": 5
       }
     },
-    "c_2_3": {
+    "c_8_2": {
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_7_2",
+        "east": "c_9_2",
+        "north": "c_8_1",
+        "south": "c_8_3"
+      }
+    },
+    "c_9_2": {
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_8_2",
+        "north": "c_9_1",
+        "south": "c_9_3"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
+      }
+    },
+    "c_0_3": {
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "east": "c_1_3",
+        "north": "c_0_2",
+        "south": "c_0_4"
+      }
+    },
+    "c_1_3": {
       "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_0_3",
+        "east": "c_2_3",
+        "north": "c_1_2",
+        "south": "c_1_4"
+      }
+    },
+    "c_2_3": {
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_3",
         "east": "c_3_3",
@@ -2967,16 +3002,23 @@
       }
     },
     "c_3_3": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_3",
         "east": "c_4_3",
         "north": "c_3_2",
         "south": "c_3_4"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_4_3": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_3",
         "east": "c_5_3",
@@ -2985,7 +3027,7 @@
       }
     },
     "c_5_3": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_3",
         "east": "c_6_3",
@@ -3012,7 +3054,7 @@
       }
     },
     "c_8_3": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_3",
         "east": "c_9_3",
@@ -3026,10 +3068,17 @@
         "west": "c_8_3",
         "north": "c_9_2",
         "south": "c_9_4"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_0_4": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "east": "c_1_4",
         "north": "c_0_3",
@@ -3037,7 +3086,7 @@
       }
     },
     "c_1_4": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_4",
         "east": "c_2_4",
@@ -3046,7 +3095,7 @@
       }
     },
     "c_2_4": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_4",
         "east": "c_3_4",
@@ -3055,16 +3104,23 @@
       }
     },
     "c_3_4": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_4",
         "east": "c_4_4",
         "north": "c_3_3",
         "south": "c_3_5"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_4_4": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_4",
         "east": "c_5_4",
@@ -3073,7 +3129,7 @@
       }
     },
     "c_5_4": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_4",
         "east": "c_6_4",
@@ -3082,7 +3138,7 @@
       }
     },
     "c_6_4": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_4",
         "east": "c_7_4",
@@ -3091,7 +3147,7 @@
       }
     },
     "c_7_4": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_4",
         "east": "c_8_4",
@@ -3109,7 +3165,7 @@
       }
     },
     "c_9_4": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_4",
         "north": "c_9_3",
@@ -3122,69 +3178,6 @@
         "east": "c_1_5",
         "north": "c_0_4",
         "south": "c_0_6"
-      }
-    },
-    "c_1_5": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_0_5",
-        "east": "c_2_5",
-        "north": "c_1_4",
-        "south": "c_1_6"
-      }
-    },
-    "c_2_5": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_1_5",
-        "east": "c_3_5",
-        "north": "c_2_4",
-        "south": "c_2_6"
-      }
-    },
-    "c_3_5": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_2_5",
-        "east": "c_4_5",
-        "north": "c_3_4",
-        "south": "c_3_6"
-      }
-    },
-    "c_4_5": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_3_5",
-        "east": "c_5_5",
-        "north": "c_4_4",
-        "south": "c_4_6"
-      }
-    },
-    "c_5_5": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_4_5",
-        "east": "c_6_5",
-        "north": "c_5_4",
-        "south": "c_5_6"
-      }
-    },
-    "c_6_5": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_5_5",
-        "east": "c_7_5",
-        "north": "c_6_4",
-        "south": "c_6_6"
-      }
-    },
-    "c_7_5": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "west": "c_6_5",
-        "east": "c_8_5",
-        "north": "c_7_4",
-        "south": "c_7_6"
       },
       "monster": {
         "name": "Siege Goblin",
@@ -3194,8 +3187,78 @@
         "gold": 5
       }
     },
+    "c_1_5": {
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_0_5",
+        "east": "c_2_5",
+        "north": "c_1_4",
+        "south": "c_1_6"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
+      }
+    },
+    "c_2_5": {
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_1_5",
+        "east": "c_3_5",
+        "north": "c_2_4",
+        "south": "c_2_6"
+      }
+    },
+    "c_3_5": {
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_2_5",
+        "east": "c_4_5",
+        "north": "c_3_4",
+        "south": "c_3_6"
+      }
+    },
+    "c_4_5": {
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_3_5",
+        "east": "c_5_5",
+        "north": "c_4_4",
+        "south": "c_4_6"
+      }
+    },
+    "c_5_5": {
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_4_5",
+        "east": "c_6_5",
+        "north": "c_5_4",
+        "south": "c_5_6"
+      }
+    },
+    "c_6_5": {
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_5_5",
+        "east": "c_7_5",
+        "north": "c_6_4",
+        "south": "c_6_6"
+      }
+    },
+    "c_7_5": {
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "west": "c_6_5",
+        "east": "c_8_5",
+        "north": "c_7_4",
+        "south": "c_7_6"
+      }
+    },
     "c_8_5": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_5",
         "east": "c_9_5",
@@ -3211,12 +3274,19 @@
       }
     },
     "c_9_5": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_5",
         "north": "c_9_4",
         "south": "c_9_6",
         "east": "p_0_2"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_0_6": {
@@ -3225,19 +3295,33 @@
         "east": "c_1_6",
         "north": "c_0_5",
         "south": "c_0_7"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_1_6": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_6",
         "east": "c_2_6",
         "north": "c_1_5",
         "south": "c_1_7"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_2_6": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_6",
         "east": "c_3_6",
@@ -3255,7 +3339,7 @@
       }
     },
     "c_4_6": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_6",
         "east": "c_5_6",
@@ -3264,23 +3348,16 @@
       }
     },
     "c_5_6": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_6",
         "east": "c_6_6",
         "north": "c_5_5",
         "south": "c_5_7"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_6_6": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_6",
         "east": "c_7_6",
@@ -3289,7 +3366,7 @@
       }
     },
     "c_7_6": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_6",
         "east": "c_8_6",
@@ -3298,7 +3375,7 @@
       }
     },
     "c_8_6": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_6",
         "east": "c_9_6",
@@ -3307,11 +3384,19 @@
       }
     },
     "c_9_6": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_6",
         "north": "c_9_5",
         "south": "c_9_7"
+      }
+    },
+    "c_0_7": {
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "exits": {
+        "east": "c_1_7",
+        "north": "c_0_6",
+        "south": "c_0_8"
       },
       "monster": {
         "name": "Siege Goblin",
@@ -3321,16 +3406,8 @@
         "gold": 5
       }
     },
-    "c_0_7": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
-      "exits": {
-        "east": "c_1_7",
-        "north": "c_0_6",
-        "south": "c_0_8"
-      }
-    },
     "c_1_7": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_7",
         "east": "c_2_7",
@@ -3348,7 +3425,7 @@
       }
     },
     "c_3_7": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_7",
         "east": "c_4_7",
@@ -3357,7 +3434,7 @@
       }
     },
     "c_4_7": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_7",
         "east": "c_5_7",
@@ -3372,17 +3449,10 @@
         "east": "c_6_7",
         "north": "c_5_6",
         "south": "c_5_8"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_6_7": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_7",
         "east": "c_7_7",
@@ -3391,7 +3461,7 @@
       }
     },
     "c_7_7": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_7",
         "east": "c_8_7",
@@ -3410,18 +3480,11 @@
       }
     },
     "c_9_7": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_7",
         "north": "c_9_6",
         "south": "c_9_8"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_0_8": {
@@ -3439,17 +3502,10 @@
         "east": "c_2_8",
         "north": "c_1_7",
         "south": "c_1_9"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_2_8": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_1_8",
         "east": "c_3_8",
@@ -3458,7 +3514,7 @@
       }
     },
     "c_3_8": {
-      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_8",
         "east": "c_4_8",
@@ -3467,7 +3523,7 @@
       }
     },
     "c_4_8": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_8",
         "east": "c_5_8",
@@ -3476,7 +3532,7 @@
       }
     },
     "c_5_8": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_8",
         "east": "c_6_8",
@@ -3485,7 +3541,7 @@
       }
     },
     "c_6_8": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_8",
         "east": "c_7_8",
@@ -3503,7 +3559,7 @@
       }
     },
     "c_8_8": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_8",
         "east": "c_9_8",
@@ -3512,7 +3568,7 @@
       }
     },
     "c_9_8": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_8",
         "north": "c_9_7",
@@ -3520,18 +3576,25 @@
       }
     },
     "c_0_9": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "east": "c_1_9",
         "north": "c_0_8"
       }
     },
     "c_1_9": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_0_9",
         "east": "c_2_9",
         "north": "c_1_8"
+      },
+      "monster": {
+        "name": "Siege Goblin",
+        "hp": 8,
+        "attack": 3,
+        "defense": 2,
+        "gold": 5
       }
     },
     "c_2_9": {
@@ -3543,22 +3606,15 @@
       }
     },
     "c_3_9": {
-      "description": "You are in a fortified hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_2_9",
         "east": "c_4_9",
         "north": "c_3_8"
-      },
-      "monster": {
-        "name": "Siege Goblin",
-        "hp": 8,
-        "attack": 3,
-        "defense": 2,
-        "gold": 5
       }
     },
     "c_4_9": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_3_9",
         "east": "c_5_9",
@@ -3566,7 +3622,7 @@
       }
     },
     "c_5_9": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_4_9",
         "east": "c_6_9",
@@ -3574,7 +3630,7 @@
       }
     },
     "c_6_9": {
-      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_5_9",
         "east": "c_7_9",
@@ -3582,7 +3638,7 @@
       }
     },
     "c_7_9": {
-      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold parapet. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_6_9",
         "east": "c_8_9",
@@ -3590,7 +3646,7 @@
       }
     },
     "c_8_9": {
-      "description": "You are in a fortified parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a imposing hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_7_9",
         "east": "c_9_9",
@@ -3598,14 +3654,14 @@
       }
     },
     "c_9_9": {
-      "description": "You are in a imposing parapet. Banners of the Siege Goblins hang here.",
+      "description": "You are in a cold hall. Banners of the Siege Goblins hang here.",
       "exits": {
         "west": "c_8_9",
         "north": "c_9_8"
       }
     },
     "cq_0_0": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_0",
         "south": "cq_0_1",
@@ -3613,7 +3669,7 @@
       }
     },
     "cq_1_0": {
-      "description": "You are in a forgotten passage. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_0",
         "east": "cq_2_0",
@@ -3621,7 +3677,7 @@
       }
     },
     "cq_2_0": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_0",
         "east": "cq_3_0",
@@ -3637,7 +3693,7 @@
       }
     },
     "cq_4_0": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_0",
         "south": "cq_4_1"
@@ -3652,7 +3708,7 @@
       }
     },
     "cq_1_1": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_1",
         "east": "cq_2_1",
@@ -3661,7 +3717,7 @@
       }
     },
     "cq_2_1": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_1",
         "east": "cq_3_1",
@@ -3670,7 +3726,7 @@
       }
     },
     "cq_3_1": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_1",
         "east": "cq_4_1",
@@ -3679,7 +3735,7 @@
       }
     },
     "cq_4_1": {
-      "description": "You are in a forgotten chamber. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_1",
         "north": "cq_4_0",
@@ -3687,7 +3743,7 @@
       }
     },
     "cq_0_2": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_2",
         "north": "cq_0_1",
@@ -3704,7 +3760,7 @@
       }
     },
     "cq_2_2": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_2",
         "east": "cq_3_2",
@@ -3713,7 +3769,7 @@
       }
     },
     "cq_3_2": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_2",
         "east": "cq_4_2",
@@ -3722,7 +3778,7 @@
       }
     },
     "cq_4_2": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_2",
         "north": "cq_4_1",
@@ -3730,7 +3786,7 @@
       }
     },
     "cq_0_3": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a forgotten passage. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_3",
         "north": "cq_0_2",
@@ -3747,7 +3803,7 @@
       }
     },
     "cq_2_3": {
-      "description": "You are in a forgotten chamber. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_3",
         "east": "cq_3_3",
@@ -3756,7 +3812,7 @@
       }
     },
     "cq_3_3": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_3",
         "east": "cq_4_3",
@@ -3765,7 +3821,7 @@
       }
     },
     "cq_4_3": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_3",
         "north": "cq_4_2",
@@ -3773,7 +3829,7 @@
       }
     },
     "cq_0_4": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_4",
         "north": "cq_0_3",
@@ -3781,7 +3837,7 @@
       }
     },
     "cq_1_4": {
-      "description": "You are in a forgotten chamber. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_4",
         "east": "cq_2_4",
@@ -3799,7 +3855,7 @@
       }
     },
     "cq_3_4": {
-      "description": "You are in a forgotten passage. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_4",
         "east": "cq_4_4",
@@ -3808,7 +3864,7 @@
       }
     },
     "cq_4_4": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a forgotten passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_4",
         "north": "cq_4_3",
@@ -3824,7 +3880,7 @@
       }
     },
     "cq_1_5": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_5",
         "east": "cq_2_5",
@@ -3833,7 +3889,7 @@
       }
     },
     "cq_2_5": {
-      "description": "You are in a forgotten chamber. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_5",
         "east": "cq_3_5",
@@ -3851,7 +3907,7 @@
       }
     },
     "cq_4_5": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_5",
         "north": "cq_4_4",
@@ -3859,7 +3915,7 @@
       }
     },
     "cq_0_6": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_6",
         "north": "cq_0_5",
@@ -3867,7 +3923,7 @@
       }
     },
     "cq_1_6": {
-      "description": "You are in a forgotten passage. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_6",
         "east": "cq_2_6",
@@ -3876,7 +3932,7 @@
       }
     },
     "cq_2_6": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_6",
         "east": "cq_3_6",
@@ -3894,7 +3950,7 @@
       }
     },
     "cq_4_6": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_6",
         "north": "cq_4_5",
@@ -3902,7 +3958,7 @@
       }
     },
     "cq_0_7": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten chamber. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_7",
         "north": "cq_0_6",
@@ -3919,7 +3975,7 @@
       }
     },
     "cq_2_7": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_7",
         "east": "cq_3_7",
@@ -3928,7 +3984,7 @@
       }
     },
     "cq_3_7": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a forgotten passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_7",
         "east": "cq_4_7",
@@ -3937,7 +3993,7 @@
       }
     },
     "cq_4_7": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a secret chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_7",
         "north": "cq_4_6",
@@ -3945,7 +4001,7 @@
       }
     },
     "cq_0_8": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_8",
         "north": "cq_0_7",
@@ -3953,7 +4009,7 @@
       }
     },
     "cq_1_8": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_8",
         "east": "cq_2_8",
@@ -3962,7 +4018,7 @@
       }
     },
     "cq_2_8": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_8",
         "east": "cq_3_8",
@@ -3971,7 +4027,7 @@
       }
     },
     "cq_3_8": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_8",
         "east": "cq_4_8",
@@ -3980,7 +4036,7 @@
       }
     },
     "cq_4_8": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_8",
         "north": "cq_4_7",
@@ -3988,14 +4044,14 @@
       }
     },
     "cq_0_9": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "east": "cq_1_9",
         "north": "cq_0_8"
       }
     },
     "cq_1_9": {
-      "description": "You are in a dusty chamber. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_0_9",
         "east": "cq_2_9",
@@ -4003,7 +4059,7 @@
       }
     },
     "cq_2_9": {
-      "description": "You are in a dusty passage. You feel a hidden presence.",
+      "description": "You are in a secret passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_1_9",
         "east": "cq_3_9",
@@ -4011,7 +4067,7 @@
       }
     },
     "cq_3_9": {
-      "description": "You are in a secret passage. You feel a hidden presence.",
+      "description": "You are in a dusty passage. You feel a hidden presence.",
       "exits": {
         "west": "cq_2_9",
         "east": "cq_4_9",
@@ -4019,11 +4075,19 @@
       }
     },
     "cq_4_9": {
-      "description": "You are in a secret chamber. You feel a hidden presence.",
+      "description": "You are in a dusty chamber. You feel a hidden presence.",
       "exits": {
         "west": "cq_3_9",
         "north": "cq_4_8"
-      }
+      },
+      "monster": {
+        "name": "The Ghost of King Bailon",
+        "hp": 200,
+        "attack": 15,
+        "defense": 10,
+        "gold": 300
+      },
+      "quest_object": "amulet_fragment_sky"
     }
   },
   "quests": {
