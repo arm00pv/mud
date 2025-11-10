@@ -41,8 +41,9 @@ const db = new sqlite3.Database('./database.db', (err) => {
         db.serialize(() => {
             db.run(`CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL,
                 email TEXT UNIQUE,
-                password TEXT,
                 verified BOOLEAN DEFAULT FALSE,
                 verification_token TEXT
             )`);
@@ -74,17 +75,42 @@ const authenticateToken = (req, res, next) => {
 
 // Register a new user
 app.post('/api/register', (req, res) => {
-    const { email, password } = req.body;
-    if (!email || !password) {
-        return res.status(400).json({ error: 'All fields are required' });
+    const { username, password } = req.body;
+    if (!username || !password) {
+        return res.status(400).json({ error: 'Username and password are required.' });
     }
     const hashedPassword = bcrypt.hashSync(password, 8);
-    const verificationToken = crypto.randomBytes(20).toString('hex');
 
-    db.run('INSERT INTO users (email, password, verification_token) VALUES (?, ?, ?)',
-        [email, hashedPassword, verificationToken], async function(err) {
+    db.run('INSERT INTO users (username, password) VALUES (?, ?)',
+        [username, hashedPassword], function(err) {
         if (err) {
-            return res.status(500).json({ error: 'Email already exists.' });
+            return res.status(500).json({ error: 'Username already exists.' });
+        }
+        res.status(201).json({ message: 'Registration successful. You can now log in.' });
+    });
+});
+
+// Get user email status
+app.get('/api/user/email', authenticateToken, (req, res) => {
+    db.get('SELECT email, verified FROM users WHERE id = ?', [req.user.id], (err, row) => {
+        if (err || !row) {
+            return res.status(404).json({ error: 'User not found.' });
+        }
+        res.json({ email: row.email, verified: row.verified });
+    });
+});
+
+// Add or update user email
+app.post('/api/user/email', authenticateToken, (req, res) => {
+    const { email } = req.body;
+    if (!email) {
+        return res.status(400).json({ error: 'Email address is required.' });
+    }
+    const verificationToken = crypto.randomBytes(20).toString('hex');
+    db.run('UPDATE users SET email = ?, verification_token = ?, verified = FALSE WHERE id = ?',
+        [email, verificationToken, req.user.id], function(err) {
+        if (err) {
+            return res.status(500).json({ error: 'Email address may already be in use.' });
         }
 
         const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
@@ -97,11 +123,7 @@ app.post('/api/register', (req, res) => {
                         Email: process.env.MAILJET_SENDER_EMAIL || 'no-reply@yourdomain.com',
                         Name: 'MUD Game',
                     },
-                    To: [
-                        {
-                            Email: email,
-                        },
-                    ],
+                    To: [{ Email: email }],
                     Subject: 'Verify Your Email Address',
                     TextPart: `Please verify your email address by clicking the following link: ${verificationUrl}`,
                     HTMLPart: `<p>Please verify your email address by clicking the following link: <a href="${verificationUrl}">${verificationUrl}</a></p>`,
@@ -111,14 +133,12 @@ app.post('/api/register', (req, res) => {
 
         request
             .then(() => {
-                res.status(201).json({ message: 'Registration successful. Please check your email to verify your account.' });
+                res.json({ message: 'Verification email sent. Please check your inbox.' });
             })
             .catch((err) => {
-                console.error('Error sending verification email:', err.statusCode, err.response.text);
+                console.error('Error sending verification email:', err.statusCode);
                 res.status(500).json({ error: 'Failed to send verification email.' });
             });
-    });
-});
     });
 });
 
@@ -141,8 +161,8 @@ app.get('/api/verify-email', (req, res) => {
 
 // Login and get a token
 app.post('/api/login', (req, res) => {
-    const { email, password } = req.body;
-    db.get('SELECT * FROM users WHERE email = ?', [email], (err, user) => {
+    const { username, password } = req.body;
+    db.get('SELECT * FROM users WHERE username = ?', [username], (err, user) => {
         if (err || !user) {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
@@ -150,10 +170,7 @@ app.post('/api/login', (req, res) => {
         if (!passwordIsValid) {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
-        if (!user.verified) {
-            return res.status(401).json({ error: 'Please verify your email address before logging in.' });
-        }
-        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '24h' });
+        const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '24h' });
         res.json({ token });
     });
 });

@@ -11,7 +11,7 @@
     <!-- Login Form -->
     <div id="login-form">
       <h2>Login</h2>
-      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="text" id="login-username" placeholder="Username" required>
       <input type="password" id="login-password" placeholder="Password" required>
       <button id="login-button">Login</button>
       <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
@@ -20,7 +20,7 @@
     <!-- Registration Form -->
     <div id="register-form" style="display: none;">
       <h2>Register</h2>
-      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="text" id="register-username" placeholder="Username" required>
       <input type="password" id="register-password" placeholder="Password" required>
       <button id="register-button">Register</button>
       <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
@@ -42,6 +42,6 @@
     <input type="text" id="input" autofocus>
   </div>
 
-  <script src="game.js"></script>
+  <script type="module" src="js/game.js"></script>
 </body>
 </html>
