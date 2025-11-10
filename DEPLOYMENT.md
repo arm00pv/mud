@@ -1,97 +1,142 @@
-# MUD Game Deployment Guide
+# Deployment Guide for Digital Ocean LAMP Server
 
-This guide provides step-by-step instructions for deploying the AI-Generated MUD game to a web server. The game consists of two main parts:
+This guide provides specific instructions for deploying the AI-Generated MUD game on a Digital Ocean LAMP server, to be hosted at `https://zapp.sytes.net/mud`.
 
-1.  **Frontend:** A set of static files (HTML, CSS, JavaScript, and JSON) that make up the game client.
-2.  **Backend:** A Node.js server that handles user authentication, email verification, and game state persistence.
+## 1. Prerequisites
 
-## Prerequisites
+Before deploying, ensure your server has the following installed.
 
-*   A web server with shell access (e.g., a VPS running a Linux distribution).
-*   Node.js and npm installed on the server.
-*   A web server software like Nginx or Apache.
-*   An SMTP server for sending verification emails.
+### a. Node.js and npm
+The backend server runs on Node.js. The recommended way to install it is using NodeSource.
 
-## Deployment Steps
+```bash
+# Run these commands as a user with sudo privileges
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
 
-### 1. Upload Game Files
+### b. PM2 (Process Manager)
+PM2 is a production process manager for Node.js applications that will keep the backend server running permanently.
 
-Transfer the entire project directory (including the `mud` and `server` subdirectories) to your web server. You can use tools like `scp` or `rsync` for this.
+```bash
+sudo npm install -g pm2
+```
 
-### 2. Set Up the Backend
+### c. Git
+To clone the repository from GitHub.
+```bash
+sudo apt-get install -y git
+```
 
-The backend server is responsible for managing user accounts and saving game progress.
+## 2. Clone the Repository
 
-1.  **Navigate to the server directory:**
-    ```bash
-    cd /path/to/your/project/server
-    ```
+Clone the game's repository into the `/var/www/webhost/mud` directory.
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+```bash
+# Navigate to the parent directory
+cd /var/www/webhost
 
-3.  **Configure Environment Variables:**
-    The server requires several environment variables to be set. You should set these in your shell's startup file (e.g., `~/.bashrc` or `~/.profile`):
-    ```bash
-    # The base URL of your application (e.g., http://your_domain.com)
-    export BASE_URL='http://your_domain.com'
+# Clone the repository into a new 'mud' folder
+git clone <YOUR_REPOSITORY_URL> mud
+```
+*Replace `<YOUR_REPOSITORY_URL>` with the actual URL of your GitHub repository.*
 
-    # A long, random, and secret string for signing JWTs
-    export JWT_SECRET='your_super_secret_and_long_random_string'
+## 3. Configure the Backend
 
-    # Your SMTP server details for sending verification emails
-    export EMAIL_HOST='your_smtp_host'
-    export EMAIL_PORT='your_smtp_port'
-    export EMAIL_USER='your_smtp_username'
-    export EMAIL_PASS='your_smtp_password'
-    ```
-    Make sure to source the file (`source ~/.bashrc`) or log out and back in for the changes to take effect.
+The backend requires Node.js dependencies and environment variables to be set up.
 
-4.  **Start the server:**
-    It's recommended to use a process manager like `pm2` to keep the server running in the background. `pm2` will automatically use the environment variables you've set.
-    ```bash
-    npm install -g pm2
-    pm2 start server.js --name "mud-backend"
-    ```
-    The backend server will start on port 3000 by default.
+### a. Install Dependencies
+Navigate to the server directory and install the required npm packages.
+```bash
+cd /var/www/webhost/mud/server
+npm install
+```
 
-### 3. Set Up the Frontend
+### b. Set Environment Variables
+The server needs several secret keys and configuration variables. The best practice is to add them to your environment.
 
-The frontend consists of static files that need to be served by a web server.
+Edit your user's shell profile file:
+```bash
+nano ~/.bashrc
+```
 
-1.  **Configure your web server (e.g., Nginx) to serve the frontend files.**
-    Create a new server block in your Nginx configuration:
-    ```nginx
-    server {
-        listen 80;
-        server_name your_domain.com;
+Add the following lines to the end of the file. **It is critical that you replace the placeholder values.**
 
-        root /path/to/your/project/mud;
-        index index.html;
+```bash
+# The full public URL where the game will be accessed.
+export BASE_URL='https://zapp.sytes.net/mud'
 
-        location / {
-            try_files $uri $uri/ =404;
-        }
+# A long, random, and secret string for signing security tokens.
+# You can generate one with: openssl rand -base64 32
+export JWT_SECRET='your_super_secret_and_long_random_string'
 
-        location /api/ {
-            proxy_pass http://localhost:3000;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
-    }
-    ```
-    This configuration serves the static files from the `mud` directory and proxies all API requests (`/api/...`) to the backend server running on port 3000.
+# Your SMTP server details for sending verification emails.
+export EMAIL_HOST='your_smtp_host'
+export EMAIL_PORT='587' # Or 465, etc.
+export EMAIL_USER='your_smtp_username'
+export EMAIL_PASS='your_smtp_password'
+```
 
-2.  **Reload your web server configuration:**
-    ```bash
-    sudo systemctl reload nginx
-    ```
+Save the file (`CTRL+X`, then `Y`, then `Enter`) and load the new variables into your current session:
+```bash
+source ~/.bashrc
+```
 
-### 4. Access the Game
+### c. Start the Backend with PM2
+Start the backend server using PM2. It will automatically run in the background and restart on server reboots.
 
-You should now be able to access the game by navigating to `http://your_domain.com` in your web browser.
+```bash
+# Make sure you are still in the /var/www/webhost/mud/server directory
+pm2 start server.js --name "mud-backend"
+
+# Save the current process list to have it restart on reboot
+pm2 save
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u $USER --hp /home/$USER
+```
+*(The long `sudo env...` command sets up the startup script for PM2.)*
+
+You can check the status of the backend at any time with `pm2 status`.
+
+## 4. Configure Apache
+
+You need to tell Apache how to serve the MUD game's static files and how to forward API requests to the Node.js backend.
+
+### a. Enable Required Apache Modules
+Ensure `mod_proxy` and `mod_proxy_http` are enabled.
+```bash
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+```
+
+### b. Edit the Apache Configuration File
+Open your existing SSL virtual host file for editing:
+```bash
+sudo nano /etc/apache2/sites-enabled/webhost-le-ssl.conf
+```
+
+Inside the `<VirtualHost *:443>` block, add the following configuration snippet. A good place is in **SECTION 2**, alongside your other application proxies.
+
+```apache
+    # --- MUD Game ---
+    # Alias maps the /mud/ URL path to the frontend's directory on the filesystem.
+    Alias /mud/ /var/www/webhost/mud/mud/
+    <Directory /var/www/webhost/mud/mud>
+        Require all granted
+    </Directory>
+
+    # This <Location> block proxies API requests from /mud/api/ to the backend server.
+    <Location /mud/api/>
+        ProxyPass http://127.0.0.1:3000/api/
+        ProxyPassReverse http://127.0.0.1:3000/api/
+    </Location>
+```
+
+### c. Restart Apache
+Apply the new configuration by restarting Apache.
+```bash
+sudo systemctl restart apache2
+```
+
+## 5. You're Live!
+
+The MUD game should now be accessible at `https://zapp.sytes.net/mud`. Open this URL in your browser to start playing.
