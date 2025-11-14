@@ -145,6 +145,8 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
     # static files from the /var/www/webhost/mud/ directory for any requests to zapp.sytes.net/mud/...
     # that are not caught by the proxy rules above.
     <Directory /var/www/webhost/mud>
+        # This tells Apache to serve 'index.html' as the default file in this directory.
+        DirectoryIndex index.html
         Require all granted
     </Directory>
 ```
