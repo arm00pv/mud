@@ -75,6 +75,7 @@ const authenticateToken = (req, res, next) => {
 
 // Register a new user
 app.post('/api/register', (req, res) => {
+    console.log('Received registration request with body:', req.body);
     const { username, password } = req.body;
     if (!username || !password) {
         return res.status(400).json({ error: 'Username and password are required.' });

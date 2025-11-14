@@ -160,3 +160,13 @@ sudo systemctl restart apache2
 ## 5. You're Live!
 
 The MUD game should now be accessible at `https://zapp.sytes.net/mud`. Open this URL in your browser to start playing.
+
+## 6. Troubleshooting
+
+If you encounter issues, the first step is to check the logs for your backend server. You can view the logs in real-time using PM2.
+
+```bash
+pm2 logs mud-backend
+```
+
+This command will display the latest output from the server, including any error messages or the diagnostic `console.log` messages we've added. To exit the log view, press `CTRL+C`.
