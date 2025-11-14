@@ -127,25 +127,25 @@ Inside the `<VirtualHost *:443>` block, add the following configuration snippet.
     # --- MUD Game ---
     # WebSocket Proxy: Must come before the Alias and Location blocks.
     # --- MUD Game ---
-    # The RewriteEngine must be on for the following rules to work.
+    # The ordering of these rules is critical for them to work together.
     RewriteEngine On
 
-    # 1. WebSocket Proxy: This rule handles the real-time chat connection.
-    # It must come before the API proxy rule. It upgrades the connection for WebSocket traffic.
+    # 1. WebSocket Proxy: This rule must come first. It intercepts WebSocket upgrade requests
+    # and proxies them to the Node.js server. [P,L] means Proxy and Last rule.
     RewriteCond %{REQUEST_URI} ^/mud/$ [NC]
     RewriteCond %{HTTP:Upgrade} =websocket [NC]
     RewriteRule ^/mud/(.*) ws://localhost:3002/$1 [P,L]
 
-    # 2. API Proxy: This rule forwards all API requests from /mud/api/... to the backend Node.js server.
-    # The [P] flag proxies the request, and [L] stops processing further rules for this request.
+    # 2. API Proxy: This rule must come second. It intercepts any requests to the API path
+    # and proxies them to the Node.js server.
     RewriteRule ^/mud/api/(.*)$ http://127.0.0.1:3002/api/$1 [P,L]
 
-    # 3. Static Files: No 'Alias' is needed here.
-    # Because your DocumentRoot is /var/www/webhost, Apache will automatically serve
-    # static files from the /var/www/webhost/mud/ directory for any requests to zapp.sytes.net/mud/...
-    # that are not caught by the proxy rules above.
-    <Directory /var/www/webhost/mud>
-        # This tells Apache to serve 'index.html' as the default file in this directory.
+    # 3. Static Files Alias: This rule comes last. It maps the /mud/ URL path to your
+    # nested frontend directory. Because the proxy rules come first, this will only apply
+    # to requests that are NOT for the API or WebSocket.
+    Alias /mud/ /var/www/webhost/mud/mud/
+    <Directory /var/www/webhost/mud/mud>
+        # This tells Apache to serve 'index.html' when someone visits /mud/
         DirectoryIndex index.html
         Require all granted
     </Directory>
