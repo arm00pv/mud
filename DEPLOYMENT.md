@@ -112,8 +112,9 @@ sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod proxy_wstunnel
 sudo a2enmod rewrite
+sudo a2enmod headers
 ```
-*(Note: `proxy_http` is essential for the `RewriteRule` with the `[P]` flag to function correctly.)*
+*(Note: `proxy_http` is essential for the `RewriteRule` with the `[P]` flag, and `headers` is required to pass the `Content-Type` header to the backend.)*
 
 ### b. Edit the Apache Configuration File
 Open your existing SSL virtual host file for editing:
