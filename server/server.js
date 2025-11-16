@@ -22,7 +22,32 @@ if (!process.env.JWT_SECRET && process.env.NODE_ENV === 'production') {
 }
 const JWT_SECRET = process.env.JWT_SECRET || 'your_very_secret_key_for_development_only';
 
-app.use(express.json());
+// app.use(express.json()); // Temporarily disable for diagnostics
+
+// Diagnostic middleware to capture raw request body
+app.use((req, res, next) => {
+    if (req.headers['content-type'] === 'application/json') {
+        let data = '';
+        req.on('data', chunk => {
+            data += chunk;
+        });
+        req.on('end', () => {
+            console.log('--- RAW REQUEST BODY ---');
+            console.log(data);
+            console.log('--- END RAW REQUEST BODY ---');
+            try {
+                req.body = JSON.parse(data);
+            } catch (e) {
+                console.error("Failed to parse JSON:", e);
+                req.body = {};
+            }
+            next();
+        });
+    } else {
+        next();
+    }
+});
+
 
 // In-memory mapping of characterId to WebSocket connection and player data
 const clients = new Map();
