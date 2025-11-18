@@ -3,23 +3,15 @@
   "start_room": "entrance",
   "rooms": {
     "cave_0_0": {
-      "description": "You are in a vast cavern at (0, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "east": "cave_1_0",
         "south": "cave_0_1"
       },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
-      },
       "quest_object": "crystal_shard_1"
     },
     "cave_0_1": {
-      "description": "You are in a vast cavern at (0, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "east": "cave_1_1",
         "north": "cave_0_0",
@@ -27,7 +19,7 @@
       }
     },
     "cave_0_2": {
-      "description": "You are in a vast cavern at (0, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "east": "cave_1_2",
         "north": "cave_0_1",
@@ -35,23 +27,15 @@
       }
     },
     "cave_0_3": {
-      "description": "You are in a vast cavern at (0, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "east": "cave_1_3",
         "north": "cave_0_2",
         "south": "cave_0_4"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_0_4": {
-      "description": "You are in a vast cavern at (0, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "east": "cave_1_4",
         "north": "cave_0_3",
@@ -59,7 +43,7 @@
       }
     },
     "cave_0_5": {
-      "description": "You are in a vast cavern at (0, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "east": "cave_1_5",
         "north": "cave_0_4",
@@ -67,11 +51,51 @@
       }
     },
     "cave_0_6": {
-      "description": "You are in a vast cavern at (0, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cavern. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "east": "cave_1_6",
         "north": "cave_0_5",
         "south": "cave_0_7"
+      }
+    },
+    "cave_0_7": {
+      "description": "You are in a ancient tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "east": "cave_1_7",
+        "north": "cave_0_6",
+        "south": "cave_0_8"
+      }
+    },
+    "cave_0_8": {
+      "description": "You are in a silent chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
+      "exits": {
+        "east": "cave_1_8",
+        "north": "cave_0_7",
+        "south": "cave_0_9"
+      }
+    },
+    "cave_0_9": {
+      "description": "You are in a ancient chasm. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
+      "exits": {
+        "east": "cave_1_9",
+        "north": "cave_0_8",
+        "south": "cave_0_10"
+      }
+    },
+    "cave_0_10": {
+      "description": "You are in a echoin chasm. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
+      "exits": {
+        "east": "cave_1_10",
+        "north": "cave_0_9",
+        "south": "cave_0_11"
+      }
+    },
+    "cave_0_11": {
+      "description": "You are in a ancient cathedral. The sound of dripping water echoes melodically through the chamber.",
+      "exits": {
+        "east": "cave_1_11",
+        "north": "cave_0_10",
+        "south": "cave_0_12"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -82,48 +106,8 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_0_7": {
-      "description": "You are in a vast cavern at (0, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "east": "cave_1_7",
-        "north": "cave_0_6",
-        "south": "cave_0_8"
-      }
-    },
-    "cave_0_8": {
-      "description": "You are in a vast cavern at (0, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "east": "cave_1_8",
-        "north": "cave_0_7",
-        "south": "cave_0_9"
-      }
-    },
-    "cave_0_9": {
-      "description": "You are in a vast cavern at (0, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "east": "cave_1_9",
-        "north": "cave_0_8",
-        "south": "cave_0_10"
-      }
-    },
-    "cave_0_10": {
-      "description": "You are in a vast cavern at (0, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "east": "cave_1_10",
-        "north": "cave_0_9",
-        "south": "cave_0_11"
-      }
-    },
-    "cave_0_11": {
-      "description": "You are in a vast cavern at (0, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "east": "cave_1_11",
-        "north": "cave_0_10",
-        "south": "cave_0_12"
-      }
-    },
     "cave_0_12": {
-      "description": "You are in a vast cavern at (0, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "east": "cave_1_12",
         "north": "cave_0_11",
@@ -131,7 +115,7 @@
       }
     },
     "cave_0_13": {
-      "description": "You are in a vast cavern at (0, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chamber. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "east": "cave_1_13",
         "north": "cave_0_12",
@@ -139,15 +123,23 @@
       }
     },
     "cave_0_14": {
-      "description": "You are in a vast cavern at (0, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "east": "cave_1_14",
         "north": "cave_0_13"
       },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
+      },
       "quest_object": "crystal_shard_2"
     },
     "cave_1_0": {
-      "description": "You are in a vast cavern at (1, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_0_0",
         "east": "cave_2_0",
@@ -155,7 +147,7 @@
       }
     },
     "cave_1_1": {
-      "description": "You are in a vast cavern at (1, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_0_1",
         "east": "cave_2_1",
@@ -164,7 +156,7 @@
       }
     },
     "cave_1_2": {
-      "description": "You are in a vast cavern at (1, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_0_2",
         "east": "cave_2_2",
@@ -173,7 +165,7 @@
       }
     },
     "cave_1_3": {
-      "description": "You are in a vast cavern at (1, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_0_3",
         "east": "cave_2_3",
@@ -182,48 +174,12 @@
       }
     },
     "cave_1_4": {
-      "description": "You are in a vast cavern at (1, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_0_4",
         "east": "cave_2_4",
         "north": "cave_1_3",
         "south": "cave_1_5"
-      }
-    },
-    "cave_1_5": {
-      "description": "You are in a vast cavern at (1, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_0_5",
-        "east": "cave_2_5",
-        "north": "cave_1_4",
-        "south": "cave_1_6"
-      }
-    },
-    "cave_1_6": {
-      "description": "You are in a vast cavern at (1, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_0_6",
-        "east": "cave_2_6",
-        "north": "cave_1_5",
-        "south": "cave_1_7"
-      }
-    },
-    "cave_1_7": {
-      "description": "You are in a vast cavern at (1, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "entrance",
-        "east": "cave_2_7",
-        "north": "cave_1_6",
-        "south": "cave_1_8"
-      }
-    },
-    "cave_1_8": {
-      "description": "You are in a vast cavern at (1, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_0_8",
-        "east": "cave_2_8",
-        "north": "cave_1_7",
-        "south": "cave_1_9"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -234,8 +190,44 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_1_5": {
+      "description": "You are in a narrow passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
+      "exits": {
+        "west": "cave_0_5",
+        "east": "cave_2_5",
+        "north": "cave_1_4",
+        "south": "cave_1_6"
+      }
+    },
+    "cave_1_6": {
+      "description": "You are in a echoin tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "west": "cave_0_6",
+        "east": "cave_2_6",
+        "north": "cave_1_5",
+        "south": "cave_1_7"
+      }
+    },
+    "cave_1_7": {
+      "description": "You are in a singing passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
+      "exits": {
+        "west": "entrance",
+        "east": "cave_2_7",
+        "north": "cave_1_6",
+        "south": "cave_1_8"
+      }
+    },
+    "cave_1_8": {
+      "description": "You are in a vast grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "west": "cave_0_8",
+        "east": "cave_2_8",
+        "north": "cave_1_7",
+        "south": "cave_1_9"
+      }
+    },
     "cave_1_9": {
-      "description": "You are in a vast cavern at (1, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_0_9",
         "east": "cave_2_9",
@@ -252,7 +244,7 @@
       }
     },
     "cave_1_10": {
-      "description": "You are in a vast cavern at (1, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_0_10",
         "east": "cave_2_10",
@@ -261,7 +253,7 @@
       }
     },
     "cave_1_11": {
-      "description": "You are in a vast cavern at (1, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_0_11",
         "east": "cave_2_11",
@@ -270,7 +262,7 @@
       }
     },
     "cave_1_12": {
-      "description": "You are in a vast cavern at (1, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_0_12",
         "east": "cave_2_12",
@@ -279,7 +271,7 @@
       }
     },
     "cave_1_13": {
-      "description": "You are in a vast cavern at (1, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_0_13",
         "east": "cave_2_13",
@@ -288,15 +280,23 @@
       }
     },
     "cave_1_14": {
-      "description": "You are in a vast cavern at (1, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_0_14",
         "east": "cave_2_14",
         "north": "cave_1_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_2_0": {
-      "description": "You are in a vast cavern at (2, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient tunnel. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_1_0",
         "east": "cave_3_0",
@@ -304,7 +304,7 @@
       }
     },
     "cave_2_1": {
-      "description": "You are in a vast cavern at (2, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_1_1",
         "east": "cave_3_1",
@@ -313,7 +313,7 @@
       }
     },
     "cave_2_2": {
-      "description": "You are in a vast cavern at (2, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient tunnel. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_1_2",
         "east": "cave_3_2",
@@ -322,7 +322,7 @@
       }
     },
     "cave_2_3": {
-      "description": "You are in a vast cavern at (2, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow grotto. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_1_3",
         "east": "cave_3_3",
@@ -331,21 +331,12 @@
       }
     },
     "cave_2_4": {
-      "description": "You are in a vast cavern at (2, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_1_4",
         "east": "cave_3_4",
         "north": "cave_2_3",
         "south": "cave_2_5"
-      }
-    },
-    "cave_2_5": {
-      "description": "You are in a vast cavern at (2, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_1_5",
-        "east": "cave_3_5",
-        "north": "cave_2_4",
-        "south": "cave_2_6"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -356,8 +347,17 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_2_5": {
+      "description": "You are in a silent grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
+      "exits": {
+        "west": "cave_1_5",
+        "east": "cave_3_5",
+        "north": "cave_2_4",
+        "south": "cave_2_6"
+      }
+    },
     "cave_2_6": {
-      "description": "You are in a vast cavern at (2, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_1_6",
         "east": "cave_3_6",
@@ -366,16 +366,24 @@
       }
     },
     "cave_2_7": {
-      "description": "You are in a vast cavern at (2, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_1_7",
         "east": "cave_3_7",
         "north": "cave_2_6",
         "south": "cave_2_8"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_2_8": {
-      "description": "You are in a vast cavern at (2, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_1_8",
         "east": "cave_3_8",
@@ -384,24 +392,16 @@
       }
     },
     "cave_2_9": {
-      "description": "You are in a vast cavern at (2, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_1_9",
         "east": "cave_3_9",
         "north": "cave_2_8",
         "south": "cave_2_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_2_10": {
-      "description": "You are in a vast cavern at (2, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_1_10",
         "east": "cave_3_10",
@@ -410,46 +410,12 @@
       }
     },
     "cave_2_11": {
-      "description": "You are in a vast cavern at (2, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_1_11",
         "east": "cave_3_11",
         "north": "cave_2_10",
         "south": "cave_2_12"
-      }
-    },
-    "cave_2_12": {
-      "description": "You are in a vast cavern at (2, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_1_12",
-        "east": "cave_3_12",
-        "north": "cave_2_11",
-        "south": "cave_2_13"
-      }
-    },
-    "cave_2_13": {
-      "description": "You are in a vast cavern at (2, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_1_13",
-        "east": "cave_3_13",
-        "north": "cave_2_12",
-        "south": "cave_2_14"
-      }
-    },
-    "cave_2_14": {
-      "description": "You are in a vast cavern at (2, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_1_14",
-        "east": "cave_3_14",
-        "north": "cave_2_13"
-      }
-    },
-    "cave_3_0": {
-      "description": "You are in a vast cavern at (3, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_2_0",
-        "east": "cave_4_0",
-        "south": "cave_3_1"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -460,8 +426,50 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_2_12": {
+      "description": "You are in a glimmering cavern. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
+      "exits": {
+        "west": "cave_1_12",
+        "east": "cave_3_12",
+        "north": "cave_2_11",
+        "south": "cave_2_13"
+      }
+    },
+    "cave_2_13": {
+      "description": "You are in a echoin tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
+      "exits": {
+        "west": "cave_1_13",
+        "east": "cave_3_13",
+        "north": "cave_2_12",
+        "south": "cave_2_14"
+      }
+    },
+    "cave_2_14": {
+      "description": "You are in a vast cathedral. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "west": "cave_1_14",
+        "east": "cave_3_14",
+        "north": "cave_2_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
+      }
+    },
+    "cave_3_0": {
+      "description": "You are in a glimmering cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
+      "exits": {
+        "west": "cave_2_0",
+        "east": "cave_4_0",
+        "south": "cave_3_1"
+      }
+    },
     "cave_3_1": {
-      "description": "You are in a vast cavern at (3, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cathedral. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_2_1",
         "east": "cave_4_1",
@@ -470,7 +478,7 @@
       }
     },
     "cave_3_2": {
-      "description": "You are in a vast cavern at (3, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chasm. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_2_2",
         "east": "cave_4_2",
@@ -479,7 +487,7 @@
       }
     },
     "cave_3_3": {
-      "description": "You are in a vast cavern at (3, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_2_3",
         "east": "cave_4_3",
@@ -488,25 +496,41 @@
       }
     },
     "cave_3_4": {
-      "description": "You are in a vast cavern at (3, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin passageway. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_2_4",
         "east": "cave_4_4",
         "north": "cave_3_3",
         "south": "cave_3_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_3_5": {
-      "description": "You are in a vast cavern at (3, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_2_5",
         "east": "cave_4_5",
         "north": "cave_3_4",
         "south": "cave_3_6"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_3_6": {
-      "description": "You are in a vast cavern at (3, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_2_6",
         "east": "cave_4_6",
@@ -515,7 +539,7 @@
       }
     },
     "cave_3_7": {
-      "description": "You are in a vast cavern at (3, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chasm. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_2_7",
         "east": "cave_4_7",
@@ -524,7 +548,7 @@
       }
     },
     "cave_3_8": {
-      "description": "You are in a vast cavern at (3, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_2_8",
         "east": "cave_4_8",
@@ -541,38 +565,21 @@
       }
     },
     "cave_3_9": {
-      "description": "You are in a vast cavern at (3, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_2_9",
         "east": "cave_4_9",
         "north": "cave_3_8",
         "south": "cave_3_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_3_10": {
-      "description": "You are in a vast cavern at (3, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_2_10",
         "east": "cave_4_10",
         "north": "cave_3_9",
         "south": "cave_3_11"
-      }
-    },
-    "cave_3_11": {
-      "description": "You are in a vast cavern at (3, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_2_11",
-        "east": "cave_4_11",
-        "north": "cave_3_10",
-        "south": "cave_3_12"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -583,8 +590,17 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_3_11": {
+      "description": "You are in a singing passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
+      "exits": {
+        "west": "cave_2_11",
+        "east": "cave_4_11",
+        "north": "cave_3_10",
+        "south": "cave_3_12"
+      }
+    },
     "cave_3_12": {
-      "description": "You are in a vast cavern at (3, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chamber. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_2_12",
         "east": "cave_4_12",
@@ -593,7 +609,7 @@
       }
     },
     "cave_3_13": {
-      "description": "You are in a vast cavern at (3, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_2_13",
         "east": "cave_4_13",
@@ -602,11 +618,28 @@
       }
     },
     "cave_3_14": {
-      "description": "You are in a vast cavern at (3, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cavern. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_2_14",
         "east": "cave_4_14",
         "north": "cave_3_13"
+      }
+    },
+    "cave_4_0": {
+      "description": "You are in a echoin passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
+      "exits": {
+        "west": "cave_3_0",
+        "east": "cave_5_0",
+        "south": "cave_4_1"
+      }
+    },
+    "cave_4_1": {
+      "description": "You are in a singing passageway. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "west": "cave_3_1",
+        "east": "cave_5_1",
+        "north": "cave_4_0",
+        "south": "cave_4_2"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -617,25 +650,8 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_4_0": {
-      "description": "You are in a vast cavern at (4, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_3_0",
-        "east": "cave_5_0",
-        "south": "cave_4_1"
-      }
-    },
-    "cave_4_1": {
-      "description": "You are in a vast cavern at (4, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_3_1",
-        "east": "cave_5_1",
-        "north": "cave_4_0",
-        "south": "cave_4_2"
-      }
-    },
     "cave_4_2": {
-      "description": "You are in a vast cavern at (4, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_3_2",
         "east": "cave_5_2",
@@ -644,24 +660,16 @@
       }
     },
     "cave_4_3": {
-      "description": "You are in a vast cavern at (4, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_3_3",
         "east": "cave_5_3",
         "north": "cave_4_2",
         "south": "cave_4_4"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_4": {
-      "description": "You are in a vast cavern at (4, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_3_4",
         "east": "cave_5_4",
@@ -670,7 +678,7 @@
       }
     },
     "cave_4_5": {
-      "description": "You are in a vast cavern at (4, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_3_5",
         "east": "cave_5_5",
@@ -679,7 +687,7 @@
       }
     },
     "cave_4_6": {
-      "description": "You are in a vast cavern at (4, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_3_6",
         "east": "cave_5_6",
@@ -688,24 +696,16 @@
       }
     },
     "cave_4_7": {
-      "description": "You are in a vast cavern at (4, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_3_7",
         "east": "cave_5_7",
         "north": "cave_4_6",
         "south": "cave_4_8"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_4_8": {
-      "description": "You are in a vast cavern at (4, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_3_8",
         "east": "cave_5_8",
@@ -714,7 +714,7 @@
       }
     },
     "cave_4_9": {
-      "description": "You are in a vast cavern at (4, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_3_9",
         "east": "cave_5_9",
@@ -723,7 +723,7 @@
       }
     },
     "cave_4_10": {
-      "description": "You are in a vast cavern at (4, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_3_10",
         "east": "cave_5_10",
@@ -732,7 +732,7 @@
       }
     },
     "cave_4_11": {
-      "description": "You are in a vast cavern at (4, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_3_11",
         "east": "cave_5_11",
@@ -741,7 +741,7 @@
       }
     },
     "cave_4_12": {
-      "description": "You are in a vast cavern at (4, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chasm. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_3_12",
         "east": "cave_5_12",
@@ -750,7 +750,7 @@
       }
     },
     "cave_4_13": {
-      "description": "You are in a vast cavern at (4, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_3_13",
         "east": "cave_5_13",
@@ -759,7 +759,7 @@
       }
     },
     "cave_4_14": {
-      "description": "You are in a vast cavern at (4, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_3_14",
         "east": "cave_5_14",
@@ -767,7 +767,7 @@
       }
     },
     "cave_5_0": {
-      "description": "You are in a vast cavern at (5, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_4_0",
         "east": "cave_6_0",
@@ -783,7 +783,7 @@
       }
     },
     "cave_5_1": {
-      "description": "You are in a vast cavern at (5, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cavern. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_4_1",
         "east": "cave_6_1",
@@ -792,7 +792,7 @@
       }
     },
     "cave_5_2": {
-      "description": "You are in a vast cavern at (5, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_4_2",
         "east": "cave_6_2",
@@ -801,7 +801,7 @@
       }
     },
     "cave_5_3": {
-      "description": "You are in a vast cavern at (5, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_4_3",
         "east": "cave_6_3",
@@ -810,7 +810,7 @@
       }
     },
     "cave_5_4": {
-      "description": "You are in a vast cavern at (5, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_4_4",
         "east": "cave_6_4",
@@ -819,7 +819,7 @@
       }
     },
     "cave_5_5": {
-      "description": "You are in a vast cavern at (5, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_4_5",
         "east": "cave_6_5",
@@ -834,7 +834,7 @@
       }
     },
     "cave_5_6": {
-      "description": "You are in a vast cavern at (5, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_4_6",
         "east": "cave_6_6",
@@ -843,7 +843,7 @@
       }
     },
     "cave_5_7": {
-      "description": "You are in a vast cavern at (5, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_4_7",
         "east": "cave_6_7",
@@ -852,7 +852,7 @@
       }
     },
     "cave_5_8": {
-      "description": "You are in a vast cavern at (5, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_4_8",
         "east": "cave_6_8",
@@ -861,7 +861,7 @@
       }
     },
     "cave_5_9": {
-      "description": "You are in a vast cavern at (5, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_4_9",
         "east": "cave_6_9",
@@ -870,24 +870,16 @@
       }
     },
     "cave_5_10": {
-      "description": "You are in a vast cavern at (5, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_4_10",
         "east": "cave_6_10",
         "north": "cave_5_9",
         "south": "cave_5_11"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_5_11": {
-      "description": "You are in a vast cavern at (5, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cavern. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_4_11",
         "east": "cave_6_11",
@@ -896,7 +888,7 @@
       }
     },
     "cave_5_12": {
-      "description": "You are in a vast cavern at (5, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_4_12",
         "east": "cave_6_12",
@@ -905,7 +897,7 @@
       }
     },
     "cave_5_13": {
-      "description": "You are in a vast cavern at (5, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_4_13",
         "east": "cave_6_13",
@@ -914,15 +906,23 @@
       }
     },
     "cave_5_14": {
-      "description": "You are in a vast cavern at (5, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cavern. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_4_14",
         "east": "cave_6_14",
         "north": "cave_5_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_6_0": {
-      "description": "You are in a vast cavern at (6, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_5_0",
         "east": "cave_7_0",
@@ -930,7 +930,7 @@
       }
     },
     "cave_6_1": {
-      "description": "You are in a vast cavern at (6, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_5_1",
         "east": "cave_7_1",
@@ -939,7 +939,7 @@
       }
     },
     "cave_6_2": {
-      "description": "You are in a vast cavern at (6, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent grotto. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_5_2",
         "east": "cave_7_2",
@@ -948,7 +948,7 @@
       }
     },
     "cave_6_3": {
-      "description": "You are in a vast cavern at (6, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_5_3",
         "east": "cave_7_3",
@@ -957,16 +957,24 @@
       }
     },
     "cave_6_4": {
-      "description": "You are in a vast cavern at (6, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_5_4",
         "east": "cave_7_4",
         "north": "cave_6_3",
         "south": "cave_6_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_6_5": {
-      "description": "You are in a vast cavern at (6, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chamber. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_5_5",
         "east": "cave_7_5",
@@ -975,7 +983,7 @@
       }
     },
     "cave_6_6": {
-      "description": "You are in a vast cavern at (6, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_5_6",
         "east": "cave_7_6",
@@ -984,7 +992,7 @@
       }
     },
     "cave_6_7": {
-      "description": "You are in a vast cavern at (6, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_5_7",
         "east": "cave_7_7",
@@ -993,7 +1001,7 @@
       }
     },
     "cave_6_8": {
-      "description": "You are in a vast cavern at (6, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cavern. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_5_8",
         "east": "cave_7_8",
@@ -1002,7 +1010,7 @@
       }
     },
     "cave_6_9": {
-      "description": "You are in a vast cavern at (6, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_5_9",
         "east": "cave_7_9",
@@ -1011,7 +1019,7 @@
       }
     },
     "cave_6_10": {
-      "description": "You are in a vast cavern at (6, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_5_10",
         "east": "cave_7_10",
@@ -1020,7 +1028,7 @@
       }
     },
     "cave_6_11": {
-      "description": "You are in a vast cavern at (6, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_5_11",
         "east": "cave_7_11",
@@ -1029,7 +1037,7 @@
       }
     },
     "cave_6_12": {
-      "description": "You are in a vast cavern at (6, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering passageway. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_5_12",
         "east": "cave_7_12",
@@ -1038,7 +1046,7 @@
       }
     },
     "cave_6_13": {
-      "description": "You are in a vast cavern at (6, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cavern. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_5_13",
         "east": "cave_7_13",
@@ -1047,39 +1055,23 @@
       }
     },
     "cave_6_14": {
-      "description": "You are in a vast cavern at (6, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_5_14",
         "east": "cave_7_14",
         "north": "cave_6_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_7_0": {
-      "description": "You are in a vast cavern at (7, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_6_0",
         "east": "cave_8_0",
         "south": "cave_7_1"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_7_1": {
-      "description": "You are in a vast cavern at (7, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_6_1",
         "east": "cave_8_1",
@@ -1088,7 +1080,7 @@
       }
     },
     "cave_7_2": {
-      "description": "You are in a vast cavern at (7, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_6_2",
         "east": "cave_8_2",
@@ -1097,7 +1089,7 @@
       }
     },
     "cave_7_3": {
-      "description": "You are in a vast cavern at (7, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing tunnel. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_6_3",
         "east": "cave_8_3",
@@ -1106,16 +1098,24 @@
       }
     },
     "cave_7_4": {
-      "description": "You are in a vast cavern at (7, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chamber. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_6_4",
         "east": "cave_8_4",
         "north": "cave_7_3",
         "south": "cave_7_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_7_5": {
-      "description": "You are in a vast cavern at (7, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_6_5",
         "east": "cave_8_5",
@@ -1124,7 +1124,7 @@
       }
     },
     "cave_7_6": {
-      "description": "You are in a vast cavern at (7, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_6_6",
         "east": "cave_8_6",
@@ -1133,7 +1133,7 @@
       }
     },
     "cave_7_7": {
-      "description": "You are in a vast cavern at (7, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_6_7",
         "east": "cave_8_7",
@@ -1142,7 +1142,7 @@
       }
     },
     "cave_7_8": {
-      "description": "You are in a vast cavern at (7, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_6_8",
         "east": "cave_8_8",
@@ -1159,7 +1159,7 @@
       }
     },
     "cave_7_9": {
-      "description": "You are in a vast cavern at (7, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_6_9",
         "east": "cave_8_9",
@@ -1176,7 +1176,7 @@
       }
     },
     "cave_7_10": {
-      "description": "You are in a vast cavern at (7, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chasm. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_6_10",
         "east": "cave_8_10",
@@ -1185,7 +1185,7 @@
       }
     },
     "cave_7_11": {
-      "description": "You are in a vast cavern at (7, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_6_11",
         "east": "cave_8_11",
@@ -1202,16 +1202,24 @@
       }
     },
     "cave_7_12": {
-      "description": "You are in a vast cavern at (7, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_6_12",
         "east": "cave_8_12",
         "north": "cave_7_11",
         "south": "cave_7_13"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_7_13": {
-      "description": "You are in a vast cavern at (7, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cathedral. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_6_13",
         "east": "cave_8_13",
@@ -1220,7 +1228,7 @@
       }
     },
     "cave_7_14": {
-      "description": "You are in a vast cavern at (7, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_6_14",
         "east": "cave_8_14",
@@ -1228,7 +1236,7 @@
       }
     },
     "cave_8_0": {
-      "description": "You are in a vast cavern at (8, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cavern. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_7_0",
         "east": "cave_9_0",
@@ -1236,7 +1244,7 @@
       }
     },
     "cave_8_1": {
-      "description": "You are in a vast cavern at (8, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_7_1",
         "east": "cave_9_1",
@@ -1245,7 +1253,7 @@
       }
     },
     "cave_8_2": {
-      "description": "You are in a vast cavern at (8, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_7_2",
         "east": "cave_9_2",
@@ -1254,7 +1262,7 @@
       }
     },
     "cave_8_3": {
-      "description": "You are in a vast cavern at (8, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_7_3",
         "east": "cave_9_3",
@@ -1263,24 +1271,16 @@
       }
     },
     "cave_8_4": {
-      "description": "You are in a vast cavern at (8, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_7_4",
         "east": "cave_9_4",
         "north": "cave_8_3",
         "south": "cave_8_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_8_5": {
-      "description": "You are in a vast cavern at (8, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_7_5",
         "east": "cave_9_5",
@@ -1289,7 +1289,7 @@
       }
     },
     "cave_8_6": {
-      "description": "You are in a vast cavern at (8, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_7_6",
         "east": "cave_9_6",
@@ -1298,7 +1298,7 @@
       }
     },
     "cave_8_7": {
-      "description": "You are in a vast cavern at (8, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_7_7",
         "east": "cave_9_7",
@@ -1307,7 +1307,7 @@
       }
     },
     "cave_8_8": {
-      "description": "You are in a vast cavern at (8, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_7_8",
         "east": "cave_9_8",
@@ -1316,7 +1316,7 @@
       }
     },
     "cave_8_9": {
-      "description": "You are in a vast cavern at (8, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_7_9",
         "east": "cave_9_9",
@@ -1325,7 +1325,7 @@
       }
     },
     "cave_8_10": {
-      "description": "You are in a vast cavern at (8, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_7_10",
         "east": "cave_9_10",
@@ -1334,16 +1334,24 @@
       }
     },
     "cave_8_11": {
-      "description": "You are in a vast cavern at (8, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cavern. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_7_11",
         "east": "cave_9_11",
         "north": "cave_8_10",
         "south": "cave_8_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_8_12": {
-      "description": "You are in a vast cavern at (8, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_7_12",
         "east": "cave_9_12",
@@ -1352,7 +1360,7 @@
       }
     },
     "cave_8_13": {
-      "description": "You are in a vast cavern at (8, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_7_13",
         "east": "cave_9_13",
@@ -1361,7 +1369,7 @@
       }
     },
     "cave_8_14": {
-      "description": "You are in a vast cavern at (8, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_7_14",
         "east": "cave_9_14",
@@ -1369,7 +1377,7 @@
       }
     },
     "cave_9_0": {
-      "description": "You are in a vast cavern at (9, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_8_0",
         "east": "cave_10_0",
@@ -1377,24 +1385,16 @@
       }
     },
     "cave_9_1": {
-      "description": "You are in a vast cavern at (9, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_8_1",
         "east": "cave_10_1",
         "north": "cave_9_0",
         "south": "cave_9_2"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_9_2": {
-      "description": "You are in a vast cavern at (9, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_8_2",
         "east": "cave_10_2",
@@ -1403,7 +1403,7 @@
       }
     },
     "cave_9_3": {
-      "description": "You are in a vast cavern at (9, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_8_3",
         "east": "cave_10_3",
@@ -1412,7 +1412,7 @@
       }
     },
     "cave_9_4": {
-      "description": "You are in a vast cavern at (9, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_8_4",
         "east": "cave_10_4",
@@ -1421,7 +1421,7 @@
       }
     },
     "cave_9_5": {
-      "description": "You are in a vast cavern at (9, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cathedral. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_8_5",
         "east": "cave_10_5",
@@ -1430,16 +1430,24 @@
       }
     },
     "cave_9_6": {
-      "description": "You are in a vast cavern at (9, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_8_6",
         "east": "cave_10_6",
         "north": "cave_9_5",
         "south": "cave_9_7"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_9_7": {
-      "description": "You are in a vast cavern at (9, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_8_7",
         "east": "cave_10_7",
@@ -1448,7 +1456,7 @@
       }
     },
     "cave_9_8": {
-      "description": "You are in a vast cavern at (9, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chasm. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_8_8",
         "east": "cave_10_8",
@@ -1457,7 +1465,7 @@
       }
     },
     "cave_9_9": {
-      "description": "You are in a vast cavern at (9, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_8_9",
         "east": "cave_10_9",
@@ -1466,24 +1474,16 @@
       }
     },
     "cave_9_10": {
-      "description": "You are in a vast cavern at (9, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_8_10",
         "east": "cave_10_10",
         "north": "cave_9_9",
         "south": "cave_9_11"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_9_11": {
-      "description": "You are in a vast cavern at (9, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_8_11",
         "east": "cave_10_11",
@@ -1492,7 +1492,7 @@
       }
     },
     "cave_9_12": {
-      "description": "You are in a vast cavern at (9, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_8_12",
         "east": "cave_10_12",
@@ -1501,7 +1501,7 @@
       }
     },
     "cave_9_13": {
-      "description": "You are in a vast cavern at (9, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chasm. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_8_13",
         "east": "cave_10_13",
@@ -1510,7 +1510,7 @@
       }
     },
     "cave_9_14": {
-      "description": "You are in a vast cavern at (9, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_8_14",
         "east": "cave_10_14",
@@ -1518,7 +1518,7 @@
       }
     },
     "cave_10_0": {
-      "description": "You are in a vast cavern at (10, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cavern. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_9_0",
         "east": "cave_11_0",
@@ -1526,7 +1526,7 @@
       }
     },
     "cave_10_1": {
-      "description": "You are in a vast cavern at (10, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_9_1",
         "east": "cave_11_1",
@@ -1535,7 +1535,7 @@
       }
     },
     "cave_10_2": {
-      "description": "You are in a vast cavern at (10, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chasm. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_9_2",
         "east": "cave_11_2",
@@ -1544,7 +1544,7 @@
       }
     },
     "cave_10_3": {
-      "description": "You are in a vast cavern at (10, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_9_3",
         "east": "cave_11_3",
@@ -1553,7 +1553,7 @@
       }
     },
     "cave_10_4": {
-      "description": "You are in a vast cavern at (10, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chamber. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_9_4",
         "east": "cave_11_4",
@@ -1562,7 +1562,7 @@
       }
     },
     "cave_10_5": {
-      "description": "You are in a vast cavern at (10, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_9_5",
         "east": "cave_11_5",
@@ -1571,7 +1571,7 @@
       }
     },
     "cave_10_6": {
-      "description": "You are in a vast cavern at (10, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_9_6",
         "east": "cave_11_6",
@@ -1580,25 +1580,41 @@
       }
     },
     "cave_10_7": {
-      "description": "You are in a vast cavern at (10, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow tunnel. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_9_7",
         "east": "cave_11_7",
         "north": "cave_10_6",
         "south": "cave_10_8"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_10_8": {
-      "description": "You are in a vast cavern at (10, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_9_8",
         "east": "cave_11_8",
         "north": "cave_10_7",
         "south": "cave_10_9"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_10_9": {
-      "description": "You are in a vast cavern at (10, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_9_9",
         "east": "cave_11_9",
@@ -1607,7 +1623,7 @@
       }
     },
     "cave_10_10": {
-      "description": "You are in a vast cavern at (10, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_9_10",
         "east": "cave_11_10",
@@ -1616,7 +1632,7 @@
       }
     },
     "cave_10_11": {
-      "description": "You are in a vast cavern at (10, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_9_11",
         "east": "cave_11_11",
@@ -1625,7 +1641,7 @@
       }
     },
     "cave_10_12": {
-      "description": "You are in a vast cavern at (10, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_9_12",
         "east": "cave_11_12",
@@ -1634,7 +1650,7 @@
       }
     },
     "cave_10_13": {
-      "description": "You are in a vast cavern at (10, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_9_13",
         "east": "cave_11_13",
@@ -1643,23 +1659,15 @@
       }
     },
     "cave_10_14": {
-      "description": "You are in a vast cavern at (10, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_9_14",
         "east": "cave_11_14",
         "north": "cave_10_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_11_0": {
-      "description": "You are in a vast cavern at (11, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cavern. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_10_0",
         "east": "cave_12_0",
@@ -1667,7 +1675,7 @@
       }
     },
     "cave_11_1": {
-      "description": "You are in a vast cavern at (11, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_10_1",
         "east": "cave_12_1",
@@ -1676,7 +1684,7 @@
       }
     },
     "cave_11_2": {
-      "description": "You are in a vast cavern at (11, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_10_2",
         "east": "cave_12_2",
@@ -1685,7 +1693,7 @@
       }
     },
     "cave_11_3": {
-      "description": "You are in a vast cavern at (11, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_10_3",
         "east": "cave_12_3",
@@ -1694,7 +1702,7 @@
       }
     },
     "cave_11_4": {
-      "description": "You are in a vast cavern at (11, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_10_4",
         "east": "cave_12_4",
@@ -1703,7 +1711,7 @@
       }
     },
     "cave_11_5": {
-      "description": "You are in a vast cavern at (11, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cathedral. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_10_5",
         "east": "cave_12_5",
@@ -1712,7 +1720,7 @@
       }
     },
     "cave_11_6": {
-      "description": "You are in a vast cavern at (11, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cavern. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_10_6",
         "east": "cave_12_6",
@@ -1721,12 +1729,21 @@
       }
     },
     "cave_11_7": {
-      "description": "You are in a vast cavern at (11, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_10_7",
         "east": "cave_12_7",
         "north": "cave_11_6",
         "south": "cave_11_8"
+      }
+    },
+    "cave_11_8": {
+      "description": "You are in a vast passageway. The sound of dripping water echoes melodically through the chamber.",
+      "exits": {
+        "west": "cave_10_8",
+        "east": "cave_12_8",
+        "north": "cave_11_7",
+        "south": "cave_11_9"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -1737,17 +1754,8 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_11_8": {
-      "description": "You are in a vast cavern at (11, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_10_8",
-        "east": "cave_12_8",
-        "north": "cave_11_7",
-        "south": "cave_11_9"
-      }
-    },
     "cave_11_9": {
-      "description": "You are in a vast cavern at (11, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_10_9",
         "east": "cave_12_9",
@@ -1756,7 +1764,7 @@
       }
     },
     "cave_11_10": {
-      "description": "You are in a vast cavern at (11, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_10_10",
         "east": "cave_12_10",
@@ -1765,7 +1773,7 @@
       }
     },
     "cave_11_11": {
-      "description": "You are in a vast cavern at (11, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_10_11",
         "east": "cave_12_11",
@@ -1774,7 +1782,7 @@
       }
     },
     "cave_11_12": {
-      "description": "You are in a vast cavern at (11, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_10_12",
         "east": "cave_12_12",
@@ -1783,7 +1791,7 @@
       }
     },
     "cave_11_13": {
-      "description": "You are in a vast cavern at (11, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_10_13",
         "east": "cave_12_13",
@@ -1792,7 +1800,7 @@
       }
     },
     "cave_11_14": {
-      "description": "You are in a vast cavern at (11, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_10_14",
         "east": "cave_12_14",
@@ -1800,7 +1808,7 @@
       }
     },
     "cave_12_0": {
-      "description": "You are in a vast cavern at (12, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cavern. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_11_0",
         "east": "cave_13_0",
@@ -1808,7 +1816,7 @@
       }
     },
     "cave_12_1": {
-      "description": "You are in a vast cavern at (12, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_11_1",
         "east": "cave_13_1",
@@ -1817,7 +1825,7 @@
       }
     },
     "cave_12_2": {
-      "description": "You are in a vast cavern at (12, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent passageway. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_11_2",
         "east": "cave_13_2",
@@ -1826,41 +1834,25 @@
       }
     },
     "cave_12_3": {
-      "description": "You are in a vast cavern at (12, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chasm. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_11_3",
         "east": "cave_13_3",
         "north": "cave_12_2",
         "south": "cave_12_4"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_4": {
-      "description": "You are in a vast cavern at (12, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_11_4",
         "east": "cave_13_4",
         "north": "cave_12_3",
         "south": "cave_12_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_5": {
-      "description": "You are in a vast cavern at (12, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_11_5",
         "east": "cave_13_5",
@@ -1869,7 +1861,7 @@
       }
     },
     "cave_12_6": {
-      "description": "You are in a vast cavern at (12, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_11_6",
         "east": "cave_13_6",
@@ -1878,7 +1870,7 @@
       }
     },
     "cave_12_7": {
-      "description": "You are in a vast cavern at (12, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_11_7",
         "east": "cave_13_7",
@@ -1887,7 +1879,7 @@
       }
     },
     "cave_12_8": {
-      "description": "You are in a vast cavern at (12, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_11_8",
         "east": "cave_13_8",
@@ -1896,41 +1888,25 @@
       }
     },
     "cave_12_9": {
-      "description": "You are in a vast cavern at (12, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cavern. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_11_9",
         "east": "cave_13_9",
         "north": "cave_12_8",
         "south": "cave_12_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_10": {
-      "description": "You are in a vast cavern at (12, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_11_10",
         "east": "cave_13_10",
         "north": "cave_12_9",
         "south": "cave_12_11"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_12_11": {
-      "description": "You are in a vast cavern at (12, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_11_11",
         "east": "cave_13_11",
@@ -1939,7 +1915,7 @@
       }
     },
     "cave_12_12": {
-      "description": "You are in a vast cavern at (12, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chamber. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_11_12",
         "east": "cave_13_12",
@@ -1948,7 +1924,7 @@
       }
     },
     "cave_12_13": {
-      "description": "You are in a vast cavern at (12, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_11_13",
         "east": "cave_13_13",
@@ -1957,64 +1933,11 @@
       }
     },
     "cave_12_14": {
-      "description": "You are in a vast cavern at (12, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_11_14",
         "east": "cave_13_14",
         "north": "cave_12_13"
-      }
-    },
-    "cave_13_0": {
-      "description": "You are in a vast cavern at (13, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_0",
-        "east": "cave_14_0",
-        "south": "cave_13_1"
-      }
-    },
-    "cave_13_1": {
-      "description": "You are in a vast cavern at (13, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_1",
-        "east": "cave_14_1",
-        "north": "cave_13_0",
-        "south": "cave_13_2"
-      }
-    },
-    "cave_13_2": {
-      "description": "You are in a vast cavern at (13, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_2",
-        "east": "cave_14_2",
-        "north": "cave_13_1",
-        "south": "cave_13_3"
-      }
-    },
-    "cave_13_3": {
-      "description": "You are in a vast cavern at (13, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_3",
-        "east": "cave_14_3",
-        "north": "cave_13_2",
-        "south": "cave_13_4"
-      }
-    },
-    "cave_13_4": {
-      "description": "You are in a vast cavern at (13, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_4",
-        "east": "cave_14_4",
-        "north": "cave_13_3",
-        "south": "cave_13_5"
-      }
-    },
-    "cave_13_5": {
-      "description": "You are in a vast cavern at (13, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_5",
-        "east": "cave_14_5",
-        "north": "cave_13_4",
-        "south": "cave_13_6"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2025,17 +1948,86 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_13_0": {
+      "description": "You are in a ancient tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
+      "exits": {
+        "west": "cave_12_0",
+        "east": "cave_14_0",
+        "south": "cave_13_1"
+      }
+    },
+    "cave_13_1": {
+      "description": "You are in a silent chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
+      "exits": {
+        "west": "cave_12_1",
+        "east": "cave_14_1",
+        "north": "cave_13_0",
+        "south": "cave_13_2"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
+      }
+    },
+    "cave_13_2": {
+      "description": "You are in a singing grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
+      "exits": {
+        "west": "cave_12_2",
+        "east": "cave_14_2",
+        "north": "cave_13_1",
+        "south": "cave_13_3"
+      }
+    },
+    "cave_13_3": {
+      "description": "You are in a echoin cathedral. The sound of dripping water echoes melodically through the chamber.",
+      "exits": {
+        "west": "cave_12_3",
+        "east": "cave_14_3",
+        "north": "cave_13_2",
+        "south": "cave_13_4"
+      }
+    },
+    "cave_13_4": {
+      "description": "You are in a echoin passageway. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
+      "exits": {
+        "west": "cave_12_4",
+        "east": "cave_14_4",
+        "north": "cave_13_3",
+        "south": "cave_13_5"
+      }
+    },
+    "cave_13_5": {
+      "description": "You are in a silent cathedral. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
+      "exits": {
+        "west": "cave_12_5",
+        "east": "cave_14_5",
+        "north": "cave_13_4",
+        "south": "cave_13_6"
+      }
+    },
     "cave_13_6": {
-      "description": "You are in a vast cavern at (13, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_12_6",
         "east": "cave_14_6",
         "north": "cave_13_5",
         "south": "cave_13_7"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_13_7": {
-      "description": "You are in a vast cavern at (13, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_12_7",
         "east": "cave_14_7",
@@ -2044,7 +2036,7 @@
       }
     },
     "cave_13_8": {
-      "description": "You are in a vast cavern at (13, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_12_8",
         "east": "cave_14_8",
@@ -2061,7 +2053,7 @@
       }
     },
     "cave_13_9": {
-      "description": "You are in a vast cavern at (13, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_12_9",
         "east": "cave_14_9",
@@ -2070,7 +2062,7 @@
       }
     },
     "cave_13_10": {
-      "description": "You are in a vast cavern at (13, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_12_10",
         "east": "cave_14_10",
@@ -2087,7 +2079,7 @@
       }
     },
     "cave_13_11": {
-      "description": "You are in a vast cavern at (13, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_12_11",
         "east": "cave_14_11",
@@ -2096,21 +2088,12 @@
       }
     },
     "cave_13_12": {
-      "description": "You are in a vast cavern at (13, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_12_12",
         "east": "cave_14_12",
         "north": "cave_13_11",
         "south": "cave_13_13"
-      }
-    },
-    "cave_13_13": {
-      "description": "You are in a vast cavern at (13, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_12_13",
-        "east": "cave_14_13",
-        "north": "cave_13_12",
-        "south": "cave_13_14"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2121,8 +2104,17 @@
         "loot": "crystal_fragment"
       }
     },
+    "cave_13_13": {
+      "description": "You are in a vast chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
+      "exits": {
+        "west": "cave_12_13",
+        "east": "cave_14_13",
+        "north": "cave_13_12",
+        "south": "cave_13_14"
+      }
+    },
     "cave_13_14": {
-      "description": "You are in a vast cavern at (13, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_12_14",
         "east": "cave_14_14",
@@ -2130,15 +2122,23 @@
       }
     },
     "cave_14_0": {
-      "description": "You are in a vast cavern at (14, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow grotto. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_13_0",
         "east": "cave_15_0",
         "south": "cave_14_1"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_14_1": {
-      "description": "You are in a vast cavern at (14, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_13_1",
         "east": "cave_15_1",
@@ -2147,7 +2147,7 @@
       }
     },
     "cave_14_2": {
-      "description": "You are in a vast cavern at (14, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_13_2",
         "east": "cave_15_2",
@@ -2156,7 +2156,7 @@
       }
     },
     "cave_14_3": {
-      "description": "You are in a vast cavern at (14, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_13_3",
         "east": "cave_15_3",
@@ -2165,7 +2165,7 @@
       }
     },
     "cave_14_4": {
-      "description": "You are in a vast cavern at (14, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_13_4",
         "east": "cave_15_4",
@@ -2174,7 +2174,7 @@
       }
     },
     "cave_14_5": {
-      "description": "You are in a vast cavern at (14, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent grotto. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_13_5",
         "east": "cave_15_5",
@@ -2183,16 +2183,24 @@
       }
     },
     "cave_14_6": {
-      "description": "You are in a vast cavern at (14, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_13_6",
         "east": "cave_15_6",
         "north": "cave_14_5",
         "south": "cave_14_7"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_14_7": {
-      "description": "You are in a vast cavern at (14, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_13_7",
         "east": "cave_15_7",
@@ -2201,7 +2209,7 @@
       }
     },
     "cave_14_8": {
-      "description": "You are in a vast cavern at (14, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_13_8",
         "east": "cave_15_8",
@@ -2210,24 +2218,16 @@
       }
     },
     "cave_14_9": {
-      "description": "You are in a vast cavern at (14, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_13_9",
         "east": "cave_15_9",
         "north": "cave_14_8",
         "south": "cave_14_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_14_10": {
-      "description": "You are in a vast cavern at (14, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing grotto. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_13_10",
         "east": "cave_15_10",
@@ -2236,24 +2236,16 @@
       }
     },
     "cave_14_11": {
-      "description": "You are in a vast cavern at (14, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_13_11",
         "east": "cave_15_11",
         "north": "cave_14_10",
         "south": "cave_14_12"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_14_12": {
-      "description": "You are in a vast cavern at (14, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cavern. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_13_12",
         "east": "cave_15_12",
@@ -2262,7 +2254,7 @@
       }
     },
     "cave_14_13": {
-      "description": "You are in a vast cavern at (14, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cavern. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_13_13",
         "east": "cave_15_13",
@@ -2271,7 +2263,7 @@
       }
     },
     "cave_14_14": {
-      "description": "You are in a vast cavern at (14, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_13_14",
         "east": "cave_15_14",
@@ -2279,7 +2271,7 @@
       }
     },
     "cave_15_0": {
-      "description": "You are in a vast cavern at (15, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_0",
         "east": "cave_16_0",
@@ -2287,7 +2279,7 @@
       }
     },
     "cave_15_1": {
-      "description": "You are in a vast cavern at (15, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_1",
         "east": "cave_16_1",
@@ -2296,7 +2288,7 @@
       }
     },
     "cave_15_2": {
-      "description": "You are in a vast cavern at (15, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_14_2",
         "east": "cave_16_2",
@@ -2305,7 +2297,7 @@
       }
     },
     "cave_15_3": {
-      "description": "You are in a vast cavern at (15, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin cathedral. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_14_3",
         "east": "cave_16_3",
@@ -2314,16 +2306,24 @@
       }
     },
     "cave_15_4": {
-      "description": "You are in a vast cavern at (15, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_4",
         "east": "cave_16_4",
         "north": "cave_15_3",
         "south": "cave_15_5"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_15_5": {
-      "description": "You are in a vast cavern at (15, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_5",
         "east": "cave_16_5",
@@ -2332,7 +2332,7 @@
       }
     },
     "cave_15_6": {
-      "description": "You are in a vast cavern at (15, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_6",
         "east": "cave_16_6",
@@ -2341,7 +2341,7 @@
       }
     },
     "cave_15_7": {
-      "description": "You are in a vast cavern at (15, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_14_7",
         "east": "cave_16_7",
@@ -2350,7 +2350,7 @@
       }
     },
     "cave_15_8": {
-      "description": "You are in a vast cavern at (15, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_14_8",
         "east": "cave_16_8",
@@ -2359,7 +2359,7 @@
       }
     },
     "cave_15_9": {
-      "description": "You are in a vast cavern at (15, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_14_9",
         "east": "cave_16_9",
@@ -2368,7 +2368,7 @@
       }
     },
     "cave_15_10": {
-      "description": "You are in a vast cavern at (15, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chamber. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_14_10",
         "east": "cave_16_10",
@@ -2377,24 +2377,16 @@
       }
     },
     "cave_15_11": {
-      "description": "You are in a vast cavern at (15, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_14_11",
         "east": "cave_16_11",
         "north": "cave_15_10",
         "south": "cave_15_12"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_15_12": {
-      "description": "You are in a vast cavern at (15, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_14_12",
         "east": "cave_16_12",
@@ -2403,16 +2395,24 @@
       }
     },
     "cave_15_13": {
-      "description": "You are in a vast cavern at (15, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_14_13",
         "east": "cave_16_13",
         "north": "cave_15_12",
         "south": "cave_15_14"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_15_14": {
-      "description": "You are in a vast cavern at (15, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_14_14",
         "east": "cave_16_14",
@@ -2420,7 +2420,7 @@
       }
     },
     "cave_16_0": {
-      "description": "You are in a vast cavern at (16, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_15_0",
         "east": "cave_17_0",
@@ -2428,7 +2428,7 @@
       }
     },
     "cave_16_1": {
-      "description": "You are in a vast cavern at (16, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_15_1",
         "east": "cave_17_1",
@@ -2437,16 +2437,24 @@
       }
     },
     "cave_16_2": {
-      "description": "You are in a vast cavern at (16, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_15_2",
         "east": "cave_17_2",
         "north": "cave_16_1",
         "south": "cave_16_3"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_16_3": {
-      "description": "You are in a vast cavern at (16, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_15_3",
         "east": "cave_17_3",
@@ -2455,24 +2463,16 @@
       }
     },
     "cave_16_4": {
-      "description": "You are in a vast cavern at (16, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_15_4",
         "east": "cave_17_4",
         "north": "cave_16_3",
         "south": "cave_16_5"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_16_5": {
-      "description": "You are in a vast cavern at (16, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chasm. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_15_5",
         "east": "cave_17_5",
@@ -2481,7 +2481,7 @@
       }
     },
     "cave_16_6": {
-      "description": "You are in a vast cavern at (16, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_15_6",
         "east": "cave_17_6",
@@ -2490,7 +2490,7 @@
       }
     },
     "cave_16_7": {
-      "description": "You are in a vast cavern at (16, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_15_7",
         "east": "cave_17_7",
@@ -2499,7 +2499,7 @@
       }
     },
     "cave_16_8": {
-      "description": "You are in a vast cavern at (16, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_15_8",
         "east": "cave_17_8",
@@ -2508,7 +2508,7 @@
       }
     },
     "cave_16_9": {
-      "description": "You are in a vast cavern at (16, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_15_9",
         "east": "cave_17_9",
@@ -2517,58 +2517,34 @@
       }
     },
     "cave_16_10": {
-      "description": "You are in a vast cavern at (16, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering grotto. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_15_10",
         "east": "cave_17_10",
         "north": "cave_16_9",
         "south": "cave_16_11"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_16_11": {
-      "description": "You are in a vast cavern at (16, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing passageway. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_15_11",
         "east": "cave_17_11",
         "north": "cave_16_10",
         "south": "cave_16_12"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_16_12": {
-      "description": "You are in a vast cavern at (16, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering chamber. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_15_12",
         "east": "cave_17_12",
         "north": "cave_16_11",
         "south": "cave_16_13"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_16_13": {
-      "description": "You are in a vast cavern at (16, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_15_13",
         "east": "cave_17_13",
@@ -2577,7 +2553,7 @@
       }
     },
     "cave_16_14": {
-      "description": "You are in a vast cavern at (16, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_15_14",
         "east": "cave_17_14",
@@ -2585,15 +2561,23 @@
       }
     },
     "cave_17_0": {
-      "description": "You are in a vast cavern at (17, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_16_0",
         "east": "cave_18_0",
         "south": "cave_17_1"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_17_1": {
-      "description": "You are in a vast cavern at (17, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast passageway. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_16_1",
         "east": "cave_18_1",
@@ -2610,7 +2594,7 @@
       }
     },
     "cave_17_2": {
-      "description": "You are in a vast cavern at (17, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_16_2",
         "east": "cave_18_2",
@@ -2619,7 +2603,7 @@
       }
     },
     "cave_17_3": {
-      "description": "You are in a vast cavern at (17, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_16_3",
         "east": "cave_18_3",
@@ -2628,7 +2612,7 @@
       }
     },
     "cave_17_4": {
-      "description": "You are in a vast cavern at (17, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_16_4",
         "east": "cave_18_4",
@@ -2637,7 +2621,7 @@
       }
     },
     "cave_17_5": {
-      "description": "You are in a vast cavern at (17, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_16_5",
         "east": "cave_18_5",
@@ -2646,7 +2630,7 @@
       }
     },
     "cave_17_6": {
-      "description": "You are in a vast cavern at (17, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chasm. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_16_6",
         "east": "cave_18_6",
@@ -2655,7 +2639,7 @@
       }
     },
     "cave_17_7": {
-      "description": "You are in a vast cavern at (17, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_16_7",
         "east": "cave_18_7",
@@ -2664,7 +2648,7 @@
       }
     },
     "cave_17_8": {
-      "description": "You are in a vast cavern at (17, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_16_8",
         "east": "cave_18_8",
@@ -2673,7 +2657,7 @@
       }
     },
     "cave_17_9": {
-      "description": "You are in a vast cavern at (17, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_16_9",
         "east": "cave_18_9",
@@ -2682,7 +2666,7 @@
       }
     },
     "cave_17_10": {
-      "description": "You are in a vast cavern at (17, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_16_10",
         "east": "cave_18_10",
@@ -2691,7 +2675,7 @@
       }
     },
     "cave_17_11": {
-      "description": "You are in a vast cavern at (17, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_16_11",
         "east": "cave_18_11",
@@ -2700,7 +2684,7 @@
       }
     },
     "cave_17_12": {
-      "description": "You are in a vast cavern at (17, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_16_12",
         "east": "cave_18_12",
@@ -2709,12 +2693,20 @@
       }
     },
     "cave_17_13": {
-      "description": "You are in a vast cavern at (17, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_16_13",
         "east": "cave_18_13",
         "north": "cave_17_12",
         "south": "cave_17_14"
+      }
+    },
+    "cave_17_14": {
+      "description": "You are in a glimmering grotto. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
+      "exits": {
+        "west": "cave_16_14",
+        "east": "cave_18_14",
+        "north": "cave_17_13"
       },
       "monster": {
         "name": "Crystal Spider",
@@ -2725,41 +2717,33 @@
         "loot": "crystal_fragment"
       }
     },
-    "cave_17_14": {
-      "description": "You are in a vast cavern at (17, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
-      "exits": {
-        "west": "cave_16_14",
-        "east": "cave_18_14",
-        "north": "cave_17_13"
-      }
-    },
     "cave_18_0": {
-      "description": "You are in a vast cavern at (18, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chasm. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_17_0",
         "east": "cave_19_0",
         "south": "cave_18_1"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_1": {
-      "description": "You are in a vast cavern at (18, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_17_1",
         "east": "cave_19_1",
         "north": "cave_18_0",
         "south": "cave_18_2"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_18_2": {
-      "description": "You are in a vast cavern at (18, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering passageway. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_17_2",
         "east": "cave_19_2",
@@ -2768,24 +2752,16 @@
       }
     },
     "cave_18_3": {
-      "description": "You are in a vast cavern at (18, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast tunnel. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_17_3",
         "east": "cave_19_3",
         "north": "cave_18_2",
         "south": "cave_18_4"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_18_4": {
-      "description": "You are in a vast cavern at (18, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chamber. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_17_4",
         "east": "cave_19_4",
@@ -2794,7 +2770,7 @@
       }
     },
     "cave_18_5": {
-      "description": "You are in a vast cavern at (18, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_17_5",
         "east": "cave_19_5",
@@ -2803,7 +2779,7 @@
       }
     },
     "cave_18_6": {
-      "description": "You are in a vast cavern at (18, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_17_6",
         "east": "cave_19_6",
@@ -2812,16 +2788,24 @@
       }
     },
     "cave_18_7": {
-      "description": "You are in a vast cavern at (18, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_17_7",
         "east": "cave_19_7",
         "north": "cave_18_6",
         "south": "cave_18_8"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_8": {
-      "description": "You are in a vast cavern at (18, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing chasm. A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
       "exits": {
         "west": "cave_17_8",
         "east": "cave_19_8",
@@ -2830,16 +2814,24 @@
       }
     },
     "cave_18_9": {
-      "description": "You are in a vast cavern at (18, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_17_9",
         "east": "cave_19_9",
         "north": "cave_18_8",
         "south": "cave_18_10"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_10": {
-      "description": "You are in a vast cavern at (18, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cavern. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_17_10",
         "east": "cave_19_10",
@@ -2848,16 +2840,24 @@
       }
     },
     "cave_18_11": {
-      "description": "You are in a vast cavern at (18, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cavern. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_17_11",
         "east": "cave_19_11",
         "north": "cave_18_10",
         "south": "cave_18_12"
+      },
+      "monster": {
+        "name": "Crystal Spider",
+        "hp": 20,
+        "attack": 6,
+        "defense": 4,
+        "gold": 20,
+        "loot": "crystal_fragment"
       }
     },
     "cave_18_12": {
-      "description": "You are in a vast cavern at (18, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_17_12",
         "east": "cave_19_12",
@@ -2866,24 +2866,16 @@
       }
     },
     "cave_18_13": {
-      "description": "You are in a vast cavern at (18, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient grotto. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_17_13",
         "east": "cave_19_13",
         "north": "cave_18_12",
         "south": "cave_18_14"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_18_14": {
-      "description": "You are in a vast cavern at (18, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient chasm. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_17_14",
         "east": "cave_19_14",
@@ -2891,7 +2883,7 @@
       }
     },
     "cave_19_0": {
-      "description": "You are in a vast cavern at (19, 0). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_18_0",
         "south": "cave_19_1"
@@ -2899,7 +2891,7 @@
       "quest_object": "crystal_shard_3"
     },
     "cave_19_1": {
-      "description": "You are in a vast cavern at (19, 1). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart.",
       "exits": {
         "west": "cave_18_1",
         "north": "cave_19_0",
@@ -2907,7 +2899,7 @@
       }
     },
     "cave_19_2": {
-      "description": "You are in a vast cavern at (19, 2). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_18_2",
         "north": "cave_19_1",
@@ -2915,7 +2907,7 @@
       }
     },
     "cave_19_3": {
-      "description": "You are in a vast cavern at (19, 3). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent chamber. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_18_3",
         "north": "cave_19_2",
@@ -2923,7 +2915,7 @@
       }
     },
     "cave_19_4": {
-      "description": "You are in a vast cavern at (19, 4). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cavern. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_18_4",
         "north": "cave_19_3",
@@ -2931,7 +2923,7 @@
       }
     },
     "cave_19_5": {
-      "description": "You are in a vast cavern at (19, 5). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast grotto. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_18_5",
         "north": "cave_19_4",
@@ -2939,7 +2931,7 @@
       }
     },
     "cave_19_6": {
-      "description": "You are in a vast cavern at (19, 6). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a singing cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_18_6",
         "north": "cave_19_5",
@@ -2947,7 +2939,7 @@
       }
     },
     "cave_19_7": {
-      "description": "You are in a vast cavern at (19, 7). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering tunnel. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_18_7",
         "north": "cave_19_6",
@@ -2955,7 +2947,7 @@
       }
     },
     "cave_19_8": {
-      "description": "You are in a vast cavern at (19, 8). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a narrow cathedral. A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
       "exits": {
         "west": "cave_18_8",
         "north": "cave_19_7",
@@ -2963,39 +2955,23 @@
       }
     },
     "cave_19_9": {
-      "description": "You are in a vast cavern at (19, 9). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient cathedral. The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
       "exits": {
         "west": "cave_18_9",
         "north": "cave_19_8",
         "south": "cave_19_10"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_19_10": {
-      "description": "You are in a vast cavern at (19, 10). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a silent tunnel. The sound of dripping water echoes melodically through the chamber.",
       "exits": {
         "west": "cave_18_10",
         "north": "cave_19_9",
         "south": "cave_19_11"
-      },
-      "monster": {
-        "name": "Crystal Spider",
-        "hp": 20,
-        "attack": 6,
-        "defense": 4,
-        "gold": 20,
-        "loot": "crystal_fragment"
       }
     },
     "cave_19_11": {
-      "description": "You are in a vast cavern at (19, 11). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a echoin chamber. Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
       "exits": {
         "west": "cave_18_11",
         "north": "cave_19_10",
@@ -3003,7 +2979,7 @@
       }
     },
     "cave_19_12": {
-      "description": "You are in a vast cavern at (19, 12). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a vast cathedral. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_18_12",
         "north": "cave_19_11",
@@ -3011,7 +2987,7 @@
       }
     },
     "cave_19_13": {
-      "description": "You are in a vast cavern at (19, 13). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a ancient passageway. The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
       "exits": {
         "west": "cave_18_13",
         "north": "cave_19_12",
@@ -3019,7 +2995,7 @@
       }
     },
     "cave_19_14": {
-      "description": "You are in a vast cavern at (19, 14). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+      "description": "You are in a glimmering passageway. The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
       "exits": {
         "west": "cave_18_14",
         "north": "cave_19_13",

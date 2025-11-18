@@ -63,9 +63,20 @@ def generate_forest():
             stack.pop()
 
     # --- Description and Faction Generation ---
-    ADJECTIVES = ["sun-dappled", "misty", "ancient", "mossy", "dark", "vibrant", "serene", "eerie"]
-    NOUNS = ["clearing", "grove", "thicket", "hollow", "path", "glade", "copse"]
-    DETAILS = ["The air is thick...", "A gentle breeze...", "The sound of a distant woodpecker...", "Sunlight streams...", "A small, babbling brook..."]
+    ADJECTIVES = ["sun-dappled", "misty", "ancient", "mossy", "dark", "vibrant", "serene", "eerie", "whispering", "luminous", "shadowy", "forgotten", "verdant", "primeval"]
+    NOUNS = ["clearing", "grove", "thicket", "hollow", "path", "glade", "copse", "dell", "meadow", "thicket", "brookside", "fen"]
+    DETAILS = [
+        "The air is thick with the scent of pine and damp earth.",
+        "A gentle breeze whispers through the leaves, carrying the melody of a hidden bird.",
+        "The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming.",
+        "Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air.",
+        "A small, babbling brook gurgles nearby, its water crystal clear over smooth stones.",
+        "A carpet of emerald moss blankets the ground, muffling your footsteps.",
+        "The gnarled roots of an ancient oak twist across the path like sleeping serpents.",
+        "Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings.",
+        "You hear the faint rustling of some unseen creature in the undergrowth.",
+        "A sense of profound peace and timelessness pervades this place."
+    ]
 
     for i in range(GRID_SIZE):
         for j in range(GRID_SIZE):
@@ -74,10 +85,10 @@ def generate_forest():
                 desc = f"You are in a {random.choice(ADJECTIVES)} {random.choice(NOUNS)}. {random.choice(DETAILS)}"
                 if i < GRID_SIZE / 2 and j < GRID_SIZE / 2:
                     rooms[room_id]['faction'] = 'fairy'
-                    desc += " Delicate, shimmering lights float in the air..."
+                    desc += " Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
                 elif i > GRID_SIZE / 2 and j > GRID_SIZE / 2:
                     rooms[room_id]['faction'] = 'nymph'
-                    desc += " Thick, gnarled vines hang from the trees..."
+                    desc += " Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
                 else:
                     rooms[room_id]['faction'] = 'contested'
                 rooms[room_id]['description'] = desc
@@ -87,7 +98,7 @@ def generate_forest():
         room_id = random.choice(list(rooms.keys()))
         if "quest_object" not in rooms[room_id]:
              rooms[room_id]['quest_object'] = 'acorn_cache'
-             rooms[room_id]['description'] += " You see a hidden cache of acorns here."
+             rooms[room_id]['description'] += " You see a hidden cache of acorns tucked into the nook of a tree."
 
     # --- Add Bridge ---
     add_bridge_to_bailon(rooms, GRID_SIZE)

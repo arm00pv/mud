@@ -20,13 +20,31 @@ def generate_aetherium():
         }
     }
 
+    # --- Description Templates ---
+    ADJECTIVES = ["cosmic", "star-strewn", "void-like", "shimmering", "ethereal", "timeless", "blinding"]
+    NOUNS = ["void", "nebula", "starfield", "continuum", "expanse", "galaxy's edge", "creation's forge"]
+    DETAILS = [
+        "You are floating in a cosmic void. Kaleidoscopic nebulae swirl in the infinite distance, and the stars are blindingly bright.",
+        "There is no up or down here, only the silent, majestic dance of celestial bodies.",
+        "Wisps of colorful, gaseous stardust drift lazily past you.",
+        "The silence is absolute and profound, a stark contrast to the visual splendor.",
+        "You feel a sense of both insignificance and connection to the vastness of the universe.",
+        "A distant supernova blossoms like a silent flower, a testament to the universe's cycle of creation and destruction.",
+        "Paths of crystalline starlight crisscross the void, forming ethereal walkways."
+    ]
+
     grid_size_x = 15
     grid_size_y = 15
     for x in range(grid_size_x):
         for y in range(grid_size_y):
             room_id = f"aether_{x}_{y}"
+            adj = random.choice(ADJECTIVES)
+            noun = random.choice(NOUNS)
+            detail = random.choice(DETAILS)
+            description = f"You are in a {adj} {noun}. {detail}"
+
             area["rooms"][room_id] = {
-                "description": f"You are floating in a cosmic void at ({x}, {y}). Nebulae swirl in the distance, and the stars are blindingly bright.",
+                "description": description,
                 "exits": {}
             }
             if x > 0:

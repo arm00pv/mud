@@ -20,13 +20,32 @@ def generate_sunken_city():
         }
     }
 
+    # --- Description Templates ---
+    ADJECTIVES = ["dimly lit", "crushing", "silent", "ancient", "ruined", "luminous", "forgotten"]
+    NOUNS = ["chamber", "plaza", "spire", "trench", "temple ruin", "palace hall", "coral garden"]
+    DETAILS = [
+        "Strange coral formations glow with an eerie, bioluminescent light.",
+        "The immense pressure of the deep sea is a palpable force around you.",
+        "A school of ghostly, transparent fish flits by, their eyes vacant.",
+        "Giant sea anemones wave their tentacles hypnotically in the slow current.",
+        "The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
+        "A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+        "You can see strange, non-Euclidean architecture that seems to defy logic.",
+        "The water is frigid, chilling you to the bone."
+    ]
+
     # Generate a 15x15 grid of rooms
     grid_size = 15
     for x in range(grid_size):
         for y in range(grid_size):
             room_id = f"room_{x}_{y}"
+            adj = random.choice(ADJECTIVES)
+            noun = random.choice(NOUNS)
+            detail = random.choice(DETAILS)
+            description = f"You are in a {adj} {noun}. {detail}"
+
             area["rooms"][room_id] = {
-                "description": f"You are in a dimly lit, water-filled chamber at ({x}, {y}). Strange coral formations glow with an eerie light.",
+                "description": description,
                 "exits": {},
                 "environment": "underwater"
             }
