@@ -43,12 +43,79 @@ def generate_bailon():
     all_rooms = {}
 
     # 1. Generate Zones
-    plaza = generate_zone(5, 5, "p", [["grand", "open", "bustling"], ["plaza", "square"], ["Fountains splash softly."]])
-    marketplace = generate_zone(8, 8, "m", [["crowded", "noisy"], ["market street", "bazaar"], ["Merchants hawk their wares."]])
-    historical = generate_zone(10, 10, "h", [["ancient", "crumbling", "silent"], ["ruin", "monument plaza"], ["The stones feel heavy with history."]])
-    undercity = generate_zone(10, 10, "u", [["damp", "dark", "twisting"], ["cave", "tunnel"], ["Water drips from the ceiling."]])
-    castle = generate_zone(10, 10, "c", [["fortified", "imposing", "cold"], ["parapet", "hall"], ["Banners of the Siege Goblins hang here."]])
-    castle_quest_area = generate_zone(5, 10, "cq", [["secret", "dusty", "forgotten"], ["passage", "chamber"], ["You feel a hidden presence."]])
+    plaza_parts = [
+        ["grand", "open", "wind-swept", "sun-bleached", "serene"],
+        ["plaza", "square", "courtyard", "terrace"],
+        [
+            "Intricate, geometric patterns are carved into the marble floor.",
+            "A fountain, now dry, sits in the center, a testament to a grander age.",
+            "The sky above is a brilliant, unending blue.",
+            "You feel a strange lightness, as if gravity itself is weaker here.",
+            "The distant sound of wind chimes creates a lonely, beautiful melody."
+        ]
+    ]
+    marketplace_parts = [
+        ["crowded", "noisy", "makeshift", "chaotic", "bustling"],
+        ["market street", "bazaar", "shanty town", "trading post"],
+        [
+            "The air is thick with the smell of strange spices and roasting meat.",
+            "Merchants with leathery skin and cunning eyes hawk their wares from behind rickety stalls.",
+            "A cacophony of shouts, haggling, and goblin laughter fills the air.",
+            "Tattered banners and hides are stretched between buildings, providing meager shade.",
+            "You see goods from a dozen different lands, plundered and traded."
+        ]
+    ]
+    historical_parts = [
+        ["ancient", "crumbling", "silent", "majestic", "weathered"],
+        ["ruin", "monument plaza", "library atrium", "garden terrace"],
+        [
+            "The stones feel heavy with history, humming with a forgotten power.",
+            "Elaborate carvings on the walls depict a civilization that worshipped the sky.",
+            "A profound silence hangs in the air, broken only by the whistling wind.",
+            "Statues of winged beings, their faces eroded by time, stand like silent sentinels.",
+            "You feel as though you are walking through a memory."
+        ]
+    ]
+    undercity_parts = [
+        ["damp", "dark", "twisting", "fungal", "oppressive"],
+        ["cave", "tunnel", "sewer", "under-croft", "chasm"],
+        [
+            "Water drips from the ceiling, each drop echoing in the vast darkness.",
+            "Bioluminescent moss casts a sickly, green-blue light on the path.",
+            "The air is cold and smells of decay and wet stone.",
+            "You hear the skittering of unseen things in the shadows.",
+            "This place feels like the city's forgotten underbelly, a place of secrets and refuse."
+        ]
+    ]
+    castle_parts = [
+        ["fortified", "imposing", "cold", "brutish", "drafty"],
+        ["parapet", "hall", "barracks", "armory", "rampart"],
+        [
+            "Crude banners of the Siege Goblins, depicting a cracked skull, hang from the walls.",
+            "The air is acrid with the smoke of goblin fires and unwashed bodies.",
+            "The architecture is functional and brutal, built for war, not comfort.",
+            "Through a narrow slit in the wall, you can see the clouds drifting far below.",
+            "The sound of guttural war chants echoes from deeper within the castle."
+        ]
+    ]
+    quest_area_parts = [
+        ["secret", "dusty", "forgotten", "sacred", "silent"],
+        ["passage", "chamber", "tomb", "sanctum", "observatory"],
+        [
+            "You feel a hidden, powerful presence here, watching your every move.",
+            "The air is still and heavy with the weight of centuries.",
+            "Intricate celestial maps are inlaid on the floor in tarnished silver.",
+            "Dust motes dance in a single shaft of light from a crack in the ceiling.",
+            "This room was clearly a place of great importance, now lost to time."
+        ]
+    ]
+
+    plaza = generate_zone(5, 5, "p", plaza_parts)
+    marketplace = generate_zone(8, 8, "m", marketplace_parts)
+    historical = generate_zone(10, 10, "h", historical_parts)
+    undercity = generate_zone(10, 10, "u", undercity_parts)
+    castle = generate_zone(10, 10, "c", castle_parts)
+    castle_quest_area = generate_zone(5, 10, "cq", quest_area_parts)
 
     # Add all rooms to the main dictionary
     all_rooms.update(plaza)

@@ -3,7 +3,7 @@
   "start_room": "gateway",
   "rooms": {
     "room_0_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "east": "room_1_0",
         "south": "room_0_1"
@@ -12,7 +12,7 @@
       "quest_object": "trident_piece_1"
     },
     "room_0_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "east": "room_1_1",
         "north": "room_0_0",
@@ -21,7 +21,7 @@
       "environment": "underwater"
     },
     "room_0_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined trench. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "east": "room_1_2",
         "north": "room_0_1",
@@ -30,7 +30,7 @@
       "environment": "underwater"
     },
     "room_0_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. The water is frigid, chilling you to the bone.",
       "exits": {
         "east": "room_1_3",
         "north": "room_0_2",
@@ -39,11 +39,38 @@
       "environment": "underwater"
     },
     "room_0_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "east": "room_1_4",
         "north": "room_0_3",
         "south": "room_0_5"
+      },
+      "environment": "underwater"
+    },
+    "room_0_5": {
+      "description": "You are in a silent temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
+      "exits": {
+        "east": "room_1_5",
+        "north": "room_0_4",
+        "south": "room_0_6"
+      },
+      "environment": "underwater"
+    },
+    "room_0_6": {
+      "description": "You are in a ancient coral garden. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+      "exits": {
+        "east": "room_1_6",
+        "north": "room_0_5",
+        "south": "room_0_7"
+      },
+      "environment": "underwater"
+    },
+    "room_0_7": {
+      "description": "You are in a ruined plaza. The immense pressure of the deep sea is a palpable force around you.",
+      "exits": {
+        "east": "room_1_7",
+        "north": "room_0_6",
+        "south": "room_0_8"
       },
       "environment": "underwater",
       "monster": {
@@ -54,35 +81,8 @@
         "gold": 15
       }
     },
-    "room_0_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 5). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "east": "room_1_5",
-        "north": "room_0_4",
-        "south": "room_0_6"
-      },
-      "environment": "underwater"
-    },
-    "room_0_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 6). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "east": "room_1_6",
-        "north": "room_0_5",
-        "south": "room_0_7"
-      },
-      "environment": "underwater"
-    },
-    "room_0_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 7). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "east": "room_1_7",
-        "north": "room_0_6",
-        "south": "room_0_8"
-      },
-      "environment": "underwater"
-    },
     "room_0_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "east": "room_1_8",
         "north": "room_0_7",
@@ -91,7 +91,7 @@
       "environment": "underwater"
     },
     "room_0_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "east": "room_1_9",
         "north": "room_0_8",
@@ -100,7 +100,7 @@
       "environment": "underwater"
     },
     "room_0_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "east": "room_1_10",
         "north": "room_0_9",
@@ -109,7 +109,7 @@
       "environment": "underwater"
     },
     "room_0_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient plaza. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "east": "room_1_11",
         "north": "room_0_10",
@@ -118,16 +118,23 @@
       "environment": "underwater"
     },
     "room_0_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient plaza. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "east": "room_1_12",
         "north": "room_0_11",
         "south": "room_0_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_0_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "east": "room_1_13",
         "north": "room_0_12",
@@ -136,7 +143,7 @@
       "environment": "underwater"
     },
     "room_0_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (0, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "east": "room_1_14",
         "north": "room_0_13"
@@ -145,7 +152,7 @@
       "quest_object": "trident_piece_2"
     },
     "room_1_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_0_0",
         "east": "room_2_0",
@@ -154,7 +161,7 @@
       "environment": "underwater"
     },
     "room_1_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_0_1",
         "east": "room_2_1",
@@ -171,7 +178,7 @@
       }
     },
     "room_1_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_0_2",
         "east": "room_2_2",
@@ -181,7 +188,7 @@
       "environment": "underwater"
     },
     "room_1_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing spire. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_0_3",
         "east": "room_2_3",
@@ -191,7 +198,7 @@
       "environment": "underwater"
     },
     "room_1_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_0_4",
         "east": "room_2_4",
@@ -201,24 +208,17 @@
       "environment": "underwater"
     },
     "room_1_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_0_5",
         "east": "room_2_5",
         "north": "room_1_4",
         "south": "room_1_6"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_1_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous coral garden. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_0_6",
         "east": "room_2_6",
@@ -228,7 +228,7 @@
       "environment": "underwater"
     },
     "room_1_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing plaza. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "gateway",
         "east": "room_2_7",
@@ -238,24 +238,17 @@
       "environment": "underwater"
     },
     "room_1_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_0_8",
         "east": "room_2_8",
         "north": "room_1_7",
         "south": "room_1_9"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_1_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten spire. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_0_9",
         "east": "room_2_9",
@@ -265,24 +258,17 @@
       "environment": "underwater"
     },
     "room_1_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit plaza. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_0_10",
         "east": "room_2_10",
         "north": "room_1_9",
         "south": "room_1_11"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_1_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing chamber. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_0_11",
         "east": "room_2_11",
@@ -292,7 +278,7 @@
       "environment": "underwater"
     },
     "room_1_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient spire. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_0_12",
         "east": "room_2_12",
@@ -302,7 +288,7 @@
       "environment": "underwater"
     },
     "room_1_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit coral garden. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_0_13",
         "east": "room_2_13",
@@ -312,20 +298,11 @@
       "environment": "underwater"
     },
     "room_1_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (1, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent trench. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_0_14",
         "east": "room_2_14",
         "north": "room_1_13"
-      },
-      "environment": "underwater"
-    },
-    "room_2_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 0). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_1_0",
-        "east": "room_3_0",
-        "south": "room_2_1"
       },
       "environment": "underwater",
       "monster": {
@@ -336,8 +313,17 @@
         "gold": 15
       }
     },
+    "room_2_0": {
+      "description": "You are in a ancient plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
+      "exits": {
+        "west": "room_1_0",
+        "east": "room_3_0",
+        "south": "room_2_1"
+      },
+      "environment": "underwater"
+    },
     "room_2_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_1_1",
         "east": "room_3_1",
@@ -347,7 +333,7 @@
       "environment": "underwater"
     },
     "room_2_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_1_2",
         "east": "room_3_2",
@@ -357,7 +343,7 @@
       "environment": "underwater"
     },
     "room_2_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit palace hall. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_1_3",
         "east": "room_3_3",
@@ -367,7 +353,7 @@
       "environment": "underwater"
     },
     "room_2_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent plaza. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_1_4",
         "east": "room_3_4",
@@ -377,17 +363,24 @@
       "environment": "underwater"
     },
     "room_2_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_1_5",
         "east": "room_3_5",
         "north": "room_2_4",
         "south": "room_2_6"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_2_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous temple ruin. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_1_6",
         "east": "room_3_6",
@@ -397,7 +390,7 @@
       "environment": "underwater"
     },
     "room_2_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous temple ruin. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_1_7",
         "east": "room_3_7",
@@ -407,7 +400,7 @@
       "environment": "underwater"
     },
     "room_2_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten palace hall. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_1_8",
         "east": "room_3_8",
@@ -417,7 +410,7 @@
       "environment": "underwater"
     },
     "room_2_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_1_9",
         "east": "room_3_9",
@@ -427,7 +420,7 @@
       "environment": "underwater"
     },
     "room_2_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_1_10",
         "east": "room_3_10",
@@ -437,24 +430,17 @@
       "environment": "underwater"
     },
     "room_2_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_1_11",
         "east": "room_3_11",
         "north": "room_2_10",
         "south": "room_2_12"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_2_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing spire. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_1_12",
         "east": "room_3_12",
@@ -464,7 +450,7 @@
       "environment": "underwater"
     },
     "room_2_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined spire. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_1_13",
         "east": "room_3_13",
@@ -474,7 +460,7 @@
       "environment": "underwater"
     },
     "room_2_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (2, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_1_14",
         "east": "room_3_14",
@@ -483,7 +469,7 @@
       "environment": "underwater"
     },
     "room_3_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_2_0",
         "east": "room_4_0",
@@ -492,7 +478,7 @@
       "environment": "underwater"
     },
     "room_3_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_2_1",
         "east": "room_4_1",
@@ -502,7 +488,7 @@
       "environment": "underwater"
     },
     "room_3_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient spire. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_2_2",
         "east": "room_4_2",
@@ -512,17 +498,24 @@
       "environment": "underwater"
     },
     "room_3_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_2_3",
         "east": "room_4_3",
         "north": "room_3_2",
         "south": "room_3_4"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_3_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_2_4",
         "east": "room_4_4",
@@ -532,7 +525,7 @@
       "environment": "underwater"
     },
     "room_3_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_2_5",
         "east": "room_4_5",
@@ -542,7 +535,7 @@
       "environment": "underwater"
     },
     "room_3_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_2_6",
         "east": "room_4_6",
@@ -552,17 +545,24 @@
       "environment": "underwater"
     },
     "room_3_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_2_7",
         "east": "room_4_7",
         "north": "room_3_6",
         "south": "room_3_8"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_3_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten trench. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_2_8",
         "east": "room_4_8",
@@ -572,7 +572,7 @@
       "environment": "underwater"
     },
     "room_3_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient palace hall. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_2_9",
         "east": "room_4_9",
@@ -582,7 +582,7 @@
       "environment": "underwater"
     },
     "room_3_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_2_10",
         "east": "room_4_10",
@@ -592,17 +592,24 @@
       "environment": "underwater"
     },
     "room_3_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient chamber. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_2_11",
         "east": "room_4_11",
         "north": "room_3_10",
         "south": "room_3_12"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_3_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined plaza. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_2_12",
         "east": "room_4_12",
@@ -612,7 +619,7 @@
       "environment": "underwater"
     },
     "room_3_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_2_13",
         "east": "room_4_13",
@@ -622,7 +629,7 @@
       "environment": "underwater"
     },
     "room_3_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (3, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_2_14",
         "east": "room_4_14",
@@ -631,7 +638,7 @@
       "environment": "underwater"
     },
     "room_4_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_3_0",
         "east": "room_5_0",
@@ -640,17 +647,24 @@
       "environment": "underwater"
     },
     "room_4_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient trench. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_3_1",
         "east": "room_5_1",
         "north": "room_4_0",
         "south": "room_4_2"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_4_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous palace hall. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_3_2",
         "east": "room_5_2",
@@ -660,17 +674,24 @@
       "environment": "underwater"
     },
     "room_4_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_3_3",
         "east": "room_5_3",
         "north": "room_4_2",
         "south": "room_4_4"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_4_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_3_4",
         "east": "room_5_4",
@@ -680,24 +701,17 @@
       "environment": "underwater"
     },
     "room_4_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit temple ruin. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_3_5",
         "east": "room_5_5",
         "north": "room_4_4",
         "south": "room_4_6"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_4_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_3_6",
         "east": "room_5_6",
@@ -707,7 +721,7 @@
       "environment": "underwater"
     },
     "room_4_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_3_7",
         "east": "room_5_7",
@@ -717,7 +731,7 @@
       "environment": "underwater"
     },
     "room_4_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_3_8",
         "east": "room_5_8",
@@ -727,7 +741,7 @@
       "environment": "underwater"
     },
     "room_4_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit plaza. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_3_9",
         "east": "room_5_9",
@@ -737,7 +751,7 @@
       "environment": "underwater"
     },
     "room_4_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit chamber. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_3_10",
         "east": "room_5_10",
@@ -747,7 +761,7 @@
       "environment": "underwater"
     },
     "room_4_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_3_11",
         "east": "room_5_11",
@@ -757,7 +771,7 @@
       "environment": "underwater"
     },
     "room_4_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined trench. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_3_12",
         "east": "room_5_12",
@@ -767,7 +781,7 @@
       "environment": "underwater"
     },
     "room_4_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_3_13",
         "east": "room_5_13",
@@ -777,23 +791,16 @@
       "environment": "underwater"
     },
     "room_4_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (4, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_3_14",
         "east": "room_5_14",
         "north": "room_4_13"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_5_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_4_0",
         "east": "room_6_0",
@@ -802,7 +809,7 @@
       "environment": "underwater"
     },
     "room_5_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent plaza. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_4_1",
         "east": "room_6_1",
@@ -812,32 +819,12 @@
       "environment": "underwater"
     },
     "room_5_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_4_2",
         "east": "room_6_2",
         "north": "room_5_1",
         "south": "room_5_3"
-      },
-      "environment": "underwater"
-    },
-    "room_5_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 3). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_4_3",
-        "east": "room_6_3",
-        "north": "room_5_2",
-        "south": "room_5_4"
-      },
-      "environment": "underwater"
-    },
-    "room_5_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 4). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_4_4",
-        "east": "room_6_4",
-        "north": "room_5_3",
-        "south": "room_5_5"
       },
       "environment": "underwater",
       "monster": {
@@ -848,8 +835,28 @@
         "gold": 15
       }
     },
+    "room_5_3": {
+      "description": "You are in a luminous plaza. Giant sea anemones wave their tentacles hypnotically in the slow current.",
+      "exits": {
+        "west": "room_4_3",
+        "east": "room_6_3",
+        "north": "room_5_2",
+        "south": "room_5_4"
+      },
+      "environment": "underwater"
+    },
+    "room_5_4": {
+      "description": "You are in a forgotten trench. You can see strange, non-Euclidean architecture that seems to defy logic.",
+      "exits": {
+        "west": "room_4_4",
+        "east": "room_6_4",
+        "north": "room_5_3",
+        "south": "room_5_5"
+      },
+      "environment": "underwater"
+    },
     "room_5_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_4_5",
         "east": "room_6_5",
@@ -865,24 +872,17 @@
       }
     },
     "room_5_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_4_6",
         "east": "room_6_6",
         "north": "room_5_5",
         "south": "room_5_7"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_5_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_4_7",
         "east": "room_6_7",
@@ -892,24 +892,17 @@
       "environment": "underwater"
     },
     "room_5_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_4_8",
         "east": "room_6_8",
         "north": "room_5_7",
         "south": "room_5_9"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_5_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined spire. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_4_9",
         "east": "room_6_9",
@@ -919,7 +912,7 @@
       "environment": "underwater"
     },
     "room_5_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing palace hall. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_4_10",
         "east": "room_6_10",
@@ -929,7 +922,7 @@
       "environment": "underwater"
     },
     "room_5_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_4_11",
         "east": "room_6_11",
@@ -939,7 +932,7 @@
       "environment": "underwater"
     },
     "room_5_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_4_12",
         "east": "room_6_12",
@@ -949,21 +942,12 @@
       "environment": "underwater"
     },
     "room_5_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_4_13",
         "east": "room_6_13",
         "north": "room_5_12",
         "south": "room_5_14"
-      },
-      "environment": "underwater"
-    },
-    "room_5_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (5, 14). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_4_14",
-        "east": "room_6_14",
-        "north": "room_5_13"
       },
       "environment": "underwater",
       "monster": {
@@ -974,8 +958,17 @@
         "gold": 15
       }
     },
+    "room_5_14": {
+      "description": "You are in a luminous coral garden. You can see strange, non-Euclidean architecture that seems to defy logic.",
+      "exits": {
+        "west": "room_4_14",
+        "east": "room_6_14",
+        "north": "room_5_13"
+      },
+      "environment": "underwater"
+    },
     "room_6_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_5_0",
         "east": "room_7_0",
@@ -984,7 +977,7 @@
       "environment": "underwater"
     },
     "room_6_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_5_1",
         "east": "room_7_1",
@@ -994,24 +987,17 @@
       "environment": "underwater"
     },
     "room_6_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_5_2",
         "east": "room_7_2",
         "north": "room_6_1",
         "south": "room_6_3"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_6_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_5_3",
         "east": "room_7_3",
@@ -1021,7 +1007,7 @@
       "environment": "underwater"
     },
     "room_6_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_5_4",
         "east": "room_7_4",
@@ -1031,24 +1017,17 @@
       "environment": "underwater"
     },
     "room_6_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_5_5",
         "east": "room_7_5",
         "north": "room_6_4",
         "south": "room_6_6"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_6_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_5_6",
         "east": "room_7_6",
@@ -1058,7 +1037,7 @@
       "environment": "underwater"
     },
     "room_6_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_5_7",
         "east": "room_7_7",
@@ -1068,7 +1047,7 @@
       "environment": "underwater"
     },
     "room_6_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient spire. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_5_8",
         "east": "room_7_8",
@@ -1078,7 +1057,7 @@
       "environment": "underwater"
     },
     "room_6_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined plaza. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_5_9",
         "east": "room_7_9",
@@ -1088,7 +1067,7 @@
       "environment": "underwater"
     },
     "room_6_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_5_10",
         "east": "room_7_10",
@@ -1098,7 +1077,7 @@
       "environment": "underwater"
     },
     "room_6_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_5_11",
         "east": "room_7_11",
@@ -1108,7 +1087,7 @@
       "environment": "underwater"
     },
     "room_6_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_5_12",
         "east": "room_7_12",
@@ -1118,7 +1097,7 @@
       "environment": "underwater"
     },
     "room_6_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined palace hall. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_5_13",
         "east": "room_7_13",
@@ -1128,7 +1107,7 @@
       "environment": "underwater"
     },
     "room_6_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (6, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_5_14",
         "east": "room_7_14",
@@ -1137,7 +1116,7 @@
       "environment": "underwater"
     },
     "room_7_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_6_0",
         "east": "room_8_0",
@@ -1146,24 +1125,17 @@
       "environment": "underwater"
     },
     "room_7_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_6_1",
         "east": "room_8_1",
         "north": "room_7_0",
         "south": "room_7_2"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing spire. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_6_2",
         "east": "room_8_2",
@@ -1173,7 +1145,7 @@
       "environment": "underwater"
     },
     "room_7_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_6_3",
         "east": "room_8_3",
@@ -1183,7 +1155,7 @@
       "environment": "underwater"
     },
     "room_7_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous temple ruin. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_6_4",
         "east": "room_8_4",
@@ -1193,7 +1165,7 @@
       "environment": "underwater"
     },
     "room_7_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_6_5",
         "east": "room_8_5",
@@ -1203,7 +1175,7 @@
       "environment": "underwater"
     },
     "room_7_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_6_6",
         "east": "room_8_6",
@@ -1213,7 +1185,7 @@
       "environment": "underwater"
     },
     "room_7_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_6_7",
         "east": "room_8_7",
@@ -1223,7 +1195,7 @@
       "environment": "underwater"
     },
     "room_7_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_6_8",
         "east": "room_8_8",
@@ -1233,17 +1205,24 @@
       "environment": "underwater"
     },
     "room_7_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient plaza. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_6_9",
         "east": "room_8_9",
         "north": "room_7_8",
         "south": "room_7_10"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_7_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_6_10",
         "east": "room_8_10",
@@ -1253,7 +1232,7 @@
       "environment": "underwater"
     },
     "room_7_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit coral garden. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_6_11",
         "east": "room_8_11",
@@ -1263,24 +1242,17 @@
       "environment": "underwater"
     },
     "room_7_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient spire. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_6_12",
         "east": "room_8_12",
         "north": "room_7_11",
         "south": "room_7_13"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_7_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_6_13",
         "east": "room_8_13",
@@ -1290,16 +1262,23 @@
       "environment": "underwater"
     },
     "room_7_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (7, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten palace hall. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_6_14",
         "east": "room_8_14",
         "north": "room_7_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_8_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing temple ruin. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_7_0",
         "east": "room_9_0",
@@ -1308,7 +1287,7 @@
       "environment": "underwater"
     },
     "room_8_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_7_1",
         "east": "room_9_1",
@@ -1318,17 +1297,24 @@
       "environment": "underwater"
     },
     "room_8_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_7_2",
         "east": "room_9_2",
         "north": "room_8_1",
         "south": "room_8_3"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_8_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_7_3",
         "east": "room_9_3",
@@ -1338,7 +1324,7 @@
       "environment": "underwater"
     },
     "room_8_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent chamber. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_7_4",
         "east": "room_9_4",
@@ -1348,22 +1334,12 @@
       "environment": "underwater"
     },
     "room_8_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_7_5",
         "east": "room_9_5",
         "north": "room_8_4",
         "south": "room_8_6"
-      },
-      "environment": "underwater"
-    },
-    "room_8_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 6). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_7_6",
-        "east": "room_9_6",
-        "north": "room_8_5",
-        "south": "room_8_7"
       },
       "environment": "underwater",
       "monster": {
@@ -1374,8 +1350,18 @@
         "gold": 15
       }
     },
+    "room_8_6": {
+      "description": "You are in a silent palace hall. The immense pressure of the deep sea is a palpable force around you.",
+      "exits": {
+        "west": "room_7_6",
+        "east": "room_9_6",
+        "north": "room_8_5",
+        "south": "room_8_7"
+      },
+      "environment": "underwater"
+    },
     "room_8_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_7_7",
         "east": "room_9_7",
@@ -1385,7 +1371,7 @@
       "environment": "underwater"
     },
     "room_8_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined temple ruin. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_7_8",
         "east": "room_9_8",
@@ -1395,7 +1381,7 @@
       "environment": "underwater"
     },
     "room_8_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined spire. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_7_9",
         "east": "room_9_9",
@@ -1405,7 +1391,7 @@
       "environment": "underwater"
     },
     "room_8_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_7_10",
         "east": "room_9_10",
@@ -1415,7 +1401,7 @@
       "environment": "underwater"
     },
     "room_8_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_7_11",
         "east": "room_9_11",
@@ -1425,7 +1411,7 @@
       "environment": "underwater"
     },
     "room_8_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten plaza. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_7_12",
         "east": "room_9_12",
@@ -1435,7 +1421,7 @@
       "environment": "underwater"
     },
     "room_8_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient coral garden. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_7_13",
         "east": "room_9_13",
@@ -1445,7 +1431,7 @@
       "environment": "underwater"
     },
     "room_8_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (8, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_7_14",
         "east": "room_9_14",
@@ -1454,121 +1440,11 @@
       "environment": "underwater"
     },
     "room_9_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_8_0",
         "east": "room_10_0",
         "south": "room_9_1"
-      },
-      "environment": "underwater"
-    },
-    "room_9_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 1). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_1",
-        "east": "room_10_1",
-        "north": "room_9_0",
-        "south": "room_9_2"
-      },
-      "environment": "underwater"
-    },
-    "room_9_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 2). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_2",
-        "east": "room_10_2",
-        "north": "room_9_1",
-        "south": "room_9_3"
-      },
-      "environment": "underwater"
-    },
-    "room_9_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 3). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_3",
-        "east": "room_10_3",
-        "north": "room_9_2",
-        "south": "room_9_4"
-      },
-      "environment": "underwater"
-    },
-    "room_9_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 4). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_4",
-        "east": "room_10_4",
-        "north": "room_9_3",
-        "south": "room_9_5"
-      },
-      "environment": "underwater"
-    },
-    "room_9_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 5). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_5",
-        "east": "room_10_5",
-        "north": "room_9_4",
-        "south": "room_9_6"
-      },
-      "environment": "underwater"
-    },
-    "room_9_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 6). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_6",
-        "east": "room_10_6",
-        "north": "room_9_5",
-        "south": "room_9_7"
-      },
-      "environment": "underwater"
-    },
-    "room_9_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 7). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_7",
-        "east": "room_10_7",
-        "north": "room_9_6",
-        "south": "room_9_8"
-      },
-      "environment": "underwater"
-    },
-    "room_9_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 8). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_8",
-        "east": "room_10_8",
-        "north": "room_9_7",
-        "south": "room_9_9"
-      },
-      "environment": "underwater"
-    },
-    "room_9_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 9). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_9",
-        "east": "room_10_9",
-        "north": "room_9_8",
-        "south": "room_9_10"
-      },
-      "environment": "underwater"
-    },
-    "room_9_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 10). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_10",
-        "east": "room_10_10",
-        "north": "room_9_9",
-        "south": "room_9_11"
-      },
-      "environment": "underwater"
-    },
-    "room_9_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 11). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_8_11",
-        "east": "room_10_11",
-        "north": "room_9_10",
-        "south": "room_9_12"
       },
       "environment": "underwater",
       "monster": {
@@ -1579,18 +1455,135 @@
         "gold": 15
       }
     },
+    "room_9_1": {
+      "description": "You are in a silent coral garden. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
+      "exits": {
+        "west": "room_8_1",
+        "east": "room_10_1",
+        "north": "room_9_0",
+        "south": "room_9_2"
+      },
+      "environment": "underwater"
+    },
+    "room_9_2": {
+      "description": "You are in a dimly lit coral garden. A school of ghostly, transparent fish flits by, their eyes vacant.",
+      "exits": {
+        "west": "room_8_2",
+        "east": "room_10_2",
+        "north": "room_9_1",
+        "south": "room_9_3"
+      },
+      "environment": "underwater"
+    },
+    "room_9_3": {
+      "description": "You are in a ruined palace hall. Strange coral formations glow with an eerie, bioluminescent light.",
+      "exits": {
+        "west": "room_8_3",
+        "east": "room_10_3",
+        "north": "room_9_2",
+        "south": "room_9_4"
+      },
+      "environment": "underwater"
+    },
+    "room_9_4": {
+      "description": "You are in a luminous trench. Strange coral formations glow with an eerie, bioluminescent light.",
+      "exits": {
+        "west": "room_8_4",
+        "east": "room_10_4",
+        "north": "room_9_3",
+        "south": "room_9_5"
+      },
+      "environment": "underwater"
+    },
+    "room_9_5": {
+      "description": "You are in a forgotten plaza. You can see strange, non-Euclidean architecture that seems to defy logic.",
+      "exits": {
+        "west": "room_8_5",
+        "east": "room_10_5",
+        "north": "room_9_4",
+        "south": "room_9_6"
+      },
+      "environment": "underwater"
+    },
+    "room_9_6": {
+      "description": "You are in a forgotten plaza. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
+      "exits": {
+        "west": "room_8_6",
+        "east": "room_10_6",
+        "north": "room_9_5",
+        "south": "room_9_7"
+      },
+      "environment": "underwater"
+    },
+    "room_9_7": {
+      "description": "You are in a forgotten trench. The immense pressure of the deep sea is a palpable force around you.",
+      "exits": {
+        "west": "room_8_7",
+        "east": "room_10_7",
+        "north": "room_9_6",
+        "south": "room_9_8"
+      },
+      "environment": "underwater"
+    },
+    "room_9_8": {
+      "description": "You are in a ruined spire. A school of ghostly, transparent fish flits by, their eyes vacant.",
+      "exits": {
+        "west": "room_8_8",
+        "east": "room_10_8",
+        "north": "room_9_7",
+        "south": "room_9_9"
+      },
+      "environment": "underwater"
+    },
+    "room_9_9": {
+      "description": "You are in a silent spire. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+      "exits": {
+        "west": "room_8_9",
+        "east": "room_10_9",
+        "north": "room_9_8",
+        "south": "room_9_10"
+      },
+      "environment": "underwater"
+    },
+    "room_9_10": {
+      "description": "You are in a dimly lit plaza. The water is frigid, chilling you to the bone.",
+      "exits": {
+        "west": "room_8_10",
+        "east": "room_10_10",
+        "north": "room_9_9",
+        "south": "room_9_11"
+      },
+      "environment": "underwater"
+    },
+    "room_9_11": {
+      "description": "You are in a ruined palace hall. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
+      "exits": {
+        "west": "room_8_11",
+        "east": "room_10_11",
+        "north": "room_9_10",
+        "south": "room_9_12"
+      },
+      "environment": "underwater"
+    },
     "room_9_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_8_12",
         "east": "room_10_12",
         "north": "room_9_11",
         "south": "room_9_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_9_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent spire. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_8_13",
         "east": "room_10_13",
@@ -1600,7 +1593,7 @@
       "environment": "underwater"
     },
     "room_9_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (9, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit plaza. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_8_14",
         "east": "room_10_14",
@@ -1609,7 +1602,7 @@
       "environment": "underwater"
     },
     "room_10_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent spire. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_9_0",
         "east": "room_11_0",
@@ -1618,7 +1611,7 @@
       "environment": "underwater"
     },
     "room_10_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_9_1",
         "east": "room_11_1",
@@ -1635,7 +1628,7 @@
       }
     },
     "room_10_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing chamber. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_9_2",
         "east": "room_11_2",
@@ -1645,7 +1638,7 @@
       "environment": "underwater"
     },
     "room_10_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_9_3",
         "east": "room_11_3",
@@ -1655,7 +1648,7 @@
       "environment": "underwater"
     },
     "room_10_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_9_4",
         "east": "room_11_4",
@@ -1665,7 +1658,7 @@
       "environment": "underwater"
     },
     "room_10_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous chamber. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_9_5",
         "east": "room_11_5",
@@ -1682,24 +1675,17 @@
       }
     },
     "room_10_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_9_6",
         "east": "room_11_6",
         "north": "room_10_5",
         "south": "room_10_7"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_10_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_9_7",
         "east": "room_11_7",
@@ -1709,7 +1695,7 @@
       "environment": "underwater"
     },
     "room_10_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit chamber. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_9_8",
         "east": "room_11_8",
@@ -1719,7 +1705,7 @@
       "environment": "underwater"
     },
     "room_10_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_9_9",
         "east": "room_11_9",
@@ -1729,7 +1715,7 @@
       "environment": "underwater"
     },
     "room_10_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient coral garden. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_9_10",
         "east": "room_11_10",
@@ -1739,7 +1725,7 @@
       "environment": "underwater"
     },
     "room_10_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_9_11",
         "east": "room_11_11",
@@ -1749,7 +1735,7 @@
       "environment": "underwater"
     },
     "room_10_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined plaza. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_9_12",
         "east": "room_11_12",
@@ -1759,7 +1745,7 @@
       "environment": "underwater"
     },
     "room_10_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_9_13",
         "east": "room_11_13",
@@ -1769,7 +1755,7 @@
       "environment": "underwater"
     },
     "room_10_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (10, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous chamber. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_9_14",
         "east": "room_11_14",
@@ -1778,7 +1764,7 @@
       "environment": "underwater"
     },
     "room_11_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten temple ruin. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_10_0",
         "east": "room_12_0",
@@ -1787,17 +1773,24 @@
       "environment": "underwater"
     },
     "room_11_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_10_1",
         "east": "room_12_1",
         "north": "room_11_0",
         "south": "room_11_2"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_11_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_10_2",
         "east": "room_12_2",
@@ -1807,7 +1800,7 @@
       "environment": "underwater"
     },
     "room_11_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient chamber. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_10_3",
         "east": "room_12_3",
@@ -1817,7 +1810,7 @@
       "environment": "underwater"
     },
     "room_11_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_10_4",
         "east": "room_12_4",
@@ -1827,7 +1820,7 @@
       "environment": "underwater"
     },
     "room_11_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient trench. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_10_5",
         "east": "room_12_5",
@@ -1837,7 +1830,7 @@
       "environment": "underwater"
     },
     "room_11_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent plaza. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_10_6",
         "east": "room_12_6",
@@ -1847,22 +1840,12 @@
       "environment": "underwater"
     },
     "room_11_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten palace hall. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_10_7",
         "east": "room_12_7",
         "north": "room_11_6",
         "south": "room_11_8"
-      },
-      "environment": "underwater"
-    },
-    "room_11_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 8). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_10_8",
-        "east": "room_12_8",
-        "north": "room_11_7",
-        "south": "room_11_9"
       },
       "environment": "underwater",
       "monster": {
@@ -1873,8 +1856,18 @@
         "gold": 15
       }
     },
+    "room_11_8": {
+      "description": "You are in a crushing palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
+      "exits": {
+        "west": "room_10_8",
+        "east": "room_12_8",
+        "north": "room_11_7",
+        "south": "room_11_9"
+      },
+      "environment": "underwater"
+    },
     "room_11_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent coral garden. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_10_9",
         "east": "room_12_9",
@@ -1884,7 +1877,7 @@
       "environment": "underwater"
     },
     "room_11_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_10_10",
         "east": "room_12_10",
@@ -1894,27 +1887,41 @@
       "environment": "underwater"
     },
     "room_11_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_10_11",
         "east": "room_12_11",
         "north": "room_11_10",
         "south": "room_11_12"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_11_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined palace hall. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_10_12",
         "east": "room_12_12",
         "north": "room_11_11",
         "south": "room_11_13"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_11_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit trench. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_10_13",
         "east": "room_12_13",
@@ -1924,7 +1931,7 @@
       "environment": "underwater"
     },
     "room_11_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (11, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_10_14",
         "east": "room_12_14",
@@ -1933,7 +1940,7 @@
       "environment": "underwater"
     },
     "room_12_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_11_0",
         "east": "room_13_0",
@@ -1942,7 +1949,7 @@
       "environment": "underwater"
     },
     "room_12_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous plaza. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_11_1",
         "east": "room_13_1",
@@ -1952,17 +1959,24 @@
       "environment": "underwater"
     },
     "room_12_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_11_2",
         "east": "room_13_2",
         "north": "room_12_1",
         "south": "room_12_3"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_12_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_11_3",
         "east": "room_13_3",
@@ -1972,7 +1986,7 @@
       "environment": "underwater"
     },
     "room_12_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_11_4",
         "east": "room_13_4",
@@ -1982,7 +1996,7 @@
       "environment": "underwater"
     },
     "room_12_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit palace hall. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_11_5",
         "east": "room_13_5",
@@ -1992,7 +2006,7 @@
       "environment": "underwater"
     },
     "room_12_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_11_6",
         "east": "room_13_6",
@@ -2002,7 +2016,7 @@
       "environment": "underwater"
     },
     "room_12_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_11_7",
         "east": "room_13_7",
@@ -2012,7 +2026,7 @@
       "environment": "underwater"
     },
     "room_12_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous trench. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_11_8",
         "east": "room_13_8",
@@ -2022,7 +2036,7 @@
       "environment": "underwater"
     },
     "room_12_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_11_9",
         "east": "room_13_9",
@@ -2032,7 +2046,7 @@
       "environment": "underwater"
     },
     "room_12_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_11_10",
         "east": "room_13_10",
@@ -2042,7 +2056,7 @@
       "environment": "underwater"
     },
     "room_12_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_11_11",
         "east": "room_13_11",
@@ -2052,7 +2066,7 @@
       "environment": "underwater"
     },
     "room_12_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent spire. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_11_12",
         "east": "room_13_12",
@@ -2062,7 +2076,7 @@
       "environment": "underwater"
     },
     "room_12_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit chamber. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_11_13",
         "east": "room_13_13",
@@ -2072,7 +2086,7 @@
       "environment": "underwater"
     },
     "room_12_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (12, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient palace hall. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_11_14",
         "east": "room_13_14",
@@ -2081,7 +2095,7 @@
       "environment": "underwater"
     },
     "room_13_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 0). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous coral garden. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_12_0",
         "east": "room_14_0",
@@ -2090,7 +2104,7 @@
       "environment": "underwater"
     },
     "room_13_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 1). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten chamber. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
       "exits": {
         "west": "room_12_1",
         "east": "room_14_1",
@@ -2100,7 +2114,7 @@
       "environment": "underwater"
     },
     "room_13_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit spire. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_12_2",
         "east": "room_14_2",
@@ -2110,7 +2124,7 @@
       "environment": "underwater"
     },
     "room_13_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined spire. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_12_3",
         "east": "room_14_3",
@@ -2120,24 +2134,17 @@
       "environment": "underwater"
     },
     "room_13_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 4). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_12_4",
         "east": "room_14_4",
         "north": "room_13_3",
         "south": "room_13_5"
       },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      }
+      "environment": "underwater"
     },
     "room_13_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 5). Strange coral formations glow with an eerie light.",
+      "description": "You are in a luminous chamber. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_12_5",
         "east": "room_14_5",
@@ -2147,7 +2154,7 @@
       "environment": "underwater"
     },
     "room_13_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 6). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_12_6",
         "east": "room_14_6",
@@ -2157,7 +2164,7 @@
       "environment": "underwater"
     },
     "room_13_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 7). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit palace hall. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_12_7",
         "east": "room_14_7",
@@ -2167,7 +2174,7 @@
       "environment": "underwater"
     },
     "room_13_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 8). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined plaza. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_12_8",
         "east": "room_14_8",
@@ -2177,7 +2184,7 @@
       "environment": "underwater"
     },
     "room_13_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient palace hall. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_12_9",
         "east": "room_14_9",
@@ -2187,17 +2194,24 @@
       "environment": "underwater"
     },
     "room_13_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient temple ruin. The water is frigid, chilling you to the bone.",
       "exits": {
         "west": "room_12_10",
         "east": "room_14_10",
         "north": "room_13_9",
         "south": "room_13_11"
       },
-      "environment": "underwater"
+      "environment": "underwater",
+      "monster": {
+        "name": "Deep One",
+        "hp": 15,
+        "attack": 4,
+        "defense": 2,
+        "gold": 15
+      }
     },
     "room_13_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_12_11",
         "east": "room_14_11",
@@ -2207,7 +2221,7 @@
       "environment": "underwater"
     },
     "room_13_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined chamber. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_12_12",
         "east": "room_14_12",
@@ -2217,7 +2231,7 @@
       "environment": "underwater"
     },
     "room_13_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing trench. Strange coral formations glow with an eerie, bioluminescent light.",
       "exits": {
         "west": "room_12_13",
         "east": "room_14_13",
@@ -2227,36 +2241,11 @@
       "environment": "underwater"
     },
     "room_13_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (13, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent plaza. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_12_14",
         "east": "room_14_14",
         "north": "room_13_13"
-      },
-      "environment": "underwater"
-    },
-    "room_14_0": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 0). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_0",
-        "south": "room_14_1"
-      },
-      "environment": "underwater",
-      "monster": {
-        "name": "Deep One",
-        "hp": 15,
-        "attack": 4,
-        "defense": 2,
-        "gold": 15
-      },
-      "quest_object": "trident_piece_3"
-    },
-    "room_14_1": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 1). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_1",
-        "north": "room_14_0",
-        "south": "room_14_2"
       },
       "environment": "underwater",
       "monster": {
@@ -2267,8 +2256,26 @@
         "gold": 15
       }
     },
+    "room_14_0": {
+      "description": "You are in a dimly lit chamber. The immense pressure of the deep sea is a palpable force around you.",
+      "exits": {
+        "west": "room_13_0",
+        "south": "room_14_1"
+      },
+      "environment": "underwater",
+      "quest_object": "trident_piece_3"
+    },
+    "room_14_1": {
+      "description": "You are in a forgotten coral garden. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+      "exits": {
+        "west": "room_13_1",
+        "north": "room_14_0",
+        "south": "room_14_2"
+      },
+      "environment": "underwater"
+    },
     "room_14_2": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 2). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ancient coral garden. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_13_2",
         "north": "room_14_1",
@@ -2277,11 +2284,56 @@
       "environment": "underwater"
     },
     "room_14_3": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 3). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. The remains of a grand, cyclopean structure are slowly being reclaimed by the sea.",
       "exits": {
         "west": "room_13_3",
         "north": "room_14_2",
         "south": "room_14_4"
+      },
+      "environment": "underwater"
+    },
+    "room_14_4": {
+      "description": "You are in a ancient temple ruin. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+      "exits": {
+        "west": "room_13_4",
+        "north": "room_14_3",
+        "south": "room_14_5"
+      },
+      "environment": "underwater"
+    },
+    "room_14_5": {
+      "description": "You are in a ancient palace hall. You can see strange, non-Euclidean architecture that seems to defy logic.",
+      "exits": {
+        "west": "room_13_5",
+        "north": "room_14_4",
+        "south": "room_14_6"
+      },
+      "environment": "underwater"
+    },
+    "room_14_6": {
+      "description": "You are in a ancient trench. A profound, crushing silence dominates this place, amplifying the sound of your own breathing.",
+      "exits": {
+        "west": "room_13_6",
+        "north": "room_14_5",
+        "south": "room_14_7"
+      },
+      "environment": "underwater"
+    },
+    "room_14_7": {
+      "description": "You are in a dimly lit trench. The water is frigid, chilling you to the bone.",
+      "exits": {
+        "west": "room_13_7",
+        "north": "room_14_6",
+        "south": "room_14_8"
+      },
+      "environment": "underwater"
+    },
+    "room_14_8": {
+      "description": "You are in a luminous spire. The immense pressure of the deep sea is a palpable force around you.",
+      "exits": {
+        "west": "room_13_8",
+        "north": "room_14_7",
+        "south": "room_14_9"
       },
       "environment": "underwater",
       "monster": {
@@ -2292,53 +2344,8 @@
         "gold": 15
       }
     },
-    "room_14_4": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 4). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_4",
-        "north": "room_14_3",
-        "south": "room_14_5"
-      },
-      "environment": "underwater"
-    },
-    "room_14_5": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 5). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_5",
-        "north": "room_14_4",
-        "south": "room_14_6"
-      },
-      "environment": "underwater"
-    },
-    "room_14_6": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 6). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_6",
-        "north": "room_14_5",
-        "south": "room_14_7"
-      },
-      "environment": "underwater"
-    },
-    "room_14_7": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 7). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_7",
-        "north": "room_14_6",
-        "south": "room_14_8"
-      },
-      "environment": "underwater"
-    },
-    "room_14_8": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 8). Strange coral formations glow with an eerie light.",
-      "exits": {
-        "west": "room_13_8",
-        "north": "room_14_7",
-        "south": "room_14_9"
-      },
-      "environment": "underwater"
-    },
     "room_14_9": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 9). Strange coral formations glow with an eerie light.",
+      "description": "You are in a silent palace hall. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_13_9",
         "north": "room_14_8",
@@ -2347,7 +2354,7 @@
       "environment": "underwater"
     },
     "room_14_10": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 10). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten coral garden. A school of ghostly, transparent fish flits by, their eyes vacant.",
       "exits": {
         "west": "room_13_10",
         "north": "room_14_9",
@@ -2356,7 +2363,7 @@
       "environment": "underwater"
     },
     "room_14_11": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 11). Strange coral formations glow with an eerie light.",
+      "description": "You are in a ruined palace hall. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_13_11",
         "north": "room_14_10",
@@ -2365,7 +2372,7 @@
       "environment": "underwater"
     },
     "room_14_12": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 12). Strange coral formations glow with an eerie light.",
+      "description": "You are in a forgotten spire. Giant sea anemones wave their tentacles hypnotically in the slow current.",
       "exits": {
         "west": "room_13_12",
         "north": "room_14_11",
@@ -2374,7 +2381,7 @@
       "environment": "underwater"
     },
     "room_14_13": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 13). Strange coral formations glow with an eerie light.",
+      "description": "You are in a crushing coral garden. You can see strange, non-Euclidean architecture that seems to defy logic.",
       "exits": {
         "west": "room_13_13",
         "north": "room_14_12",
@@ -2383,7 +2390,7 @@
       "environment": "underwater"
     },
     "room_14_14": {
-      "description": "You are in a dimly lit, water-filled chamber at (14, 14). Strange coral formations glow with an eerie light.",
+      "description": "You are in a dimly lit temple ruin. The immense pressure of the deep sea is a palpable force around you.",
       "exits": {
         "west": "room_13_14",
         "north": "room_14_13",
