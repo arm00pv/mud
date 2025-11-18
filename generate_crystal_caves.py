@@ -20,14 +20,33 @@ def generate_crystal_caves():
         }
     }
 
+    # --- Description Templates ---
+    ADJECTIVES = ["vast", "glimmering", "echoin", "silent", "narrow", "ancient", "singing"]
+    NOUNS = ["cavern", "chasm", "tunnel", "grotto", "chamber", "passageway", "cathedral"]
+    DETAILS = [
+        "The walls are lined with glowing crystals that cast a soft, ethereal light, painting the room in hues of blue and violet.",
+        "The air hums with a faint, resonant frequency, seemingly emanating from the crystals themselves.",
+        "A perfectly clear, still underground lake reflects the crystalline ceiling like a flawless mirror.",
+        "Giant, perfectly formed crystal shards jut from the floor like the teeth of some great beast.",
+        "The sound of dripping water echoes melodically through the chamber.",
+        "A chasm of unfathomable depth splits the room, crossed by a narrow, natural rock bridge.",
+        "The light from the crystals refracts through the air, creating miniature, dancing rainbows.",
+        "You feel a sense of deep, geological time in this place, as if you've stepped into the planet's heart."
+    ]
+
     # Generate a 20x15 grid of rooms
     grid_size_x = 20
     grid_size_y = 15
     for x in range(grid_size_x):
         for y in range(grid_size_y):
             room_id = f"cave_{x}_{y}"
+            adj = random.choice(ADJECTIVES)
+            noun = random.choice(NOUNS)
+            detail = random.choice(DETAILS)
+            description = f"You are in a {adj} {noun}. {detail}"
+
             area["rooms"][room_id] = {
-                "description": f"You are in a vast cavern at ({x}, {y}). The walls are lined with glowing crystals that cast a soft, ethereal light.",
+                "description": description,
                 "exits": {}
             }
             if x > 0:

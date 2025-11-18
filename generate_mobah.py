@@ -60,9 +60,44 @@ def generate_mobah():
     all_rooms = {}
 
     # 1. Generate Zones (approx. 500 rooms total)
-    main_desert = generate_zone(20, 20, "d", [["vast", "scorching", "windswept"], ["expanse", "dune sea"], ["The sun beats down relentlessly."]])
-    market = generate_zone(5, 5, "m", [["bustling", "colorful"], ["market square", "oasis bazaar"], ["The smell of exotic spices fills the air."]])
-    tribal_village = generate_zone(10, 10, "t", [["quiet", "sandstone"], ["village", "tribal ground"], ["The Mobashi people watch you silently."]])
+    desert_parts = [
+        ["vast", "scorching", "windswept", "endless", "sun-blasted", "barren"],
+        ["expanse", "dune sea", "rocky wadi", "salt flat", "sunken basin"],
+        [
+            "The sun beats down relentlessly, the heat shimmering above the sand.",
+            "Wind sculpts the dunes into razor-sharp ridges that stretch to the horizon.",
+            "The bleached bones of some colossal, long-dead creature lie half-buried in the sand.",
+            "A sense of profound, agoraphobic emptiness surrounds you.",
+            "The silence is absolute, broken only by the whisper of the wind.",
+            "Mirages dance on the horizon, promising water and coolness that do not exist."
+        ]
+    ]
+    market_parts = [
+        ["bustling", "colorful", "sand-worn", "vibrant"],
+        ["market square", "oasis bazaar", "trade encampment", "watering hole"],
+        [
+            "The smell of exotic spices, roasting meats, and pack animals fills the air.",
+            "Traders from distant lands shout their wares in a dozen different languages.",
+            "Brightly colored awnings provide a welcome respite from the oppressive sun.",
+            "A central well, the heart of the oasis, is surrounded by thirsty travelers.",
+            "The energy here is a stark contrast to the silence of the surrounding desert."
+        ]
+    ]
+    village_parts = [
+        ["quiet", "sandstone", "ancient", "cliff-side", "sheltered"],
+        ["village", "tribal ground", "cliff dwelling", "encampment"],
+        [
+            "The Mobashi people, their faces weathered like the rock, watch you with silent curiosity.",
+            "Homes are carved directly into the sandstone cliffs, offering protection from the elements.",
+            "The air is filled with the scent of hearth fires and cooking herbs.",
+            "Mystical symbols are painted onto stretched hides and rock faces.",
+            "There is a sense of deep-rooted community and resilience here."
+        ]
+    ]
+
+    main_desert = generate_zone(20, 20, "d", desert_parts)
+    market = generate_zone(5, 5, "m", market_parts)
+    tribal_village = generate_zone(10, 10, "t", village_parts)
 
     all_rooms.update(main_desert)
     all_rooms.update(market)

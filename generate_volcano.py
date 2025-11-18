@@ -20,14 +20,32 @@ def generate_volcano():
         }
     }
 
+    # --- Description Templates ---
+    ADJECTIVES = ["sweltering", "scorching", "choking", "ash-filled", "magma-lit", "unstable", "brimstone"]
+    NOUNS = ["tunnel", "cavern", "magma tube", "fissure", "chamber", "caldera", "vent"]
+    DETAILS = [
+        "Rivers of magma flow in channels along the floor, casting a fiery, dancing glow.",
+        "The air is thick with sulfur and ash, making it difficult to breathe.",
+        "The ground trembles periodically, a reminder of the immense power churning beneath you.",
+        "Sharp, glassy obsidian shards litter the floor, crunching underfoot.",
+        "Geysers of scalding steam erupt from cracks in the rock with a deafening hiss.",
+        "The heat is so intense it feels like a physical weight pressing down on you.",
+        "Strange, heat-resistant fungi grow in bizarre formations on the cooler rock faces."
+    ]
+
     grid_size_x = 20
     grid_size_y = 15
     for x in range(grid_size_x):
         for y in range(grid_size_y):
             room_id = f"volcano_{x}_{y}"
+            adj = random.choice(ADJECTIVES)
+            noun = random.choice(NOUNS)
+            detail = random.choice(DETAILS)
+            description = f"You are in a {adj} {noun}. {detail}"
+
             is_hot_room = random.random() < 0.3 # 30% chance for a room to have intense heat
             area["rooms"][room_id] = {
-                "description": f"You are in a sweltering tunnel at ({x}, {y}). Rivers of magma flow in channels along the floor, casting a fiery glow.",
+                "description": description,
                 "exits": {},
                 "environment": "intense_heat" if is_hot_room else "normal"
             }

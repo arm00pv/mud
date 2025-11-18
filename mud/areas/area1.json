@@ -1,15 +1,14 @@
 {
   "name": "The Great Forest",
   "description": "A vast and ancient forest, home to warring factions of fairies and nymphs.",
-  "start_room": "room_9_1",
+  "start_room": "room_5_9",
   "rooms": {
-    "room_9_1": {
+    "room_5_9": {
       "exits": {
-        "south": "room_9_2"
+        "west": "room_4_9"
       },
       "faction": "contested",
-      "description": "You are in a mossy path. Sunlight streams... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache",
+      "description": "You are in a primeval thicket. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird.",
       "npcs": {
         "hermit": {
           "name": "A mysterious Hermit",
@@ -18,285 +17,129 @@
         }
       }
     },
-    "room_9_2": {
+    "room_4_9": {
       "exits": {
-        "north": "room_9_1",
-        "south": "room_9_3"
+        "east": "room_5_9",
+        "west": "room_3_9"
       },
       "faction": "contested",
-      "description": "You are in a mossy path. A small, babbling brook..."
-    },
-    "room_9_3": {
-      "exits": {
-        "north": "room_9_2",
-        "west": "room_8_3"
-      },
-      "faction": "contested",
-      "description": "You are in a misty copse. The air is thick..."
-    },
-    "room_8_3": {
-      "exits": {
-        "east": "room_9_3",
-        "south": "room_8_4"
-      },
-      "faction": "contested",
-      "description": "You are in a misty clearing. A gentle breeze..."
-    },
-    "room_8_4": {
-      "exits": {
-        "north": "room_8_3",
-        "south": "room_8_5"
-      },
-      "faction": "contested",
-      "description": "You are in a serene glade. A gentle breeze..."
-    },
-    "room_8_5": {
-      "exits": {
-        "north": "room_8_4",
-        "east": "room_9_5"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled clearing. The sound of a distant woodpecker..."
-    },
-    "room_9_5": {
-      "exits": {
-        "west": "room_8_5",
-        "north": "room_9_4",
-        "south": "room_9_6"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled hollow. Sunlight streams..."
-    },
-    "room_9_4": {
-      "exits": {
-        "south": "room_9_5"
-      },
-      "faction": "contested",
-      "description": "You are in a mossy hollow. A gentle breeze..."
-    },
-    "room_9_6": {
-      "exits": {
-        "north": "room_9_5",
-        "south": "room_9_7"
-      },
-      "faction": "nymph",
-      "description": "You are in a serene glade. Sunlight streams... Thick, gnarled vines hang from the trees..."
-    },
-    "room_9_7": {
-      "exits": {
-        "north": "room_9_6",
-        "west": "room_8_7"
-      },
-      "faction": "nymph",
-      "description": "You are in a vibrant hollow. Sunlight streams... Thick, gnarled vines hang from the trees..."
-    },
-    "room_8_7": {
-      "exits": {
-        "east": "room_9_7",
-        "west": "room_7_7"
-      },
-      "faction": "nymph",
-      "description": "You are in a vibrant copse. Sunlight streams... Thick, gnarled vines hang from the trees..."
-    },
-    "room_7_7": {
-      "exits": {
-        "east": "room_8_7",
-        "south": "room_7_8"
-      },
-      "faction": "nymph",
-      "description": "You are in a sun-dappled copse. A gentle breeze... Thick, gnarled vines hang from the trees..."
-    },
-    "room_7_8": {
-      "exits": {
-        "north": "room_7_7",
-        "south": "room_7_9"
-      },
-      "faction": "nymph",
-      "description": "You are in a mossy clearing. The air is thick... Thick, gnarled vines hang from the trees..."
-    },
-    "room_7_9": {
-      "exits": {
-        "north": "room_7_8",
-        "west": "room_6_9",
-        "east": "room_8_9"
-      },
-      "faction": "nymph",
-      "description": "You are in a ancient grove. A gentle breeze... Thick, gnarled vines hang from the trees..."
-    },
-    "room_6_9": {
-      "exits": {
-        "east": "room_7_9",
-        "north": "room_6_8"
-      },
-      "faction": "nymph",
-      "description": "You are in a serene thicket. A gentle breeze... Thick, gnarled vines hang from the trees..."
-    },
-    "room_6_8": {
-      "exits": {
-        "south": "room_6_9",
-        "north": "room_6_7"
-      },
-      "faction": "nymph",
-      "description": "You are in a eerie glade. A gentle breeze... Thick, gnarled vines hang from the trees... You see a hidden cache of acorns here.",
+      "description": "You are in a vibrant grove. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_6_7": {
+    "room_3_9": {
       "exits": {
-        "south": "room_6_8",
-        "north": "room_6_6"
-      },
-      "faction": "nymph",
-      "description": "You are in a ancient clearing. Sunlight streams... Thick, gnarled vines hang from the trees..."
-    },
-    "room_6_6": {
-      "exits": {
-        "south": "room_6_7",
-        "east": "room_7_6"
-      },
-      "faction": "nymph",
-      "description": "You are in a dark grove. A gentle breeze... Thick, gnarled vines hang from the trees..."
-    },
-    "room_7_6": {
-      "exits": {
-        "west": "room_6_6",
-        "north": "room_7_5",
-        "east": "room_8_6"
-      },
-      "faction": "nymph",
-      "description": "You are in a mossy clearing. The sound of a distant woodpecker... Thick, gnarled vines hang from the trees..."
-    },
-    "room_7_5": {
-      "exits": {
-        "south": "room_7_6",
-        "west": "room_6_5"
+        "east": "room_4_9",
+        "north": "room_3_8"
       },
       "faction": "contested",
-      "description": "You are in a ancient thicket. Sunlight streams... You see a hidden cache of acorns here.",
+      "description": "You are in a sun-dappled meadow. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_3_8": {
+      "exits": {
+        "south": "room_3_9",
+        "west": "room_2_8"
+      },
+      "faction": "contested",
+      "description": "You are in a vibrant hollow. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
+    },
+    "room_2_8": {
+      "exits": {
+        "east": "room_3_8",
+        "west": "room_1_8"
+      },
+      "faction": "contested",
+      "description": "You are in a misty clearing. You hear the faint rustling of some unseen creature in the undergrowth."
+    },
+    "room_1_8": {
+      "exits": {
+        "east": "room_2_8",
+        "north": "room_1_7"
+      },
+      "faction": "contested",
+      "description": "You are in a primeval path. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air."
+    },
+    "room_1_7": {
+      "exits": {
+        "south": "room_1_8",
+        "north": "room_1_6"
+      },
+      "faction": "contested",
+      "description": "You are in a eerie brookside. A carpet of emerald moss blankets the ground, muffling your footsteps. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_6_5": {
+    "room_1_6": {
       "exits": {
-        "east": "room_7_5",
-        "north": "room_6_4"
+        "south": "room_1_7",
+        "north": "room_1_5"
       },
       "faction": "contested",
-      "description": "You are in a mossy copse. Sunlight streams..."
+      "description": "You are in a whispering path. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
     },
-    "room_6_4": {
+    "room_1_5": {
       "exits": {
-        "south": "room_6_5",
-        "east": "room_7_4"
+        "south": "room_1_6",
+        "east": "room_2_5"
       },
       "faction": "contested",
-      "description": "You are in a misty glade. A small, babbling brook... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
+      "description": "You are in a forgotten grove. The air is thick with the scent of pine and damp earth."
     },
-    "room_7_4": {
+    "room_2_5": {
       "exits": {
-        "west": "room_6_4",
-        "north": "room_7_3"
+        "west": "room_1_5",
+        "east": "room_3_5"
       },
       "faction": "contested",
-      "description": "You are in a vibrant grove. The air is thick... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
-    },
-    "room_7_3": {
-      "exits": {
-        "south": "room_7_4",
-        "west": "room_6_3"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie thicket. A small, babbling brook..."
-    },
-    "room_6_3": {
-      "exits": {
-        "east": "room_7_3",
-        "west": "room_5_3"
-      },
-      "faction": "contested",
-      "description": "You are in a dark grove. The sound of a distant woodpecker... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
-    },
-    "room_5_3": {
-      "exits": {
-        "east": "room_6_3",
-        "north": "room_5_2"
-      },
-      "faction": "contested",
-      "description": "You are in a dark clearing. Sunlight streams..."
-    },
-    "room_5_2": {
-      "exits": {
-        "south": "room_5_3",
-        "west": "room_4_2"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie glade. The air is thick..."
-    },
-    "room_4_2": {
-      "exits": {
-        "east": "room_5_2",
-        "south": "room_4_3"
-      },
-      "faction": "fairy",
-      "description": "You are in a misty path. The air is thick... Delicate, shimmering lights float in the air..."
-    },
-    "room_4_3": {
-      "exits": {
-        "north": "room_4_2",
-        "south": "room_4_4"
-      },
-      "faction": "fairy",
-      "description": "You are in a dark thicket. Sunlight streams... Delicate, shimmering lights float in the air..."
-    },
-    "room_4_4": {
-      "exits": {
-        "north": "room_4_3",
-        "west": "room_3_4"
-      },
-      "faction": "fairy",
-      "description": "You are in a dark path. The sound of a distant woodpecker... Delicate, shimmering lights float in the air..."
-    },
-    "room_3_4": {
-      "exits": {
-        "east": "room_4_4",
-        "south": "room_3_5"
-      },
-      "faction": "fairy",
-      "description": "You are in a sun-dappled clearing. The air is thick... Delicate, shimmering lights float in the air..."
+      "description": "You are in a mossy fen. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
     },
     "room_3_5": {
       "exits": {
-        "north": "room_3_4",
+        "west": "room_2_5",
         "south": "room_3_6"
       },
       "faction": "contested",
-      "description": "You are in a dark thicket. A gentle breeze... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
+      "description": "You are in a verdant copse. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air."
     },
     "room_3_6": {
       "exits": {
         "north": "room_3_5",
-        "east": "room_4_6"
+        "south": "room_3_7"
       },
       "faction": "contested",
-      "description": "You are in a mossy hollow. The air is thick..."
+      "description": "You are in a misty copse. You hear the faint rustling of some unseen creature in the undergrowth."
     },
-    "room_4_6": {
+    "room_3_7": {
       "exits": {
-        "west": "room_3_6",
-        "south": "room_4_7"
+        "north": "room_3_6",
+        "west": "room_2_7",
+        "east": "room_4_7"
       },
       "faction": "contested",
-      "description": "You are in a eerie path. The sound of a distant woodpecker..."
+      "description": "You are in a whispering meadow. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
+    },
+    "room_2_7": {
+      "exits": {
+        "east": "room_3_7",
+        "north": "room_2_6"
+      },
+      "faction": "contested",
+      "description": "You are in a ancient hollow. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones."
+    },
+    "room_2_6": {
+      "exits": {
+        "south": "room_2_7"
+      },
+      "faction": "contested",
+      "description": "You are in a dark fen. You hear the faint rustling of some unseen creature in the undergrowth."
     },
     "room_4_7": {
       "exits": {
-        "north": "room_4_6",
+        "west": "room_3_7",
         "south": "room_4_8"
       },
       "faction": "contested",
-      "description": "You are in a ancient path. A gentle breeze..."
+      "description": "You are in a vibrant brookside. The air is thick with the scent of pine and damp earth. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
     },
     "room_4_8": {
       "exits": {
@@ -304,528 +147,685 @@
         "east": "room_5_8"
       },
       "faction": "contested",
-      "description": "You are in a ancient thicket. A small, babbling brook... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
+      "description": "You are in a primeval thicket. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
     },
     "room_5_8": {
       "exits": {
         "west": "room_4_8",
-        "north": "room_5_7",
-        "south": "room_5_9"
+        "east": "room_6_8"
       },
       "faction": "contested",
-      "description": "You are in a serene glade. A small, babbling brook..."
+      "description": "You are in a vibrant clearing. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
     },
-    "room_5_7": {
+    "room_6_8": {
       "exits": {
-        "south": "room_5_8",
-        "north": "room_5_6"
+        "west": "room_5_8",
+        "south": "room_6_9"
       },
-      "faction": "contested",
-      "description": "You are in a mossy clearing. A small, babbling brook..."
+      "faction": "nymph",
+      "description": "You are in a serene glade. The air is thick with the scent of pine and damp earth. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_5_6": {
+    "room_6_9": {
       "exits": {
-        "south": "room_5_7",
-        "north": "room_5_5"
+        "north": "room_6_8",
+        "east": "room_7_9"
       },
-      "faction": "contested",
-      "description": "You are in a mossy grove. The air is thick..."
+      "faction": "nymph",
+      "description": "You are in a vibrant glade. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_5_5": {
+    "room_7_9": {
       "exits": {
-        "south": "room_5_6",
-        "north": "room_5_4",
-        "west": "room_4_5"
+        "west": "room_6_9",
+        "north": "room_7_8"
       },
-      "faction": "contested",
-      "description": "You are in a mossy path. The sound of a distant woodpecker..."
+      "faction": "nymph",
+      "description": "You are in a luminous meadow. A sense of profound peace and timelessness pervades this place. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_5_4": {
+    "room_7_8": {
       "exits": {
-        "south": "room_5_5"
+        "south": "room_7_9",
+        "north": "room_7_7"
       },
-      "faction": "contested",
-      "description": "You are in a dark clearing. The air is thick..."
+      "faction": "nymph",
+      "description": "You are in a vibrant fen. A carpet of emerald moss blankets the ground, muffling your footsteps. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_4_5": {
+    "room_7_7": {
       "exits": {
-        "east": "room_5_5"
+        "south": "room_7_8",
+        "east": "room_8_7"
       },
-      "faction": "contested",
-      "description": "You are in a sun-dappled glade. Sunlight streams..."
-    },
-    "room_5_9": {
-      "exits": {
-        "north": "room_5_8",
-        "west": "room_4_9"
-      },
-      "faction": "contested",
-      "description": "You are in a vibrant path. The sound of a distant woodpecker..."
-    },
-    "room_4_9": {
-      "exits": {
-        "east": "room_5_9",
-        "west": "room_3_9"
-      },
-      "faction": "contested",
-      "description": "You are in a mossy copse. The sound of a distant woodpecker..."
-    },
-    "room_3_9": {
-      "exits": {
-        "east": "room_4_9",
-        "west": "room_2_9"
-      },
-      "faction": "contested",
-      "description": "You are in a ancient copse. Sunlight streams..."
-    },
-    "room_2_9": {
-      "exits": {
-        "east": "room_3_9",
-        "west": "room_1_9"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled path. The sound of a distant woodpecker..."
-    },
-    "room_1_9": {
-      "exits": {
-        "east": "room_2_9",
-        "north": "room_1_8"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled glade. A gentle breeze..."
-    },
-    "room_1_8": {
-      "exits": {
-        "south": "room_1_9",
-        "west": "room_0_8"
-      },
-      "faction": "contested",
-      "description": "You are in a serene path. The air is thick..."
-    },
-    "room_0_8": {
-      "exits": {
-        "east": "room_1_8",
-        "south": "room_0_9",
-        "north": "room_0_7"
-      },
-      "faction": "contested",
-      "description": "You are in a ancient hollow. The sound of a distant woodpecker..."
-    },
-    "room_0_9": {
-      "exits": {
-        "north": "room_0_8"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie clearing. The sound of a distant woodpecker..."
-    },
-    "room_0_7": {
-      "exits": {
-        "south": "room_0_8",
-        "east": "room_1_7"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie thicket. A gentle breeze..."
-    },
-    "room_1_7": {
-      "exits": {
-        "west": "room_0_7",
-        "north": "room_1_6"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie hollow. The sound of a distant woodpecker... You see a hidden cache of acorns here.",
+      "faction": "nymph",
+      "description": "You are in a whispering hollow. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_1_6": {
+    "room_8_7": {
       "exits": {
-        "south": "room_1_7",
-        "west": "room_0_6"
+        "west": "room_7_7",
+        "east": "room_9_7"
       },
-      "faction": "contested",
-      "description": "You are in a mossy grove. Sunlight streams..."
+      "faction": "nymph",
+      "description": "You are in a serene brookside. The gnarled roots of an ancient oak twist across the path like sleeping serpents. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_0_6": {
+    "room_9_7": {
       "exits": {
-        "east": "room_1_6",
-        "north": "room_0_5"
+        "west": "room_8_7",
+        "south": "room_9_8",
+        "north": "room_9_6"
       },
-      "faction": "contested",
-      "description": "You are in a misty grove. Sunlight streams..."
+      "faction": "nymph",
+      "description": "You are in a whispering clearing. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_0_5": {
+    "room_9_8": {
       "exits": {
-        "south": "room_0_6",
-        "north": "room_0_4"
+        "north": "room_9_7",
+        "west": "room_8_8"
       },
-      "faction": "contested",
-      "description": "You are in a mossy thicket. A gentle breeze..."
+      "faction": "nymph",
+      "description": "You are in a ancient glade. A sense of profound peace and timelessness pervades this place. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
-    "room_0_4": {
+    "room_8_8": {
       "exits": {
-        "south": "room_0_5",
-        "north": "room_0_3"
+        "east": "room_9_8",
+        "south": "room_8_9"
       },
-      "faction": "fairy",
-      "description": "You are in a eerie path. A small, babbling brook... Delicate, shimmering lights float in the air..."
-    },
-    "room_0_3": {
-      "exits": {
-        "south": "room_0_4",
-        "north": "room_0_2"
-      },
-      "faction": "fairy",
-      "description": "You are in a misty grove. Sunlight streams... Delicate, shimmering lights float in the air..."
-    },
-    "room_0_2": {
-      "exits": {
-        "south": "room_0_3",
-        "east": "room_1_2"
-      },
-      "faction": "fairy",
-      "description": "You are in a vibrant glade. Sunlight streams... Delicate, shimmering lights float in the air..."
-    },
-    "room_1_2": {
-      "exits": {
-        "west": "room_0_2",
-        "north": "room_1_1"
-      },
-      "faction": "fairy",
-      "description": "You are in a dark glade. The air is thick... Delicate, shimmering lights float in the air..."
-    },
-    "room_1_1": {
-      "exits": {
-        "south": "room_1_2",
-        "east": "room_2_1"
-      },
-      "faction": "fairy",
-      "description": "You are in a ancient path. A gentle breeze... Delicate, shimmering lights float in the air..."
-    },
-    "room_2_1": {
-      "exits": {
-        "west": "room_1_1",
-        "north": "room_2_0"
-      },
-      "faction": "fairy",
-      "description": "You are in a eerie hollow. The air is thick... Delicate, shimmering lights float in the air..."
-    },
-    "room_2_0": {
-      "exits": {
-        "south": "room_2_1",
-        "east": "room_3_0",
-        "west": "room_1_0"
-      },
-      "faction": "fairy",
-      "description": "You are in a sun-dappled thicket. The air is thick... Delicate, shimmering lights float in the air..."
-    },
-    "room_3_0": {
-      "exits": {
-        "west": "room_2_0",
-        "east": "room_4_0"
-      },
-      "faction": "fairy",
-      "description": "You are in a sun-dappled hollow. The sound of a distant woodpecker... Delicate, shimmering lights float in the air... You see a hidden cache of acorns here.",
+      "faction": "nymph",
+      "description": "You are in a mossy thicket. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_4_0": {
+    "room_8_9": {
       "exits": {
-        "west": "room_3_0",
-        "east": "room_5_0"
+        "north": "room_8_8",
+        "east": "room_9_9"
       },
-      "faction": "fairy",
-      "description": "You are in a mossy grove. The air is thick... Delicate, shimmering lights float in the air... You see a hidden cache of acorns here.",
+      "faction": "nymph",
+      "description": "You are in a misty grove. A sense of profound peace and timelessness pervades this place. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
+    },
+    "room_9_9": {
+      "exits": {
+        "west": "room_8_9"
+      },
+      "faction": "nymph",
+      "description": "You are in a whispering glade. A carpet of emerald moss blankets the ground, muffling your footsteps. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
+    },
+    "room_9_6": {
+      "exits": {
+        "south": "room_9_7",
+        "north": "room_9_5"
+      },
+      "faction": "nymph",
+      "description": "You are in a ancient hollow. The gnarled roots of an ancient oak twist across the path like sleeping serpents. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
+    },
+    "room_9_5": {
+      "exits": {
+        "south": "room_9_6",
+        "west": "room_8_5"
+      },
+      "faction": "contested",
+      "description": "You are in a misty hollow. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_8_5": {
+      "exits": {
+        "east": "room_9_5",
+        "west": "room_7_5"
+      },
+      "faction": "contested",
+      "description": "You are in a shadowy thicket. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_7_5": {
+      "exits": {
+        "east": "room_8_5",
+        "west": "room_6_5"
+      },
+      "faction": "contested",
+      "description": "You are in a sun-dappled path. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air."
+    },
+    "room_6_5": {
+      "exits": {
+        "east": "room_7_5",
+        "north": "room_6_4"
+      },
+      "faction": "contested",
+      "description": "You are in a dark dell. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
+    },
+    "room_6_4": {
+      "exits": {
+        "south": "room_6_5",
+        "east": "room_7_4"
+      },
+      "faction": "contested",
+      "description": "You are in a whispering grove. A carpet of emerald moss blankets the ground, muffling your footsteps."
+    },
+    "room_7_4": {
+      "exits": {
+        "west": "room_6_4",
+        "north": "room_7_3"
+      },
+      "faction": "contested",
+      "description": "You are in a misty dell. You hear the faint rustling of some unseen creature in the undergrowth."
+    },
+    "room_7_3": {
+      "exits": {
+        "south": "room_7_4",
+        "north": "room_7_2"
+      },
+      "faction": "contested",
+      "description": "You are in a sun-dappled thicket. The air is thick with the scent of pine and damp earth. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_5_0": {
+    "room_7_2": {
       "exits": {
-        "west": "room_4_0",
-        "east": "room_6_0"
+        "south": "room_7_3",
+        "north": "room_7_1"
       },
       "faction": "contested",
-      "description": "You are in a misty clearing. Sunlight streams... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
-    },
-    "room_6_0": {
-      "exits": {
-        "west": "room_5_0",
-        "south": "room_6_1"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled copse. The air is thick..."
-    },
-    "room_6_1": {
-      "exits": {
-        "north": "room_6_0",
-        "east": "room_7_1",
-        "west": "room_5_1"
-      },
-      "faction": "contested",
-      "description": "You are in a mossy clearing. Sunlight streams..."
+      "description": "You are in a luminous path. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones."
     },
     "room_7_1": {
       "exits": {
-        "west": "room_6_1",
+        "south": "room_7_2",
         "north": "room_7_0"
       },
       "faction": "contested",
-      "description": "You are in a serene path. A gentle breeze..."
+      "description": "You are in a shadowy fen. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
     },
     "room_7_0": {
       "exits": {
         "south": "room_7_1",
-        "east": "room_8_0"
+        "east": "room_8_0",
+        "west": "room_6_0"
       },
       "faction": "contested",
-      "description": "You are in a misty clearing. Sunlight streams..."
+      "description": "You are in a dark fen. The gnarled roots of an ancient oak twist across the path like sleeping serpents."
     },
     "room_8_0": {
       "exits": {
         "west": "room_7_0",
-        "south": "room_8_1",
         "east": "room_9_0"
       },
       "faction": "contested",
-      "description": "You are in a ancient hollow. Sunlight streams... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
-    },
-    "room_8_1": {
-      "exits": {
-        "north": "room_8_0",
-        "south": "room_8_2"
-      },
-      "faction": "contested",
-      "description": "You are in a serene clearing. The sound of a distant woodpecker..."
-    },
-    "room_8_2": {
-      "exits": {
-        "north": "room_8_1",
-        "west": "room_7_2"
-      },
-      "faction": "contested",
-      "description": "You are in a dark grove. Sunlight streams..."
-    },
-    "room_7_2": {
-      "exits": {
-        "east": "room_8_2",
-        "west": "room_6_2"
-      },
-      "faction": "contested",
-      "description": "You are in a sun-dappled hollow. The sound of a distant woodpecker..."
-    },
-    "room_6_2": {
-      "exits": {
-        "east": "room_7_2"
-      },
-      "faction": "contested",
-      "description": "You are in a eerie clearing. A small, babbling brook..."
+      "description": "You are in a misty dell. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones."
     },
     "room_9_0": {
       "exits": {
         "west": "room_8_0",
+        "south": "room_9_1",
         "east": "area1_bridge_room"
       },
       "faction": "contested",
-      "description": "You are in a ancient thicket. A gentle breeze... You see a hidden cache of acorns here.",
+      "description": "You are in a misty path. The gnarled roots of an ancient oak twist across the path like sleeping serpents."
+    },
+    "room_9_1": {
+      "exits": {
+        "north": "room_9_0",
+        "south": "room_9_2"
+      },
+      "faction": "contested",
+      "description": "You are in a misty clearing. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_9_2": {
+      "exits": {
+        "north": "room_9_1",
+        "west": "room_8_2"
+      },
+      "faction": "contested",
+      "description": "You are in a ancient thicket. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
+    },
+    "room_8_2": {
+      "exits": {
+        "east": "room_9_2",
+        "south": "room_8_3",
+        "north": "room_8_1"
+      },
+      "faction": "contested",
+      "description": "You are in a misty grove. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_8_3": {
+      "exits": {
+        "north": "room_8_2",
+        "south": "room_8_4"
+      },
+      "faction": "contested",
+      "description": "You are in a verdant meadow. You hear the faint rustling of some unseen creature in the undergrowth."
+    },
+    "room_8_4": {
+      "exits": {
+        "north": "room_8_3",
+        "east": "room_9_4"
+      },
+      "faction": "contested",
+      "description": "You are in a vibrant thicket. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_9_4": {
+      "exits": {
+        "west": "room_8_4",
+        "north": "room_9_3"
+      },
+      "faction": "contested",
+      "description": "You are in a misty thicket. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones."
+    },
+    "room_9_3": {
+      "exits": {
+        "south": "room_9_4"
+      },
+      "faction": "contested",
+      "description": "You are in a whispering copse. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones."
+    },
+    "room_8_1": {
+      "exits": {
+        "south": "room_8_2"
+      },
+      "faction": "contested",
+      "description": "You are in a shadowy thicket. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air."
+    },
+    "room_6_0": {
+      "exits": {
+        "east": "room_7_0",
+        "west": "room_5_0"
+      },
+      "faction": "contested",
+      "description": "You are in a primeval hollow. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird."
+    },
+    "room_5_0": {
+      "exits": {
+        "east": "room_6_0",
+        "south": "room_5_1"
+      },
+      "faction": "contested",
+      "description": "You are in a serene glade. The air is thick with the scent of pine and damp earth."
     },
     "room_5_1": {
       "exits": {
-        "east": "room_6_1",
-        "west": "room_4_1"
+        "north": "room_5_0",
+        "south": "room_5_2"
       },
       "faction": "contested",
-      "description": "You are in a dark clearing. A gentle breeze..."
+      "description": "You are in a verdant grove. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
     },
-    "room_4_1": {
+    "room_5_2": {
       "exits": {
-        "east": "room_5_1",
-        "west": "room_3_1"
+        "north": "room_5_1",
+        "east": "room_6_2"
       },
-      "faction": "fairy",
-      "description": "You are in a sun-dappled clearing. The sound of a distant woodpecker... Delicate, shimmering lights float in the air... You see a hidden cache of acorns here.",
+      "faction": "contested",
+      "description": "You are in a dark thicket. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_3_1": {
+    "room_6_2": {
       "exits": {
-        "east": "room_4_1",
-        "south": "room_3_2"
+        "west": "room_5_2",
+        "north": "room_6_1",
+        "south": "room_6_3"
       },
-      "faction": "fairy",
-      "description": "You are in a eerie hollow. A small, babbling brook... Delicate, shimmering lights float in the air..."
+      "faction": "contested",
+      "description": "You are in a mossy thicket. The air is thick with the scent of pine and damp earth."
     },
-    "room_3_2": {
+    "room_6_1": {
       "exits": {
-        "north": "room_3_1",
-        "west": "room_2_2"
+        "south": "room_6_2"
       },
-      "faction": "fairy",
-      "description": "You are in a serene grove. A gentle breeze... Delicate, shimmering lights float in the air..."
+      "faction": "contested",
+      "description": "You are in a mossy path. You hear the faint rustling of some unseen creature in the undergrowth."
     },
-    "room_2_2": {
+    "room_6_3": {
       "exits": {
-        "east": "room_3_2",
-        "south": "room_2_3"
+        "north": "room_6_2",
+        "west": "room_5_3"
       },
-      "faction": "fairy",
-      "description": "You are in a dark clearing. The air is thick... Delicate, shimmering lights float in the air..."
+      "faction": "contested",
+      "description": "You are in a primeval thicket. A carpet of emerald moss blankets the ground, muffling your footsteps."
     },
-    "room_2_3": {
+    "room_5_3": {
       "exits": {
-        "north": "room_2_2",
-        "east": "room_3_3",
-        "south": "room_2_4"
+        "east": "room_6_3",
+        "south": "room_5_4"
+      },
+      "faction": "contested",
+      "description": "You are in a verdant path. The gnarled roots of an ancient oak twist across the path like sleeping serpents."
+    },
+    "room_5_4": {
+      "exits": {
+        "north": "room_5_3",
+        "west": "room_4_4"
+      },
+      "faction": "contested",
+      "description": "You are in a luminous meadow. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_4_4": {
+      "exits": {
+        "east": "room_5_4",
+        "north": "room_4_3",
+        "south": "room_4_5"
       },
       "faction": "fairy",
-      "description": "You are in a vibrant path. The air is thick... Delicate, shimmering lights float in the air... You see a hidden cache of acorns here.",
+      "description": "You are in a shadowy meadow. A sense of profound peace and timelessness pervades this place. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_4_3": {
+      "exits": {
+        "south": "room_4_4",
+        "west": "room_3_3"
+      },
+      "faction": "fairy",
+      "description": "You are in a serene grove. A carpet of emerald moss blankets the ground, muffling your footsteps. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
     "room_3_3": {
       "exits": {
-        "west": "room_2_3"
+        "east": "room_4_3",
+        "north": "room_3_2"
       },
       "faction": "fairy",
-      "description": "You are in a dark thicket. A small, babbling brook... Delicate, shimmering lights float in the air..."
+      "description": "You are in a misty clearing. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_2_4": {
+    "room_3_2": {
       "exits": {
-        "north": "room_2_3",
-        "south": "room_2_5"
+        "south": "room_3_3",
+        "west": "room_2_2"
       },
       "faction": "fairy",
-      "description": "You are in a sun-dappled grove. Sunlight streams... Delicate, shimmering lights float in the air..."
+      "description": "You are in a whispering glade. The gnarled roots of an ancient oak twist across the path like sleeping serpents. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_2_5": {
+    "room_2_2": {
       "exits": {
-        "north": "room_2_4",
-        "west": "room_1_5",
-        "south": "room_2_6"
+        "east": "room_3_2",
+        "north": "room_2_1"
       },
-      "faction": "contested",
-      "description": "You are in a serene thicket. A small, babbling brook..."
-    },
-    "room_1_5": {
-      "exits": {
-        "east": "room_2_5",
-        "north": "room_1_4"
-      },
-      "faction": "contested",
-      "description": "You are in a misty thicket. The sound of a distant woodpecker... You see a hidden cache of acorns here.",
+      "faction": "fairy",
+      "description": "You are in a sun-dappled meadow. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
       "quest_object": "acorn_cache"
     },
-    "room_1_4": {
+    "room_2_1": {
       "exits": {
-        "south": "room_1_5",
-        "north": "room_1_3"
+        "south": "room_2_2",
+        "east": "room_3_1"
       },
       "faction": "fairy",
-      "description": "You are in a misty copse. The air is thick... Delicate, shimmering lights float in the air..."
+      "description": "You are in a forgotten path. A sense of profound peace and timelessness pervades this place. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_1_3": {
+    "room_3_1": {
       "exits": {
-        "south": "room_1_4"
+        "west": "room_2_1",
+        "east": "room_4_1"
       },
       "faction": "fairy",
-      "description": "You are in a misty glade. The air is thick... Delicate, shimmering lights float in the air..."
+      "description": "You are in a luminous hollow. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
     },
-    "room_2_6": {
+    "room_4_1": {
       "exits": {
-        "north": "room_2_5",
-        "south": "room_2_7"
+        "west": "room_3_1",
+        "south": "room_4_2",
+        "north": "room_4_0"
       },
-      "faction": "contested",
-      "description": "You are in a dark glade. A small, babbling brook..."
+      "faction": "fairy",
+      "description": "You are in a forgotten thicket. You hear the faint rustling of some unseen creature in the undergrowth. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_2_7": {
+    "room_4_2": {
       "exits": {
-        "north": "room_2_6",
-        "east": "room_3_7"
+        "north": "room_4_1"
       },
-      "faction": "contested",
-      "description": "You are in a mossy path. The air is thick..."
+      "faction": "fairy",
+      "description": "You are in a primeval thicket. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_3_7": {
+    "room_4_0": {
       "exits": {
-        "west": "room_2_7",
-        "south": "room_3_8"
+        "south": "room_4_1",
+        "west": "room_3_0"
       },
-      "faction": "contested",
-      "description": "You are in a mossy copse. The air is thick..."
+      "faction": "fairy",
+      "description": "You are in a luminous glade. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_3_8": {
+    "room_3_0": {
       "exits": {
-        "north": "room_3_7",
-        "west": "room_2_8"
+        "east": "room_4_0",
+        "west": "room_2_0"
       },
-      "faction": "contested",
-      "description": "You are in a eerie hollow. Sunlight streams..."
+      "faction": "fairy",
+      "description": "You are in a verdant grove. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
     },
-    "room_2_8": {
+    "room_2_0": {
       "exits": {
-        "east": "room_3_8"
+        "east": "room_3_0",
+        "west": "room_1_0"
       },
-      "faction": "contested",
-      "description": "You are in a misty thicket. Sunlight streams..."
+      "faction": "fairy",
+      "description": "You are in a vibrant path. A carpet of emerald moss blankets the ground, muffling your footsteps. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
     },
     "room_1_0": {
       "exits": {
         "east": "room_2_0",
-        "west": "room_0_0"
+        "south": "room_1_1"
       },
       "faction": "fairy",
-      "description": "You are in a dark path. A gentle breeze... Delicate, shimmering lights float in the air..."
+      "description": "You are in a dark thicket. You hear the faint rustling of some unseen creature in the undergrowth. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
     },
-    "room_0_0": {
+    "room_1_1": {
       "exits": {
-        "east": "room_1_0",
-        "south": "room_0_1"
+        "north": "room_1_0",
+        "west": "room_0_1"
       },
       "faction": "fairy",
-      "description": "You are in a misty grove. The air is thick... Delicate, shimmering lights float in the air..."
+      "description": "You are in a forgotten thicket. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
     },
     "room_0_1": {
       "exits": {
+        "east": "room_1_1",
+        "south": "room_0_2",
         "north": "room_0_0"
       },
       "faction": "fairy",
-      "description": "You are in a misty clearing. The air is thick... Delicate, shimmering lights float in the air..."
+      "description": "You are in a forgotten path. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_0_2": {
+      "exits": {
+        "north": "room_0_1",
+        "east": "room_1_2"
+      },
+      "faction": "fairy",
+      "description": "You are in a eerie thicket. A carpet of emerald moss blankets the ground, muffling your footsteps. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_1_2": {
+      "exits": {
+        "west": "room_0_2",
+        "south": "room_1_3"
+      },
+      "faction": "fairy",
+      "description": "You are in a sun-dappled path. The gnarled roots of an ancient oak twist across the path like sleeping serpents. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_1_3": {
+      "exits": {
+        "north": "room_1_2",
+        "west": "room_0_3"
+      },
+      "faction": "fairy",
+      "description": "You are in a misty thicket. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_0_3": {
+      "exits": {
+        "east": "room_1_3",
+        "south": "room_0_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a mossy thicket. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_0_4": {
+      "exits": {
+        "north": "room_0_3",
+        "south": "room_0_5",
+        "east": "room_1_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a luminous path. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_0_5": {
+      "exits": {
+        "north": "room_0_4",
+        "south": "room_0_6"
+      },
+      "faction": "contested",
+      "description": "You are in a dark thicket. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird."
+    },
+    "room_0_6": {
+      "exits": {
+        "north": "room_0_5",
+        "south": "room_0_7"
+      },
+      "faction": "contested",
+      "description": "You are in a vibrant glade. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_0_7": {
+      "exits": {
+        "north": "room_0_6",
+        "south": "room_0_8"
+      },
+      "faction": "contested",
+      "description": "You are in a verdant copse. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_0_8": {
+      "exits": {
+        "north": "room_0_7",
+        "south": "room_0_9"
+      },
+      "faction": "contested",
+      "description": "You are in a luminous hollow. A gentle breeze whispers through the leaves, carrying the melody of a hidden bird."
+    },
+    "room_0_9": {
+      "exits": {
+        "north": "room_0_8",
+        "east": "room_1_9"
+      },
+      "faction": "contested",
+      "description": "You are in a dark brookside. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_1_9": {
+      "exits": {
+        "west": "room_0_9",
+        "east": "room_2_9"
+      },
+      "faction": "contested",
+      "description": "You are in a sun-dappled hollow. The gnarled roots of an ancient oak twist across the path like sleeping serpents. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
+    },
+    "room_2_9": {
+      "exits": {
+        "west": "room_1_9"
+      },
+      "faction": "contested",
+      "description": "You are in a eerie glade. The air is thick with the scent of pine and damp earth."
+    },
+    "room_1_4": {
+      "exits": {
+        "west": "room_0_4",
+        "east": "room_2_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a mossy fen. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_2_4": {
+      "exits": {
+        "west": "room_1_4",
+        "north": "room_2_3",
+        "east": "room_3_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a forgotten hollow. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. Delicate, shimmering lights float in the air, a telltale sign of fairy presence. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
+    },
+    "room_2_3": {
+      "exits": {
+        "south": "room_2_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a luminous clearing. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_3_4": {
+      "exits": {
+        "west": "room_2_4"
+      },
+      "faction": "fairy",
+      "description": "You are in a luminous brookside. The air is thick with the scent of pine and damp earth. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_0_0": {
+      "exits": {
+        "south": "room_0_1"
+      },
+      "faction": "fairy",
+      "description": "You are in a dark clearing. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming. Delicate, shimmering lights float in the air, a telltale sign of fairy presence."
+    },
+    "room_4_5": {
+      "exits": {
+        "north": "room_4_4",
+        "east": "room_5_5"
+      },
+      "faction": "contested",
+      "description": "You are in a ancient grove. A small, babbling brook gurgles nearby, its water crystal clear over smooth stones. You see a hidden cache of acorns tucked into the nook of a tree.",
+      "quest_object": "acorn_cache"
+    },
+    "room_5_5": {
+      "exits": {
+        "west": "room_4_5",
+        "south": "room_5_6"
+      },
+      "faction": "contested",
+      "description": "You are in a vibrant path. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_5_6": {
+      "exits": {
+        "north": "room_5_5",
+        "west": "room_4_6",
+        "south": "room_5_7"
+      },
+      "faction": "contested",
+      "description": "You are in a mossy copse. The sound of a distant woodpecker echoes through the trees, a steady, rhythmic drumming."
+    },
+    "room_4_6": {
+      "exits": {
+        "east": "room_5_6"
+      },
+      "faction": "contested",
+      "description": "You are in a primeval fen. Strange, bioluminescent fungi cast a soft, ethereal glow on the surroundings."
+    },
+    "room_5_7": {
+      "exits": {
+        "north": "room_5_6",
+        "east": "room_6_7"
+      },
+      "faction": "contested",
+      "description": "You are in a misty grove. A sense of profound peace and timelessness pervades this place."
+    },
+    "room_6_7": {
+      "exits": {
+        "west": "room_5_7",
+        "north": "room_6_6"
+      },
+      "faction": "nymph",
+      "description": "You are in a shadowy fen. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
+    },
+    "room_6_6": {
+      "exits": {
+        "south": "room_6_7",
+        "east": "room_7_6"
+      },
+      "faction": "nymph",
+      "description": "You are in a dark thicket. Sunlight streams through the canopy in golden shafts, illuminating dust motes dancing in the air. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
+    },
+    "room_7_6": {
+      "exits": {
+        "west": "room_6_6",
+        "east": "room_8_6"
+      },
+      "faction": "nymph",
+      "description": "You are in a misty copse. You hear the faint rustling of some unseen creature in the undergrowth. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
     "room_8_6": {
       "exits": {
         "west": "room_7_6"
       },
       "faction": "nymph",
-      "description": "You are in a sun-dappled hollow. The sound of a distant woodpecker... Thick, gnarled vines hang from the trees..."
-    },
-    "room_8_9": {
-      "exits": {
-        "west": "room_7_9",
-        "north": "room_8_8"
-      },
-      "faction": "nymph",
-      "description": "You are in a vibrant glade. A small, babbling brook... Thick, gnarled vines hang from the trees..."
-    },
-    "room_8_8": {
-      "exits": {
-        "south": "room_8_9",
-        "east": "room_9_8"
-      },
-      "faction": "nymph",
-      "description": "You are in a eerie glade. The air is thick... Thick, gnarled vines hang from the trees... You see a hidden cache of acorns here.",
-      "quest_object": "acorn_cache"
-    },
-    "room_9_8": {
-      "exits": {
-        "west": "room_8_8",
-        "south": "room_9_9"
-      },
-      "faction": "nymph",
-      "description": "You are in a ancient glade. Sunlight streams... Thick, gnarled vines hang from the trees..."
-    },
-    "room_9_9": {
-      "exits": {
-        "north": "room_9_8"
-      },
-      "faction": "nymph",
-      "description": "You are in a serene thicket. A gentle breeze... Thick, gnarled vines hang from the trees..."
+      "description": "You are in a vibrant thicket. A sense of profound peace and timelessness pervades this place. Thick, gnarled vines, pulsing with a faint green light, hang from the trees, marking nymph territory."
     },
     "area1_bridge_room": {
       "description": "You are on a shimmering bridge of light that stretches into the sky towards a floating city.",
